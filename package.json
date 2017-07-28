@@ -13,5 +13,20 @@
     "morgan": "~1.6.1",
     "nunjucks": "^3.0.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "esnext": true,
+    "ignores": [
+      "public/**/*"
+    ],
+    "env": [
+      "jquery",
+      "browser",
+      "mocha"
+    ]
   }
 }
