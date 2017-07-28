@@ -1,5 +1,15 @@
-extends layout
+{% extends 'layout.njk' %}
+{% set pageTitle = "Index" %}
 
-block content
-  h1= title
-  p Welcome to #{title}
+{% block content %}
+  <main id="content" role="main">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1>{{pageTitle}}</h1>
+        <p>
+          Welcome to {{pageTitle}}
+        </p>
+      </div>
+    </div>
+  </main>
+{% endblock %}

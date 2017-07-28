@@ -36,24 +36,15 @@ app.use((req, res, next) => {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
-  app.use((err, req, res) => {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
-// Production error handler
-// No stacktraces leaked to user
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
+  const env = process.env.NODE_ENV;
+  const error = env === 'development' ? err : '';
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
-    error: {}
+    error
   });
+  next();
 });
 
 module.exports = app;
