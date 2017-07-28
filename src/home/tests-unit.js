@@ -6,8 +6,8 @@ const {get} = require('./functions');
 const expect = chai.expect;
 
 module.exports = () => {
-  describe('Test', () => {
-    it('will pass', () => {
+  describe('Get /', () => {
+    it('will render the view for the home page', () => {
       const req = {};
       const res = {
         render: (view, data) => {
