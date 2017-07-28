@@ -1,10 +1,9 @@
 const express = require('express');
 
 const router = new express.Router();
+const {get, post} = require('./functions');
 
-/* GET home page. */
-router.get('/', (req, res) => {
-  res.render('index', {title: 'Express'});
-});
+router.get('/', get);
+router.post('/', post);
 
 module.exports = router;
