@@ -3,11 +3,7 @@
 const template = `${__dirname}/template.njk`;
 
 function get(req, res) {
-  res.render(template, {title: 'Express'});
+  return res.render(template, {title: 'Home'});
 }
 
-function post(req, res) {
-  res.render(template, {title: 'Express'});
-}
-
-module.exports = {get, post};
+module.exports = {get};
