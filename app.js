@@ -25,9 +25,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use((req, res, next) => {
+  res.locals.appName = 'craigabbott.co.uk';
+  next();
+});
 
 // Routes
-app.use('/', require('./src/home'));
+app.use('/', require('./src/pages/home'));
+app.use('/:title', require('./src/pages/article'));
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {

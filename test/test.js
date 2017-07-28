@@ -1,4 +1,5 @@
 'use strict';
 
 // Unit tests
-require('../src/home/tests-unit')();
+require('../src/pages/home/tests-unit')();
+require('../src/pages/article/tests-unit')();
