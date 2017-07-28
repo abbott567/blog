@@ -35,15 +35,14 @@ app.use((req, res, next) => {
 });
 
 // Error handler
-app.use((err, req, res, next) => {
+app.use((err, req, res, _next) => {
   const env = process.env.NODE_ENV;
   const error = env === 'development' ? err : '';
   res.status(err.status || 500);
-  res.render('error', {
+  res.render('common/error', {
     message: err.message,
     error
   });
-  next();
 });
 
 module.exports = app;
