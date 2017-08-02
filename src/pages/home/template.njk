@@ -8,11 +8,9 @@
 
         {% for post in posts %}
           <article>
-            {% markdown %}
               <h2><a href="{{post.slug}}">{{post.title}}</a></h2>
               <p>{{ post.createdAt }}</p>
-              {% include 'posts/' + post.body %}
-            {% endmarkdown %}
+              {% markdown 'posts/' + post.body %}
           </article>
         {% endfor %}
 
