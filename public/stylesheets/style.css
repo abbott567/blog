@@ -1,8 +1,40 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 19px "Ubuntu", sans-serif;
+  background: #efefef;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  max-width: 630px;
 }
 
 a {
-  color: #00B7FF;
+  color: #2B8CC4;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+article {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 2em;
+  padding: 20px;
+}
+
+pre {
+  font-size: 16px;
+}
+
+.published-date {
+  font-size: 14px;
+  color: #ccc;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }

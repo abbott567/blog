@@ -21,6 +21,9 @@ const jucks = nunjucks.configure('src', {
   express: app
 });
 
+// Load nunjucks filters
+require('./src/helpers/filters')(jucks);
+
 // Markdown config
 markdown.register(jucks, marked);
 
