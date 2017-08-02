@@ -8,8 +8,13 @@
   </head>
 
   <body>
+    {% include './header.njk' %}
+
     {% block content %}
     {% endblock %}
+
+    {% include './footer.njk' %}
+
     <script src="/javascripts/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script> 
   </body>

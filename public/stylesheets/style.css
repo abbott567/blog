@@ -3,8 +3,12 @@
   src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
+* {
+  outline: none;
+}
+
 body {
-  padding: 50px;
+  padding: 20px;
   font: 19px "Ubuntu", sans-serif;
   background: #efefef;
 }
@@ -15,10 +19,47 @@ main {
   max-width: 630px;
 }
 
+header {
+  padding-bottom: 1.4em;
+}
+
+nav {
+  width: 100%;
+  max-width: 630px;
+  margin: auto;
+}
+
+footer ul {
+  width: 100%;
+  max-width: 630px;
+  margin: auto;
+  font-size: 14px;
+}
+
 a {
   color: #2B8CC4;
   text-decoration: none;
   border-bottom: 1px dashed;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a:focus {
+  background-color: #ffbf47;
+  outline: 3px solid #ffbf47;
+}
+
+a:link:focus {
+  color: #005798;
+}
+
+.skiplink {
+  position: absolute;
+  left: -9999em;
+}
+
+.skiplink:focus {
+  left: 0;
+  z-index: 1;
 }
 
 article {
@@ -47,11 +88,28 @@ main#error pre {
 
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
+  left: -9999em;
+  top: auto;
   width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  height: 1px;
+  overflow: hidden;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.list-no-bullets {
+  list-style: none;
+  padding-left: 0;
 }
