@@ -1,8 +1,10 @@
 'use-strict';
 
+const formatDate = require('date-fns/format');
+
 function loadFilters(env) {
-  env.addFilter('formatDate', str => {
-    return str.slice(0, 5);
+  env.addFilter('formatDate', timestamp => {
+    return formatDate(timestamp, 'D MMMM YYYY');
   });
 }
 

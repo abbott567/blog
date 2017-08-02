@@ -4,12 +4,15 @@
   <main id="content" role="main">
     <div class="grid-row">
       <div class="column-two-thirds">
-        <h1>{{title}}</h1>
+        <h1 class="visually-hidden">All articles</h1>
 
         {% for post in posts %}
           <article>
               <h2><a href="{{post.slug}}">{{post.title}}</a></h2>
-              <p class="published-date">Published {{post.createdAt|formatDate}}</p>
+              <p class="published-date">
+                <span class="visually-hidden">Published on</span>
+                {{post.createdAt|formatDate}}
+              </p>
               {% markdown 'posts/' + post.body %}
           </article>
         {% endfor %}
