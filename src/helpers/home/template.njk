@@ -1,0 +1,23 @@
+{% extends '../../common/layout.njk' %}
+
+{% block content %}
+  <main id="content" role="main" tabindex="-1">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="visually-hidden">All articles</h1>
+
+        {% for post in posts %}
+          <article>
+              <h2><a href="{{post.slug}}">{{post.title}}</a></h2>
+              <p class="published-date">
+                <span class="visually-hidden">Published on</span>
+                {{post.createdAt|formatDate}}
+              </p>
+              {% markdown 'posts/' + post.body %}
+          </article>
+        {% endfor %}
+
+      </div>
+    </div>
+  </main>
+{% endblock %}
