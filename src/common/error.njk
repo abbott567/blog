@@ -2,15 +2,15 @@
 {% set pageTitle = "Error" %}
 
 {% block content %}
-  <main id="content" role="main">
+  <main id="error" role="main">
     <div class="grid-row">
       <div class="column-two-thirds">
         <h1>{{message}}</h1>
         <h2>{{error.status}}</h2>
-        <pre>
-          {{error.stack}}
-        </pre>
       </div>
     </div>
   </main>
+  <pre>
+    {{error.stack}}
+  </pre>
 {% endblock %}

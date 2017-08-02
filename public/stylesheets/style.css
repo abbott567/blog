@@ -30,6 +30,12 @@ article {
 
 pre {
   font-size: 16px;
+  width: 100%;
+  overflow: scroll;
+}
+
+main#error pre {
+  font-size: 12px;
 }
 
 .published-date {
