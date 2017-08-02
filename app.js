@@ -6,6 +6,8 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const nunjucks = require('nunjucks');
+const markdown = require('nunjucks-markdown');
+const marked = require('marked');
 
 const app = express();
 
@@ -13,11 +15,13 @@ const app = express();
 app.set('view engine', 'njk');
 
 // Nunjucks config
-nunjucks.configure('src', {
+const jucks = nunjucks.configure('src', {
   watch: true,
   noCache: true,
   express: app
 });
+
+markdown.register(jucks, marked);
 
 // Middleware
 app.use(logger('dev'));
@@ -32,7 +36,6 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/', require('./src/pages/home'));
-app.use('/:title', require('./src/pages/article'));
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {

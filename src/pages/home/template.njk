@@ -5,9 +5,17 @@
     <div class="grid-row">
       <div class="column-two-thirds">
         <h1>{{title}}</h1>
-        <p>
-          Welcome to {{title}}
-        </p>
+
+        {% for post in posts %}
+          <article>
+            {% markdown %}
+              <h2><a href="{{post.slug}}">{{post.title}}</a></h2>
+              <p>{{ post.createdAt }}</p>
+              {% include 'posts/' + post.body %}
+            {% endmarkdown %}
+          </article>
+        {% endfor %}
+
       </div>
     </div>
   </main>
