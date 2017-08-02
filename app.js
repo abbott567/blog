@@ -21,6 +21,7 @@ const jucks = nunjucks.configure('src', {
   express: app
 });
 
+// Markdown config
 markdown.register(jucks, marked);
 
 // Middleware
