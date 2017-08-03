@@ -5,31 +5,35 @@
 
 * {
   box-sizing: border-box;
-  color: #333;
   outline: none;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.250em; /* 36px */
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 1.625em; /* 26px */
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.375em; /* 22px */
 }
 
 h4 {
-  font-size: 19px;
+  font-size: 1.188em; /* 19px */
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
+  color: #333;
   font-family: "OpenSans", sans-serif;
   background: #fff;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 1em;
+  line-height: 2em;
   margin: 0;
   padding: 20px;
   word-spacing: 0;
@@ -45,12 +49,12 @@ nav {
   border-bottom: 1px solid #ccc;
   margin: auto;
   max-width: 630px;
-  padding-bottom: 30px;
+  padding-bottom: 1.875em;
   width: 100%;
 }
 
 nav a {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 footer {
@@ -61,7 +65,7 @@ footer {
 }
 
 footer ul {
-  font-size: 14px;
+  font-size: .875em;
 }
 
 a {
@@ -111,20 +115,20 @@ article {
 }
 
 pre {
-  font-size: 16px;
+  font-size: 1em;
   overflow: scroll;
   width: 100%;
 }
 
 main#error pre {
-  font-size: 12px;
+  font-size: .750em; /* 12px */
 }
 
 .published-date {
   color: #aaa;
   display: block;
-  font-size: 14px;
-  padding-bottom: 10px;
+  font-size: .5em; /* 14px */
+  padding-bottom: .625em /* 10px */;
 }
 
 .visually-hidden {
@@ -157,5 +161,5 @@ li {
 blockquote {
   border-left: 5px solid #ccc;
   margin-left: 0;
-  padding-left: 20px;
+  padding-left: 1.25em; /* 20px */
 }
