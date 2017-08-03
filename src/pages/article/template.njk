@@ -2,16 +2,20 @@
 
 {% block content %}
   <main id="content" role="main" tabindex="-1">
+    <div class="large-container">
+      <div class="column-two-thirds">
 
-    <article>
-      <h1>
-        <span class="visually-hidden">Published on</span>
-        <span class="published-date">{{post.createdAt|formatDate}}</span>
-        {{post.title}}
-      </h1>
-      
-      {% markdown 'posts/' + post.slug + '/post.md' %}
-    </article>
+        <article>
+          <h1>
+            <span class="visually-hidden">Published on</span>
+            <span class="published-date">{{post.createdAt|formatDate}}</span>
+            {{post.title}}
+          </h1>
+          
+          {% markdown 'posts/' + post.slug + '/post.md' %}
+        </article>
 
+      </div>
+    </div>
   </main>
 {% endblock %}

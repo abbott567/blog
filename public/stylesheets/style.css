@@ -27,7 +27,7 @@ h4 {
 
 body {
   font-family: "OpenSans", sans-serif;
-  background: #efefef;
+  background: #fff;
   font-size: 19px;
   line-height: 32px;
   margin: 0;
@@ -41,13 +41,11 @@ main {
   width: 100%;
 }
 
-header {
-  padding-bottom: 1.4em;
-}
-
 nav {
+  border-bottom: 1px solid #ccc;
   margin: auto;
   max-width: 630px;
+  padding-bottom: 30px;
   width: 100%;
 }
 
@@ -55,11 +53,15 @@ nav a {
   font-size: 24px;
 }
 
-footer ul {
-  font-size: 14px;
+footer {
+  border-top: 1px solid #ccc;
   margin: auto;
   max-width: 630px;
   width: 100%;
+}
+
+footer ul {
+  font-size: 14px;
 }
 
 a {
@@ -88,11 +90,24 @@ a:link:focus {
   z-index: 1;
 }
 
+.read-full-article-wrapper {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding-bottom: 3em;
+  padding-top: 1em;
+}
+
+main article:last-child {
+  margin-bottom: 0;
+}
+
+main article:last-child .read-full-article-wrapper {
+  border: 0;
+}
+
 article {
-  background: #fff;
-  border: 1px solid #ccc;
-  margin-bottom: 2em;
-  padding: 20px;
+  margin-bottom: 4em;
+  padding: 0 0 2em;
 }
 
 pre {

@@ -2,23 +2,27 @@
 
 {% block content %}
   <main id="content" role="main" tabindex="-1">
+    <div class="column-two-thirds">
 
-    {% for post in posts %}
-      <article>
-        <h1>
-          <span class="visually-hidden">Published on</span>
-          <span class="published-date">{{post.createdAt|formatDate}}</span>
-          {{post.title}}
-        </h1>
-        
-        {% markdown 'posts/' + post.slug + '/excerpt.md' %}
+      {% for post in posts %}
+        <article>
+          <h1>
+            <span class="visually-hidden">Published on</span>
+            <span class="published-date">{{post.createdAt|formatDate}}</span>
+            {{post.title}}
+          </h1>
+          
+          {% markdown 'posts/' + post.slug + '/excerpt.md' %}
 
-        <a class="read-more-link" href="/{{post.slug}}">
-          Read full article
-          <span class="visually-hidden">: {{post.title}}</span>
-        </a>
-      </article>
-    {% endfor %}
+          <div class="read-full-article-wrapper">
+            <a href="/{{post.slug}}">
+              Read full article
+              <span class="visually-hidden">: {{post.title}}</span>
+            </a>
+          </div>
 
+        </article>
+      {% endfor %}
+    </div>
   </main>
 {% endblock %}
