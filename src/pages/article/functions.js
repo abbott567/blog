@@ -16,11 +16,12 @@ function get(req, res, next) {
 
 function findPostBySlug(slug) {
   for (let i = 0; i < posts.length; i++) {
+    console.log(slug, posts[i].slug)
     if (posts[i].slug === slug) {
       return posts[i];
     }
-    return false;
   }
+  return false;
 }
 
 module.exports = {get, findPostBySlug};

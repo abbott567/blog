@@ -1,12 +1,12 @@
 This is a code test demo.
 
-## HTML
+### HTML
 
 ``` html
   <a class="link" href="#">Moo!</a>
 ```
 
-## CSS
+### CSS
 
 ``` css
   .link {
@@ -14,7 +14,7 @@ This is a code test demo.
   }
 ```
 
-## Javascript
+### Javascript
 
 ``` javascript
   $('.link').on('click', function(e) {

@@ -6,11 +6,27 @@
 * {
   box-sizing: border-box;
   color: #333;
-  font-family: "OpenSans", sans-serif;
   outline: none;
 }
 
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
 body {
+  font-family: "OpenSans", sans-serif;
   background: #efefef;
   font-size: 19px;
   line-height: 32px;
@@ -90,8 +106,8 @@ main#error pre {
 }
 
 .published-date {
-  border-bottom: 1px solid #ccc;
   color: #aaa;
+  display: block;
   font-size: 14px;
   padding-bottom: 10px;
 }
