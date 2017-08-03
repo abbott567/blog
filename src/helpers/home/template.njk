@@ -8,12 +8,14 @@
 
         {% for post in posts %}
           <article>
+          
               <h2><a href="{{post.slug}}">{{post.title}}</a></h2>
               <p class="published-date">
                 <span class="visually-hidden">Published on</span>
                 {{post.createdAt|formatDate}}
               </p>
               {% markdown 'posts/' + post.body %}
+
           </article>
         {% endfor %}
 

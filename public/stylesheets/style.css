@@ -109,10 +109,8 @@ main#error pre {
 }
 
 li {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  line-height: 1.8em;
 }
-
 .list-no-bullets {
   list-style: none;
   padding-left: 0;
