@@ -1,7 +1,30 @@
 <a href="#content" class="skiplink">Skip to main content</a>
 
 <header>
-  <nav>
-    <a href="/">craigabbott.co.uk</a>
-  </nav>
+  <div class="nav-wrapper">
+    <nav>
+      <a href="/">craigabbott.co.uk</a>
+    </nav>
+
+    <div class="a11y">
+      <fieldset>
+        <legend>Font size</legend>
+        <button id="font-size+" class="font-size-change" data-amount="1" aria-label="Increase font size">A+</button>
+        <button id="font-size-" class="font-size-change" data-amount="-1" aria-label="Decrease font size">A-</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Theme</legend>
+        <button class="colour-change" data-theme="default">A</button>
+        <button class="colour-change _black-white" data-theme="black-white">A</button>
+        <button class="colour-change _blue-yellow" data-theme="blue-yellow">A</button>
+        <button class="colour-change _yellow-black" data-theme="yellow-black">A</button>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Font</legend>
+        <button class="font-change" data-font="OpenSans">Default</button>
+        <button class="font-change _comicSans" data-font="comicSansMS">Comic Sans</button>
+      </fieldset>
+    </div>
 </header>

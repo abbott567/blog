@@ -32,11 +32,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 app.use((req, res, next) => {
   res.locals.appName = 'craigabbott.co.uk';
   next();
 });
+
+// Static files
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/jquery.js', express.static('node_modules/jquery/dist/jquery.slim.min.js'));
 
 // Routes
 app.use('', require('./src/pages/home'));
