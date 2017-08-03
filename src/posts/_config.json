@@ -1,8 +1,12 @@
 [
   {
-    "title": "Test 1",
-    "slug": "test",
-    "body": "test.md",
+    "title": "What is 'normal' anyway?",
+    "slug": "what-is-normal-anyway",
+    "body": "what-is-normal-anyway.md",
+    "category": {
+      "title": "Mental Health",
+      "slug": "mental-health"
+    },
     "createdAt": "2017-07-31T14:41:00.00Z"
   }
 ]
