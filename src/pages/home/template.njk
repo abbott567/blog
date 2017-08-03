@@ -12,7 +12,8 @@
                 <span class="published-date">{{post.createdAt|formatDate}}</span>
                 <a href="{{post.slug}}">{{post.title}}</a>
               </h1>
-              {% markdown 'posts/' + post.body %}
+              
+              {% markdown 'posts/' + post.slug + '.md' %}
           </article>
         {% endfor %}
 

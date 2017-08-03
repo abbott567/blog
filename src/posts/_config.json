@@ -2,7 +2,6 @@
   {
     "title": "Code Test",
     "slug": "code-test",
-    "body": "code-test.md",
     "category": {
       "title": "Development",
       "slug": "development"
@@ -12,7 +11,6 @@
   {
     "title": "What is 'normal' anyway?",
     "slug": "what-is-normal-anyway",
-    "body": "what-is-normal-anyway.md",
     "category": {
       "title": "Mental Health",
       "slug": "mental-health"
