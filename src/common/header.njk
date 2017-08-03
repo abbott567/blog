@@ -1,14 +1,30 @@
 <a href="#content" class="skiplink">Skip to main content</a>
 
 <header>
-  <nav>
-    <a href="/">craigabbott.co.uk</a>
-  </nav>
-</header>
+  <div class="nav-wrapper">
+    <nav>
+      <a href="/">craigabbott.co.uk</a>
+    </nav>
 
-<button class="font-size-change" data-amount="1">Font-size +</button>
-<button class="font-size-change" data-amount="-1">Font-size -</button>
-<button class="colour-change" data-colour="default">White / Black</button>
-<button class="colour-change" data-colour="black-white">Black / White</button>
-<button class="colour-change" data-colour="blue-yellow">Blue / Yellow</button>
-<button class="colour-change" data-colour="yellow-black">Yellow / Black</button>
+    <div class="a11y">
+      <fieldset>
+        <legend>Font size</legend>
+        <button id="font-size+" class="font-size-change" data-amount="1" aria-label="Increase font size">A+</button>
+        <button id="font-size-" class="font-size-change" data-amount="-1" aria-label="Decrease font size">A-</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Theme</legend>
+        <button class="colour-change" data-theme="default">A</button>
+        <button class="colour-change _black-white" data-theme="black-white">A</button>
+        <button class="colour-change _blue-yellow" data-theme="blue-yellow">A</button>
+        <button class="colour-change _yellow-black" data-theme="yellow-black">A</button>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Font</legend>
+        <button class="font-change" data-font="OpenSans">Default</button>
+        <button class="font-change _comicSans" data-font="comicSansMS">Comic Sans</button>
+      </fieldset>
+    </div>
+</header>

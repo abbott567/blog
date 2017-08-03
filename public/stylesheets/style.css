@@ -3,6 +3,11 @@
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: ComicSans;
+  src: url(../fonts/ComicSansMS.ttf);
+}
+
 * {
   box-sizing: border-box;
   outline: none;
@@ -45,11 +50,15 @@ main {
   width: 100%;
 }
 
-nav {
+.nav-wrapper {
   border-bottom: 1px solid #ccc;
   margin: auto;
   max-width: 630px;
-  padding-bottom: 1.875em;
+  width: 100%;
+}
+nav {
+  margin: auto;
+  max-width: 630px;
   width: 100%;
 }
 
@@ -66,6 +75,10 @@ footer {
 
 footer ul {
   font-size: .875em;
+}
+
+button:focus {
+  outline: 3px solid #ffbf47;
 }
 
 a {
@@ -162,4 +175,49 @@ blockquote {
   border-left: 5px solid #ccc;
   margin-left: 0;
   padding-left: 1.25em; /* 20px */
+}
+
+.a11y {
+  padding: 0.6em 0;
+  margin: auto;
+  max-width: 630px;
+  width: 100%;
+}
+
+.a11y button {
+  border: 1px solid #333;
+  height: 2.1em;
+  font-size: 1em
+}
+
+.a11y fieldset {
+  border: 0;
+  display: inline-block;
+  padding: 0;
+}
+
+.a11y legend {
+  font-size: 0.6em;
+  line-height: 2em;
+}
+
+.colour-change {
+  cursor: default;
+  font-size: 2em;
+}
+.colour-change._black-white {
+  background-color: #333;
+  color: #fff;
+}
+.colour-change._blue-yellow {
+  background-color: #134A61;
+  color: #E6DE4E;
+}
+.colour-change._yellow-black {
+  background-color: #D9CB84;
+  color: #000;
+}
+
+.font-change._comicSans {
+  font-family: 'ComicSansMS';
 }
