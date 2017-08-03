@@ -2,19 +2,17 @@
   {
     "title": "Code Test",
     "slug": "code-test",
-    "category": {
-      "title": "Development",
-      "slug": "development"
-    },
-    "createdAt": "2017-08-03T11:10:00.00Z"
+    "createdAt": "2017-08-03T11:10:00.00Z",
+    "categories": [
+      "development"
+    ]
   },
   {
     "title": "What is 'normal' anyway?",
     "slug": "what-is-normal-anyway",
-    "category": {
-      "title": "Mental Health",
-      "slug": "mental-health"
-    },
-    "createdAt": "2017-07-31T14:41:00.00Z"
+    "createdAt": "2017-07-31T14:41:00.00Z",
+    "categories": [
+      "mental-health"
+    ]
   }
 ]

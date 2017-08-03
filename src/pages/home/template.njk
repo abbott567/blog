@@ -13,7 +13,9 @@
                 <a href="{{post.slug}}">{{post.title}}</a>
               </h1>
               
-              {% markdown 'posts/' + post.slug + '.md' %}
+              {% markdown 'posts/' + post.slug + '/excerpt.md' %}
+
+              <a class="read-more-link" href="/{{post.slug}}">Continue reading '{{post.title}}'</a>
           </article>
         {% endfor %}
 
