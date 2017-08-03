@@ -6,25 +6,25 @@
       <a href="/">craigabbott.co.uk</a>
     </nav>
 
-    <div class="a11y">
+    <div class="a11y" aria-label="Accessibility tools">
       <fieldset>
         <legend>Font size</legend>
-        <button id="font-size+" class="font-size-change" data-amount="1" aria-label="Increase font size">A+</button>
-        <button id="font-size-" class="font-size-change" data-amount="-1" aria-label="Decrease font size">A-</button>
+        <button class="font-size-change" data-amount="1" aria-label="Increase font size">A+</button>
+        <button class="font-size-change" data-amount="-1" aria-label="Decrease font size">A-</button>
       </fieldset>
 
       <fieldset>
         <legend>Theme</legend>
-        <button class="colour-change" data-theme="default">A</button>
-        <button class="colour-change _black-white" data-theme="black-white">A</button>
-        <button class="colour-change _blue-yellow" data-theme="blue-yellow">A</button>
-        <button class="colour-change _yellow-black" data-theme="yellow-black">A</button>
+        <button class="colour-change" data-theme="default" aria-label="White background with black text">A</button>
+        <button class="colour-change _black-white" data-theme="black-white" aria-label="Change theme to black background with white text">A</button>
+        <button class="colour-change _blue-yellow" data-theme="blue-yellow" aria-label="Change theme to blue background with yellow text">A</button>
+        <button class="colour-change _yellow-black" data-theme="yellow-black" aria-label="Change theme to yellow background with black text">A</button>
       </fieldset>
       
       <fieldset>
         <legend>Font</legend>
-        <button class="font-change" data-font="OpenSans">Default</button>
-        <button class="font-change _comicSans" data-font="comicSansMS">Comic Sans</button>
+        <button class="font-change" data-font="OpenSans" aria-label="Change font to Open Sans">Default</button>
+        <button class="font-change _comicSans" data-font="comicSansMS" aria-label="Change font to Comic Sans">Comic Sans</button>
       </fieldset>
     </div>
 </header>
