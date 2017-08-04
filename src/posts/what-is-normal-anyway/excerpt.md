@@ -1,3 +1,3 @@
-*I just want to be normal.* I wonder how many people have muttered these words during times of turmoil. I wonder how many people have, at least in that instance; wanted to trade their noisy, adrenalised, racing thoughts for a brain that was more peaceful. A brain that was numb, void of opinion. I know I have.
+*I want to be normal*. How many people have muttered these words during times of turmoil. How many people have wanted to trade their noisy, racing thoughts for a brain that was more peaceful. A brain that was numb and void of opinion. I know I have.
 
 As I sit here, staring at the blank page, I can already feel my anxieties rising. As I begin to write, I find myself trying to imagine how anybody reading this will perceive my words. Type, then delete. Type, then delete.
