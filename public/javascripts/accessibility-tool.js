@@ -1,12 +1,16 @@
+var settings = Cookies.get('settings') || {};
+if (typeof settings === 'string') {
+  settings = JSON.parse(settings);
+}
+
 $(document).on('click', '.font-size-change', function () {
-  var elements = ['body', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-  for (var i = 0; i < elements.length; i++) {
-    var $element = $(elements[i]);
-    var fontSize = parseInt($element.css('font-size'), 10) || 0;
-    var newFontSize = fontSize + parseInt($(this).attr('data-amount'), 10);
-    console.log(fontSize, newFontSize)
-    $element.css('font-size', newFontSize);
-  }
+  var $html = $('html');
+  var increment = parseInt($(this).attr('data-amount'), 10);
+  var fontSize = parseInt($html.css('font-size'), 10) + increment;
+  var em = fontSize / 16;
+  $html.css('font-size', em + 'em');
+  settings.fontSize = em;
+  Cookies.set('settings', settings);
 });
 
 $(document).on('click', '.colour-change', function () {
@@ -14,17 +18,21 @@ $(document).on('click', '.colour-change', function () {
   var $customTheme = $('#custom-css');
   var link = '/stylesheets/' + css + '.css ';
   if (css === 'default') {
-    return $('#custom-css').remove();
+    $('#custom-css').remove();
+  } else if ($customTheme.length) {
+    $customTheme.attr('href', link);
+  } else {
+    $('head').append(
+      '<link id="custom-css" href="' + link + '" rel="stylesheet" type="text/css" />'
+    );
   }
-  if ($customTheme.length) {
-    return $customTheme.attr('href', link);
-  }
-  $('head').append(
-    '<link id="custom-css" href="' + link + '" rel="stylesheet" type="text/css" />'
-  );
+  settings.theme = css;
+  Cookies.set('settings', settings);
 });
 
 $(document).on('click', '.font-change', function () {
   var font = $(this).attr('data-font');
   $('body').css('font-family', font);
+  settings.font = font;
+  Cookies.set('settings', settings);
 });

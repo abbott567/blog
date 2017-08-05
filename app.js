@@ -33,6 +33,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use((req, res, next) => {
+  const cookie = req.cookies.settings || {};
+  const settings = (typeof cookie === 'string') ? JSON.parse(cookie) : cookie;
+  res.locals.settings = settings;
   res.locals.appName = 'craigabbott.co.uk';
   next();
 });
@@ -40,6 +43,7 @@ app.use((req, res, next) => {
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/jquery.js', express.static('node_modules/jquery/dist/jquery.slim.min.js'));
+app.use('/js-cookie.js', express.static('node_modules/js-cookie/src/js.cookie.js'));
 
 // Routes
 app.use('', require('./src/pages/home'));
