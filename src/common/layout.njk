@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" {{'style=font-size:' + settings.fontSize + 'em' if settings.fontSize}}>
   <head>
     <meta charset="utf-8">
     <title>{{appName}}{{' - ' + title if title}}</title>
     <link href="/stylesheets/highlightjs.css" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if settings.theme %}
+      <link id="custom-css" href="/stylesheets/{{settings.theme}}.css" rel="stylesheet" type="text/css" />
+    {% endif %}
   </head>
 
-  <body>
+  <body {{'style=font-family:' + settings.font if settings.font}}>
     {% include './header.njk' %}
-
-    {% block content %}
-    {% endblock %}
-
+    {% block content %}{% endblock %}
     {% include './footer.njk' %}
 
     <script src="/jquery.js"></script>
+    <script src="/js-cookie.js"></script>
     <script src="/javascripts/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="/javascripts/accessibility-tool.js"></script>
