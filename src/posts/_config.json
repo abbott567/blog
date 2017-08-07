@@ -1,5 +1,13 @@
 [
   {
+    "title": "Error messages are not funny",
+    "slug": "error-messages-are-not-funny",
+    "createdAt": "2017-08-07T00:00:00.00Z",
+    "categories": [
+      "ux"
+    ]
+  },
+  {
     "title": "Some thoughts on primary buttons",
     "slug": "some-thoughts-on-primary-buttons",
     "createdAt": "2017-07-26T00:00:00.00Z",
