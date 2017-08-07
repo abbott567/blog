@@ -69,6 +69,7 @@ main {
   max-width: 630px;
   width: 100%;
 }
+
 nav {
   margin: auto;
   max-width: 630px;
@@ -204,6 +205,10 @@ blockquote {
 }
 
 .a11y fieldset {
+  margin: .5em;
+}
+
+fieldset {
   border: 0;
   display: inline-block;
   padding: 0;
