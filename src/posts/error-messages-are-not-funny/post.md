@@ -58,7 +58,7 @@ They have positioned the message telling you what is wrong below the field. Imag
 
 The solution to this is to inform the user there has been a problem. Then to give a summary to what they need to do to fix it along with clear and concise error messages on each field.
 
-I’m going to base the next example on the design pattern we use for errors and validation in Government. You can view the GDS pattern for errors on the GOVUK elements site.
+I’m going to base the next example on the design pattern we use for errors and validation in Government. You can [view the GDS pattern for errors on GOVUK elements](https://govuk-elements.herokuapp.com).
 
 The first thing needed is an error heading. This can be something like “There’s been a problem.” It should be the first thing in the main tag on the page. This lets the screen reader immediately inform the user when the page has reloaded.
 
@@ -95,7 +95,7 @@ Last but not least. Position your error messages between the label and the input
   <div class=“form-group error”>
     <label for=“mobile-number”>
         Mobile number
-        <span>Enter your mobile number</span>
+        <span class="error">Enter your mobile number</span>
     </label>
 
     <input type=“text” id=“mobile-number” />
