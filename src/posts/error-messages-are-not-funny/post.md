@@ -14,7 +14,7 @@ Out of curiosity, I deleted everything and hit submit again to see the full exte
 
 ![A screenshot of kidly.co.uk's website. It shows 3 text fields for recipient name, your mobile and recipient address. The error messages in red read: Please enter a recipient name. Oops, you forgot to pop in your mobile number, don't be shy. And, Doh! We need this to know where we're going.](/images/error-messages-are-not-funny.jpg "Screenshot of kidly.co.uk's error messages")
 
-Problem 1 - Making assumptions about behaviour
+## Making assumptions about behaviour
 
 It suggests I forgot to enter my number. But I didn’t. I deliberately didn’t enter my phone number, because I didn’t want to. Particularly because buried in the privacy policy you can find the phrase: 
 
@@ -26,13 +26,13 @@ If you’re truly doing user centred design, only ask for information that is es
 
 A solution is to not ask for the mobile number, or at the very east make it optional and tell the user exactly why you want it.
 
-Problem 2 - Assuming personality
+## Assuming personality
 
 “Don't be shy.” Well, this is a bit insulting. I wasn't shy. I was trying to pay for my stuff! We're not on a first date. I'm not even using Tinder. It’s a website, where you offer products and I buy the ones I want. Making assumptions about peoples reasons for omitting something is an absolute minefield.
 
 A solution here would be to delete this immediately. Then, have a quiet word with yourself for thinking it was a good idea in the first place.
 
-Problem 3 - Using idioms
+## Using idioms
 
 ‘Pop’ in your number? How do you ‘pop in’ a number? This type of language is known as an idiom. It means you have no way of working out what it means without anybody teaching you explicitly.
 
@@ -40,7 +40,7 @@ This type of language can lead to difficulties. It is particularly difficult for
 
 A better solution is to tell the user exactly what they need to do to progress. If you need a phone number and there is no way round it, then explain that. The phrase ‘enter a phone number’ leaves no ambiguity as to what the user needs to do.
 
-Problem 4 - Humour
+## Humour
 
 The language tries to sound light hearted. It’s trying to be amusing.
 
@@ -52,7 +52,7 @@ No. I don’t think it does. I have no user need to be entertained. I have no us
 
 The solution to this again is to tell the user exactly what they need to do to progress, using as few words as possible.
 
-Problem 5 - Inaccessible markup
+## Inaccessible markup
 
 They have positioned the message telling you what is wrong below the field. Imagine you can’t see the screen and you’re using a screen reader. You will have to navigate past the thing you need to fix to find out what you did wrong. Then, you have to go back up the page again to edit the field, and this can be disorientating.
 
