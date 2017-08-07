@@ -84,7 +84,9 @@ Next, add a list of the errors. If I’ve made errors, list them at the top of t
     <h1>There’s been a problem</h1>
     <p>Check the following:</p>
     <ul>
-        <li><a href=“#mobile-number”>Mobile number cannot be blank</a></li>
+        <li>
+          <a href=“#mobile-number”>Mobile number cannot be blank</a>
+        </li>
     </ul>
  </div>
 ```
