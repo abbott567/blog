@@ -18,7 +18,11 @@ code {
 }
 
 img {
-  width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
   max-width: 630px;
 }
 
