@@ -13,6 +13,15 @@
   outline: none;
 }
 
+code {
+  line-height: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: 630px;
+}
+
 h1 {
   font-size: 2.250em; /* 36px */
 }
