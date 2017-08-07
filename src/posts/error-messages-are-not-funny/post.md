@@ -12,7 +12,7 @@ There are so many things wrong with this error message, and it caused a bit of a
 
 Out of curiosity, I deleted everything and hit submit again to see the full extent of the problem. The following screenshot shows the error messages in all their glory. For the sake of this post, I’m going to focus on the mobile number field.
 
-![A screenshot of kidly.co.uk's website. It shows 3 text fields for recipient name, your mobile and recipient address. The error messages in red read: Please enter a recipient name. Oops, you forgot to pop in your mobile number, don't be shy. And, Doh! We need this to know where we're going.](/public/images/error-messages-are-not-funny.jpg "Screenshot of kidly.co.uk's error messages")
+![A screenshot of kidly.co.uk's website. It shows 3 text fields for recipient name, your mobile and recipient address. The error messages in red read: Please enter a recipient name. Oops, you forgot to pop in your mobile number, don't be shy. And, Doh! We need this to know where we're going.](/images/error-messages-are-not-funny.jpg "Screenshot of kidly.co.uk's error messages")
 
 Problem 1 - Making assumptions about behaviour
 
