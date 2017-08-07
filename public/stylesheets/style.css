@@ -27,19 +27,19 @@ img {
 }
 
 h1 {
-  font-size: 2.250em; /* 36px */
+  font-size: 2.250em;
 }
 
 h2 {
-  font-size: 1.625em; /* 26px */
+  font-size: 1.625em;
 }
 
 h3 {
-  font-size: 1.375em; /* 22px */
+  font-size: 1.375em;
 }
 
 h4 {
-  font-size: 1.188em; /* 19px */
+  font-size: 1.188em;
 }
 
 html {
@@ -148,14 +148,14 @@ pre {
 }
 
 main#error pre {
-  font-size: .750em; /* 12px */
+  font-size: .750em;
 }
 
 .published-date {
   color: #aaa;
   display: block;
-  font-size: .5em; /* 14px */
-  padding-bottom: .625em /* 10px */;
+  font-size: .3em;
+  padding-bottom: .625em;
 }
 
 .visually-hidden {
@@ -188,7 +188,7 @@ li {
 blockquote {
   border-left: 5px solid #ccc;
   margin-left: 0;
-  padding-left: 1.25em; /* 20px */
+  padding-left: 1.25em; 
 }
 
 .a11y {
