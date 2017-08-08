@@ -24,7 +24,7 @@ What if I didn’t own a mobile phone? What if I couldn’t remember my number? 
 
 If you’re truly doing user centred design, only ask for information that is essential. By forcing people to enter a mobile number for marketing purposes, you are designing for the needs of the business. This will make people drop out before paying you any money.
 
-A solution is to not ask for the mobile number, or at the very east make it optional and tell the user exactly why you want it.
+A solution is to not ask for the mobile number, or at the very least make it optional and tell the user exactly why you want it.
 
 ## Assuming personality
 
