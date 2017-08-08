@@ -97,7 +97,8 @@ button:focus {
 
 a {
   border-bottom: 1px dashed;
-  color: #2B8CC4;
+  color: #005EA5;
+  font-weight: bold;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
@@ -152,7 +153,7 @@ main#error pre {
 }
 
 .published-date {
-  color: #aaa;
+  color: #6F777B;
   display: block;
   font-size: .3em;
   padding-bottom: .625em;
