@@ -60,12 +60,18 @@ The solution to this is to inform the user there has been a problem. Then to giv
 
 I’m going to base the next example on the design pattern we use for errors and validation in Government. You can [view the GDS pattern for errors on GOVUK elements](https://govuk-elements.herokuapp.com).
 
-The first thing needed is an error heading. This can be something like “There’s been a problem.” It should be the first thing in the main tag on the page. This lets the screen reader immediately inform the user when the page has reloaded.
-
-Wrap it in a div and add a tab index of -1. This allows you to fire some javascript on document ready to set the focus. This ensures that the error heading is the first thing read out. By default, only links and form elements are focusable. But, adding a tab index of -1 to anything else allows you to focus it them using javascript. Because it's -1, it wont add it to the usual flow of links and form elements that happens when you hit the tab key. For example:
+First thiing to do is to state an error has occurred in the page title. For example:
 
 ``` html
-  <div id=“error-summary” tabindex=“-1”>
+  <title>Error: Your details</title>
+```
+
+Next, add an error container with a good heading. This can be something like “There’s been a problem.” It should be the first thing in the main tag on the page. This lets the screen reader immediately inform the user when the page has reloaded.
+
+Add `role=alert` to the container and add a tab index of -1. This allows a screen reader to prioritise the alert, and the tabindex allows you to fire some javascript on document ready to set the focus. This ensures that the error heading is the first thing read out. By default, only links and form elements are focusable. But, adding a tab index of -1 to anything else allows you to focus it them using javascript. Because it's -1, it wont add it to the usual flow of links and form elements that happens when you hit the tab key. For example:
+
+``` html
+  <div id=“error-summary” role="alert" tabindex=“-1”>
     <h1>There’s been a problem</h1>
   </div>
 ```
