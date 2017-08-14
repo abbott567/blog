@@ -8,7 +8,7 @@ There's a lot these systems have to answer for. But one of my biggest gripes is 
 
 ## The problem
 
-The notes box has become a global dumping ground for anything the user thinks 'might' be useful. Whether they're processing an application or dealing with a customer query, they just fill the notes box with lines and lines of redundant information. Just incase theres a slight chance somebody else might need it in the future.
+The notes box has become a global dumping ground for anything the user thinks 'might' be useful. Whether they're processing an application or dealing with a customer query, they just fill the notes box with lines and lines of redundant information. Just incase there's a slight chance somebody else might need it in the future.
 
 Some people think they're being helpful. Should anybody else want that information, it's there. Others do it out of fear. They're covering their own back, proving they're being thorough with their work. For example:
 
@@ -22,4 +22,4 @@ We've replaced notes with a logging system. It captures the key information at t
 
 We need to do the hard work to make it simple. As designers, we need to make sure we always challenge the status quo and design for user needs. But at the same time, we need to make sure we build trust and rapport with users through regular user research. This will allow us to understand user needs and come to the right design decisions together.
 
-As always, I'm happy to discuss this further. Just drop me a tweet.
+As always, I'm happy to discuss this further. Just send me a tweet.
