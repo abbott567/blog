@@ -1,5 +1,13 @@
 [
   {
+    "title": "Death of the notes box",
+    "slug": "death-of-the-notes-box",
+    "createdAt": "2017-08-14T00:00:00.00Z",
+    "categories": [
+      "ux"
+    ]
+  },
+  {
     "title": "Error messages are not funny",
     "slug": "error-messages-are-not-funny",
     "createdAt": "2017-08-07T00:00:00.00Z",
