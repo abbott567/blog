@@ -273,3 +273,19 @@ fieldset {
   font-family: 'OpenDyslexicMono', sans-serif;
   font-size: .8em;
 }
+
+/* Themes */
+.theme-black-white {
+  background: #333;
+  color: #fff;
+}
+
+.theme-yellow-black {
+  background: #D9CB84;
+  color: #000;
+}
+
+.theme-blue-yellow {
+  background: #134A61;
+  color: #E6DE4E;
+}

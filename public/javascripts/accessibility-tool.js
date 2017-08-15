@@ -1,43 +1,37 @@
 var settings = Cookies.get('settings') || {};
+var $body = $('body');
+
 if (typeof settings === 'string') {
   settings = JSON.parse(settings);
 }
 
 $(document).on('click', '.font-size-change', function () {
-  var $html = $('html');
-  var increment = parseInt($(this).attr('data-amount'), 10);
-  var fontSize = parseInt($html.css('font-size'), 10) + increment;
-  var em = fontSize / 16;
-  $html.css('font-size', em + 'em');
+  var increment = parseFloat($(this).attr('data-amount'), 10);
+  var fontSize = parseFloat($body.css('font-size'), 10) / 16;
+  var em = fontSize + increment;
   settings.fontSize = em;
   Cookies.set('settings', settings);
+  updateStyles();
 });
 
 $(document).on('click', '.colour-change', function () {
-  var css = $(this).attr('data-theme');
-  var $customTheme = $('#custom-css');
-  var link = '/stylesheets/' + css + '.css ';
-  if (css === 'default') {
-    $('#custom-css').remove();
-  } else if ($customTheme.length) {
-    $customTheme.attr('href', link);
-  } else {
-    $('head').append(
-      '<link id="custom-css" href="' + link + '" rel="stylesheet" type="text/css" />'
-    );
-  }
-  settings.theme = css;
+  var theme = $(this).attr('data-theme');
+  settings.theme = theme;
   Cookies.set('settings', settings);
+  updateStyles();
 });
 
 $(document).on('click', '.font-change', function () {
-  var fontAttr = $(this).attr('data-font');
-  if (fontAttr) {
-    $('body').addClass('dyslexia');
-    settings.font = 'dyslexia';
-  } else {
-    $('body').removeClass('dyslexia');  
-    settings.font = undefined;    
-  }
+  var fontAttr = $(this).attr('data-font') || '';
+  settings.font = fontAttr;  
   Cookies.set('settings', settings);
+  updateStyles();
 });
+
+function updateStyles() {
+  var settings = JSON.parse(Cookies.get('settings'));
+  $body.attr('class', '');
+  $body.addClass(settings.font);
+  $body.addClass('theme-' + settings.theme);
+  $body.css('font-size', settings.fontSize + 'em');  
+}
