@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const nunjucks = require('nunjucks');
 const markdown = require('nunjucks-markdown');
 const marked = require('marked');
+const shrinkRay = require('shrink-ray');
 
 const app = express();
 
@@ -28,6 +29,7 @@ require('./src/helpers/filters')(jucks);
 markdown.register(jucks, marked);
 
 // Middleware
+app.use(shrinkRay());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
