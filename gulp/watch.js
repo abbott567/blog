@@ -8,5 +8,9 @@ gulp.task('watch', done => {
 });
 
 gulp.task('watch-sass', () => {
-  return gulp.watch('./src/common/sass/**/*.scss', ['sass']);
+  return gulp.watch('./src/assets/sass/**/*.scss', ['sass']);
+});
+
+gulp.task('watch-js', () => {
+  return gulp.watch('./src/assets/js/**/*.js', ['uglify']);
 });
