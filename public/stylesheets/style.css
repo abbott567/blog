@@ -277,15 +277,46 @@ fieldset {
 /* Themes */
 .theme-black-white {
   background: #333;
-  color: #fff;
+  color: #ddd;
+}
+
+.theme-black-white .published-date {
+  color: #ccc;
+}
+
+.theme-black-white a {
+  color: #55b6ff;
+}
+
+.theme-blue-yellow {
+  background: #073642;
+  color: #b58900;
+}
+
+.theme-blue-yellow blockquote {
+  border-color: #657b83;
+}
+
+.theme-blue-yellow .published-date {
+  color: #b58900;
+}
+
+.theme-blue-yellow a {
+  color: #2aa198;
 }
 
 .theme-yellow-black {
   background: #D9CB84;
-  color: #000;
+  color: #222;
 }
 
-.theme-blue-yellow {
-  background: #134A61;
-  color: #E6DE4E;
+.theme-yellow-black .nav-wrapper,
+.theme-yellow-black .read-full-article-wrapper,
+.theme-yellow-black footer,
+.theme-yellow-black blockquote {
+  border-color: #222;  
+}
+
+.theme-yellow-black .published-date {
+  color: #444;
 }

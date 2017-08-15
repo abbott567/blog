@@ -1,0 +1,84 @@
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.theme-blue-yellow .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #002b36;
+  color: #839496;
+}
+
+.theme-blue-yellow .hljs-comment,
+.theme-blue-yellow .hljs-quote {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.theme-blue-yellow .hljs-keyword,
+.theme-blue-yellow .hljs-selector-tag,
+.theme-blue-yellow .hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.theme-blue-yellow .hljs-number,
+.theme-blue-yellow .hljs-string,
+.theme-blue-yellow .hljs-meta .theme-blue-yellow .hljs-meta-string,
+.theme-blue-yellow .hljs-literal,
+.theme-blue-yellow .hljs-doctag,
+.theme-blue-yellow .hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.theme-blue-yellow .hljs-title,
+.theme-blue-yellow .hljs-section,
+.theme-blue-yellow .hljs-name,
+.theme-blue-yellow .hljs-selector-id,
+.theme-blue-yellow .hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.theme-blue-yellow .hljs-attribute,
+.theme-blue-yellow .hljs-attr,
+.theme-blue-yellow .hljs-variable,
+.theme-blue-yellow .hljs-template-variable,
+.theme-blue-yellow .hljs-class .theme-blue-yellow .hljs-title,
+.theme-blue-yellow .hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.theme-blue-yellow .hljs-symbol,
+.theme-blue-yellow .hljs-bullet,
+.theme-blue-yellow .hljs-subst,
+.theme-blue-yellow .hljs-meta,
+.theme-blue-yellow .hljs-meta .theme-blue-yellow .hljs-keyword,
+.theme-blue-yellow .hljs-selector-attr,
+.theme-blue-yellow .hljs-selector-pseudo,
+.theme-blue-yellow .hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.theme-blue-yellow .hljs-built_in,
+.theme-blue-yellow .hljs-deletion {
+  color: #dc322f;
+}
+
+.theme-blue-yellow .hljs-formula {
+  background: #073642;
+}
+
+.theme-blue-yellow .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-blue-yellow .hljs-strong {
+  font-weight: bold;
+}

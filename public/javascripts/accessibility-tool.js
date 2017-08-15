@@ -32,6 +32,6 @@ function updateStyles() {
   var settings = JSON.parse(Cookies.get('settings'));
   $body.attr('class', '');
   $body.addClass(settings.font);
-  $body.addClass('theme-' + settings.theme);
+  $body.addClass(settings.theme);
   $body.css('font-size', settings.fontSize + 'em');  
 }
