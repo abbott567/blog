@@ -1,0 +1,45 @@
+$body-text: #222;
+$body-secondary: #444;
+$body-backgroud: #d9cb84;
+$border-colour: #222;
+$focus-background: #dc322f;
+$focus-colour: #fff;
+$selection-colour: #000;
+$selection-background: #83a0ab;
+
+.theme-yellow-black {
+  background: $body-backgroud;
+  color: $body-text;
+
+  ::selection {
+    background: $selection-background;
+    color: $selection-colour;
+  }
+
+  .nav-wrapper,
+  .read-full-article-wrapper,
+  footer,
+  blockquote {
+    border-color: $body-text;
+  }
+
+  .published-date {
+    color: $body-text;
+  }
+
+  a {
+    &:focus {
+      outline-color: $focus-background;
+      background: $focus-background;
+      color: $focus-colour;
+    }
+  }
+
+  button {
+    border-color: $border-colour;
+
+    &:focus {
+      outline-color: $focus-background;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+$body-text: #ddd;
+$body-secondary: #ccc;
+$body-backgroud: #333;
+$link-colour: #55b6ff;
+$link-hover: #a8d9ff;
+$selection-colour: #fff;
+$selection-background: #55b6ff;
+
+.theme-black-white {
+  background: $body-backgroud;
+  color: $body-text;
+
+  .published-date {
+    color: $body-secondary;
+  }
+
+  a {
+    color: $link-colour;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    &:focus {
+      color: $focus-colour;
+    }
+  }
+
+  ::selection {
+    background: $selection-background;
+    color: $selection-colour;
+  }
+}

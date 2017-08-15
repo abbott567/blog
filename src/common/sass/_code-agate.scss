@@ -1,0 +1,127 @@
+/*!
+* Agate by Taufik Nurrohman <https://github.com/tovic>
+* ----------------------------------------------------
+*
+* #ade5fc
+* #a2fca2
+* #c6b4f0
+* #d36363
+* #fcc28c
+* #fc9b9b
+* #ffa
+* #fff
+* #333
+* #62c8f3
+* #888
+*
+*/
+
+$addition-background: #a2fca2;
+$addition-colour: #333;
+$background: #222;
+$colour: #fff;
+$comment: #888;
+$deletion-background: #fc9b9b;
+$deletion-colour: #333;
+$keyword: #fcc28c;
+$meta: #fc9b9b;
+$number: #d36363;
+$regex: #c6b4f0;
+$string: #a2fca2;
+$tag: #62c8f3;
+$type: #ffa;
+$variable: #ade5fc;
+
+.theme-black-white {
+  .hljs {
+    display: block;
+    padding: .5em;
+    overflow-x: auto;
+    background: $background;
+    color: $colour;
+
+    a {
+      color: inherit;
+
+      &:focus,
+      &:hover {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  .hljs-name,
+  .hljs-strong {
+    font-weight: bold;
+  }
+
+  .hljs-code,
+  .hljs-emphasis {
+    font-style: italic;
+  }
+
+  .hljs-tag {
+    color: $tag;
+  }
+
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-selector-id,
+  .hljs-selector-class {
+    color: $variable;
+  }
+
+  .hljs-string,
+  .hljs-bullet {
+    color: $string;
+  }
+
+  .hljs-type,
+  .hljs-title,
+  .hljs-section,
+  .hljs-attribute,
+  .hljs-quote,
+  .hljs-built_in,
+  .hljs-builtin-name {
+    color: $type;
+  }
+
+  .hljs-number,
+  .hljs-symbol,
+  .hljs-bullet {
+    color: $number;
+  }
+
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal {
+    color: $keyword;
+  }
+
+  .hljs-comment,
+  .hljs-deletion,
+  .hljs-code {
+    color: $comment;
+  }
+
+  .hljs-regexp,
+  .hljs-link {
+    color: $regex;
+  }
+
+  .hljs-meta {
+    color: $meta;
+  }
+
+  .hljs-deletion {
+    background-color: $deletion-background;
+    color: $deletion-colour;
+  }
+
+  .hljs-addition {
+    background-color: $addition-background;
+    color: $addition-colour;
+  }
+}

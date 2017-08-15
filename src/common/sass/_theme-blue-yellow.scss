@@ -1,0 +1,38 @@
+$blockquote: #657b83;
+$body-text: #b58900;
+$body-secondary: #b58900;
+$body-backgroud: #073642;
+$link-colour: #2aa198;
+$link-hover: #41dcd0;
+$selection-colour: #859900;
+$selection-background: #002b36;
+
+.theme-blue-yellow {
+  background: $body-backgroud;
+  color: $body-text;
+
+  ::selection {
+    background: $selection-background;
+    color: $selection-colour;
+  }
+
+  blockquote {
+    border-color: $blockquote;
+  }
+
+  .published-date {
+    color: $body-secondary;
+  }
+
+  a {
+    color: $link-colour;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    &:focus {
+      color: $focus-colour;
+    }
+  }
+}

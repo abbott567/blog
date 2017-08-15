@@ -1,0 +1,51 @@
+$default-background: #fff;
+$default-colour: #000;
+$black-white-background: #333;
+$black-white-colour: #ddd;
+$blue-yellow-background: #073642;
+$blue-yellow-colour: #b58900;
+$yellow-black-background: #d9cb84;
+$yellow-black-colour: #222;
+
+.a11y {
+  width: 100%;
+  max-width: 630px;
+  margin: auto;
+  padding: .6em 0;
+
+  button {
+    height: 2.1em;
+    border: 1px solid $border-colour;
+    font-size: 1em;
+  }
+
+  fieldset {
+    margin: .5em;
+  }
+
+  legend {
+    font-size: .6em;
+    line-height: 2em;
+  }
+}
+
+.colour-change {
+  background-color: $default-background;
+  color: $default-colour;
+  font-size: 2em;
+
+  &._black-white {
+    background-color: $black-white-background;
+    color: $black-white-colour;
+  }
+
+  &._blue-yellow {
+    background-color: $blue-yellow-background;
+    color: $blue-yellow-colour;
+  }
+
+  &._yellow-black {
+    background-color: $yellow-black-background;
+    color: $yellow-black-colour;
+  }
+}
