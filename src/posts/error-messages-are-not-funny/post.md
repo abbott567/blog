@@ -63,7 +63,7 @@ I’m going to base the next example on the design pattern we use for errors and
 First thiing to do is to state an error has occurred in the page title. For example:
 
 ``` html
-  <title>Error: Your details</title>
+<title>Error: Your details</title>
 ```
 
 Next, add an error container with a good heading. This can be something like “There’s been a problem.” It should be the first thing in the main tag on the page. This lets the screen reader immediately inform the user when the page has reloaded.
@@ -71,43 +71,43 @@ Next, add an error container with a good heading. This can be something like “
 Add `role=alert` to the container and add a tab index of -1. This allows a screen reader to prioritise the alert, and the tabindex allows you to fire some javascript on document ready to set the focus. This ensures that the error heading is the first thing read out. By default, only links and form elements are focusable. But, adding a tab index of -1 to anything else allows you to focus it them using javascript. Because it's -1, it wont add it to the usual flow of links and form elements that happens when you hit the tab key. For example:
 
 ``` html
-  <div id=“error-summary” role="alert" tabindex=“-1”>
-    <h1>There’s been a problem</h1>
-  </div>
+<div id=“error-summary” role="alert" tabindex=“-1”>
+  <h1>There’s been a problem</h1>
+</div>
 ```
 
 ``` javascript
 // jQuery
 $(document).ready(function() {
-    $(‘#error-summary’).focus();
+  $(‘#error-summary’).focus();
 });
 ```
 
 Next, add a list of the errors. If I’ve made errors, list them at the top of the page. This helps understand how many issues there are and how to fix each one before I even attempt to navigate the page. For example:
 
 ``` html
-  <div id=“error-summary” tabindex=“-1”>
-    <h1>There’s been a problem</h1>
-    <p>Check the following:</p>
-    <ul>
-        <li>
-          <a href=“#mobile-number”>Mobile number cannot be blank</a>
-        </li>
-    </ul>
- </div>
+<div id=“error-summary” tabindex=“-1”>
+  <h1>There’s been a problem</h1>
+  <p>Check the following:</p>
+  <ul>
+      <li>
+        <a href=“#mobile-number”>Mobile number cannot be blank</a>
+      </li>
+  </ul>
+</div>
 ```
 
 Last but not least. Position your error messages between the label and the input instead of underneath. This gives it a more natural flow and means I don’t have to navigate past the input to find out what’s wrong. For example: 
 
 ``` html
-  <div class=“form-group error”>
-    <label for=“mobile-number”>
-        Mobile number
-        <span class="error">Enter your mobile number</span>
-    </label>
+<div class=“form-group error”>
+  <label for=“mobile-number”>
+      Mobile number
+      <span class="error">Enter your mobile number</span>
+  </label>
 
-    <input type=“text” id=“mobile-number” />
-  </div>
+  <input type=“text” id=“mobile-number” />
+</div>
 ```
 
 Now, when the page loads, the screen reader will automatically focus the error summary. Read out there’s been a problem. Give you a list the problems in a concise manner, and link each list item to the input.

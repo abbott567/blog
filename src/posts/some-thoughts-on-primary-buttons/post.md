@@ -9,7 +9,7 @@ Well, buttons should trigger actions. Buttons should interact with data. If you�
 Links are a means of navigating between pages. You usually navigate to a form using a link, then submit it using a button. If you’re using the following in your markup, it's almost certain that you’re doing it wrong.
 
 ``` html
-  <a class=“btn”…<a/>
+<a class=“btn”>…<a/>
 ``` 
 
 This leads me onto primary buttons. A primary button is the action that the user is most likely to want to complete. For example, if I’m filling in a contact form, the primary action should be to submit it. Putting too many buttons on a page is more likely to slow me down or cause me to make mistakes.
