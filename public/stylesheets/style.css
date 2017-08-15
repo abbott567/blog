@@ -304,9 +304,20 @@ fieldset {
   color: #A8D9FF;
 }
 
+.theme-black-white ::selection {
+  color: #fff;
+  background: #55b6ff;
+}
+
+
 .theme-blue-yellow {
   background: #073642;
   color: #b58900;
+}
+
+.theme-blue-yellow ::selection {
+  color: #859900;
+  background: #002b36;
 }
 
 .theme-blue-yellow blockquote {
@@ -328,6 +339,11 @@ fieldset {
 .theme-yellow-black {
   background: #D9CB84;
   color: #222;
+}
+
+.theme-yellow-black ::selection {
+  color: #000;
+  background: #83A0AB;
 }
 
 .theme-yellow-black .nav-wrapper,
