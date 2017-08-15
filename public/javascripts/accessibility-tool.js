@@ -31,8 +31,9 @@ $(document).on('click', '.colour-change', function () {
 });
 
 $(document).on('click', '.font-change', function () {
-  var font = $(this).attr('data-font');
-  $('body').css('font-family', font);
-  settings.font = font;
+  var fontAttr = $(this).attr('data-font');
+  var fontName = Array.isArray(fontAttr) ? fontAttr.join(' ') : fontAttr;
+  $('body').css('font-family', fontName);
+  settings.font = fontName;
   Cookies.set('settings', settings);
 });

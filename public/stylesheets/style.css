@@ -1,11 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
 @font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: 'OpenDyslexic';
+  font-weight: 400;
+  src: url('../fonts/OpenDyslexic-Regular.WOFF');
 }
 
 @font-face {
-  font-family: ComicSans;
-  src: url(../fonts/ComicSansMS.ttf);
+  font-family: 'OpenDyslexic';
+  font-style: italic;
+  src: url('../fonts/OpenDyslexic-Italic.WOFF');
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  font-weight: 700;
+  src: url('../fonts/OpenDyslexic-Bold.WOFF');
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/OpenDyslexic-BoldItalic.WOFF');
+}
+
+@font-face {
+  font-family: OpenDyslexicMono;
+  src: url('../fonts/OpenDyslexicMono-Regular.WOFF');
 }
 
 * {
@@ -48,12 +70,16 @@ html {
 
 body {
   color: #333;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #fff;
   font-size: 1.188em;
   margin: 0;
   padding: 20px;
   word-spacing: 0;
+}
+
+.default {
+  font-family: 'Open Sans', sans-serif;
 }
 
 body p {
@@ -191,7 +217,7 @@ li {
 blockquote {
   border-left: 5px solid #ccc;
   margin-left: 0;
-  padding-left: 1.25em; 
+  padding-left: 1.25em;
 }
 
 .a11y {
@@ -241,6 +267,6 @@ fieldset {
   color: #000;
 }
 
-.font-change._comicSans {
-  font-family: 'ComicSans';
+.font-change._OpenDyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
 }
