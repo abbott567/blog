@@ -51,12 +51,14 @@ body {
   font-family: 'OpenSans', sans-serif;
   background: #fff;
   font-size: 1.188em;
-  line-height: 1.6em;
   margin: 0;
   padding: 20px;
   word-spacing: 0;
 }
 
+body p {
+  line-height: 1.6em;
+}
 main {
   margin: auto;
   max-width: 630px;
