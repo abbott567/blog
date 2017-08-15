@@ -26,7 +26,7 @@
 }
 
 @font-face {
-  font-family: OpenDyslexicMono;
+  font-family: 'OpenDyslexicMono';
   src: url('../fonts/OpenDyslexicMono-Regular.WOFF');
 }
 
@@ -78,13 +78,10 @@ body {
   word-spacing: 0;
 }
 
-.default {
-  font-family: 'Open Sans', sans-serif;
-}
-
 body p {
   line-height: 1.6em;
 }
+
 main {
   margin: auto;
   max-width: 630px;
@@ -272,3 +269,7 @@ fieldset {
   line-height: 1.4;
 }
 
+.dyslexia code {
+  font-family: 'OpenDyslexicMono', sans-serif;
+  font-size: .8em;
+}
