@@ -121,6 +121,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #ddd;
+}
+
 button:focus {
   outline: 3px solid #ffbf47;
 }
@@ -131,6 +135,10 @@ a {
   font-weight: bold;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  color: #2B8CC4;
 }
 
 a:focus {
@@ -292,6 +300,10 @@ fieldset {
   color: #55b6ff;
 }
 
+.theme-black-white a:hover {
+  color: #A8D9FF;
+}
+
 .theme-blue-yellow {
   background: #073642;
   color: #b58900;
@@ -307,6 +319,10 @@ fieldset {
 
 .theme-blue-yellow a {
   color: #2aa198;
+}
+
+.theme-blue-yellow a:hover {
+  color: #41DCD0;
 }
 
 .theme-yellow-black {
