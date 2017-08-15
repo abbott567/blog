@@ -116,6 +116,11 @@ footer ul {
   font-size: .875em;
 }
 
+button {
+  background: #ccc;
+  cursor: pointer;
+}
+
 button:focus {
   outline: 3px solid #ffbf47;
 }
@@ -248,7 +253,6 @@ fieldset {
 .colour-change {
   background-color: #fff;
   color: #333;
-  cursor: default;
   font-size: 2em;
 }
 .colour-change._black-white {
