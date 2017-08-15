@@ -267,6 +267,8 @@ fieldset {
   color: #000;
 }
 
-.font-change._OpenDyslexic {
+.dyslexia {
   font-family: 'OpenDyslexic', sans-serif;
+  line-height: 1.4;
 }
+

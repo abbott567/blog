@@ -11,7 +11,7 @@
     {% endif %}
   </head>
 
-  <body {{'style=font-family:' + settings.font if settings.font}}>
+  <body {{'class=' + settings.font if settings.font}}>
     {% include './header.njk' %}
     {% block content %}{% endblock %}
     {% include './footer.njk' %}
