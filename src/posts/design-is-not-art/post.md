@@ -10,10 +10,10 @@ Design is different. The purpose of a design is to be interacted with so that so
 
 If you design something badly, people notice. If you design something well, people should never know you were there. A bad design can disable somebody from completing a task. But the good thing about this, is that you can *prove* when it's bad.
 
-For example, a door you have to push to open that has a pull handle on it. These always catch me out. You can tell it's a bad design by observing people using it. If 10 people go through it, and 9 of them try to pull it, then your design is bad. You can't argue with the observed evidence.
+For example, a door you have to push to open that has a pull handle. These always catch me out. You can tell it's a bad design by observing people using it. If 10 people go through it, and 9 of them try to pull it, then your design is bad. You can't argue with the observed evidence.
 
 As designers, it's important that we always consider this. It's important that we don't just  design things that we think are pretty. Sure, good design should have some asthetics to it. Anybody that's held any Apple product will know how good it feels in your hands. But all too often, the usability is sacrificed for asthetics.
 
-We're in the unique position where we design things that make a difference to peoples lives. It's important to make sure that we research often. We do the hard work to make it simple for those that use our products.
+We're in the unique position where we design things that make a difference to peoples lives. It's important to make sure that we research often. That we do the hard work to make it simple for those that use our products.
 
 Make your door ugly, or make it pretty. But make damn sure it works!
