@@ -4,7 +4,7 @@
   var document = global.document;
   var body = document.body;
   var cookie = getCookie('settings');
-  var settings = cookie ? JSON.parse(cookie) : {};
+  var settings = cookie && cookie[0] === '{' ? JSON.parse(cookie) : {};
 
   var fontSizeChangers = body.querySelectorAll('.font-size-change');
   var fontChangers = body.querySelectorAll('.font-change');
