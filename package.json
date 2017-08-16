@@ -42,6 +42,12 @@
     "ignores": [
       "public/**/*"
     ],
+    "overrides": [
+      {
+        "files": "src/assets/js/*.js",
+        "esnext": false
+      }
+    ],
     "env": [
       "browser",
       "mocha"

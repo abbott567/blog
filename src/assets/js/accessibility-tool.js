@@ -1,5 +1,5 @@
 ;(function (global) {
-  'use strict'
+  'use strict';
 
   var document = global.document;
   var body = document.body;
@@ -26,28 +26,28 @@
     var increment = parseFloat(this.getAttribute('data-amount'), 10);
     var currentFontSize = getComputedStyle(body)['font-size'].slice(0, -2) / 16;
     var newFontSize = currentFontSize + increment + 'em';
-    body.style.fontSize = newFontSize
+    body.style.fontSize = newFontSize;
     settings.fontSize = newFontSize;
     updateCookie(settings);
-  };
+  }
 
   function fontChangeHandler() {
     var fontAttr = this.getAttribute('data-font') || '';
     settings.font = fontAttr;
     updateBodyClasses(settings);
-  };
+  }
 
   function colourChangeHandler() {
     var theme = this.getAttribute('data-theme') || '';
     settings.theme = theme;
     updateBodyClasses(settings);
-  };
+  }
 
   function updateBodyClasses(settings) {
     var font = settings.font || '';
     var theme = settings.theme || '';
     body.setAttribute('class', font + ' ' + theme);
-    updateCookie(settings)
+    updateCookie(settings);
   }
 
   function updateCookie(settings) {
@@ -57,6 +57,8 @@
   function getCookie(name) {
     var value = '; ' + document.cookie;
     var parts = value.split('; ' + name + '=');
-    if (parts.length == 2) return parts.pop().split(';').shift();
+    if (parts.length === 2) {
+      return parts.pop().split(';').shift();
+    }
   }
 })(window);
