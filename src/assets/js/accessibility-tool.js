@@ -1,4 +1,4 @@
-;(function (global) {
+;(function (global) { // eslint-disable-line no-extra-semi
   'use strict';
 
   var document = global.document;
