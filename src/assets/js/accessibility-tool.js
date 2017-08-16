@@ -1,37 +1,62 @@
-var settings = Cookies.get('settings') || {};
-var $body = $('body');
+;(function (global) {
+  'use strict'
 
-if (typeof settings === 'string') {
-  settings = JSON.parse(settings);
-}
+  var document = global.document;
+  var body = document.body;
+  var cookie = getCookie('settings');
+  var settings = cookie ? JSON.parse(cookie) : {};
 
-$(document).on('click', '.font-size-change', function () {
-  var increment = parseFloat($(this).attr('data-amount'), 10);
-  var fontSize = parseFloat($body.css('font-size'), 10) / 16;
-  var em = fontSize + increment;
-  settings.fontSize = em;
-  Cookies.set('settings', settings);
-  updateStyles();
-});
+  var fontSizeChangers = body.querySelectorAll('.font-size-change');
+  var fontChangers = body.querySelectorAll('.font-change');
+  var colourChangers = body.querySelectorAll('.colour-change');
 
-$(document).on('click', '.colour-change', function () {
-  var theme = $(this).attr('data-theme');
-  settings.theme = theme;
-  Cookies.set('settings', settings);
-  updateStyles();
-});
+  Array.prototype.forEach.call(fontSizeChangers, function (button) {
+    button.addEventListener('click', fontSizeHandler);
+  });
 
-$(document).on('click', '.font-change', function () {
-  var fontAttr = $(this).attr('data-font') || '';
-  settings.font = fontAttr;  
-  Cookies.set('settings', settings);
-  updateStyles();
-});
+  Array.prototype.forEach.call(fontChangers, function (button) {
+    button.addEventListener('click', fontChangeHandler);
+  });
 
-function updateStyles() {
-  var settings = JSON.parse(Cookies.get('settings'));
-  $body.attr('class', '');
-  $body.addClass(settings.font);
-  $body.addClass(settings.theme);
-  $body.css('font-size', settings.fontSize + 'em');  
-}
+  Array.prototype.forEach.call(colourChangers, function (button) {
+    button.addEventListener('click', colourChangeHandler);
+  });
+
+  function fontSizeHandler() {
+    var increment = parseFloat(this.getAttribute('data-amount'), 10);
+    var currentFontSize = getComputedStyle(body)['font-size'].slice(0, -2) / 16;
+    var newFontSize = currentFontSize + increment + 'em';
+    body.style.fontSize = newFontSize
+    settings.fontSize = newFontSize;
+    updateCookie(settings);
+  };
+
+  function fontChangeHandler() {
+    var fontAttr = this.getAttribute('data-font') || '';
+    settings.font = fontAttr;
+    updateBodyClasses(settings);
+  };
+
+  function colourChangeHandler() {
+    var theme = this.getAttribute('data-theme') || '';
+    settings.theme = theme;
+    updateBodyClasses(settings);
+  };
+
+  function updateBodyClasses(settings) {
+    var font = settings.font || '';
+    var theme = settings.theme || '';
+    body.setAttribute('class', font + ' ' + theme);
+    updateCookie(settings)
+  }
+
+  function updateCookie(settings) {
+    document.cookie = 'settings=' + JSON.stringify(settings);
+  }
+
+  function getCookie(name) {
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + name + '=');
+    if (parts.length == 2) return parts.pop().split(';').shift();
+  }
+})(window);

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body class="{{settings.font if settings.font}} {{settings.theme if settings.theme}}" {{'style=font-size:' + settings.fontSize + 'em' if settings.fontSize}}>
+  <body class="{{settings.font if settings.font}} {{settings.theme if settings.theme}}" {{'style=font-size:' + settings.fontSize if settings.fontSize}}>
     {% include './header.njk' %}
     {% block content %}{% endblock %}
     {% include './footer.njk' %}
