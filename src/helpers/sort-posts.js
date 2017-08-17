@@ -10,7 +10,7 @@ function sortPosts() {
       return -1;
     }
     return 0;
-  });
+  }).reverse();
 }
 
 module.exports = sortPosts();
