@@ -9,6 +9,7 @@ const nunjucks = require('nunjucks');
 const markdown = require('nunjucks-markdown');
 const marked = require('marked');
 const shrinkRay = require('shrink-ray');
+const favicon = require('serve-favicon');
 
 const app = express();
 
@@ -29,6 +30,7 @@ require('./src/helpers/filters')(jucks);
 markdown.register(jucks, marked);
 
 // Middleware
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')));
 app.use(shrinkRay());
 app.use(logger('dev'));
 app.use(bodyParser.json());
