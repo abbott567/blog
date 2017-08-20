@@ -92,7 +92,9 @@ Math.ceil(1.9) // 2
 Math.ceil(2)   // 2
 ```
 
-I chose to round up, as I thought it was better to over estimate than to under estimate. If you want to round down you can use `.floor()` instead of `.ceil()`. I guess a downside is that passing in one word would still return a read time of 1 minute. However, I don't plan on doing any 1 word blog posts, so it shouldn't affect me.
+I chose to round up, as I thought it was better to over estimate than to under estimate. If you want to round down you can use `.floor()` instead of `.ceil()`.
+
+I guess a downside of using ceiling, is that passing in one word would still return a read time of 1 minute. However, I don't plan on doing any 1 word blog posts, so it shouldn't affect me.
 
 ``` javascript
 function readingTime(text) {
