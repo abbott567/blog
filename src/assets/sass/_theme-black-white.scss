@@ -5,6 +5,7 @@ $link-colour: #55b6ff;
 $link-hover: #a8d9ff;
 $selection-colour: #fff;
 $selection-background: #55b6ff;
+$inline-code-colour: #e97661;
 
 .theme-black-white {
   background: $body-backgroud;
@@ -29,5 +30,11 @@ $selection-background: #55b6ff;
   ::selection {
     background: $selection-background;
     color: $selection-colour;
+  }
+
+  p {
+    code {
+      color: $inline-code-colour;
+    }
   }
 }

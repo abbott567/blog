@@ -13,6 +13,12 @@ body {
 
   p {
     line-height: 1.6em;
+
+    code {
+      padding: .1em;
+      color: $inline-code-colour;
+      font-size: 1.2em;
+    }
   }
 }
 

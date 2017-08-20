@@ -6,6 +6,7 @@ $link-colour: #2aa198;
 $link-hover: #41dcd0;
 $selection-colour: #859900;
 $selection-background: #002b36;
+$inline-code-colour: #f47738;
 
 .theme-blue-yellow {
   background: $body-backgroud;
@@ -33,6 +34,12 @@ $selection-background: #002b36;
 
     &:focus {
       color: $focus-colour;
+    }
+  }
+
+  p {
+    code {
+      color: $inline-code-colour;
     }
   }
 }
