@@ -1,5 +1,13 @@
 [
   {
+    "title": "Bug fixes and performance improvements",
+    "slug": "bug-fixes-and-performance-improvements",
+    "createdAt": "2017-08-22T00:00:00.00Z",
+    "categories": [
+      "ux", "development"
+    ]
+  },
+  {
     "title": "How to calculate reading time, like Medium",
     "slug": "how-to-calculate-reading-time-like-medium",
     "createdAt": "2017-08-20T00:00:00.00Z",
