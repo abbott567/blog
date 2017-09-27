@@ -46,7 +46,7 @@ That is almost 10 million people in the UK alone are surfing the web with a disa
 
 One thing I have seen repeatedly from research, is that people always find a way to do things. People are amazing, and will learn and adapt. Those with visual impairments may use screen readers. Those with motor impairments may use a keyboard or voice activation software. 
 
-We have no idea of detecting these devices. So, as designers and developers, it is important we design with these people in mind. Having semantic markup, correct tab indexes and accessible content has never been more important. And by making our websites work better for these people, we will automatically make it better for everyone.
+We have no way of detecting these devices. So, as designers and developers, it is important we design with these people in mind. Having semantic markup, correct tab indexes and accessible content has never been more important. And by making our websites work better for these people, we will automatically make it better for everyone.
 
 ## Citations
 - [Disability facts and figures 2016 - gov.uk](
