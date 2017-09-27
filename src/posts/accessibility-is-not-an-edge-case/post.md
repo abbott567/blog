@@ -4,7 +4,7 @@ I'm going to show you why it's important to make your website accessible.
 
 There are a few of disclaimers:
 
-- I'm combining figures from reports in 2015, 2016 and 2017. So the results won't be representative of a single historic year. Instead, they will be the most up to date figures I could find.
+- I'm combining figures from reports in 2014, 2016 and 2017. So the results won't be representative of a single historic year. Instead, they will be the most up to date figures I could find.
 
 - The reports will only capture those with a diagnosis. Those with a registered disability. Or, those who took part in research by the Office for National Statistics. It's likely there are more people who have disabilities but are not included in the data.
 
@@ -49,7 +49,7 @@ One thing I have seen repeatedly from research, is that people always find a way
 We have no way of detecting these devices. So, as designers and developers, it is important we design with these people in mind. Having semantic markup, correct tab indexes and accessible content has never been more important. And by making our websites work better for these people, we will automatically make it better for everyone.
 
 ## Citations
-- [Disability facts and figures 2016 - gov.uk](
+- [Disability facts and figures 2014 - gov.uk](
 https://www.gov.uk/government/publications/disability-facts-and-figures/disability-facts-and-figures)
 
 
