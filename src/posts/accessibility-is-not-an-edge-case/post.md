@@ -4,7 +4,7 @@ I'm going to show you why it's important to make your website accessible.
 
 There are a few of disclaimers:
 
-- I'm combining figures from reports in 2014, 2016 and 2017. So the results won't be representative of a single historic year. Instead, they will be the most up to date figures I could find.
+- I'm combining figures from reports in 2015, 2016 and 2017. So the results won't be representative of a single historic year. Instead, they will be the most up to date figures I could find.
 
 - The reports will only capture those with a diagnosis. Those with a registered disability. Or, those who took part in research by the Office for National Statistics. It's likely there are more people who have disabilities but are not included in the data.
 
