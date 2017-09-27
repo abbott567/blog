@@ -1,5 +1,13 @@
 [
   {
+    "title": "Accessibility is not an edge case",
+    "slug": "accessibility-is-not-an-edge-case",
+    "createdAt": "2017-09-27T00:00:00.00Z",
+    "categories": [
+      "ux", "accessibility", "development"
+    ]
+  },
+  {
     "title": "Bug fixes and performance improvements",
     "slug": "bug-fixes-and-performance-improvements",
     "createdAt": "2017-08-22T00:00:00.00Z",
