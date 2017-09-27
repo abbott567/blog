@@ -12,7 +12,7 @@ There are a few of disclaimers:
 
 - I'm only using UK statistics. People can access websites from anywhere in the world, so the figures will actually be far higher.
 
-## Lets do some math.
+## Lets do some maths.
 
 Last year, 65,648,054 lived in the UK. Of these, 63% were aged 16-64, and 18% were over 65. Combined, this is around 53.2 million adults. This is from a report published by the Office for National Statistics.
 
