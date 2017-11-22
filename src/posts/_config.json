@@ -1,5 +1,13 @@
 [
   {
+    "title": "Own your Alpha",
+    "slug": "own-your-alpha",
+    "createdAt": "2017-11-22T00:00:00.00Z",
+    "categories": [
+      "ux"
+    ]
+  },
+  {
     "title": "Semantics and accessibility",
     "slug": "semantics-and-accessibility",
     "createdAt": "2017-10-10T00:00:00.00Z",
