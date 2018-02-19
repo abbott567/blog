@@ -8,7 +8,7 @@ Until recently, despite my contract saying my hours are flexible, I was still st
 
 I cycle through periods of depression and mania. When I'm depressed, I find it hard to get out of bed. I get agitated easy and I struggle to maintain focus for more than a few hours. I still do whats expected of me, but there is little left in the tank for anything extra.
 
-When I'm manic, I find it hard to stop. In fact, I don't want to stop. I'm super motivated. Enthusiastic. Laser focussed. And I barely sleep without any repercussions. I'm get involved in anything and everything. Can I write and deliver a talk? Can I help on another project? Can I renovate an entire room in my house?
+When I'm manic, I find it hard to stop. In fact, I don't want to stop. I'm super motivated. Enthusiastic. Laser focussed. And I barely sleep without any repercussions. I get involved in anything and everything. Can I write and deliver a talk? Can I help on another project? Can I renovate an entire room in my house?
 
 As you can imagine, this doesn't work well with fixed regimes. Just because an organisation forces me to be there on time, it doesn't mean that my brain is ready to go. Sometimes when I'm struggling to get out of bed, that extra half hour could be the difference between having a productive day and it being a write-off.
 
