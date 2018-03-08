@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'colours';
 @import 'a11y-tool';
+@import 'pagination';
 
 body {
   margin: 0;
@@ -101,7 +102,7 @@ button {
 
 a {
   border-bottom: 1px dashed;
-  color: $link-color;
+  color: $link-colour;
   font-weight: bold;
   text-decoration: none;
 
@@ -135,7 +136,7 @@ a {
 }
 
 article {
-  margin-bottom: 4em;
+  margin-bottom: 0;
   padding: 0 0 2em;
 }
 
