@@ -28,15 +28,6 @@
   border-bottom: 0;
   font-weight: normal;
   text-decoration: none;
-
-  &:visited {
-    color: $link-colour;
-  }
-
-  &:hover,
-  &:active {
-    background-color: $white;
-  }
 }
 
 .pagination__link-title {
@@ -51,10 +42,10 @@
   text-align: left;
 
   @media (max-width: 640px) {
-    text-align: center;
     width: 100%;
-    float: none;
     margin-bottom: 3em;
+    float: none;
+    text-align: center;
   }
 }
 
@@ -64,9 +55,9 @@
   text-align: right;
 
   @media (max-width: 640px) {
-    text-align: center;
     width: 100%;
     float: none;
+    text-align: center;
   }
 }
 
