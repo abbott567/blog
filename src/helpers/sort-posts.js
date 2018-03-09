@@ -11,15 +11,10 @@ function sortByDate(posts) {
   }).reverse();
 }
 
-function paginate(allPosts, page) {
-  if (page === undefined || page === '1') {
-    return allPosts.slice(0, 10);
-  }
-  const padded = parseInt(page.padEnd(page.length + 1, '0'), 10);
-  const arrayStart = padded - 10;
-  const arrayEnd = arrayStart + 10;
-  const pagePosts = allPosts.slice(arrayStart, arrayEnd);
-  return pagePosts;
+const PAGE_LENGTH = 10;
+function paginate(allPosts, page = 1) {
+  const index = (page * PAGE_LENGTH) - PAGE_LENGTH;
+  return allPosts.slice(index, index + PAGE_LENGTH);
 }
 
 module.exports = {sortByDate, paginate};
