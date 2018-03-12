@@ -9,7 +9,7 @@
           <h1>
             {{post.title}}
             <span class="visually-hidden">Published on</span>
-            <span class="published-date">{{post.createdAt|formatDate}} | {{readTime}}</span>
+            <span class="published-date">{{post.createdAt|formatDate}} <span class="vertical-line"></span> {{readTime}}</span>
           </h1>
           
           {% markdown 'posts/' + post.slug + '/post.md' %}

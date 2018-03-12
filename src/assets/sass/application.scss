@@ -148,8 +148,10 @@ pre {
 
 .published-date {
   display: block;
+  padding: .5em 0;
   color: $body-secondary;
   font-size: .5em;
+  
 }
 
 .visually-hidden {
@@ -202,6 +204,15 @@ fieldset {
     font-family: 'OpenDyslexicMono', sans-serif;
     font-size: .8em;
   }
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin-right: .5em;
+  margin-left: .5em;
+  border-right: .15em solid $body-secondary;
 }
 
 @import 'code-agate';
