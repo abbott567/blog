@@ -8,9 +8,9 @@
       {% for post in posts %}
         <article>
           <h1>
+            {{post.title}}
             <span class="visually-hidden">Published on</span>
             <span class="published-date">{{post.createdAt|formatDate}} | {{post.slug|readTime}}</span>
-            {{post.title}}
           </h1>
           
           {% markdown 'posts/' + post.slug + '/excerpt.md' %}
