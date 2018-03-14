@@ -1,5 +1,13 @@
 [
   {
+    "title": "One-page-applications are not accessible",
+    "slug": "one-page-applications-are-not-accessible",
+    "createdAt": "2018-03-14T00:00:00.00Z",
+    "categories": [
+      "ux", "accessibility"
+    ]
+  },
+  {
     "title": "What can Baloo teach us about design?",
     "slug": "what-can-baloo-teach-us-about-design",
     "createdAt": "2018-02-20T00:00:00.00Z",

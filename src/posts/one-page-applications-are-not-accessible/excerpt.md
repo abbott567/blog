@@ -1,0 +1,3 @@
+The biggest problem with one-page-applications, is they create a terrible experience for people using screen readers.
+
+There is a cognitive issue. Users have to maintain a mental image map of the page in all it's states. If they click something, and some new content appears. How does your user know what has changed? How do you make them understand what they cannot see? How do you orientate this to their mental map they have been building?
