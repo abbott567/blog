@@ -5,6 +5,11 @@
     <title>{{appName}}{{' - ' + title if title}}</title>
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if environment != 'development' %}
+      <script>
+        {% include './ga.js' %}
+      </script>
+    {% endif %}
   </head>
 
   <body class="{{settings.font if settings.font}} {{settings.theme if settings.theme}}" {{'style=font-size:' + settings.fontSize if settings.fontSize}}>
@@ -14,11 +19,5 @@
 
     <script src="/js/application.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    {% if environment != 'development' %}
-      <script>
-        {% include './ga.js' %}
-      </script>
-    {% endif %}
   </body>
 </html>
