@@ -31,21 +31,21 @@
     body.style.fontSize = newFontSize;
     settings.fontSize = newFontSize;
     updateCookie(settings);
-    ga('send', 'event', ['Font size'], [this.id]);
+    ga('send', 'event', 'Font size', this.id);
   }
 
   function fontChangeHandler() {
     var fontAttr = this.getAttribute('data-font') || '';
     settings.font = fontAttr;
     updateBodyClasses(settings);
-    ga('send', 'event', ['Font'], [this.id]);
+    ga('send', 'event', 'Font', this.id);
   }
 
   function colourChangeHandler() {
     var theme = this.getAttribute('data-theme') || '';
     settings.theme = theme;
     updateBodyClasses(settings);
-    ga('send', 'event', ['Theme'], [this.id]);
+    ga('send', 'event', 'Theme', this.id);
   }
 
   function updateBodyClasses(settings) {
