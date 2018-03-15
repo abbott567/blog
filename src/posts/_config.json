@@ -1,5 +1,13 @@
 [
   {
+    "title": "What is it like to use a screen reader on an inaccessible website?",
+    "slug": "what-is-it-like-to-use-a-screen-reader",
+    "createdAt": "2018-03-15T00:00:00.00Z",
+    "categories": [
+      "ux", "accessibility"
+    ]
+  },
+  {
     "title": "One-page-applications are not accessible",
     "slug": "one-page-applications-are-not-accessible",
     "createdAt": "2018-03-14T00:00:00.00Z",
