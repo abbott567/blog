@@ -11,6 +11,7 @@
   var fontSizeChangers = body.querySelectorAll('.font-size-change');
   var fontChangers = body.querySelectorAll('.font-change');
   var colourChangers = body.querySelectorAll('.colour-change');
+  var pBorderChangers = body.querySelectorAll('.p-borders-change');
 
   Array.prototype.forEach.call(fontSizeChangers, function (button) {
     button.addEventListener('click', fontSizeHandler);
@@ -22,6 +23,10 @@
 
   Array.prototype.forEach.call(colourChangers, function (button) {
     button.addEventListener('click', colourChangeHandler);
+  });
+
+  Array.prototype.forEach.call(pBorderChangers, function (button) {
+    button.addEventListener('click', pBordersHandler);
   });
 
   function fontSizeHandler() {
@@ -46,6 +51,20 @@
     settings.theme = theme;
     updateBodyClasses(settings);
     ga('send', 'event', 'Theme', this.id);
+  }
+
+  function pBordersHandler() {
+    var main = document.querySelector('main') || '';
+    var toggle = this.getAttribute('data-pBorders') || '';
+    if (toggle === 'on') {
+      settings.pBorders = 'with-borders';
+      main.classList.add('with-borders');
+    } else {
+      settings.pBorders = '';
+      main.classList.remove('with-borders');
+    }
+    updateCookie(settings);
+    ga('send', 'event', 'Paragraph borders', this.id);
   }
 
   function updateBodyClasses(settings) {

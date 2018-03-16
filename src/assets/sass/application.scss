@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'colours';
+@import 'typography';
 @import 'a11y-tool';
 @import 'pagination';
 
@@ -41,6 +42,7 @@ main {
   width: 100%;
   max-width: 630px;
   margin: auto;
+  border-top: 1px solid $border-colour;
 
   .error {
     pre {
@@ -59,11 +61,18 @@ main {
   }
 }
 
+.with-borders {
+  p {
+    padding: 1em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $body-text;
+  }
+}
+
 .nav-wrapper {
   width: 100%;
-  max-width: 630px;
   margin: auto;
-  border-bottom: 1px solid $border-colour;
 }
 
 nav {

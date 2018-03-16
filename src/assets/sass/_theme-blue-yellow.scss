@@ -42,4 +42,10 @@ $inline-code-colour: #f47738;
       color: $inline-code-colour;
     }
   }
+
+  .with-borders {
+    p {
+      border-color: $body-text;
+    }
+  }
 }

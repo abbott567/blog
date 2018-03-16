@@ -42,4 +42,10 @@ $selection-background: #83a0ab;
       outline-color: $focus-background;
     }
   }
+
+  .with-borders {
+    p {
+      border-color: $body-text;
+    }
+  }
 }

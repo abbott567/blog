@@ -9,12 +9,14 @@ $yellow-black-colour: #222;
 
 .a11y {
   width: 100%;
-  max-width: 630px;
+  max-width: 100%;
   margin: auto;
   padding: .6em 0;
+  text-align: center;
 
   button {
-    height: 2.1em;
+    min-width: 30px;
+    min-height: 40px;
     border: 1px solid $border-colour;
     font-size: 1em;
   }
@@ -27,25 +29,28 @@ $yellow-black-colour: #222;
     font-size: .6em;
     line-height: 2em;
   }
-}
 
-.colour-change {
-  background-color: $default-background;
-  color: $default-colour;
-  font-size: 2em;
-
-  &._black-white {
-    background-color: $black-white-background;
-    color: $black-white-colour;
+  .p-borders__on {
+    box-shadow: inset 0 0 0 3px $default-colour;
   }
 
-  &._blue-yellow {
-    background-color: $blue-yellow-background;
-    color: $blue-yellow-colour;
-  }
-
-  &._yellow-black {
-    background-color: $yellow-black-background;
-    color: $yellow-black-colour;
+  .colour-change {
+    background-color: $default-background;
+    color: $default-colour;
+  
+    &._black-white {
+      background-color: $black-white-background;
+      color: $black-white-colour;
+    }
+  
+    &._blue-yellow {
+      background-color: $blue-yellow-background;
+      color: $blue-yellow-colour;
+    }
+  
+    &._yellow-black {
+      background-color: $yellow-black-background;
+      color: $yellow-black-colour;
+    }
   }
 }

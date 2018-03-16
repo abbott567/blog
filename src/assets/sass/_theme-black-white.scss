@@ -37,4 +37,10 @@ $inline-code-colour: #e97661;
       color: $inline-code-colour;
     }
   }
+
+  .with-borders {
+    p {
+      border-color: $body-text;
+    }
+  }
 }
