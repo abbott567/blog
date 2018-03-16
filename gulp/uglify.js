@@ -8,7 +8,8 @@ const concat = require('gulp-concat');
 gulp.task('uglify', cb => {
   pump([
     gulp.src([
-      './src/assets/js/*.js'
+      './src/assets/js/*.js',
+      '!./src/assets/js/ga.js'
     ]),
     concat('application.js'),
     uglify(),
