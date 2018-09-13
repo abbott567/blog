@@ -26,6 +26,6 @@ The militant vegans would argue that number 1 is the only option. But you can't 
 
 I'd like to say I chose number 4, but in most cases it was number 3. I wouldn't want to upset somebody who has tried their best. So instead, I would feel like a fraud. A fake vegan. Because there is a guilt that comes with the label when you slip up.
 
-So, I don't know if I have a label now. But that doesn't matter. I still eat vegan. I still buy canvas shoes and have rice milk on my cereal. Nothing has really changed except I no longer call myself a vegan and no longer beat myself up about it I don't get it perfect.
+So, I don't know if I have a label now. But that doesn't matter. I still eat vegan. I still buy soya based stuff and have rice milk on my cereal. Nothing has really changed except I no longer call myself a vegan and no longer beat myself up about it I don't get it perfect.
 
 Empathy is not always black and white. Label or no label, I'm doing my best. And thats all I can do.
