@@ -2,24 +2,24 @@
 
 {% block content %}
 
-<aside class="article-info">
-  <dl>
-    <dt class="article-info__text">Published:</dt><dd class="article-info__text">{{post.createdAt|formatDate}}</dd>
-    <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{readTime}}</dd>
-  </dl>
-</aside>
+<div class="container">
+  <aside class="article-info">
+    <dl>
+      <dt class="article-info__text">Published:</dt><dd class="article-info__text">{{post.createdAt|formatDate}}</dd>
+      <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{readTime}}</dd>
+    </dl>
+  </aside>
+</div>
 
-<main id="main" role="main">
-  <div class="large-container">
-    <div class="column-two-thirds">
+<main class="container" id="main" role="main">
+  <div class="column-two-thirds">
 
-        <h1 class="heading-large">
-          {{post.title}}
-        </h1>
-        
-        {% markdown 'posts/' + post.slug + '/post.md' %}
+      <h1 class="heading-large">
+        {{post.title}}
+      </h1>
+      
+      {% markdown 'posts/' + post.slug + '/post.md' %}
 
-    </div>
   </div>
 </main>
 
