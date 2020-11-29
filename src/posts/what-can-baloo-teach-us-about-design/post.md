@@ -7,8 +7,7 @@ The idea of design-reuse has been around for many years. Walt Disney reused many
 
 You may not have noticed before, but Disney's Baloo and Little John are almost identical. They were even voiced by the same person, Phil Harris.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Disney&#39;s version of a resuable component?<br>.bear--brown<br>.bear__nose--black<br>.hat--green <a href="https://t.co/ow3IQIHDr8">pic.twitter.com/ow3IQIHDr8</a></p>&mdash; Craig Abbott (@abbott567) <a href="https://twitter.com/abbott567/status/880437772250750976?ref_src=twsrc%5Etfw">June 29, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![An image of Baloo and Little John side by side. They are identical apart from clothes and colour](/images/baloo-little-john.jpg)
 
 When I've pointed this out, some people say they feel cheated. There's an impact on the nostalgic childhood memories of our most beloved characters. But, like identical twins, Baloo and Little John have their own loveable personalities. They may look and move the same,  but they're very unique in character.
 
