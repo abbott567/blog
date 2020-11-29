@@ -1,16 +1,15 @@
-'use-strict';
+'use-strict'
 
-const gulp = require('gulp');
-const runSequence = require('run-sequence');
+const gulp = require('gulp')
 
-gulp.task('watch', done => {
-  runSequence('watch-sass', 'watch-js', done);
-});
+gulp.task('watch-sass', done => {
+  gulp.watch('./src/**/*.scss', gulp.series('sass'))
+  done()
+})
 
-gulp.task('watch-sass', () => {
-  return gulp.watch('./src/assets/sass/**/*.scss', ['sass']);
-});
+gulp.task('watch-js', done => {
+  gulp.watch('./src/assets/js/**/*.js', gulp.series('uglify'))
+  done()
+})
 
-gulp.task('watch-js', () => {
-  return gulp.watch('./src/assets/js/**/*.js', ['uglify']);
-});
+gulp.task('watch', gulp.series('watch-sass', 'watch-js'))

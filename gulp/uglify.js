@@ -1,20 +1,17 @@
-'use-strict';
+'use-strict'
 
-const gulp = require('gulp');
-const uglify = require('gulp-uglify');
-const pump = require('pump');
-const concat = require('gulp-concat');
+const gulp = require('gulp')
+const uglify = require('gulp-uglify')
+const pump = require('pump')
+const concat = require('gulp-concat')
 
-gulp.task('uglify', cb => {
-  pump([
+gulp.task('uglify', () => {
+  return pump([
     gulp.src([
-      './src/assets/js/*.js',
-      '!./src/assets/js/ga.js'
+      './src/assets/js/*.js'
     ]),
     concat('application.js'),
     uglify(),
     gulp.dest('./public/js')
-  ],
-  cb
-  );
-});
+  ])
+})

@@ -1,0 +1,59 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: auto;
+  width: 100%;
+  max-width: 630px;
+}
+
+main {
+  width: 100%;
+  max-width: 630px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  background: $body-backgroud;
+  color: $body-text;
+  font-size: 1.188rem;
+}
+
+pre {
+  width: 100%;
+  overflow: scroll;
+  font-size: 1rem;
+}
+
+code {
+  color: $inline-code-colour;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+img {
+  display: block;
+  max-width: 630px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid $border-colour;
+}
+
+li {
+  line-height: 1.8rem;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1.25rem;
+  border-left: 5px solid $border-colour;
+}
+
+fieldset {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+}

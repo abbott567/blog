@@ -1,171 +1,30 @@
-@import 'fonts';
 @import 'colours';
+@import 'base';
 @import 'typography';
-@import 'a11y-tool';
-@import 'pagination';
 
-body {
-  margin: 0;
-  padding: 20px;
-  background: $body-backgroud;
-  color: $body-text;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.188em;
-  word-spacing: 0;
+// Components
+@import '../../common/components/article-info/article-info';
+@import '../../common/components/article/article';
+@import '../../common/components/footer/footer';
+@import '../../common/components/header/header';
+@import '../../common/components/pagination/pagination';
+@import '../../common/components/skip-link/skip-link';
 
-  p {
-    line-height: 1.6em;
-
-    code {
-      padding: .1em;
-      color: $inline-code-colour;
-      font-size: 1.2em;
-    }
-  }
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-code {
-  line-height: 1.4em;
-}
-
-img {
-  display: block;
-  max-width: 630px;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: 1px solid $border-colour;
-}
-
-
-main {
-  width: 100%;
-  max-width: 630px;
-  margin: auto;
-  border-top: 1px solid $border-colour;
-
-  .error {
-    pre {
-      font-size: .75em;
-    }
-  }
-
-  article {
-    &:last-child {
-      margin-bottom: 0;
-
-      .read-full-article-wrapper {
-        border: 0;
-      }
-    }
-  }
-}
-
-.with-borders {
-  p {
-    padding: 1em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $body-text;
-  }
-}
-
-.nav-wrapper {
-  width: 100%;
-  margin: auto;
-}
-
-nav {
-  width: 100%;
-  max-width: 630px;
-  margin: auto;
-
-  a {
-    font-size: 1.5em;
-  }
-}
-
-footer {
-  width: 100%;
-  max-width: 630px;
-  margin: auto;
-  border-top: 1px solid $border-colour;
-
-  ul {
-    font-size: .875em;
-  }
-}
-
-button {
-  background: $button-background;
-  cursor: pointer;
-
-  &:hover {
-    background: $button-hover;
-  }
-
-  &:focus {
-    outline: 3px solid $focus-background;
-  }
-}
-
-a {
-  border-bottom: 1px dashed;
-  color: $link-colour;
-  font-weight: bold;
-  text-decoration: none;
-
-  &:hover {
-    color: $link-hover;
-  }
-
-  &:focus {
-    outline: 3px solid $focus-background;
-    background-color: $focus-background;
-    color: $focus-colour;
-  }
-}
-
-.skiplink {
-  position: absolute;
-  left: -9999em;
-
-  &:focus {
-    left: 0;
-    z-index: 1;
-  }
-}
-
-
-.read-full-article-wrapper {
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 3em;
-  border-bottom: 1px solid $border-colour;
-}
-
-article {
+.read-full-article {
+  margin-top: 1rem;
   margin-bottom: 0;
-  padding: 0 0 2em;
-}
-
-pre {
-  width: 100%;
-  overflow: scroll;
-  font-size: 1em;
-}
-
-.published-date {
-  display: block;
-  padding: .5em 0;
-  color: $body-secondary;
-  font-size: .5em;
+  display: inline-block;
 }
 
 .visually-hidden {
   position: absolute;
   top: auto;
-  left: -9999em;
+  left: -9999rem;
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -183,51 +42,7 @@ pre {
   }
 }
 
-li {
-  line-height: 1.8em;
-}
-
 .list-no-bullets {
   padding-left: 0;
   list-style: none;
 }
-
-blockquote {
-  margin-left: 0;
-  padding-left: 1.25em;
-  border-left: 5px solid $border-colour;
-}
-
-fieldset {
-  display: inline-block;
-  padding: 0;
-  border: 0;
-}
-
-.dyslexia {
-  font-family: 'OpenDyslexic', sans-serif;
-  line-height: 1.4;
-
-  code {
-    font-family: 'OpenDyslexicMono', sans-serif;
-    font-size: .8em;
-  }
-}
-
-.vertical-line {
-  display: inline-block;
-  width: 1px;
-  height: 10px;
-  margin-right: .5em;
-  margin-left: .5em;
-  border-right: .15em solid $body-secondary;
-}
-
-@import 'code-agate';
-@import 'code-solarized-dark';
-@import 'code-vs2015';
-@import 'code-zenburn';
-
-@import 'theme-black-white';
-@import 'theme-blue-yellow';
-@import 'theme-yellow-black';

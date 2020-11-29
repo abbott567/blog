@@ -1,11 +1,9 @@
-'use-strict';
+'use-strict'
 
-const gulp = require('gulp');
-const runSequence = require('run-sequence');
+const gulp = require('gulp')
 
-gulp.task('default', done => {
-  if (process.env.NODE_ENV !== 'production') {    
-    return runSequence('sass', 'uglify', 'move-assets', 'nodemon', 'watch', done);
-  }
-  runSequence('sass', 'uglify', 'move-assets', done);
-});
+if (process.env.NODE_ENV === 'production') {
+  gulp.task('default', gulp.series('sass', 'uglify', 'move-assets'))
+} else {
+  gulp.task('default', gulp.series('sass', 'uglify', 'move-assets', 'nodemon', 'watch'))
+}

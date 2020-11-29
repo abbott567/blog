@@ -4,18 +4,14 @@
     <meta charset="utf-8">
     <title>{{appName}}{{' - ' + title if title}}</title>
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if environment != 'development' %}
-      <script>
-        {% include '../assets/js/ga.js' %}
-      </script>
-    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   </head>
 
-  <body class="{{settings.font if settings.font}} {{settings.theme if settings.theme}}" {{'style=font-size:' + settings.fontSize if settings.fontSize}}>
-    {% include './header.njk' %}
+  <body>
+    {% include './components/skip-link/template.njk' %}
+    {% include './components/header/template.njk' %}
     {% block content %}{% endblock %}
-    {% include './footer.njk' %}
+    {% include './components/footer/template.njk' %}
 
     <script src="/js/application.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

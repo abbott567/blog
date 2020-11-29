@@ -1,5 +1,11 @@
-'use-strict';
+'use-strict'
 
-const requireDir = require('require-dir');
+const gulp = require('gulp')
 
-requireDir('./gulp', {recurse: true});
+require('./gulp/watch')
+require('./gulp/nodemon')
+require('./gulp/move-assets')
+require('./gulp/sass')
+require('./gulp/uglify')
+
+gulp.task('default', gulp.series('sass', 'uglify', 'move-assets', 'nodemon', 'watch'))

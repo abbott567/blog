@@ -1,19 +1,39 @@
 html {
-  font-size: 100%;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 1.3em;
-}
-
-h3 {
-  font-size: 1.1em;
-}
-
-h4 {
   font-size: 1em;
+  font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: $link-colour;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:focus {
+    outline: 3px solid transparent;
+    color: $focus-colour;
+    background-color: $focus-background;
+    -webkit-box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
+    box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
+    text-decoration: none;
+  }
+}
+
+.heading-large {
+  font-size: 1.5rem;
+}
+
+.heading-medium {
+  font-size: 1.3rem;
+}
+
+.heading-small {
+  font-size: 1.1rem;
 }

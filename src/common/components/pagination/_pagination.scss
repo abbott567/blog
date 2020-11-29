@@ -1,6 +1,8 @@
 .pagination {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid $border-colour;
 }
 
 .pagination__list {
@@ -17,23 +19,26 @@
 .pagination__item {
   width: 50%;
   float: left;
-  font-size: .8em;
-  line-height: 1.15em;
+  font-size: 1rem;
+  line-height: 1.15rem;
   list-style: none;
   text-align: right;
 }
 
 .pagination__link {
-  display: block;
+  display: inline-block;
   border-bottom: 0;
   font-weight: normal;
   text-decoration: none;
+  @media (max-width: 640px) {
+    display: block;
+  }
 }
 
 .pagination__link-title {
   display: block;
-  font-size: 1.1em;
-  line-height: 1.1111111111;
+  font-size: 1.4rem;
+  line-height: 1.1;
   text-transform: none;
 }
 
@@ -43,7 +48,7 @@
 
   @media (max-width: 640px) {
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
     float: none;
     text-align: center;
   }
@@ -64,16 +69,15 @@
 
 .pagination__link-icon {
   display: inline-block;
-  width: .63em;
-  height: .482em;
+  width: .63rem;
+  height: .482rem;
   margin-bottom: 1px;
 }
 
 .pagination__link-label {
   display: inline-block;
-  margin-top: .1em;
-  border-bottom: 1px dashed $link-colour;
-  font-size: .5em;
+  margin-top: .1rem;
+  font-size: .8rem;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
