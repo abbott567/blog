@@ -9,10 +9,14 @@
 @import '../../common/components/header/header';
 @import '../../common/components/pagination/pagination';
 @import '../../common/components/skip-link/skip-link';
+@import '../../common/components/nav-menu/nav-menu';
 
 .container {
+  margin: auto;
   padding-left: 3rem;
   padding-right: 3rem;
+  width: 100%;
+  max-width: 630px;
 }
 
 .read-full-article {

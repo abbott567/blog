@@ -41,27 +41,35 @@ app.use('/jquery.js', express.static('node_modules/jquery/dist/jquery.slim.min.j
 
 // Routes
 app.use('', require('./src/pages/home'))
-app.use('/', require('./src/pages/article'))
+app.use('/', require('./src/pages/redirects'))
+app.use('/blog', require('./src/pages/blog'))
+app.use('/blog/', require('./src/pages/post'))
+app.use('/talks', require('./src/pages/talks'))
+
+app.use((req, res, next) => {
+  const err = new Error('Not Found')
+  err.heading = 'Not found'
+  err.url = req.url
+  err.message = `The page "${err.url}" does not exist`
+  err.status = 404
+  next(err)
+})
 
 // Error handler
 app.use((err, req, res, next) => {
   const dev = process.env.NODE_ENV !== 'production'
-  res.status(404)
-  res.statusCode = 404
-  err.url = req.url
-  err.heading = 'Not found'
-  err.message = `The page "${err.url}" does not exist`
-
+  if (err.status === 404) {
+    res.statusCode = 404
+    res.status(404)
+  }
   // respond with html page
   if (req.accepts('html')) {
     return res.render('common/error.njk', { err, dev })
   }
-
   // respond with json
   if (req.accepts('json')) {
     return res.send({ error: 'Not found' })
   }
-
   // default to plain-text. send()
   res.type('txt').send('Not found')
 })

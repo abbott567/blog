@@ -2,10 +2,10 @@
 
 const posts = require('../../posts/_config.json')
 
-const template = 'pages/home/template.njk'
+const template = 'pages/talks/template.njk'
 
 function get (req, res) {
-  res.render(template, { title: 'Home' })
+  res.render(template, { title: 'Talks' })
 }
 
 function findPostBySlug (slug) {

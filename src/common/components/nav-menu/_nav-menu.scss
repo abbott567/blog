@@ -1,0 +1,15 @@
+.nav-menu {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid $border-colour;
+  padding-bottom: 1rem;
+
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+  }
+}

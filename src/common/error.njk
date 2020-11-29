@@ -2,8 +2,8 @@
 {% set pageTitle = "Error" %}
 
 {% block content %}
-  <main class="error" id="error" role="main">
-    <div class="grid-row">
+  <main class="container" id="main" role="main">
+    <div class="grid-row" role="alert">
       <div class="column-two-thirds">
         <h1 class="heading-large">
           {{err.heading}}
@@ -11,15 +11,11 @@
         <p>
           {{err.message}}
         </p>
-        <p>
-          
-        </p>
       </div>
     </div>
   </main>
   {% if dev %}
     <pre>
-      Status: {{err.status}}
       {{err.stack}}
     </pre>
     <pre>

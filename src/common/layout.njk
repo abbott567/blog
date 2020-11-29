@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{title if title}} - {{appName}}</title>
+    <title>{{title + ' - ' if title}} {{appName}}</title>
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   </head>
@@ -10,6 +10,14 @@
   <body>
     {% include './components/skip-link/template.njk' %}
     {% include './components/header/template.njk' %}
+    <div class="container">
+      <nav class="nav-menu" role="navigation">
+        <uL id="nav-menu">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/talks/">Talks</a></li>
+        </uL>
+      </nav>
+    </div>
     {% block content %}{% endblock %}
     {% include './components/footer/template.njk' %}
 
