@@ -1,5 +1,6 @@
 .nav-menu {
   padding-bottom: 1rem;
+  border-bottom: 3px solid $border-colour;
 
   ul {
     padding: 0;
@@ -9,5 +10,16 @@
     display: inline-block;
     list-style: none;
     margin-right: 1em;
+  }
+  a {
+    font-weight: bold;
+
+    &:visited {
+      color: $link-colour;
+    }
+
+    &:hover {
+      color: $link-hover;
+    }
   }
 }
