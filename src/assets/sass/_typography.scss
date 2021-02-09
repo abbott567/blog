@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -26,6 +26,10 @@ a {
     box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
     text-decoration: none;
   }
+}
+
+.heading-xlarge {
+  font-size: 2rem;
 }
 
 .heading-large {

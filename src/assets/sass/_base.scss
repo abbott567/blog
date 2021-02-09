@@ -8,8 +8,9 @@ html {
 
 main {
   width: 100%;
-  max-width: 630px;
   margin: auto;
+  border-bottom: 3px solid $border-colour;
+  border-top: 3px solid $border-colour;
 }
 
 body {

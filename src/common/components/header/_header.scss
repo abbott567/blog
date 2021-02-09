@@ -3,8 +3,16 @@ header {
   width: 100%;
   max-width: 630px;
   margin: auto;
-
+  
   a {
-    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  img {
+    width: 100%;
+    max-width: 8rem;
+    border: 0;
+    display: inline;
+    margin: 0;
   }
 }
