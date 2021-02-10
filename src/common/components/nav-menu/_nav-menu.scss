@@ -21,6 +21,10 @@
     &:hover {
       color: $link-hover;
     }
+
+    &:focus {
+      color: $focus-colour;
+    }
   }
 }
 
