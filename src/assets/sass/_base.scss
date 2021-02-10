@@ -9,13 +9,11 @@ html {
 main {
   width: 100%;
   margin: auto;
-  border-bottom: 3px solid $border-colour;
+  padding-bottom: 3rem;
 }
 
 body {
   margin: 0;
-  background: $body-backgroud;
-  color: $body-text;
   font-size: 1.188rem;
 }
 
@@ -26,9 +24,8 @@ pre {
 }
 
 code {
-  color: $inline-code-colour;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.4rem;  
 }
 
 img {
@@ -38,7 +35,6 @@ img {
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid $border-colour;
 }
 
 li {
@@ -48,7 +44,8 @@ li {
 blockquote {
   margin-left: 0;
   padding-left: 1.25rem;
-  border-left: 5px solid $border-colour;
+  border-left-width: 5px;
+  border-left-style: solid;
 }
 
 fieldset {

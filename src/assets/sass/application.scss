@@ -1,10 +1,11 @@
-@import 'colours';
+@import 'colour-schemes/!colours';
+@import 'colour-schemes/all';
 @import 'base';
 @import 'typography';
 
 // Components
-@import '../../common/components/article-info/article-info';
-@import '../../common/components/article/article';
+@import '../../common/components/section-info/section-info';
+@import '../../common/components/section/section';
 @import '../../common/components/footer/footer';
 @import '../../common/components/header/header';
 @import '../../common/components/pagination/pagination';

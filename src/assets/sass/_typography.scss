@@ -10,23 +10,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $link-colour;
   text-decoration: underline;
 
-  &:visited {
-    color: $link-visited;
-  }
-
-  &:hover {
-    color: $link-hover;
-  }
-
   &:focus {
-    outline: 3px solid transparent;
-    color: $focus-colour;
-    background-color: $focus-background;
-    -webkit-box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
-    box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: transparent;
     text-decoration: none;
   }
 }

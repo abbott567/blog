@@ -1,18 +1,11 @@
+@import './pagination-colours';
+
 .pagination {
   display: block;
   margin-bottom: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid $border-colour;
-
-  a {
-    &:visited {
-      color: $link-colour;
-    }
-
-    &:hover {
-      color: $link-hover;
-    }
-  }
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 .pagination__list {

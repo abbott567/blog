@@ -1,0 +1,36 @@
+a {
+  color: $link-colour-light;
+  @media (prefers-color-scheme: dark) {
+    color: $link-colour-dark;
+  }
+
+  &:visited {
+    color: $link-visited-light;
+    @media (prefers-color-scheme: dark) {
+      color: $link-visited-dark;
+    }
+  }
+
+  &:hover {
+    color: $link-hover-light;
+    background: $body-text-light;
+    @media (prefers-color-scheme: dark) {
+      color: $link-hover-dark;
+      background: $body-text-dark;
+    }
+  }
+
+  &:focus {
+    color: $focus-colour-light;
+    background-color: $focus-background-light;
+    -webkit-box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+    box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+
+    @media (prefers-color-scheme: dark) {
+      color: $focus-colour-dark;
+      background-color: $focus-background-dark;
+      -webkit-box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+      box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+    }
+  }
+}

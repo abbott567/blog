@@ -1,8 +1,11 @@
+@import './section-colours';
+
 .section {
   margin-bottom: 2rem;
   padding: 0 0 2rem;
-  border-bottom: 1px solid $border-colour;
-
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  
   &:first-of-type {
     margin-top: 2rem;
   }

@@ -1,0 +1,6 @@
+.page-footer {
+  border-top-color: $border-colour-light;
+  @media (prefers-color-scheme: dark) {
+    border-top-color: $border-colour-dark;
+  }
+}

@@ -1,6 +1,9 @@
+@import './nav-menu-colours';
+
 .nav-menu {
   padding-bottom: 1rem;
-  border-bottom: 3px solid $border-colour;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
 
   ul {
     padding: 0;
@@ -13,18 +16,6 @@
   }
   a {
     font-weight: bold;
-
-    &:visited {
-      color: $link-colour;
-    }
-
-    &:hover {
-      color: $link-hover;
-    }
-
-    &:focus {
-      color: $focus-colour;
-    }
   }
 }
 

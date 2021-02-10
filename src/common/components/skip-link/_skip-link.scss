@@ -26,10 +26,17 @@
     clip-path: none;
     white-space: inherit;
     outline: 3px solid transparent;
-    color: $focus-colour;
-    background-color: $focus-background;
-    -webkit-box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
-    box-shadow: 0 -2px $focus-background, 0 4px $focus-colour;
     text-decoration: none;
+    color: $focus-colour-light;
+    background-color: $focus-background-light;
+    -webkit-box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+    box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+
+    @media (prefers-color-scheme: dark) {
+      color: $focus-colour-dark;
+      background-color: $focus-background-dark;
+      -webkit-box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+      box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+    }
   }
 }
