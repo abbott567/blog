@@ -41,6 +41,12 @@ function toggleButtonText (currentTheme) {
   button.innerHTML = buttonText
 }
 
+function toggleCurrentThemeText (newTheme) {
+  const announcement = document.getElementById('current-theme-text')
+  const newText = 'Theme is now set to ' + newTheme
+  announcement.innerHTML = newText
+}
+
 function changeTheme () {
   const body = document.querySelector('body')
   const currentTheme = body.getAttribute('data-theme')
@@ -48,12 +54,14 @@ function changeTheme () {
     window.localStorage.setItem('theme', 'dark')
     toggleLogo('dark')
     toggleButtonText('dark')
+    toggleCurrentThemeText('dark')
     return body.setAttribute('data-theme', 'dark')
   }
   if (currentTheme === 'dark') {
     window.localStorage.setItem('theme', 'light')
     toggleLogo('light')
     toggleButtonText('light')
+    toggleCurrentThemeText('light')
     return body.setAttribute('data-theme', 'light')
   }
 }
@@ -64,7 +72,7 @@ function addThemeToggle () {
   const currentTheme = document.querySelector('body').getAttribute('data-theme')
   const otherTheme = currentTheme === 'dark' ? 'light' : 'dark'
   const buttonText = 'Activate ' + capitalize(otherTheme) + ' theme'
-  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
+  const buttonHTML = '<div class="theme-toggle-container"><span id="current-theme-text" class="visually-hidden" aria-live="polite">Theme is now set to ' + currentTheme + '</span><button id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
   header.innerHTML = header.innerHTML + buttonHTML
   // Add event listener for click
   document.getElementById('theme-toggle').addEventListener('click', function () {
