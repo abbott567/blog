@@ -42,8 +42,8 @@ function toggleButtonText (currentTheme) {
 }
 
 function toggleCurrentThemeText (newTheme) {
-  const body = document.querySelector('body')
-  const newText = 'Theme is set to ' + newTheme
+  const body = document.getElementById('theme-toggle')
+  const newText = 'Theme is now set to ' + newTheme
   body.setAttribute('aria-label', newText)
 }
 
@@ -72,7 +72,7 @@ function addThemeToggle () {
   const currentTheme = document.querySelector('body').getAttribute('data-theme')
   const otherTheme = currentTheme === 'dark' ? 'light' : 'dark'
   const buttonText = 'Activate ' + capitalize(otherTheme) + ' theme'
-  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
+  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" aria-live="polite" class="theme-toggle">' + buttonText + '</button></div>'
   header.innerHTML = header.innerHTML + buttonHTML
   // Add event listener for click
   document.getElementById('theme-toggle').addEventListener('click', function () {
