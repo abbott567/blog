@@ -1,0 +1,12 @@
+body[data-theme="dark"] {
+  background-color: $body-background-dark;
+  color: $body-text-dark;
+  
+  blockquote {
+    border-color: $border-colour-dark;
+  }
+  
+  code {
+    color: $inline-code-colour-dark;
+  }
+}

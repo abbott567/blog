@@ -1,0 +1,39 @@
+.container {
+  margin: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+  max-width: 720px;
+}
+
+.read-full-article {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  left: -9999rem;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  .focusable {
+    &:active,
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+  }
+}
+
+.list-no-bullets {
+  padding-left: 0;
+  list-style: none;
+}

@@ -1,0 +1,16 @@
+body[data-theme="dark"] {
+  .theme-toggle {
+    color: $body-background-dark;
+    background-color: $border-colour-dark;
+    -webkit-box-shadow: 0 2px 0 $border-colour-dark;
+    box-shadow: 0 2px 0 $border-colour-dark;
+  
+    &:focus:not(:active) {
+      border-color: $focus-background-dark;
+      color: $focus-colour-dark;
+      background-color: $focus-background-dark;
+      -webkit-box-shadow: 0 4px 0 $focus-colour-dark;
+      box-shadow: 0 4px 0 $focus-colour-dark;
+    }
+  }
+}

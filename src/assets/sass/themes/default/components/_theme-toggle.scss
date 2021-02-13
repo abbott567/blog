@@ -1,0 +1,27 @@
+.theme-toggle {
+  color: $body-text-light;
+  background-color: $border-colour-light;
+  -webkit-box-shadow: 0 2px 0 $border-colour-light;
+  box-shadow: 0 2px 0 $border-colour-light;
+  @media(prefers-color-scheme: dark) {
+    color: $body-background-dark;
+    background-color: $border-colour-dark;
+    -webkit-box-shadow: 0 2px 0 $border-colour-dark;
+    box-shadow: 0 2px 0 $border-colour-dark;
+  }
+
+  &:focus:not(:active) {
+    border-color: $focus-background-light;
+    color: $focus-colour-light;
+    background-color: $focus-background-light;
+    -webkit-box-shadow: 0 4px 0 $focus-colour-light;
+    box-shadow: 0 4px 0 $focus-colour-light;
+    @media(prefers-color-scheme: dark) {
+      border-color: $focus-background-dark;
+      color: $focus-colour-dark;
+      background-color: $focus-background-dark;
+      -webkit-box-shadow: 0 4px 0 $focus-colour-dark;
+      box-shadow: 0 4px 0 $focus-colour-dark;
+    }
+  }
+}

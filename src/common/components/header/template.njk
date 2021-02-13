@@ -1,9 +1,10 @@
 <header class="container" role="banner">
-  <picture>
+  <picture id="logo">
     <source 
       srcset="/images/logo-dark.svg" 
       media="(prefers-color-scheme: dark)"
     >
     <img src="/images/logo.svg" alt="Craig Abbott signature logo">
   </picture>
+  {% include '../nav-menu/template.njk' %}
 </header>

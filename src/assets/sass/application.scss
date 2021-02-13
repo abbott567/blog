@@ -1,53 +1,13 @@
-@import 'colour-schemes/!colours';
-@import 'colour-schemes/all';
-@import 'base';
-@import 'typography';
+// Non-colour settings for elements and components
+@import './common/all';
 
-// Components
-@import '../../common/components/section-info/section-info';
-@import '../../common/components/section/section';
-@import '../../common/components/footer/footer';
-@import '../../common/components/header/header';
-@import '../../common/components/pagination/pagination';
-@import '../../common/components/skip-link/skip-link';
-@import '../../common/components/nav-menu/nav-menu';
+// Load colour variables
+@import './themes/dark/!colours';
+@import './themes/light/!colours';
 
-.container {
-  margin: auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  width: 100%;
-  max-width: 720px;
-}
+// Default theme auto/light dark mode
+@import './themes/default/all-elements';
 
-.read-full-article {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  display: inline-block;
-}
-
-.visually-hidden {
-  position: absolute;
-  top: auto;
-  left: -9999rem;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-
-  .focusable {
-    &:active,
-    &:focus {
-      position: static;
-      width: auto;
-      height: auto;
-      margin: 0;
-      overflow: visible;
-      clip: auto;
-    }
-  }
-}
-
-.list-no-bullets {
-  padding-left: 0;
-  list-style: none;
-}
+// JS Overrides for dark/light themes
+@import './themes/dark/all-elements';
+@import './themes/light/all-elements';

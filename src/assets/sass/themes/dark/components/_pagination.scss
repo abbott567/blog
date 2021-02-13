@@ -1,0 +1,22 @@
+body[data-theme="dark"] {
+  .pagination {
+    border-top-color: $border-colour-dark;
+  
+    a {
+      &:visited {
+        color: $link-colour-dark;
+      }
+  
+      &:hover {
+        color: $link-hover-dark;
+      }
+  
+      &:focus {
+        color: $focus-colour-dark;
+        background-color: $focus-background-dark;
+        -webkit-box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+        box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+      }
+    }
+  }
+}

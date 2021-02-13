@@ -1,0 +1,19 @@
+body[data-theme="light"] {
+  .nav-menu {
+    border-color: $border-colour-light;
+  
+    a {
+      &:visited {
+        color: $link-colour-light;
+      }
+  
+      &:hover {
+        color: $link-hover-light;
+      }
+  
+      &:focus {
+        color: $focus-colour-light;
+      }
+    }
+  }
+}

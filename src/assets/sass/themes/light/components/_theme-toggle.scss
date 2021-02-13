@@ -1,0 +1,16 @@
+body[data-theme="light"] {
+  .theme-toggle {
+    color: $body-text-light;
+    background-color: $border-colour-light;
+    -webkit-box-shadow: 0 2px 0 $border-colour-light;
+    box-shadow: 0 2px 0 $border-colour-light;
+  
+    &:focus:not(:active) {
+      border-color: $focus-background-light;
+      color: $focus-colour-light;
+      background-color: $focus-background-light;
+      -webkit-box-shadow: 0 4px 0 $focus-colour-light;
+      box-shadow: 0 4px 0 $focus-colour-light;
+    }
+  }
+}

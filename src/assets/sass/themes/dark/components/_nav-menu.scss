@@ -1,0 +1,19 @@
+body[data-theme="dark"] {
+  .nav-menu {
+    border-color: $border-colour-dark;
+  
+    a {
+      &:visited {
+        color: $link-colour-dark;
+      }
+  
+      &:hover {
+        color: $link-hover-dark;
+      }
+  
+      &:focus {
+        color: $focus-colour-dark;
+      }
+    }
+  }
+}

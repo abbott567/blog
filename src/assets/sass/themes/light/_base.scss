@@ -1,0 +1,12 @@
+body[data-theme="light"] {
+  background-color: $body-background-light;
+  color: $body-text-light;
+  
+  blockquote {
+    border-color: $border-colour-light;
+  }
+  
+  code {
+    color: $inline-code-colour-light;
+  }
+}

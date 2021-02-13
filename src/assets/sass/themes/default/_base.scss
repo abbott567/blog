@@ -1,0 +1,23 @@
+body {
+  background-color: $body-background-light;
+  color: $body-text-light;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $body-background-dark;
+    color: $body-text-dark;
+  }
+}
+
+blockquote {
+  border-color: $border-colour-light;
+  @media (prefers-color-scheme: dark) {
+    border-color: $border-colour-dark;
+  }
+}
+
+code {
+  color: $inline-code-colour-light;
+  @media (prefers-color-scheme: dark) {
+    color: $inline-code-colour-dark;
+  }
+}

@@ -1,0 +1,21 @@
+body[data-theme="dark"] {
+  a {
+    color: $link-colour-dark;
+  
+    &:visited {
+      color: $link-visited-dark;
+    }
+  
+    &:hover {
+      color: $link-hover-dark;
+      background: $body-text-dark;
+    }
+  
+    &:focus {
+      color: $focus-colour-dark;
+      background-color: $focus-background-dark;
+      -webkit-box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+      box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
+    }
+  }
+}

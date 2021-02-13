@@ -1,6 +1,0 @@
-blockquote {
-  border-color: $border-colour-light;
-  @media (prefers-color-scheme: dark) {
-    border-color: $border-colour-dark;
-  }
-}
