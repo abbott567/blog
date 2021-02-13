@@ -21,7 +21,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^2.0.1",
     "highlight.js": "^10.6.0",
-    "marked": "^1.2.5",
+    "marked": "^2.0.0",
     "nunjucks": "^3.2.2",
     "nunjucks-markdown": "^2.0.1",
     "pump": "^3.0.0",
