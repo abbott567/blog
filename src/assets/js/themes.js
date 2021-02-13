@@ -60,13 +60,13 @@ function toggleButtonText (currentTheme) {
 
 function appendCurrentThemeText (newTheme) {
   const footer = document.querySelector('footer')
-  const newText = '<p class="visually-hidden" id="current-theme" aria-live="polite">Theme is currently set to ' + newTheme + '</p>'
+  const newText = '<p class="visually-" id="current-theme" aria-live="polite">' + newTheme + ' theme is active</p>'
   footer.innerHTML = footer.innerHTML + newText
 }
 
 function toggleCurrentThemeText (newTheme) {
   const currentTheme = document.getElementById('current-theme')
-  currentTheme.innerHTML = 'Theme is currently set to ' + newTheme
+  currentTheme.innerHTML = newTheme + ' theme is active'
 }
 
 function changeTheme () {
