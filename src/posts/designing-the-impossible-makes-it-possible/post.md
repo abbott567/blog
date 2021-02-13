@@ -4,7 +4,7 @@ A lot of the time this is because of technology restrictions. We can't integrate
 
 It's easy to make a snap decision, bow to peer pressure and change the design. After all, we don't want to waste our time designing something that's not possible.
 
-Only, that's exactly what we SHOULD do.
+Only, that's exactly what we *should* do.
 
 Design is about pushing what's possible. It's about taking something right to it's breaking point and saying, "ok how can we get past this." If you don't, you end up designing something that is a shell of what it could have been, and probably not fit for purpose.
 

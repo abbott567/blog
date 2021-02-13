@@ -16,31 +16,26 @@ There are a few of disclaimers:
 
 Last year, 65,648,054 lived in the UK. Of these, 63% were aged 16-64, and 18% were over 65. Combined, this is around 53.2 million adults. This is from a report published by the Office for National Statistics.
 
-```
-Working out
-63% of 65,648,054 = 41,358,274
-18% of 65,648,054 = 11,816,649
-41,358,274 + 11,816,649 = 53,174,923
-```
+Working out:
+`63% of 65,648,054 = 41,358,274`
+`18% of 65,648,054 = 11,816,649`
+`41,358,274 + 11,816,649 = 53,174,923`
+
 
 In 2014, 16% of working age people and 45% of people over state pension age were living with a disability. Combined, thats 11.9 million people in the UK alone. Around 1 in 5, or 20%. This is from a report published on GOVUK.
 
-```
 Working out:
-16% of 41,358,274 = 6,617,323
-45% of 11,816,649 = 5,317,492
-6,617,323 + 5,317,492 = 11,934,815
-```
+`16% of 41,358,274 = 6,617,323`
+`45% of 11,816,649 = 5,317,492`
+`6,617,323 + 5,317,492 = 11,934,815`
 
 Now, in 2017, only 22% of adults living with a disability said they had never used the internet. This was from another report published by the Office for National Statistics.
 
 So, of our 11.9 million people, we can remove 22% This leaves us with the number people living with a disability that do use the internet. Which is 9.3 million.
 
-```
 Working out:
-22% of 11,934,815 = 2,625,659
-11,934,815 - 2,625,659 = 9,309,155
-```
+`22% of 11,934,815 = 2,625,659`
+`11,934,815 - 2,625,659 = 9,309,155`
 
 That is almost 10 million people in the UK alone are surfing the web with a disability. *Definitely NOT an edge case.*
 

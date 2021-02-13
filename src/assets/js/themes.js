@@ -77,7 +77,6 @@ function setSavedPreferredTheme () {
   // Check local storage for saved theme settings
   const preferredTheme = window.localStorage.getItem('theme')
   const body = document.querySelector('body')
-  console.log(preferredTheme)
   if (preferredTheme === 'dark') {
     body.setAttribute('data-theme', 'dark')
   }

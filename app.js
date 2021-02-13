@@ -23,6 +23,28 @@ const jucks = nunjucks.configure('src', {
 // Load nunjucks filters
 require('./src/helpers/filters')(jucks)
 
+// Override code blocks to use tabindex on <PRE?
+const renderer = new marked.Renderer()
+const { overrides } = require('./src/helpers/marked-overrides')
+overrides.marked.code(renderer)
+overrides.marked.heading(renderer)
+
+marked.setOptions({
+  renderer: renderer,
+  gfm: true,
+  tables: true,
+  breaks: true,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: true,
+  highlight: function (code, language) {
+    const hljs = require('highlight.js')
+    const validLanguage = hljs.getLanguage(language) ? language : 'plaintext'
+    return hljs.highlight(validLanguage, code).value
+  }
+})
+
 // Markdown config
 markdown.register(jucks, marked)
 

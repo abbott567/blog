@@ -5,12 +5,17 @@ body[data-theme="dark"] {
   blockquote {
     border-color: $border-colour-dark;
   }
-  
-  code {
-    color: $inline-code-colour-dark;
-  }
 
   img {
     opacity: 75%;
+  }
+
+  pre:focus {
+    border-color: $focus-colour-dark;
+    outline-color: $focus-background-dark;
+  }
+
+  p > code {
+    color: $inline-code-colour-dark;
   }
 }

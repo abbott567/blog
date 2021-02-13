@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  font-size: 1.1875rem;
+  line-height: 1.31579;
+
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1rem;
+  display: block;
 }
 
 a {
@@ -20,24 +26,37 @@ a {
   }
 }
 
+code {
+  font-size: 1.2rem;
+  line-height: 1.4rem;  
+}
+p > code {
+  font-size: 1.5rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+
 .heading-xlarge {
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: 3rem;
+  line-height: 1.04167;
 }
 
 .heading-large {
-  font-size: 1.5rem;
-  margin-top: 3rem;
+  font-size: 2.25rem;
+  line-height: 1.11111;
 }
 
 .heading-medium {
-  font-size: 1.3rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
 }
 
 .heading-small {
+  font-size: 1.1875rem;
   margin-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.1875rem;
+  line-height: 1.31579;
 }
 
 .font-size-small {

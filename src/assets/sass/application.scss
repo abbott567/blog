@@ -11,3 +11,6 @@
 // JS Overrides for dark/light themes
 @import './themes/dark/all-elements';
 @import './themes/light/all-elements';
+
+// Highlight.js theme
+@import '../../../node_modules/highlight.js/scss/vs2015.scss';

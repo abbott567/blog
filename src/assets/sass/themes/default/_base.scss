@@ -15,13 +15,22 @@ blockquote {
   }
 }
 
-code {
+img {
+  opacity: 100%;
+}
+
+pre:focus {
+  border-color: $focus-colour-light;
+  outline-color: $focus-background-light;
+  @media (prefers-color-scheme: dark) {
+    border-color: $focus-colour-dark;
+    outline-color: $focus-background-dark;
+  }
+}
+
+p > code {
   color: $inline-code-colour-light;
   @media (prefers-color-scheme: dark) {
     color: $inline-code-colour-dark;
   }
-}
-
-img {
-  opacity: 100%;
 }

@@ -8,7 +8,7 @@ gulp.task('watch-sass', done => {
 })
 
 gulp.task('watch-js', done => {
-  gulp.watch('./src/assets/js/**/*.js', gulp.series('uglify'))
+  gulp.watch('./src/assets/js/**/*.js', gulp.series('terser'))
   done()
 })
 

@@ -6,11 +6,16 @@ body[data-theme="light"] {
     border-color: $border-colour-light;
   }
   
-  code {
-    color: $inline-code-colour-light;
-  }
-  
   img {
     opacity: 100%;
+  }
+
+  pre:focus {
+    border-color: $focus-colour-light;
+    outline-color: $focus-background-light;
+  }
+
+  p > code {
+    color: $inline-code-colour-light;
   }
 }
