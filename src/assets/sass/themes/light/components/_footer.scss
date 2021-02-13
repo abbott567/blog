@@ -1,5 +1,19 @@
 body[data-theme="light"] {
   .page-footer {
     border-top-color: $border-colour-light;
+    
+    a {
+      &:visited {
+        color: $link-colour-light;
+      }
+  
+      &:hover {
+        color: $link-hover-light;
+      }
+  
+      &:focus {
+        color: $focus-colour-light;
+      }
+    }
   }
 }
