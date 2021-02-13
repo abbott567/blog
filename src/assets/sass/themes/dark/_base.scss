@@ -9,4 +9,8 @@ body[data-theme="dark"] {
   code {
     color: $inline-code-colour-dark;
   }
+
+  img {
+    opacity: 75%;
+  }
 }
