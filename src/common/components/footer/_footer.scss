@@ -6,7 +6,18 @@
   border-top-width: 3px;
   border-top-style: solid;
 
-  ul {
+  .project-links li {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  .support-links li {
     font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1rem;
+    @media (max-width: 480px) {
+      display: block;
+    }
   }
 }

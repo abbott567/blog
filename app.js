@@ -46,6 +46,7 @@ app.use('/blog', require('./src/pages/blog'))
 app.use('/blog/', require('./src/pages/post'))
 app.use('/talks', require('./src/pages/talks'))
 app.use('/work', require('./src/pages/work'))
+app.use('/privacy', require('./src/pages/privacy'))
 
 app.use((req, res, next) => {
   const err = new Error('Not Found')
