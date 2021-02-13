@@ -2,20 +2,37 @@ function capitalize (string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+// Set preferred theme if stored
+function setSavedPreferredTheme () {
+  // Check local storage for saved theme settings
+  const preferredTheme = window.localStorage.getItem('theme')
+  const body = document.querySelector('body')
+  if (preferredTheme === 'dark') {
+    appendCurrentThemeText('dark')
+    body.setAttribute('data-theme', 'dark')
+  }
+  if (preferredTheme === 'light') {
+    appendCurrentThemeText('light')
+    body.setAttribute('data-theme', 'light')
+  }
+}
+
 function setDefaultTheme () {
   const body = document.querySelector('body')
   const preferredTheme = body.getAttribute('data-theme')
-  // If/ there is no preferred theme saved
+  // If there is no preferred theme saved
   if (!preferredTheme) {
     // Check if browser supports prefers-color-scheme
     if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
       // Supported
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // Dark mode is preferred
+        appendCurrentThemeText('dark')
         return body.setAttribute('data-theme', 'dark')
       }
     }
     // If all else fails, set the theme to light
+    appendCurrentThemeText('light')
     body.setAttribute('data-theme', 'light')
   }
 }
@@ -41,10 +58,15 @@ function toggleButtonText (currentTheme) {
   button.innerHTML = buttonText
 }
 
+function appendCurrentThemeText (newTheme) {
+  const footer = document.querySelector('footer')
+  const newText = '<p class="visually-hidden" id="current-theme" aria-live="polite">Theme is currently set to ' + newTheme + '</p>'
+  footer.innerHTML = footer.innerHTML + newText
+}
+
 function toggleCurrentThemeText (newTheme) {
-  const body = document.getElementById('theme-toggle')
-  const newText = 'Theme is now set to ' + newTheme
-  body.setAttribute('aria-label', newText)
+  const currentTheme = document.getElementById('current-theme')
+  currentTheme.innerHTML = 'Theme is currently set to ' + newTheme
 }
 
 function changeTheme () {
@@ -72,25 +94,12 @@ function addThemeToggle () {
   const currentTheme = document.querySelector('body').getAttribute('data-theme')
   const otherTheme = currentTheme === 'dark' ? 'light' : 'dark'
   const buttonText = 'Activate ' + capitalize(otherTheme) + ' theme'
-  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" aria-live="polite" class="theme-toggle">' + buttonText + '</button></div>'
+  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
   header.innerHTML = header.innerHTML + buttonHTML
   // Add event listener for click
   document.getElementById('theme-toggle').addEventListener('click', function () {
     changeTheme()
   })
-}
-
-// Set preferred theme if stored
-function setSavedPreferredTheme () {
-  // Check local storage for saved theme settings
-  const preferredTheme = window.localStorage.getItem('theme')
-  const body = document.querySelector('body')
-  if (preferredTheme === 'dark') {
-    body.setAttribute('data-theme', 'dark')
-  }
-  if (preferredTheme === 'light') {
-    body.setAttribute('data-theme', 'light')
-  }
 }
 
 // Document ready
