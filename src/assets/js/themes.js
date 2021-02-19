@@ -44,10 +44,10 @@ function toggleLogo (theme) {
     theme = body.getAttribute('data-theme')
   }
   if (theme === 'light') {
-    logo.innerHTML = '<img src="/images/logo.svg" alt="Craig Abbott signature logo">'
+    logo.innerHTML = '<img src="/images/logo.svg" alt="Craig Abbott signature logo" width="100">'
   }
   if (theme === 'dark') {
-    logo.innerHTML = '<img src="/images/logo-dark.svg" alt="Craig Abbott signature logo">'
+    logo.innerHTML = '<img src="/images/logo-dark.svg" alt="Craig Abbott signature logo" width="100">'
   }
 }
 
