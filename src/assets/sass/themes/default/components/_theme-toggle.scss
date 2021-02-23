@@ -24,4 +24,8 @@
       box-shadow: 0 4px 0 $focus-colour-dark;
     }
   }
+
+  &:hover {
+    opacity: 80%;
+  }
 }
