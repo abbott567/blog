@@ -17,6 +17,10 @@ blockquote {
 
 img {
   opacity: 100%;
+  border-color: $border-colour-light;
+  @media (prefers-color-scheme: dark) {
+    border-color: $border-colour-dark;
+  }
 }
 
 pre:focus {

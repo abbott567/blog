@@ -35,6 +35,15 @@ img {
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  border-width: 1px;
+  border-style: solid;
+}
+
+ol {
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 li {

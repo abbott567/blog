@@ -8,6 +8,7 @@ body[data-theme="light"] {
   
   img {
     opacity: 100%;
+    border-color: $border-colour-light;
   }
 
   pre:focus {

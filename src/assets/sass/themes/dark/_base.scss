@@ -8,6 +8,7 @@ body[data-theme="dark"] {
 
   img {
     opacity: 75%;
+    border-color: $border-colour-dark;
   }
 
   pre:focus {
