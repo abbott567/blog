@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
 
-* {
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-}
-
 html {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 1em;
 }
 
@@ -40,13 +37,8 @@ a {
 }
 
 code {
-  font-size: 1.2rem;
-  line-height: 1.4rem;  
-}
-p > code {
-  font-size: 1.5rem;
-  padding-left: .3rem;
-  padding-right: .3rem;
+  font-family: monospace, monospace;
+  font-size: 1rem;
 }
 
 .heading-xlarge {

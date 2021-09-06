@@ -1,7 +1,8 @@
 body[data-theme="light"] {
   .page-footer {
-    border-top-color: $border-colour-light;
-    
+    .support-links {
+      border-top-color: $border-colour-light;
+    }
     a {
       &:visited {
         color: $link-colour-light;

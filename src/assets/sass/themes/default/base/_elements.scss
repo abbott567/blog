@@ -23,12 +23,12 @@ img {
   }
 }
 
-pre:focus {
-  border-color: $focus-colour-light;
-  outline-color: $focus-background-light;
+code:focus {
+  box-shadow: 0px 0px 0px 5px $focus-background-light;
+  outline-color: $focus-colour-light;
   @media (prefers-color-scheme: dark) {
-    border-color: $focus-colour-dark;
-    outline-color: $focus-background-dark;
+    box-shadow: 0px 0px 0px 5px $focus-background-dark;
+    outline-color: $focus-colour-dark;
   }
 }
 

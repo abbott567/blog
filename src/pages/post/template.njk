@@ -11,14 +11,15 @@
   </aside>
 </div>
 
-<main class="container" id="main" role="main">
+<main class="container" id="main" role="main" tabindex="-1">
   <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
         {{post.title}}
       </h1>
       
-      {% markdown 'posts/' + post.slug + '/post.md' %}
+      {%- set mdcontent -%}{%- include 'posts/' + post.slug + '/post.md' -%}{%- endset -%}
+      {{mdcontent|markdown|safe}}
 
   </div>
 </main>

@@ -6,7 +6,7 @@ const got = require('got')
 module.exports = () => {
   describe('Render article page', () => {
     it('will get a 200 response', async () => {
-      const results = await got('http://localhost:8080/own-your-alpha')
+      const results = await got('http://localhost:8080/talks')
       expect(results.statusCode).to.eql(200)
     })
   })

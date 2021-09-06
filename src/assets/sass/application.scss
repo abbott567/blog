@@ -1,16 +1,7 @@
-// Non-colour settings for elements and components
-@import './common/all';
+// Main CSS
+@import 'main';
 
-// Load colour variables
-@import './themes/dark/!colours';
-@import './themes/light/!colours';
-
-// Default theme auto/light dark mode
-@import './themes/default/all-elements';
-
-// JS Overrides for dark/light themes
-@import './themes/dark/all-elements';
-@import './themes/light/all-elements';
-
-// Highlight.js theme
-@import '../../../node_modules/highlight.js/scss/vs2015.scss';
+// Themes
+@import 'themes/dark/dark.scss';
+@import 'themes/light/light.scss';
+@import 'themes/default/default.scss';

@@ -1,11 +1,16 @@
 .page-footer {
   width: 100%;
-  max-width: 630px;
+  max-width: 720px;
   margin: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
-  border-top-width: 3px;
-  border-top-style: solid;
-
+  .support-links {
+    padding-top: 1em;
+    border-top-width: 3px;
+    border-top-style: solid;
+  }
+  
   .project-links li {
     font-size: .75rem;
     line-height: 1rem;

@@ -11,9 +11,9 @@ body[data-theme="dark"] {
     border-color: $border-colour-dark;
   }
 
-  pre:focus {
-    border-color: $focus-colour-dark;
-    outline-color: $focus-background-dark;
+  code:focus {
+    box-shadow: 0px 0px 0px 5px $focus-background-dark;
+    outline-color: $focus-colour-dark;
   }
 
   p > code {

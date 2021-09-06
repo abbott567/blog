@@ -1,8 +1,8 @@
 'use strict'
 
 const posts = require('../../posts/_config.json')
-const readingTime = require('../../helpers/reading-time')
-const requirePostAsString = require('../../helpers/require-md')
+const readingTime = require('../../lib/reading-time')
+const requirePostAsString = require('../../lib/require-md')
 
 const template = 'pages/post/template.njk'
 

@@ -17,15 +17,18 @@ body {
   margin: 0;
 }
 
-pre {
-  width: 100%;
-  overflow: scroll;
-  &:focus {
-    border-width: 3px;
-    border-style: solid;
-    outline-width: 3px;
-    outline-style: solid;
-  }
+pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  border: 1px dashed;
+}
+code:focus {
+  outline: 4px solid;
+  outline-offset: 4px;
+}
+p > code {
+  padding: 0 .5em;;
 }
 
 img {
