@@ -7,7 +7,7 @@
     <h1 class="heading-xlarge">Sitemap</h1>
 
     <h2>Pages</h2>
-    <ul>
+    <ul class="list list--bullet">
       <li><a href="/">Home</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/talks">Talks</a></li>
@@ -17,7 +17,7 @@
     </ul>
 
     <h2>Blog posts</h2>
-    <ul>
+    <ul class="list list--bullet">
       {% for post in posts %}
         <li><a href="/blog/{{post.slug}}">{{post.title}}</a></li>
       {% endfor %}

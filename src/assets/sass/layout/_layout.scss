@@ -33,7 +33,11 @@
   }
 }
 
-.list-no-bullets {
+ul {
   padding-left: 0;
   list-style: none;
+}
+.list--bullet {
+  padding-left: 1em;
+  list-style: disc;
 }
