@@ -6,11 +6,6 @@ body[data-theme="dark"] {
     border-color: $border-colour-dark;
   }
 
-  img {
-    opacity: 75%;
-    border-color: $border-colour-dark;
-  }
-
   code:focus {
     box-shadow: 0px 0px 0px 5px $focus-background-dark;
     outline-color: $focus-colour-dark;
@@ -18,5 +13,12 @@ body[data-theme="dark"] {
 
   p > code {
     color: $inline-code-colour-dark;
+  }
+}
+
+main {
+  img {
+    opacity: 75%;
+    border-color: $border-colour-dark;
   }
 }
