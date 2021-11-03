@@ -14,12 +14,14 @@
 <main class="container" id="main" role="main" tabindex="-1">
   <div class="column-two-thirds">
 
+    <article>
       <h1 class="heading-xlarge">
         {{post.title}}
       </h1>
       
       {%- set mdcontent -%}{%- include 'posts/' + post.slug + '/post.md' -%}{%- endset -%}
       {{mdcontent|markdown|safe}}
+    </article>
 
   </div>
 </main>

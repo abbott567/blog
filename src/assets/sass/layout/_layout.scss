@@ -33,11 +33,30 @@
   }
 }
 
-ul {
+ul, ol {
   padding-left: 0;
+  margin-left: 0;
   list-style: none;
 }
-.list--bullet {
-  padding-left: 1em;
-  list-style: disc;
+
+.list--bullet,
+article ul {
+  li {
+    list-style: disc;
+    list-style-position: inside; 
+  }
+}
+
+.list--number,
+article ol {
+  li {
+    list-style: decimal;
+    list-style-position: inside; 
+
+    &::before {
+      content: '';
+      width: .75em;
+      display: inline-block;
+    }
+  }
 }
