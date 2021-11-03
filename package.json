@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-    "node": "12.13.1"
+    "node": "14.18.0"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
