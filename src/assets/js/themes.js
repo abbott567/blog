@@ -94,7 +94,7 @@ function addThemeToggle () {
   const currentTheme = document.querySelector('body').getAttribute('data-theme')
   const otherTheme = currentTheme === 'dark' ? 'light' : 'dark'
   const buttonText = 'Activate ' + capitalize(otherTheme) + ' theme'
-  const buttonHTML = '<div class="theme-toggle-container"><button id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
+  const buttonHTML = '<div class="theme-toggle-container"><button type="button" id="theme-toggle" class="theme-toggle">' + buttonText + '</button></div>'
   header.innerHTML = header.innerHTML + buttonHTML
   // Add event listener for click
   document.getElementById('theme-toggle').addEventListener('click', function () {
