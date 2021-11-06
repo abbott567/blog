@@ -1,7 +1,10 @@
 {% extends '../../common/layout.njk' %}
 
-{% block content %}
+{%- block metaDescription -%}
+  {%- include 'posts/' + post.slug + '/meta-description.txt' -%}
+{%- endblock -%}
 
+{% block content %}
 <div class="container">
   <aside class="article-info">
     <dl>
