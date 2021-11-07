@@ -7,7 +7,7 @@ gulp.task('move:images', () => {
 })
 
 gulp.task('move:robots', () => {
-  return gulp.src('./src/assets/robots.txt')
+  return gulp.src('./src/assets/Robots.txt')
     .pipe(gulp.dest('./public'))
 })
 
