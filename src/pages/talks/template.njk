@@ -1,8 +1,8 @@
 {% extends '../../common/layout.njk' %}
 
-{%- block metaDescription -%}
-  A list of talks I've delivered. Includes a summary of the event and the dates it was delivered.
-{%- endblock -%}
+{%- set metaDescription -%}
+  {%- include './meta-description.txt' -%}
+{%- endset -%}
 
 {% block content %}
 <main class="container" id="main" role="main" tabindex="-1">

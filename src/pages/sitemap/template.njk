@@ -1,8 +1,8 @@
 {% extends '../../common/layout.njk' %}
 
-{%- block metaDescription -%}
-  Sitemap for craigabbott.co.uk. View all pages and blog posts in one place.
-{%- endblock -%}
+{%- set metaDescription -%}
+  {%- include './meta-description.txt' -%}
+{%- endset -%}
 
 {% block content %}
 <main class="container" id="main" role="main" tabindex="-1">

@@ -1,8 +1,8 @@
 {% extends '../../common/layout.njk' %}
 
-{%- block metaDescription -%}
-  Projects I am proud of and things I am working on. 
-{%- endblock -%}
+{%- set metaDescription -%}
+  {%- include './meta-description.txt' -%}
+{%- endset -%}
 
 {% block content %}
 <main class="container" id="main" role="main" tabindex="-1">

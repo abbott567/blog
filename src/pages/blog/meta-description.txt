@@ -1,0 +1,1 @@
+This is my personal blog. Topics cover Accessibility, UX Design and Frontend Development.
