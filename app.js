@@ -5,6 +5,10 @@ const express = require('express')
 // Application
 const app = express()
 
+// Force https in production
+const useHttpsInProd = require('./src/lib/use-https-in-production')
+useHttpsInProd(app)
+
 // Markdown
 const markdown = require('./src/lib/markdown')
 markdown.setup()
