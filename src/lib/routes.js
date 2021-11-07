@@ -1,11 +1,6 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/robots.txt', function (req, res) {
-  res.type('text/plain')
-  res.send('User-agent: *\nDisallow: \nSitemap: /sitemap')
-})
-
 router.use('', require('../pages/home'))
 router.use('/', require('../pages/redirects'))
 router.use('/accessibility', require('../pages/accessibility'))
