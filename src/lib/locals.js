@@ -1,5 +1,8 @@
 function locals (req, res, next) {
-  res.locals.appName = 'craigabbott.co.uk'
+  const appURL = 'craigabbott.co.uk'
+  res.locals.appName = appURL
+  res.locals.appURL = appURL
+  res.locals.canonical = 'http://www.' + appURL + req.originalUrl
   res.locals.environment = process.env.NODE_ENV
   next()
 }
