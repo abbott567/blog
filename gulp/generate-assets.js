@@ -1,6 +1,5 @@
-'use-strict'
-
 const gulp = require('gulp')
+require('./generate-xml-sitemap')
 
 gulp.task('move:images', () => {
   return gulp.src('./src/assets/images/**.*')
@@ -12,7 +11,8 @@ gulp.task('move:robots', () => {
     .pipe(gulp.dest('./public'))
 })
 
-gulp.task('move-assets', gulp.parallel([
+gulp.task('generate-assets', gulp.parallel([
   'move:images',
-  'move:robots'
+  'move:robots',
+  'generate:sitemap'
 ]))

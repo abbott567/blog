@@ -11,12 +11,9 @@
 
     <h2>Pages</h2>
     <ul class="list list--bullet">
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/talks">Talks</a></li>
-      <li><a href="/work">Work</a></li>
-      <li><a href="/privacy">Privacy</a></li>
-      <li><a href="/sitemap">Sitemap</a></li>
+      {% for page in pages %}
+        <li><a href="{{page.slug}}">{{page.title}}</a></li>
+      {% endfor %}
     </ul>
 
     <h2>Blog posts</h2>
