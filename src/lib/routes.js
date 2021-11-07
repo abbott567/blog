@@ -2,7 +2,8 @@ const express = require('express')
 const router = express.Router({ caseSensitive: true })
 
 router.get('/robots.txt', (req, res) => {
-  res.redirect('/Robots.txt')
+  res.type('text/plain')
+  res.send('Sitemap: /sitemap.xml\nUser-agent: *\nDisallow: ')
 })
 router.get('/Robots.txt', (req, res) => {
   res.type('text/plain')
