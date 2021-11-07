@@ -1,5 +1,13 @@
 const express = require('express')
-const router = express.Router()
+const router = express.Router({ caseSensitive: true })
+
+router.get('/robots.txt', (req, res) => {
+  res.redirect('/Robots.txt')
+})
+router.get('/Robots.txt', (req, res) => {
+  res.type('text/plain')
+  res.send('Sitemap: /sitemap.xml\nUser-agent: *\nDisallow: ')
+})
 
 router.use('', require('../pages/home'))
 router.use('/', require('../pages/redirects'))
