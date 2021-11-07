@@ -3,11 +3,11 @@ const router = express.Router({ caseSensitive: true })
 
 router.get('/robots.txt', (req, res) => {
   res.type('text/plain')
-  res.send('Sitemap: /sitemap.xml\nUser-agent: *\nDisallow: ')
+  res.send('Sitemap: https://www.craigabbott.co.uk/sitemap.xml\nUser-agent: *\nDisallow: ')
 })
 router.get('/Robots.txt', (req, res) => {
   res.type('text/plain')
-  res.send('Sitemap: /sitemap.xml\nUser-agent: *\nDisallow: ')
+  res.send('Sitemap: https://www.craigabbott.co.uk/sitemap.xml\nUser-agent: *\nDisallow: ')
 })
 
 router.use('', require('../pages/home'))
