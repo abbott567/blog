@@ -27,12 +27,14 @@ function setDefaultTheme () {
       // Supported
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // Dark mode is preferred
+        toggleMeta('dark')
         appendCurrentThemeText('dark')
         return body.setAttribute('data-theme', 'dark')
       }
     }
     // If all else fails, set the theme to light
     appendCurrentThemeText('light')
+    toggleMeta('light')
     body.setAttribute('data-theme', 'light')
   }
 }
@@ -74,6 +76,7 @@ function changeTheme () {
   const currentTheme = body.getAttribute('data-theme')
   if (currentTheme === 'light') {
     window.localStorage.setItem('theme', 'dark')
+    toggleMeta('dark')
     toggleLogo('dark')
     toggleButtonText('dark')
     toggleCurrentThemeText('dark')
@@ -81,6 +84,7 @@ function changeTheme () {
   }
   if (currentTheme === 'dark') {
     window.localStorage.setItem('theme', 'light')
+    toggleMeta('light')
     toggleLogo('light')
     toggleButtonText('light')
     toggleCurrentThemeText('light')
@@ -100,6 +104,16 @@ function addThemeToggle () {
   document.getElementById('theme-toggle').addEventListener('click', function () {
     changeTheme()
   })
+}
+
+function toggleMeta (theme) {
+  const metatag = document.querySelectorAll('meta[name=theme-color]')[0]
+  if (theme === 'dark') {
+    metatag.setAttribute('content', '#222222')
+  }
+  if (theme === 'light') {
+    metatag.setAttribute('content', '#f9f9f9')
+  }
 }
 
 // Document ready
