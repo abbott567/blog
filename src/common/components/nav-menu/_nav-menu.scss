@@ -6,19 +6,23 @@
   ul {
     padding: 0;
     margin-bottom: 0;
-  }
-  li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 1em;
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 1rem;
+    }
+    :last-child {
+      margin-right: 0;
+    }
   }
   a {
     font-weight: bold;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 400px) {
   .nav-menu {
-    font-size: .8rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }

@@ -1,5 +1,7 @@
 .theme-toggle-container {
   text-align: right;
+  margin: 0;
+  padding: 0;
 
   .theme-toggle {
     display: inline-block;
@@ -19,10 +21,6 @@
     
     &:focus {
       outline: 3px solid transparent
-    }
-
-    @media (max-width: 380px) {
-      padding: 5px;
     }
   }
 
