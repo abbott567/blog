@@ -60,3 +60,35 @@ article ol {
     }
   }
 }
+
+.rss-feed {
+  padding: 5px;
+  display: inline-block;
+  span {
+    position: absolute;
+    top: auto;
+    left: -9999rem;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  &:focus {
+    span {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+  }
+  img {
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+  
