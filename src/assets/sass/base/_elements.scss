@@ -11,6 +11,9 @@ main {
   margin: auto;
   padding-bottom: 3rem;
   display: block;
+  &:focus {
+   outline: 0; 
+  }
 }
 
 body {
