@@ -1,5 +1,9 @@
 {% extends '../../common/layout.njk' %}
 
+{% block headEnd %}
+  <link rel=”alternate” type=”application/rss+xml” href=”https://www.yoursite/feed.xml” title=”Your title”>
+{% endblock %}
+
 {%- set metaDescription -%}
   {%- include './meta-description.txt' -%}
 {%- endset -%}
@@ -7,7 +11,12 @@
 {% block content %}
 <main class="container" id="main" role="main" tabindex="-1">
   <div class="column-two-thirds">
-    <h1 class="heading-xlarge">Blog {% if page > 1 %}- page {{page}}{% endif %}</h1>
+    <h1 class="heading-xlarge margin-bottom-1">Blog {% if page > 1 %}- page {{page}}{% endif %}</h1>
+    
+    <a class="rss-feed" href="/feed.xml">
+      <img src="/images/rss-icon.svg" alt="" />
+      <span>RSS feed</span>
+    </a>
 
     {% for post in posts %}
       <article class="section">
