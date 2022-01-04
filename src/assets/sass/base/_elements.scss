@@ -23,7 +23,7 @@ body {
 pre code {
   display: block;
   overflow-x: auto;
-  padding: 1em;
+  padding: 1rem;
   border: 1px dashed;
 }
 code:focus {
@@ -31,7 +31,7 @@ code:focus {
   outline-offset: 4px;
 }
 p > code {
-  padding: 0 .5em;;
+  padding: 0 .25rem;;
 }
 
 img {

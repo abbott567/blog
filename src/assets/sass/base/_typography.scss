@@ -2,18 +2,17 @@
 
 html {
   font-family: 'Atkinson Hyperlegible', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 body {
   font-size: 1.1875rem;
   line-height: 1.31579;
-
 }
 
 p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +37,11 @@ a {
 
 code {
   font-family: monospace, monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+pre code {
+  font-size: .9rem;
 }
 
 .heading-xlarge {
