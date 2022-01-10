@@ -126,7 +126,7 @@ I ended up getting counselling through an incredible organisation called [North 
 
 [Anxious Minds](https://www.anxiousminds.co.uk/) is another North East mental health service which can offer reduced price counselling.
 
-For my ADHD diagnosis, through the NHS, I would have been looking at around at least 15 to 24 months at least. Because it's a lengthy and expensive process, there seems to be a greater desire just to write prescriptions to treat those comorbid conditions like anxiety and depression. So, I often came away from the GP meetings with anti-depressants and anti-anxiety medications, rather than the answers I needed.
+For my ADHD diagnosis, through the NHS, I would have been looking at around 15 to 24 months at least. Because it's a lengthy and expensive process, there seems to be a greater desire just to write prescriptions to treat those comorbid conditions like anxiety and depression. So, I often came away from the GP meetings with anti-depressants and anti-anxiety medications, rather than the answers I needed.
 
 I got my ADHD diagnosis through an organisation called [Psychiatry UK](https://psychiatry-uk.com/). But, unfortunately, it looks like at this time they don't have any appointments available until October 2022. This again highlights the overwhelming need for more mental health services in the UK.
 
