@@ -22,4 +22,8 @@ body[data-theme="dark"] {
       box-shadow: 0 -2px $focus-background-dark, 0 4px $focus-colour-dark;
     }
   }
+
+  p > code {
+    font-weight: 700;
+  }
 }

@@ -10,10 +10,6 @@ body[data-theme="dark"] {
     box-shadow: 0px 0px 0px 5px $focus-background-dark;
     outline-color: $focus-colour-dark;
   }
-
-  p > code {
-    color: $inline-code-colour-dark;
-  }
 }
 
 main {

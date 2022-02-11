@@ -16,9 +16,5 @@ body[data-theme="light"] {
     outline-color: $focus-colour-light;
   }
 
-  p > code {
-    color: $inline-code-colour-light;
-  }
-
   @import '../../../node_modules/highlight.js/scss/a11y-light.scss';
 }
