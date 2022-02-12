@@ -65,7 +65,7 @@ The [idiomatic text element](https://developer.mozilla.org/en-US/docs/Web/HTML/E
 
 In HTML5, the idiomatic text element should be used for text which is different in some way to the surrounding text. This can be an alternative voice or mood, technical terms, thoughts or inner monologues and terms from other languages.
 
-You should use an idiomatic text elements rather than a [span element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span). Some screen readers will ignore the lang attribute on because a span does not inherently represent anything. They are the inline equivalent of `<div>` elements and should only be used for styling.
+You should use an idiomatic text elements rather than a [span element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span). Some screen readers will ignore the lang attribute on spans because they do not inherently represent anything. They are the inline equivalent of `<div>` elements and should only be used for styling.
 
 ## A complex real world example
 
