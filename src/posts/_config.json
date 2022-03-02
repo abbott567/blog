@@ -1,5 +1,13 @@
 [
   {
+    "title": "Partially supported is not supported",
+    "slug": "partially-supported-is-not-supported",
+    "createdAt": "2022-03-02T00:00:00.00Z",
+    "categories": [
+      "accessibility"
+    ]
+  },
+  {
     "title": "Using the language attribute to make your website accessible",
     "slug": "using-the-language-attribute-to-make-your-website-accessible",
     "createdAt": "2022-02-11T00:00:00.00Z",

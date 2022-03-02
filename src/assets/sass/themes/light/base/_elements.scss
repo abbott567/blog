@@ -17,4 +17,16 @@ body[data-theme="light"] {
   }
 
   @import '../../../node_modules/highlight.js/scss/a11y-light.scss';
+  
+  table {
+    thead {
+      tr {
+        background-color: $table-head-light;
+      }
+    }
+    tbody tr {
+      border-color: $border-colour-light;
+    }
+  }
 }
+

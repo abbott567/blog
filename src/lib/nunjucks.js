@@ -1,4 +1,5 @@
 const nunjucks = require('nunjucks')
+const wcagify = require('wcagify')
 const markdown = require('./markdown')
 const path = require('path')
 const { format } = require('date-fns')
@@ -24,7 +25,7 @@ function setup (app) {
     const date = new Date(timestamp)
     return format(date, 'd MMMM yyyy')
   })
-
+  nunjucksEnvironment.addFilter('wcagify', wcagify)
   nunjucksEnvironment.addFilter('readTime', post => {
     const text = requirePostAsString(post)
     return readingTime(text)

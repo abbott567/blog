@@ -18,3 +18,14 @@ main {
     border-color: $border-colour-dark;
   }
 }
+
+table {
+  thead {
+    tr {
+      background-color: $table-head-dark;
+    }
+  }
+  tbody tr {
+    border-color: $border-colour-dark;
+  }
+}

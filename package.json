@@ -29,7 +29,8 @@
     "require-dir": "^1.2.0",
     "sass": "^1.47.0",
     "serve-favicon": "^2.5.0",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.5",
+    "wcagify": "^1.4.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",
