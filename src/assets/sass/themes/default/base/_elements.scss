@@ -49,8 +49,10 @@ table {
   thead {
     tr {
       background-color: $table-head-light;
+      color: $body-text-light;
       @media (prefers-color-scheme: dark) {
         background-color: $table-head-dark;
+        color: $body-text-dark;
       }
       text-align: left;
     }
