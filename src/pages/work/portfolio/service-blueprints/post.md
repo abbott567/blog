@@ -88,9 +88,9 @@ The next image shows documented rows of data and how they correspond to both the
 
 For example:
 
-1. The common descriptor is what it is commonly called when we refer to it in the team and in the organisation. For the invite code it's just 'Invite code'.
+1. The common descriptor is just how we refer to it in the team and in the organisation. For the invite code it's just 'Invite code'.
 2. The blueprint reference tells us the data is referenced in cell D48 in the visual blueprint. This allows us to easily find corresponding actions and user needs related to it.
-3. Relational fields show the database id or api keys you need to read to get the value. In this example, the invite code corresponds to `INVITE_CODE` in the database schema.
+3. Relational fields show the database id or API keys you need to read to get the value. In this example, the invite code corresponds to `INVITE_CODE` in the database schema.
 4. The source is where the data originates. In this case the invite code is created when an invite letter is sent to a claimant.
 5. The data type is literally just the type of the data you can expect to have to validate. For the invite code it is a string.
 6. The interaction type is what the user will need to do with the data. For the invite code, the user will enter it into an input on the digital service.

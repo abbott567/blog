@@ -10,8 +10,8 @@ Across DWP Digital, a lot of people were designing similar solutions to solve id
 
 For example. We had a simple user story such as:
 > **As a** member of staff who processes benefits, 
-> **I want to** be confident Im looking at the right claim, 
-> **So that** my advice is accurate any amendments I make are correct.
+> **I want to** be confident I'm looking at the right claim, 
+> **So that** my advice is accurate and any amendments I make are correct.
 
 Designers would go through the process, and inevitably design a solution which worked. But, like the [Tenrec of Madagascar](https://blog.rsb.org.uk/species-of-the-week-tenrecs), the evolution of the design was done in isolation and just happened to be *very* similar to other designs which worked.
 
@@ -21,14 +21,18 @@ Designers would go through the process, and inevitably design a solution which w
 
 There was no [DWP Design System](https://design-system.dwp.gov.uk) or [GOV.UK Design System](https://design-system.service.gov.uk) at the time. The terminology was not as widespread as it is now, so designers often struggled to understand the difference between a pattern and a component.
 
-[GOV.UK Elements](https://govuk-elements.herokuapp.com) *did* exist. But it was just a collection of HTML Elements, not consumable components or patterns. There was no patterns listed anywhere at the time for internal systems.
+[GOV.UK Elements](https://govuk-elements.herokuapp.com) *did* exist. But it was just a collection of HTML Elements, not consumable components or patterns. There were no patterns listed anywhere at the time for internal systems.
 
 ![A screenshot of the landing page of GOV.UK Elements.](/images/work/design-patterns-govuk-elements.jpg)
 
 
 ## Task
 
-Consolidate existing designs and prevent design silos forming again in future. Build a library of re-usable design elements that would help designers working on internal systems in DWP, and build a strong community where designers are open to showing their work regularly and collaborating with others.
+Consolidate existing designs and prevent design silos forming again in future. 
+
+Build a library of re-usable design elements that help designers working on internal systems in DWP.
+
+Build a strong community where designers are open to showing their work regularly and collaborating with others.
 
 ## Action
 
@@ -38,7 +42,7 @@ We needed designers to work together in a unified way, but we quickly realised t
 
 We changed the language (temporarily) around patterns and components, and just started calling them 'Design Examples'. It didn’t really matter whether it was labelled as a pattern or a component. That was a technical detail for later. 
 
-What mattered is that designers understood the design intent and could re-use it easily. When I started calling them “Design Examples meet-ups” attendance jumped by 340%.
+What mattered was that designers understood the design intent and could re-use it easily. When I started calling them “Design Examples meet-ups” attendance jumped by 340%.
 
 ![A group of 10 designers sat around a table waving at the camera.](/images/work/design-patterns-workshop-1.jpg)
 

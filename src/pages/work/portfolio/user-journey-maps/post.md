@@ -24,7 +24,7 @@ It needed to be anonymous, but not feel disconnected. It needed to still invoke 
 
 ### Personas
 
-I created overview personas for each job role. These weren't personal, but included things like what they do on a day to day bases, how many of these roles are in a team etc.
+I created overview personas for each job role. These weren't personal, but included examples of what they do on a day to day bases, how many of these roles are in a team etc.
 
 #### Example: A Workflow Manager
 
@@ -61,7 +61,7 @@ For example:
 
 ### Tasks or themes
 
-If a task has more than one step or action then you can group them to help people understand what it is the user was doing at the time.
+If a task has more than one step or action, then you can group them to help people understand what it is the user was doing at the time.
 
 ![A title spanning multiple columns, grouping the first two actions under a category titled: Quality Check, cut and paste relevant files.](/images/work/user-journey-map-tasks.jpg)
 

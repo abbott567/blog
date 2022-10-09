@@ -9,7 +9,7 @@ Fixing accessibility problems in the design is:
 - 10x cheaper than in Test
 - 30x cheaper than in Production
 
-Teams were missing simple opportunities to embed accessibility work easier in the process. It was clear that teams needed more feedback than was currently available.
+Teams were missing simple opportunities to embed accessibility work in the process. It was clear that teams needed more feedback than was currently available.
 
 Accessibility specialists are rare. So we needed to be more generous with the ones we did have available.
 

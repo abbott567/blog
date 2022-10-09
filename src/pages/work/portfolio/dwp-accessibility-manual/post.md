@@ -44,7 +44,7 @@ I initially started building an application using the [GOV.UK Prototype Kit](htt
 
 Because the Prototype Kit uses vanilla HTML and [Nunjucks](https://mozilla.github.io/nunjucks/), it is also more difficult for people to contribute to.
 
-So, I started again with a fork of the [GOV.UK Design System](https://design-system.service.gov.uk/). This was I was able to utilise all the hard work already done across Government and quickly start to build out an app structured for documentation using Markdown as the primary format.
+So, I started again with a fork of the [GOV.UK Design System](https://design-system.service.gov.uk/). I was able to utilise all the hard work already done across Government and quickly start to build out an app structured for documentation using Markdown as the primary format.
 
 ![The Accessibility Manual open in Visual Studio Code. It shows the content to explain labels or instructions to an Interaction Designer, but it is written in Markdown format.](/images/work/dwp-accessibility-manual-markdown.jpg)
 

@@ -34,7 +34,7 @@ If they made a change to a style, pattern or component then I would make changes
 
 Each component was mapped to the same examples featured in GOV.UK Elements so that it felt familiar and could be cross referenced easily.
 
-There was examples for both desktop and mobile screens.
+There were examples for both desktop and mobile screens.
 
 ![A screenshot of version 1 of the GOV.UK Wireframing Kit for Sketch. It shows a collection of elements such as inputs and radios. They are scaled for desktop screens.](/images/work/wireframing-kit-v1-desktop.jpg)
 
