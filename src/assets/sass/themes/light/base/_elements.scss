@@ -16,7 +16,7 @@ body[data-theme="light"] {
     outline-color: $focus-colour-light;
   }
 
-  @import '../../../node_modules/highlight.js/scss/a11y-light.scss';
+  @import '../../../node_modules/highlight.js/scss/a11y-light';
   
   table {
     thead {
