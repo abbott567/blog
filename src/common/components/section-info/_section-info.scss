@@ -1,18 +1,12 @@
-.article-info__text {
-  display: block;
-  font-size: 1rem;
+dl.article-info {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.article-info dd {
-  display: inline;
-  margin: 0;
-}
-.article-info dd:after{
-  display: block;
-  content: '';
-}
-.article-info dt{
+dt.article-info__text {
+  width: 33%;
   font-weight: 700;
-  display: inline-block;
-  min-width: 8rem;
+}
+dd.article-info__text {
+  margin-left: auto;
+  width: 66%;
 }

@@ -15,6 +15,7 @@
     "date-fns": "^2.28.0",
     "debug": "^4.3.3",
     "express": "^4.17.2",
+    "fs-jetpack": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-nodemon": "^2.5.0",

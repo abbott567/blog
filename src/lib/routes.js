@@ -19,5 +19,6 @@ router.use('/privacy', require('../pages/privacy'))
 router.use('/sitemap', require('../pages/sitemap'))
 router.use('/talks', require('../pages/talks'))
 router.use('/work', require('../pages/work'))
+router.use('/work/:item', require('../pages/work'))
 
 module.exports = router

@@ -1,0 +1,23 @@
+{% extends '../../common/layout.njk' %}
+
+{% set title = 'Work: ' + config.title %}
+
+{%- set metaDescription -%}
+  {%- include './meta-description.txt' -%}
+{%- endset -%}
+
+{% block content %}
+<main class="container" id="main" role="main" tabindex="-1">
+  <div class="column-two-thirds">
+      <h1>
+        <span class="heading-caption">Work</span><span class="visually-hidden">: </span>
+        {{config.title}}
+      </h1>
+      <div class="md">
+        {%- set mdcontent -%}{%- include 'pages/work/portfolio/' + config.slug + '/post.md' -%}{%- endset -%}
+        {{mdcontent|markdown|safe}}
+      </div>
+  </div>
+</main>
+
+{% endblock %}

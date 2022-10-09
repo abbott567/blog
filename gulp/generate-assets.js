@@ -3,7 +3,7 @@ require('./generate-xml-sitemap')
 require('./generate-xml-feed')
 
 gulp.task('copy:images', () => {
-  return gulp.src('./src/assets/images/**.*')
+  return gulp.src('./src/assets/images/**/*.*')
     .pipe(gulp.dest('./public/images'))
 })
 

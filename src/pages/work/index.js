@@ -3,8 +3,9 @@
 const express = require('express')
 
 const router = new express.Router()
-const { get } = require('./functions')
+const { getPortfolio, getPieceOfWork } = require('./functions')
 
-router.get('/', get)
+router.get('/', getPortfolio)
+router.get('/:workURL', getPieceOfWork)
 
 module.exports = router
