@@ -2,11 +2,8 @@
 
 function sortByDate (posts) {
   return posts.sort((a, b) => {
-    if (a.createdAt > b.createdAt) {
-      return 1
-    } else if (a.createdAt < b.createdAt) {
-      return -1
-    }
+    if (a.createdAt > b.createdAt) return 1
+    else if (a.createdAt < b.createdAt) return -1
     return 0
   }).reverse()
 }
