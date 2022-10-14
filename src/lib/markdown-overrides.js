@@ -91,4 +91,11 @@ function paragraph (renderer) {
   }
 }
 
-module.exports = { code, heading, paragraph }
+function list (renderer) {
+  renderer.list = function (body, ordered, start) {
+    if (ordered) return `<ol class="list list--numbered">${body}</ol>`
+    return `<ul class="list list--bullet">${body}</ul>`
+  }
+}
+
+module.exports = { code, heading, paragraph, list }
