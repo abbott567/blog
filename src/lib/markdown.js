@@ -11,6 +11,7 @@ function setup () {
   overrides.code(renderer)
   overrides.heading(renderer)
   overrides.paragraph(renderer)
+  overrides.list(renderer)
 
   // Set render options
   marked.setOptions({
