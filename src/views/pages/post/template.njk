@@ -1,4 +1,4 @@
-{% extends '../../common/layout.njk' %}
+{% extends 'layouts/base.njk' %}
 
 {%- set metaDescription -%}
   {%- include 'posts/' + post.slug + '/meta-description.txt' -%}
@@ -9,7 +9,7 @@
   <aside class="article-info">
     <dl class="article-info">
       <dt class="article-info__text">Published:</dt><dd class="article-info__text">{{post.createdAt|formatDate}}</dd>
-      <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{readTime}}</dd>
+      <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{post.readTime}}</dd>
     </dl>
   </aside>
 </div>
@@ -18,7 +18,7 @@
   <div class="column-two-thirds">
 
     <article>  
-      {{content|markdown|safe}}
+      {{post.content|markdown|safe}}
     </article>
 
   </div>

@@ -1,6 +1,8 @@
 'use strict'
 
-function readingTime (text) {
+const fs = require('fs-jetpack')
+
+function forText (text) {
   const wordsPerMinute = 260
   const noOfWords = text.split(/\s/g).length
   const minutes = noOfWords / wordsPerMinute
@@ -8,4 +10,13 @@ function readingTime (text) {
   return `${readTime} minutes`
 }
 
-module.exports = readingTime
+function forFile (pathToFile) {
+  const text = fs.read(pathToFile)
+  const wordsPerMinute = 260
+  const noOfWords = text.split(/\s/g).length
+  const minutes = noOfWords / wordsPerMinute
+  const readTime = Math.ceil(minutes)
+  return `${readTime} minutes`
+}
+
+module.exports = { forText, forFile }

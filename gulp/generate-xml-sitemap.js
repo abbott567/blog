@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs-jetpack')
 const gulp = require('gulp')
 const pages = require('../src/views/pages/_config')

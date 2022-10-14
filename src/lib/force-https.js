@@ -1,3 +1,5 @@
+'use strict'
+
 function forcehttps (req, res, next) {
   const host = req.headers.host
   let protocol = req.headers['x-forwarded-proto']

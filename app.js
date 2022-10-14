@@ -1,3 +1,5 @@
+'use strict'
+
 // NPM dependencies
 const path = require('path')
 const express = require('express')

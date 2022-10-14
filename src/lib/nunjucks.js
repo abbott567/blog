@@ -1,3 +1,5 @@
+'use strict'
+
 // Configure app to use Nunjucks
 const nunjucks = require('nunjucks')
 function setup (app) {
@@ -9,6 +11,7 @@ function setup (app) {
     path.resolve(),
     path.resolve('src'),
     path.resolve('src', 'views'),
+    path.resolve('src', 'views', 'common'),
     path.resolve('src', 'views', 'pages')
   ]
 
@@ -37,8 +40,15 @@ function setup (app) {
 
   // Add filter for reading time
   const readingTime = require('../lib/reading-time')
-  nunjucksEnvironment.addFilter('readTime', text => {
-    return readingTime(text)
+  nunjucksEnvironment.addFilter('readTimeForText', text => {
+    return readingTime.forText(text)
+  })
+
+  const fs = require('fs-jetpack')
+  nunjucksEnvironment.addFilter('readTimeForFile', pathToFile => {
+    const markdownPath = fs.find('src', { matching: `*${pathToFile}*`, directories: true })[0]
+    if (markdownPath.includes('/posts/')) return readingTime.forFile(`${markdownPath}/post.md`)
+    return readingTime.forFile(markdownPath)
   })
 
   return app

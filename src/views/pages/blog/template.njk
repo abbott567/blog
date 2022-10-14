@@ -1,4 +1,4 @@
-{% extends '../../common/layout.njk' %}
+{% extends 'layouts/base.njk' %}
 
 {%- set metaDescription -%}
   {%- include './meta-description.txt' -%}
@@ -15,8 +15,7 @@
           {{post.title}}
         </h2>
 
-        {%- set mdcontent -%}{%- include 'posts/' + post.slug + '/excerpt.md' -%}{%- endset -%}
-        {{mdcontent|markdown|safe}}
+        {{ renderMarkdownFile('posts/' + post.slug + '/excerpt.md') }}
 
         <a class="read-full-article" href="/blog/{{post.slug}}">
           <span class="visually-hidden">{{post.title}}: </span>
@@ -25,7 +24,7 @@
         <footer>
           <dl class="article-info">
             <dt class="article-info__text">Published:</dt><dd class="article-info__text">{{post.createdAt|formatDate}}</dd>
-            <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{mdcontent|readTime}}</dd>
+            <dt class="article-info__text">Read time:</dt><dd class="article-info__text">{{post.slug|readTimeForFile}}</dd>
           </dl>
         </footer>
       </article>

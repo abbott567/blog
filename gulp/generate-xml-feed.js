@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs-jetpack')
 const datefns = require('date-fns')
 const gulp = require('gulp')

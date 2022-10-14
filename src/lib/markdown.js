@@ -1,3 +1,5 @@
+'use strict'
+
 const marked = require('marked')
 const wcagifyMarked = require('wcagify/markedjs')
 const overrides = require('./markdown-overrides')

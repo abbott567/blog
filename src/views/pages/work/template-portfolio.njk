@@ -1,4 +1,4 @@
-{% extends '../../common/layout.njk' %}
+{% extends 'layouts/base.njk' %}
 
 {%- set metaDescription -%}
   {%- include './meta-description.txt' -%}
@@ -9,160 +9,43 @@
   <div class="column-two-thirds">
 
     <div class="section">
-      <h1 class="heading-xlarge">
-        Work
-      </h1>
-      <p>
-        This is my portfolio and everything in here is my work, but I believe 
-        collaboration is key.
-      </p>
-      <p>
-        I've worked in small start-ups with just 4 people, and I've worked in huge 
-        organisations with close to 96,000 employees.
-      </p>
-      <p>
-        Whatever the size of the organisation, I never work in isolation. 
-        Every piece of work listed here will have had input and 
-        influence from some of the amazing people I've worked with over the years.
-      </p>
+      {{ renderMarkdownFile('pages/work/partials/introduction.md') }}
     </div>
 
     <div class="section">
-      <h2>
-        Contents
-      </h2>
-      <h3>
-        Design Work
-      </h3>
-      <ul class="list list--bullet">
-        <li>
-          <a href="#design-patterns">
-            Design Patterns - Department for Work and Pensions
-          </a>
-        </li>
-        <li>
-          <a href="#govuk-wireframing-kit">
-            GOV.UK Wireframing Kit for Sketch
-          </a>
-        </li>
-        <li>
-          <a href="#service-blueprints">
-            Service Blueprints
-          </a>
-        </li>
-        <li>
-          <a href="#user-journey-maps">
-            User Journey Maps
-          </a>
-        </li>
-      </ul>
-
-      <h3>
-        Accessibility Work
-      </h3>
-      <ul class="list list--bullet">
-        <li>
-          <a href="#dwp-accessibility-manual">
-            DWP Accessibility Manual
-          </a>
-        </li>
-        <li>
-          <a href="#standards-and-strategy">
-            Standards and strategy
-          </a>
-        </li>
-        {# <li>
-          <a href="#accessibility-reporting">
-            Accessibility Reporting
-          </a>
-        </li> #}
-        <li>
-          <a href="#accessibility-clinics">
-            Accessibility Clinics
-          </a>
-        </li>
-        <li>
-          <a href="#wcagify">
-            WCAGify
-          </a>
-        </li>
-      </ul>
+      {{ renderMarkdownFile('pages/work/partials/contents.md') }}
     </div>
     
     <div class="section">
-      <h2 id="design-work">
-        Design work
-      </h2>
-      <p>
-        I've worked in multidisciplinary teams doing agile delivery on individual 
-        services, and across entire portfolios of products.
-      </p>
-      <p>
-        I work with many other people in their roles, including Designers, 
-        Researchers, Developers, Product Managers, Architects, Test Engineers 
-        and Stakeholders, and across various communities in larger organisations.
-      </p>
-      <p>
-        A lot of what I do is about bringing people together and breaking down silos. 
-        I organise and facilitate community meetings, workshops and training 
-        sessions to make sure services are designed consistently and built to 
-        the right standards.
-      </p>
-      <p>
-        Depending on the phase and the scope of a project, I design for the big 
-        picture, or for the detail. 
-      </p>
-      <p>
-        I design interactions, content, visuals, maps and blueprints for products 
-        and services.
-      </p>
-      <p>
-        I was part of the original <a href="https://design-system.service.gov.uk/community/design-system-working-group/">
-        GOV.UK Design System Working Group</a> and reviewed and provided feedback 
-        on dozens of submissions for the <a href="https://design-system.service.gov.uk">
-        GOV.UK Design System</a> against their 
-        <a href="https://design-system.service.gov.uk/community/contribution-criteria/">
-        contribution criteria</a>.
-      </p>
-      <p>
-        I've assessed the design on over 40 services at <a href="https://www.gov.uk/service-manual/service-assessments">
-        GOV.UK Service Assessments</a>, to make sure they are designed correctly 
-        in line with the <a href="https://www.gov.uk/service-manual/service-standard">
-        GOV.UK Service Standard</a>, and that they use common patterns, components 
-        and best practice wherever possible.
-      </p>
+      {{ renderMarkdownFile('pages/work/partials/overview-design-work.md') }}
     </div>
 
     <div class="section">
       <h3 id="design-patterns">
         Design Patterns - Department for Work and Pensions
       </h3>
-      {%- set mdDesignPatterns -%}{%- include 'pages/work/portfolio/design-patterns-dwp/excerpt.md' -%}{%- endset -%}
-      {{mdDesignPatterns|markdown|safe}}
+      {{ renderMarkdownFile('pages/work/portfolio/design-patterns-dwp/excerpt.md') }}
     </div>
 
     <div class="section">
       <h3 id="govuk-wireframing-kit">
         GOV.UK Wireframing Kit for SKetch
       </h3>
-      {%- set mdDesignExamples -%}{%- include 'pages/work/portfolio/govuk-wireframing-kit-for-sketch/excerpt.md' -%}{%- endset -%}
-      {{mdDesignExamples|markdown|safe}}
+      {{ renderMarkdownFile('pages/work/portfolio/govuk-wireframing-kit-for-sketch/excerpt.md') }}
     </div>
     
     <div class="section">
       <h3 id="service-blueprints">
         Service Blueprints
       </h3>
-      {%- set mdServiceBlueprints -%}{%- include 'pages/work/portfolio/service-blueprints/excerpt.md' -%}{%- endset -%}
-      {{mdServiceBlueprints|markdown|safe}}
+      {{ renderMarkdownFile('pages/work/portfolio/service-blueprints/excerpt.md') }}
     </div>
 
     <div class="section">
       <h3 id="user-journey-maps">
         User Journey Maps
       </h3>
-      {%- set mdUserJourneyMaps -%}{%- include 'pages/work/portfolio/user-journey-maps/excerpt.md' -%}{%- endset -%}
-      {{mdUserJourneyMaps|markdown|safe}}
+      {{ renderMarkdownFile('pages/work/portfolio/user-journey-maps/excerpt.md') }}
     </div>
 
     <div class="section">

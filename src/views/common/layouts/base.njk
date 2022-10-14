@@ -1,4 +1,5 @@
 {% set title = (title + ' - ' if title) + appName %}
+{% from 'macros/render-markdown-file.njk' import renderMarkdownFile %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,12 +38,10 @@
   </head>
 
   <body>
-    {% include './components/skip-link/template.njk' %}
-    {% include './components/header/template.njk' %}
-    
+    {% include 'components/skip-link/template.njk' %}
+    {% include 'components/header/template.njk' %}
     {% block content %}{% endblock %}
-    {% include './components/footer/template.njk' %}
-
+    {% include 'components/footer/template.njk' %}
     <script src="/js/application.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+'use strict'
+
 const gulp = require('gulp')
 require('./generate-xml-sitemap')
 require('./generate-xml-feed')

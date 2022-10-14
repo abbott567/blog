@@ -1,3 +1,5 @@
+'use strict'
+
 function locals (req, res, next) {
   const appURL = 'craigabbott.co.uk'
   res.locals.appName = appURL

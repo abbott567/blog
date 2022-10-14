@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = [
   {
     title: 'Partially supported is not supported',

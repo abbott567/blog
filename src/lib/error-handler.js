@@ -1,3 +1,5 @@
+'use strict'
+
 // Error handler
 function errorHandler (err, req, res, next) {
   const dev = process.env.NODE_ENV !== 'production'

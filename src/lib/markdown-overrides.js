@@ -1,3 +1,5 @@
+'use strict'
+
 const slugify = require('slugify')
 
 function code (renderer) {

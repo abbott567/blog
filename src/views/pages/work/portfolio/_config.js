@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = [
   {
     title: 'Design Patterns - Department for Work and Pensions',

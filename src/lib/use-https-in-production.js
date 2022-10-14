@@ -1,3 +1,5 @@
+'use strict'
+
 const forcehttps = require('./force-https')
 
 function useHttpsInProd (app) {
