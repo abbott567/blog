@@ -1,7 +1,7 @@
 const fs = require('fs-jetpack')
 const datefns = require('date-fns')
 const gulp = require('gulp')
-const posts = require('../src/views/posts/_config.json')
+const posts = require('../src/views/posts/_config')
 
 gulp.task('generate:feed', async () => {
   let xml = ''

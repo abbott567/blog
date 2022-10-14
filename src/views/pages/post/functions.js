@@ -1,7 +1,7 @@
 'use strict'
 
 const fs = require('fs-jetpack')
-const posts = require('../../posts/_config.json')
+const posts = require('../../posts/_config')
 const readingTime = require('../../../lib/reading-time')
 
 const page = 'post'

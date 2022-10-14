@@ -3,7 +3,7 @@
 const page = 'blog'
 const template = `src/views/pages/${page}/template.njk`
 const { sortByDate, paginate } = require('../../../lib/sort-posts')
-const allPosts = require('../../posts/_config.json')
+const allPosts = require('../../posts/_config')
 
 function get (req, res, next) {
   sortByDate(allPosts)
