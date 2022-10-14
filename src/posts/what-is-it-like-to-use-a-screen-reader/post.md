@@ -1,3 +1,5 @@
+# What is it like to use a screen reader on an inaccessible website?
+
 You enter the front-door of a building. Somewhere inside is some information you need, but you've no idea where it is.
 
 It's dark. Pitch black, in-fact. You cannot see your hand in front of your face.

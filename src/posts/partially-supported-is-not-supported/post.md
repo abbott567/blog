@@ -1,3 +1,5 @@
+# Partially supported is not supported
+
 I usually like to write helpful blog posts. But I'm going to be honest and warn you up-front that this one is definitely a rant!
 
 That's not to say it won't be helpful, but you will have to deal with my tone. I'm exhausted, I'm disappointed, and quite frankly, I'm angry.

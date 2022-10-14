@@ -1,3 +1,5 @@
+# One-page-applications are not accessible
+
 One-page-applications are on the rise. With them you get funky animations and cool transition effects. Some are a real beauty to behold.
 
 Building them used to be a chore. You needed a lot of [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX) requests and complex call-back functions. You needed to manipulate the [DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) a lot using [Javascript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) or [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery).

@@ -1,3 +1,5 @@
+# Validation for prototypes
+
 On our Slack channel, validation comes up a lot. Designers often aren't sure how to make the prototyping kit handle validation. Is it client-side? Is it server-side? How do I edit my routes file?
 
 I made a jQuery plugin a couple of years back. It picked up a data attribute called `data-required`. It also picked up an error message you passed into `data-error`. Then, it checked if the input was blank or unchecked. If it was, it would append the error messages and prevent the user from submitting the form.

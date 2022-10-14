@@ -1,3 +1,5 @@
+# 5 arguments against accessibility and why they are wrong
+
 In my role, I deal with many different teams and organisations. I also get involved in a bunch of other things on the side, just because accessibility is so misunderstood. One thing which has become quite apparent is that there are some common misconceptions regardless of which team, department or arms-length body you talk to.
 
 I’ve pulled out 5 of the most common arguments I hear for why people think they should be exempt from doing accessibility work.

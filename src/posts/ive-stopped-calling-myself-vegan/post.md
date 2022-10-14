@@ -1,3 +1,5 @@
+# I've stopped calling myself vegan
+
 My new years resolution for 2017 was to move on from vegetarian and to become a legitimate vegan. Now, 12 months later, my new years resolution for 2018 is to no longer call myself a vegan at all.
 
 I was never a preachy vegan. I would never try and force my beliefs onto others. But if people asked me about it, I'd explain why I was. 

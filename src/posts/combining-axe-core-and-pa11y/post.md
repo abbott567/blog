@@ -1,3 +1,5 @@
+# Combining axe-core and PA11Y
+
 Last week, I was looking at automated accessibility tools, and I published [a comparison between axe-core and PA11Y](/blog/axe-core-vs-pa11y). 
 
 The conclusion was that we shouldn't use one over the other because they both find different things. So, I set about trying to find an elegant way to use both.

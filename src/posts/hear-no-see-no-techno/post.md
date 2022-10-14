@@ -1,3 +1,5 @@
+# Hear no, see no, techno
+
 Last week I attended [Camp Digital](http://www.wearesigma.com/campdigital/2017/), in the beautiful Town Hall of Manchester. It was your usual digital conference. Your usual crowd. But, today I saw a talk that has changed the way I think about websites and service design forever.
 
 We all know websites have to be responsive. They have to be malleable so that they look crisp and well laid out on all devices. We know the font size needs to increase for mobile devices. That columns should stack when the viewport becomes narrow. We have this all figured out. But we assume people are using the devices we use and seeing the site the way that we see it.

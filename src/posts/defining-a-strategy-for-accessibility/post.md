@@ -1,3 +1,5 @@
+# Defining a strategy for accessibility
+
 I've been in my role for about a year now. And, to be honest, it feels like it's been about a week. 
 
 Coming from an Interaction Design background, it's the first time I've had to step into a truly strategic role. I've gone from designing services and writing HTML to designing spreadsheets and writing emails... A lot of emails.

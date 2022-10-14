@@ -1,3 +1,5 @@
+# Rising disability statistics
+
 The number of people in the UK living with a disability is rising.
 
 It's currently accepted that in the UK it is around 1 in 5 people, or 20%. And, from 2012 to 2019, there has been a further 3% increase in the 'official statistics'.

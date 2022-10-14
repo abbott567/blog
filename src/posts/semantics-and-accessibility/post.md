@@ -1,3 +1,5 @@
+# Semantics and accessibility
+
 I used to think semantics was only about getting that little W3C badge on your website. I thought it was bragging rights.
 
 In the past, I've been guilty of using DIV's for everything. I've also been guilty of changing a H1 to a H2, because I needed it to be smaller. 

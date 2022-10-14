@@ -1,3 +1,5 @@
+# Design is not art
+
 Design and art go hand in hand. But they're not the same thing.
 
 When I was younger, I identified as a graphic designer. I'd design logos and flyers for nightclubs in Newcastle. When you're doing this kind of thing, the lines between art and design blur a lot. I didn't know the difference.

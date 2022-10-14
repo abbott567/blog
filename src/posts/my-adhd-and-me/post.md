@@ -1,3 +1,5 @@
+# My ADHD and me
+
 ## Preface
 
 I am not a medical expert. This post is my own personal experience, where I outline some of my traits and how I managed to get a diagnosis.

@@ -1,3 +1,4 @@
+# What can Baloo teach us about design?
 
 It seems everybody is talking about design systems at the moment. And with good reason. If you can meet the same user need with the same design more than once, it saves time and energy. A defined pattern or component should have gone through plenty of research. So, it's also reassuring to know the design is likely to work with little effort.
 
