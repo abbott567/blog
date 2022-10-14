@@ -10,11 +10,7 @@ function code (renderer) {
         code = out
       }
     }
-    code = code.replace(/~~/g, '')
-    if (!lang) {
-      return `<pre><code role="figure" tabindex="0" class="hljs">${code}</code></pre>\n`
-    }
-
+    if (!lang) return `<pre><code role="figure" tabindex="0" class="hljs">${code}</code></pre>\n`
     return `<pre><code role="figure" tabindex="0" class="hljs ${this.options.langPrefix}${escape(lang, true)}">${code}</code></pre>\n`
   }
 }
@@ -55,19 +51,12 @@ function paragraph (renderer) {
       let closingTag = ''
       const parts = text.replace('$ ', '').split(' ')
       parts.forEach(part => {
-        if (part.charAt(0) === '/') {
-          closingTag = part
-        } else if (part.charAt(0) === '#') {
-          id = ` id="${part.replace('#', '')}"`
-        } else if (part.charAt(0) === '.') {
-          _class = ` class="${part.replace('.', '')}"`
-        } else {
-          tag = part
-        }
+        if (part.charAt(0) === '/') closingTag = part
+        else if (part.charAt(0) === '#') id = ` id="${part.replace('#', '')}"`
+        else if (part.charAt(0) === '.') _class = ` class="${part.replace('.', '')}"`
+        else tag = part
       })
-      if (closingTag) {
-        return `<${closingTag}>`
-      }
+      if (closingTag) return `<${closingTag}>`
       return `<${tag}${id}${_class}>`
     }
     const isDL = text.match(/(.*)<br>:\s(.*)/g)
@@ -77,12 +66,8 @@ function paragraph (renderer) {
       sort.forEach(part => {
         const isdt = part.charAt(0) !== ':'
         const isdd = part.charAt(0) === ':'
-        if (isdt) {
-          dl += `<dt>${part}</dt>`
-        }
-        if (isdd) {
-          dl += `<dd>${part.replace(': ', '')}</dd>`
-        }
+        if (isdt) dl += `<dt>${part}</dt>`
+        if (isdd) dl += `<dd>${part.replace(': ', '')}</dd>`
       })
       dl += '</dl>'
       return dl
