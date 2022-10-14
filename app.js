@@ -39,7 +39,7 @@ const routes = require('./src/lib/routes')
 app.use(routes)
 
 // Error Handler
-const errorHandler = require('./src/lib/error-handler')
-app.use(errorHandler)
+// const errorHandler = require('./src/lib/error-handler')
+// app.use(errorHandler)
 
 module.exports = app

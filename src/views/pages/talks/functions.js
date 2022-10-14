@@ -1,10 +1,12 @@
 'use strict'
 
-const template = 'pages/talks/template.njk'
 const fs = require('fs-jetpack')
 
+const pathToPage = 'src/views/pages/talks'
+const template = `${pathToPage}/template.njk`
+const content = fs.read(`${pathToPage}/content.md`)
+
 function get (req, res) {
-  const content = fs.read('src/views/pages/talks/content.md')
   res.render(template, { title: 'Talks', content })
 }
 

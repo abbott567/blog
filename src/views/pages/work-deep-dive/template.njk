@@ -3,7 +3,7 @@
 {% set title = 'Work: ' + config.title %}
 
 {%- set metaDescription -%}
-  {%- include './meta-description.txt' -%}
+  {%- include 'pages/work-deep-dive/portfolio/' + config.slug +'/meta-description.txt' -%}
 {%- endset -%}
 
 {% block content %}
@@ -14,8 +14,7 @@
         {{config.title}}
       </h1>
       <div class="md">
-        {%- set mdcontent -%}{%- include 'pages/work/portfolio/' + config.slug + '/post.md' -%}{%- endset -%}
-        {{mdcontent|markdown|safe}}
+        {{ renderMarkdownFile('pages/work-deep-dive/portfolio/' + config.slug + '/post.md') }}
       </div>
   </div>
 </main>

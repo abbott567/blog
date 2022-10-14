@@ -9,43 +9,43 @@
   <div class="column-two-thirds">
 
     <div class="section">
-      {{ renderMarkdownFile('pages/work/partials/introduction.md') }}
+      {{ renderMarkdownFile('pages/work-overview/partials/introduction.md') }}
     </div>
 
     <div class="section">
-      {{ renderMarkdownFile('pages/work/partials/contents.md') }}
+      {{ renderMarkdownFile('pages/work-overview/partials/contents.md') }}
     </div>
     
     <div class="section">
-      {{ renderMarkdownFile('pages/work/partials/overview-design-work.md') }}
+      {{ renderMarkdownFile('pages/work-overview/partials/overview-design-work.md') }}
     </div>
 
     <div class="section">
       <h3 id="design-patterns">
         Design Patterns - Department for Work and Pensions
       </h3>
-      {{ renderMarkdownFile('pages/work/portfolio/design-patterns-dwp/excerpt.md') }}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/design-patterns-dwp/excerpt.md') }}
     </div>
 
     <div class="section">
       <h3 id="govuk-wireframing-kit">
         GOV.UK Wireframing Kit for SKetch
       </h3>
-      {{ renderMarkdownFile('pages/work/portfolio/govuk-wireframing-kit-for-sketch/excerpt.md') }}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/govuk-wireframing-kit-for-sketch/excerpt.md') }}
     </div>
     
     <div class="section">
       <h3 id="service-blueprints">
         Service Blueprints
       </h3>
-      {{ renderMarkdownFile('pages/work/portfolio/service-blueprints/excerpt.md') }}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/service-blueprints/excerpt.md') }}
     </div>
 
     <div class="section">
       <h3 id="user-journey-maps">
         User Journey Maps
       </h3>
-      {{ renderMarkdownFile('pages/work/portfolio/user-journey-maps/excerpt.md') }}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/user-journey-maps/excerpt.md') }}
     </div>
 
     <div class="section">
@@ -82,8 +82,7 @@
       <h3 id="dwp-accessibility-manual">
         DWP Accessibility Manual
       </h3>
-      {%- set mdA11yManual -%}{%- include 'pages/work/portfolio/dwp-accessibility-manual/excerpt.md' -%}{%- endset -%}
-      {{mdA11yManual|markdown|safe}}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/dwp-accessibility-manual/excerpt.md') }}
     </div>
 
     {# <div class="section"> #}
@@ -96,15 +95,14 @@
       <h3 id="accessibility-clinics">
         Accessibility Clinics
       </h3>
-      {%- set mdA11yClinics -%}{%- include 'pages/work/portfolio/accessibility-clinics/excerpt.md' -%}{%- endset -%}
-      {{mdA11yClinics|markdown|safe}}
+      {{ renderMarkdownFile('pages/work-deep-dive/portfolio/accessibility-clinics/excerpt.md') }}
     </div>
 
     <div class="section">
       <h3 id="standards-and-strategy">
         Standards and strategy
       </h3>
-      <img src="/images/work/strategy-and-standards.jpg" alt="A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.">
+      <img src="/images/work-overview/strategy-and-standards.jpg" alt="A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.">
       <p>
         It's common for large organisations to focus all of their efforts on the rules. 
         All the guidance, all the processes and all the governance, they all focus 

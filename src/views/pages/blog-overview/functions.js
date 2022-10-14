@@ -1,7 +1,8 @@
 'use strict'
 
-const page = 'blog'
-const template = `src/views/pages/${page}/template.njk`
+const pathToPage = 'src/views/pages/blog-overview'
+const template = `${pathToPage}/template.njk`
+
 const { sortByDate, paginate } = require('../../../lib/sort-posts')
 const allPosts = require('../../posts/_config')
 
