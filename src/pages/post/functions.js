@@ -1,10 +1,12 @@
 'use strict'
 
+const fs = require('fs-jetpack')
 const posts = require('../../posts/_config.json')
 const readingTime = require('../../lib/reading-time')
 const requirePostAsString = require('../../lib/require-md')
 
-const template = 'pages/post/template.njk'
+const page = 'post'
+const template = `pages/${page}/template.njk`
 
 function get (req, res, next) {
   const slug = req.params.slug
@@ -12,7 +14,8 @@ function get (req, res, next) {
   const text = requirePostAsString(slug)
   const readTime = readingTime(text)
   if (post) {
-    return res.render(template, { title: post.title, readTime, post })
+    const content = fs.read(`src/posts/${post.slug}/post.md`)
+    return res.render(template, { title: post.title, readTime, post, content })
   }
   next()
 }

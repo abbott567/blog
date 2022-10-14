@@ -16,6 +16,13 @@
       {% endfor %}
     </ul>
 
+    <h2>Work</h2>
+    <ul class="list list--bullet">
+      {% for item in portfolio %}
+        <li><a href="/work{{item.slug}}">{{item.title}}</a></li>
+      {% endfor %}
+    </ul>
+
     <h2>Blog posts</h2>
     <ul class="list list--bullet">
       {% for post in posts %}

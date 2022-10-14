@@ -1,6 +1,7 @@
 'use strict'
 
-const template = 'pages/blog/template.njk'
+const page = 'blog'
+const template = `src/pages/${page}/template.njk`
 const { sortByDate, paginate } = require('../../lib/sort-posts')
 const allPosts = require('../../posts/_config.json')
 
@@ -16,11 +17,9 @@ function get (req, res, next) {
 
 function checkPageQuery (req, res, next) {
   const pageQuery = parseInt(req.query.page, 10)
-
   if (pageQuery > (allPosts.length - 1 / 10)) {
     return res.redirect('/blog')
   }
-
   if (pageQuery <= 1) {
     return res.redirect('/blog')
   }
