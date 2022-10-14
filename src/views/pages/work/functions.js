@@ -11,7 +11,7 @@ function getPortfolio (req, res) {
 
 function getPieceOfWork (req, res) {
   const workURL = req.params.workURL
-  const workExists = fs.exists(`src/pages/work/portfolio/${workURL}/post.md`) === 'file'
+  const workExists = fs.exists(`src/views/pages/work/portfolio/${workURL}/post.md`) === 'file'
   if (workExists) {
     const config = require(`./portfolio/${workURL}/config`)
     req.config = config

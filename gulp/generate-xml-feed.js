@@ -1,7 +1,7 @@
 const fs = require('fs')
 const datefns = require('date-fns')
 const gulp = require('gulp')
-const posts = require('../src/posts/_config.json')
+const posts = require('../src/views/posts/_config.json')
 
 gulp.task('generate:feed', async () => {
   let xml = ''
@@ -19,7 +19,7 @@ gulp.task('generate:feed', async () => {
   xml += '      <url>https://www.craigabbott.co.uk/images/share-image-1.jpg</url>\n'
   xml += '    </image>\n'
   posts.forEach(post => {
-    const meta = fs.readFileSync(`src/posts/${post.slug}/meta-description.txt`, 'utf8')
+    const meta = fs.readFileSync(`src/views/posts/${post.slug}/meta-description.txt`, 'utf8')
     const postDate = datefns.parseISO(post.createdAt)
     const pubDate = datefns.format(postDate, 'EEE, dd MMM yyyy HH:mm:ss +0000')
     xml += '    <item>\n'

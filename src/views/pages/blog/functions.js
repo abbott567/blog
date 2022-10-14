@@ -1,8 +1,8 @@
 'use strict'
 
 const page = 'blog'
-const template = `src/pages/${page}/template.njk`
-const { sortByDate, paginate } = require('../../lib/sort-posts')
+const template = `src/views/pages/${page}/template.njk`
+const { sortByDate, paginate } = require('../../../lib/sort-posts')
 const allPosts = require('../../posts/_config.json')
 
 function get (req, res, next) {
@@ -13,6 +13,7 @@ function get (req, res, next) {
   if (page) {
     return res.render(template, { title: 'Blog', nextPage, posts, page })
   }
+  next()
 }
 
 function checkPageQuery (req, res, next) {

@@ -3,7 +3,7 @@
 const fs = require('fs')
 
 function requirePostAsString (slug) {
-  return fs.readFileSync(`src/posts/${slug}/post.md`, 'utf8')
+  return fs.readFileSync(`src/views/posts/${slug}/post.md`, 'utf8')
 }
 
 module.exports = requirePostAsString

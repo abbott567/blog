@@ -1,7 +1,7 @@
 const fs = require('fs')
 const gulp = require('gulp')
-const pages = require('../src/pages/_config.json')
-const posts = require('../src/posts/_config.json')
+const pages = require('../src/views/pages/_config.json')
+const posts = require('../src/views/pages/_config.json')
 
 gulp.task('generate:sitemap', async () => {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
