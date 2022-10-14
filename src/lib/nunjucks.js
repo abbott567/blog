@@ -10,7 +10,8 @@ function setup (app) {
   app.set('view engine', 'njk')
 
   const paths = [
-    path.join(__dirname, '../', '../', 'src')
+    path.resolve(),
+    path.resolve('src')
   ]
 
   const nunjucksEnvironment = nunjucks.configure(paths, {
