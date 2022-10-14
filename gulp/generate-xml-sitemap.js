@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs-jetpack')
 const gulp = require('gulp')
 const pages = require('../src/views/pages/_config.json')
 const posts = require('../src/views/pages/_config.json')
@@ -21,7 +21,5 @@ gulp.task('generate:sitemap', async () => {
     xml += '  </url>\n'
   })
   xml += '</urlset>'
-  fs.writeFile('public/sitemap.xml', xml, function (err) {
-    if (err) throw (err)
-  })
+  fs.write('public/sitemap.xml', xml)
 })

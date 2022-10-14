@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs-jetpack')
 const datefns = require('date-fns')
 const gulp = require('gulp')
 const posts = require('../src/views/posts/_config.json')
@@ -19,7 +19,7 @@ gulp.task('generate:feed', async () => {
   xml += '      <url>https://www.craigabbott.co.uk/images/share-image-1.jpg</url>\n'
   xml += '    </image>\n'
   posts.forEach(post => {
-    const meta = fs.readFileSync(`src/views/posts/${post.slug}/meta-description.txt`, 'utf8')
+    const meta = fs.read(`src/views/posts/${post.slug}/meta-description.txt`)
     const postDate = datefns.parseISO(post.createdAt)
     const pubDate = datefns.format(postDate, 'EEE, dd MMM yyyy HH:mm:ss +0000')
     xml += '    <item>\n'
@@ -32,7 +32,5 @@ gulp.task('generate:feed', async () => {
   })
   xml += '  </channel>\n'
   xml += '</rss>'
-  fs.writeFile('public/feed.xml', xml, function (err) {
-    if (err) throw (err)
-  })
+  fs.write('public/feed.xml', xml)
 })

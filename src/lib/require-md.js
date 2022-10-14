@@ -1,9 +1,9 @@
 'use strict'
 
-const fs = require('fs')
+const fs = require('fs-jetpack')
 
 function requirePostAsString (slug) {
-  return fs.readFileSync(`src/views/posts/${slug}/post.md`, 'utf8')
+  return fs.read(`src/views/posts/${slug}/post.md`)
 }
 
 module.exports = requirePostAsString
