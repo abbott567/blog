@@ -35,10 +35,10 @@ module.exports = {
     {
       title: 'Accessibility Clinics',
       slug: 'accessibility-clinics'
+    },
+    {
+      title: 'WCAGify',
+      slug: 'wcagify'
     }
-    //  {
-    //    title: 'WCAGify',
-    //    slug: 'wcagify'
-    //  }
   ]
 }
