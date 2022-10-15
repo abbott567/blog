@@ -2,4 +2,4 @@
 
 Government services are huge with many complex processes. It’s difficult to do end-to-end service design without knowing how a user interacts with all the different parts of the organisation.
 
-[Read about Service Blueprints in detail](/work/service-blueprints)
+[Read deep-dive on Service Blueprints](/work/service-blueprints)

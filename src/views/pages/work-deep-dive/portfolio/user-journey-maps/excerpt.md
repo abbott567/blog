@@ -6,4 +6,4 @@ Unlike a Service Blueprint, they won't show you a full end-to-end service. Inste
 
 They feature actions, pain points, mood and quotes. All that good stuff you need as a designer!
 
-[Read about User Journey Maps in detail](/work/user-journey-maps)
+[Read deep-dive on User Journey Maps](/work/user-journey-maps)

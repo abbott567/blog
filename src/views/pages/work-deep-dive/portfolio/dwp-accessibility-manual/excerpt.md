@@ -6,4 +6,4 @@ I've contributed countless hours, pushed over 60,000 lines of code, written page
 
 The project is based heavily on the [GOV.UK Design System](https://design-system.service.gov.uk/), only it is using a different configuration behind the scenes to make it feel more like the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/docs). It uses [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) and [Markdown](https://www.markdownguide.org/), so pages and guidance are easy to update and contribute to.
 
-[Read about the DWP Accessibility Manual in detail](/work/dwp-accessibility-manual)
+[Read deep-dive on DWP Accessibility Manual](/work/dwp-accessibility-manual)

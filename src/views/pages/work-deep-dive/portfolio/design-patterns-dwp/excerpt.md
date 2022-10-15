@@ -4,4 +4,4 @@ Across DWP Digital, a lot of people were designing similar solutions to solve id
 
 This work on Design Patterns at the Department for Work and Pensions predates the [DWP Design System](https://design-system.dwp.gov.uk/) and [GOV.UK Design System](https://design-system.service.gov.uk/), but showcases some of the work that was done which built some of those foundations.
 
-[Read about Design Patterns at DWP in detail](/work/design-patterns-dwp)
+[Read deep-dive on Design Patterns at DWP](/work/design-patterns-dwp)

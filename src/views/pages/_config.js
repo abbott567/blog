@@ -3,30 +3,30 @@
 module.exports = [
   {
     title: 'Home',
-    slug: '/'
+    slug: ''
   },
   {
     title: 'Blog',
-    slug: '/blog'
+    slug: 'blog'
   },
   {
     title: 'Talks',
-    slug: '/talks'
+    slug: 'talks'
   },
   {
     title: 'Work',
-    slug: '/work'
+    slug: 'work'
   },
   {
     title: 'Accessibility',
-    slug: '/accessibility'
+    slug: 'accessibility'
   },
   {
     title: 'Privacy',
-    slug: '/privacy'
+    slug: 'privacy'
   },
   {
     title: 'Sitemap',
-    slug: '/sitemap'
+    slug: 'sitemap'
   }
 ]

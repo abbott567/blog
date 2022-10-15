@@ -6,4 +6,4 @@ It is a library of GOV.UK styles, patterns and components you can download from 
 
 Until version 5.0 the kit was solely my work. It is now maintained by the cross Gov design community.
 
-[Read about the GOV.UK Wireframing Kit for Sketch in detail](/work/govuk-wireframing-kit-for-sketch)
+[Read deep-dive on the GOV.UK Wireframing Kit for Sketch](/work/govuk-wireframing-kit-for-sketch)

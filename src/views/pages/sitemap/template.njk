@@ -12,17 +12,20 @@
     <h2>Pages</h2>
     <ul class="list list--bullet">
       {% for page in pages %}
-        <li><a href="{{page.slug}}">{{page.title}}</a></li>
+        <li><a href="/{{page.slug}}">{{page.title}}</a></li>
       {% endfor %}
     </ul>
 
     <h2>Work</h2>
     <ul class="list list--bullet">
-      {% for item in portfolio %}
-        <li><a href="/work{{item.slug}}">{{item.title}}</a></li>
+      {% for item in portfolio.design %}
+        <li><a href="/work/{{item.slug}}">{{item.title}}</a></li>
+      {% endfor %}
+      {% for item in portfolio.accessibility %}
+        <li><a href="/work/{{item.slug}}">{{item.title}}</a></li>
       {% endfor %}
     </ul>
-
+    
     <h2>Blog posts</h2>
     <ul class="list list--bullet">
       {% for post in posts %}

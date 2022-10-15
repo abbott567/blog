@@ -2,4 +2,4 @@
 
 Accessibility Clinics are a safe space where teams can bring a design, idea, code block or finished product and receive feedback from experts.
 
-[Read about Accessibility Clinics in detail](/work/accessibility-clinics)
+[Read deep-dive on Accessibility Clinics](/work/accessibility-clinics)

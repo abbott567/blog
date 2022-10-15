@@ -10,7 +10,7 @@ function get (req, res, next) {
   const slug = req.params.slug
   const workExists = fs.exists(`${pathToPortfolio}/${slug}/post.md`) === 'file'
   if (workExists) {
-    const config = require(`./portfolio/${slug}/config`)
+    const config = require(`./portfolio/${slug}/_config`)
     req.config = config
     return res.render(template, { title: 'Portfolio', config })
   // } else {

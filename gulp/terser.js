@@ -8,7 +8,7 @@ const concat = require('gulp-concat')
 gulp.task('terser', () => {
   return pump([
     gulp.src([
-      './src/assets/js/*.js'
+      './src/views/assets/js/*.js'
     ]),
     concat('application.js'),
     terser(),
