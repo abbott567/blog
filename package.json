@@ -42,9 +42,10 @@
     "standard": "^16.0.4"
   },
   "standard": {
-    "env": [
-      "mocha"
-    ],
+    "env": {
+      "mocha": true,
+      "browser": true
+    },
     "ignore": [
       "**/html5shiv.js"
     ]
