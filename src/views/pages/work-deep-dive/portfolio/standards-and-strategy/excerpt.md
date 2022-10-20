@@ -8,4 +8,4 @@ I created a strategy which focused on compliance, culture and education, to impr
 
 I mapped and delivered high impact work in each category, creating a series of short and long term goals. Each goal was attached to an Objective Key Result (OKR) and measured using Key Performance Indicators (KPI).
 
-[Read about accessibility standards and strategy in more detail](/work/standards-and-strategy)
+[Read deep-dive on accessibility standards and strategy](/work/standards-and-strategy)
