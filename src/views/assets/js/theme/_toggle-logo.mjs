@@ -1,0 +1,15 @@
+function toggleLogo (theme) {
+  const logo = document.getElementById('logo')
+  if (!theme) {
+    const body = document.querySelector('body')
+    theme = body.getAttribute('data-theme')
+  }
+  if (theme === 'light') {
+    logo.innerHTML = '<img src="/images/logo.svg" alt="Craig Abbott signature logo" width="100">'
+  }
+  if (theme === 'dark') {
+    logo.innerHTML = '<img src="/images/logo-dark.svg" alt="Craig Abbott signature logo" width="100">'
+  }
+}
+
+export default toggleLogo

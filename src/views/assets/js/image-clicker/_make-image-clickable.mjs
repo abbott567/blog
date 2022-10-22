@@ -16,8 +16,5 @@ function makeImageClickable () {
     }
   })
 }
-document.addEventListener('DOMContentLoaded', function () {
-  if ('querySelector' in document) {
-    makeImageClickable()
-  }
-})
+
+export default makeImageClickable
