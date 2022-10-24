@@ -22,8 +22,6 @@
     "marked": "^4.1.1",
     "nunjucks": "^3.2.3",
     "nunjucks-markdown": "^2.0.1",
-    "require-dir": "^1.2.0",
-    "sass": "^1.55.0",
     "serve-favicon": "^2.5.0",
     "slugify": "^1.6.5",
     "wcagify": "^1.4.1"
@@ -45,6 +43,8 @@
     "mocha": "^10.1.0",
     "nyc": "^15.1.0",
     "pump": "^3.0.0",
+    "require-dir": "^1.2.0",
+    "sass": "^1.55.0",
     "standard": "^17.0.0",
     "webpack-stream": "^7.0.0"
   },
