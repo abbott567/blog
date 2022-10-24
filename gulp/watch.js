@@ -3,12 +3,12 @@
 const gulp = require('gulp')
 
 gulp.task('watch-sass', done => {
-  gulp.watch('./src/**/*.scss', gulp.series('sass'))
+  gulp.watch('./src/sass/**/*.scss', gulp.series('sass'))
   done()
 })
 
 gulp.task('watch-js', done => {
-  gulp.watch('./src/views/assets/js/**/*', gulp.series('webpack'))
+  gulp.watch('./src/javascripts/**/*', gulp.series('webpack'))
   done()
 })
 

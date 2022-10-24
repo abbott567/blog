@@ -1,0 +1,17 @@
+@import './components/section-info--light';
+@import './components/section--light';
+@import './components/footer--light';
+@import './components/pagination--light';
+@import './components/skip-link--light';
+@import './components/nav-menu--light';
+@import './components/theme-toggle--light';
+
+@mixin theme__components--light {
+  @include theme__section-info--light;
+  @include theme__section--light;
+  @include theme__footer--light;
+  @include theme__pagination--light;
+  @include theme__skip-link--light;
+  @include theme__nav-menu--light;
+  @include theme__theme-toggle--light;
+}

@@ -1,0 +1,5 @@
+@mixin theme__section--dark {
+  .section {
+    border-bottom-color: $border-colour-dark;
+  }
+}

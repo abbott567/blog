@@ -8,38 +8,40 @@ const express = require('express')
 const app = express()
 
 // Force https in production
-const useHttpsInProd = require('./src/lib/use-https-in-production')
+const useHttpsInProd = require('./lib/use-https-in-production')
 useHttpsInProd(app)
 
 // Markdown
-const markdown = require('./src/lib/markdown')
+const markdown = require('./lib/markdown')
 markdown.setup()
 
 // Nunjucks
-const nunjucks = require('./src/lib/nunjucks')
+const nunjucks = require('./lib/nunjucks')
 nunjucks.setup(app)
 
 // Locals
-const locals = require('./src/lib/locals')
+const locals = require('./lib/locals')
 app.use(locals)
 
 // Favicon
 const favicon = require('serve-favicon')
-app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'dist/images', 'favicon.ico')))
 
 // Compression
 const compression = require('compression')
 app.use(compression())
 
 // Static files
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'dist')))
 
 // Routes
-const routes = require('./src/lib/routes')
+const routes = require('./lib/routes')
 app.use(routes)
 
 // Error Handler
-// const errorHandler = require('./src/lib/error-handler')
-// app.use(errorHandler)
+if (process.env.NODE_ENV !== 'production') {
+  const errorhandler = require('errorhandler')
+  app.use(errorhandler())
+}
 
 module.exports = app

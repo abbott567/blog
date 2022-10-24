@@ -1,0 +1,33 @@
+.theme-toggle-container {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+
+  .theme-toggle {
+    margin: 0;
+    display: inline-block;
+    top: 1rem;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.1875;
+    padding: 8px 10px 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0;
+    text-align: center;
+    -webkit-appearance: none;
+    vertical-align: top;
+    cursor: pointer;
+    outline-color: transparent;
+    
+    &:focus {
+      outline: 3px solid transparent
+    }
+  }
+
+  @media (max-width: 400px) {
+    text-align: center;
+  }
+}
+

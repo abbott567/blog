@@ -1,6 +1,0 @@
-.section {
-  border-bottom-color: $border-colour-light;
-  @media(prefers-color-scheme: dark) {
-    border-bottom-color: $border-colour-dark;
-  }
-}

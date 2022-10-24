@@ -3,7 +3,7 @@
 const pathToPage = 'src/views/pages/blog-overview'
 const template = `${pathToPage}/template.njk`
 
-const { sortByDate, paginate } = require('../../../lib/sort-posts')
+const { sortByDate, paginate } = require('../../../../lib/sort-posts')
 const allPosts = require('../../posts/_config')
 
 function get (req, res, next) {

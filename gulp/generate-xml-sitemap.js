@@ -23,5 +23,5 @@ gulp.task('generate:sitemap', async () => {
     xml += '  </url>\n'
   })
   xml += '</urlset>'
-  fs.write('public/sitemap.xml', xml)
+  fs.write('dist/sitemap.xml', xml)
 })

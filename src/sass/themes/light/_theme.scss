@@ -1,0 +1,12 @@
+@import './themes/light/colours';
+@import './themes/light/code';
+@import './themes/light/elements';
+@import './themes/light/typography';
+@import './themes/light/components';
+
+html {
+  @include theme__code--light;
+  @include theme__elements--light;
+  @include theme__typography--light;
+  @include theme__components--light;
+}

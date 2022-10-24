@@ -1,0 +1,18 @@
+@import './themes/dark/colours';
+@import './themes/dark/code';
+@import './themes/dark/elements';
+@import './themes/dark/typography';
+@import './themes/dark/components';
+
+html[data-theme="dark"] {
+  @include theme__code--dark;
+  @include theme__elements--dark;
+  @include theme__typography--dark;
+  @include theme__components--dark;
+}
+@media (prefers-color-scheme: dark) {
+  @include theme__code--dark;
+  @include theme__elements--dark;
+  @include theme__typography--dark;
+  @include theme__components--dark;
+}

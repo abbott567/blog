@@ -27,8 +27,8 @@ const path = require('path')
 
 gulp.task('webpack', () => {
   return gulp
-    .src(path.resolve('src/views/assets/js/application.mjs'))
+    .src(path.resolve('src/javascripts/application.mjs'))
     .pipe(webpack(webpackConfig))
     .pipe(terser())
-    .pipe(gulp.dest(path.resolve('public/js')))
+    .pipe(gulp.dest(path.resolve('dist/js')))
 })

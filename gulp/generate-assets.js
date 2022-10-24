@@ -5,13 +5,13 @@ require('./generate-xml-sitemap')
 require('./generate-xml-feed')
 
 gulp.task('copy:images', () => {
-  return gulp.src('./src/views/assets/images/**/*.*')
-    .pipe(gulp.dest('./public/images'))
+  return gulp.src('./src/assets/images/**/*.*')
+    .pipe(gulp.dest('./dist/images'))
 })
 
 gulp.task('copy:downloads', () => {
-  return gulp.src('./src/views/assets/downloads/**/*.*')
-    .pipe(gulp.dest('./public/downloads'))
+  return gulp.src('./src/assets/downloads/**/*.*')
+    .pipe(gulp.dest('./dist/downloads'))
 })
 
 gulp.task('generate-assets', gulp.parallel([

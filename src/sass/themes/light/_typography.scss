@@ -1,0 +1,25 @@
+@mixin theme__typography--light {
+  h1, h2, h3, h4, h5, h6 {
+    border-top-color: $border-colour-light;
+  }
+
+  a {
+    color: $link-colour-light;
+  
+    &:visited {
+      color: $link-visited-light;
+    }
+  
+    &:hover {
+      color: $link-hover-light;
+      background: $body-text-light;
+    }
+  
+    &:focus {
+      color: $focus-colour-light;
+      background-color: $focus-background-light;
+      -webkit-box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+      box-shadow: 0 -2px $focus-background-light, 0 4px $focus-colour-light;
+    }
+  }
+}  

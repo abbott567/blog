@@ -1,0 +1,33 @@
+@mixin theme__elements--light {
+  body {
+    background-color: $body-background-light;
+    color: $body-text-light;
+  }
+  
+  blockquote {
+    border-color: $border-colour-light;
+  }
+  
+  code:focus {
+    box-shadow: 0px 0px 0px 5px $focus-background-light;
+    outline-color: $focus-colour-light;
+  }
+
+  main {
+    img {
+      opacity: 100%;
+      border-color: $border-colour-light;
+    }
+  }
+  
+  table {
+    thead {
+      tr {
+        background-color: $table-head-light;
+      }
+    }
+    tbody tr {
+      border-color: $border-colour-light;
+    }
+  }
+}  

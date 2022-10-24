@@ -6,7 +6,7 @@ const pathToPage = 'src/views/pages/blog-post'
 const template = `${pathToPage}/template.njk`
 
 const posts = require('../../posts/_config')
-const readingTime = require('../../../lib/reading-time')
+const readingTime = require('../../../../lib/reading-time')
 
 function get (req, res, next) {
   const slug = req.params.slug

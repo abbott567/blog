@@ -34,5 +34,5 @@ gulp.task('generate:feed', async () => {
   })
   xml += '  </channel>\n'
   xml += '</rss>'
-  fs.write('public/feed.xml', xml)
+  fs.write('dist/feed.xml', xml)
 })
