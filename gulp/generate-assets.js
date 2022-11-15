@@ -9,14 +9,8 @@ gulp.task('copy:images', () => {
     .pipe(gulp.dest('./dist/images'))
 })
 
-gulp.task('copy:downloads', () => {
-  return gulp.src('./src/assets/downloads/**/*.*')
-    .pipe(gulp.dest('./dist/downloads'))
-})
-
 gulp.task('generate-assets', gulp.parallel([
   'copy:images',
-  'copy:downloads',
   'generate:sitemap',
   'generate:feed'
 ]))

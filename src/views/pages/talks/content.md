@@ -6,10 +6,11 @@ I delivered several sessions for National Coding Week.
 
 Each talk was based on HTML and accessibility. You can download the slides and demos in HTML format using the following links:
 
-- [HTML: Back to basics](/downloads/decks/2022-09-html-back-to-basics.zip)
-- [HTML: Forms](/downloads/decks/2022-09-html-forms.zip)
-- [WAI-ARIA](/downloads/decks/2022-09-wai-aria.zip)
-- [Automated Accessibility testing](/downloads/decks/2022-09-automated-accessibility-testing.zip)
+View slides for:
+- [HTML: Back to basics](/decks/html-back-to-basics/slides.html)
+- [HTML: Forms](/decks/html-forms/slides.html)
+- [WAI-ARIA](/decks/wai-aria/slides.html)
+- [Automated Accessibility testing](/decks/automated-accessibility-testing/slides.html)
 
 ## Common WCAG failures
 
@@ -19,6 +20,8 @@ This talk was delivered at:
 - Global Accessibility Awareness Day - May 2022
 - DWP Accessibility Conf - March 2022
 
+[View slides for Common WCAG failures](/decks/common-wcag-failures/slides.html)
+
 ## My ADHD and Me
 
 This talk is about my personal journey with Attention Deficit Hyperactivity Disorder. It coveres how I got a diagnosis and strategies I have put in place to be successful.
@@ -26,6 +29,8 @@ This talk is about my personal journey with Attention Deficit Hyperactivity Diso
 This talk was delivered at:
 - Global Accessibility Awareness Day - May 2022
 - DWP - Feb 2022
+
+[View slides for My ADHD and Me](/decks/my-adhd-and-me/slides.html)
 
 ## Accessibility, Regulations, Standards and Strategy
 
