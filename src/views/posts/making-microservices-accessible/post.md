@@ -258,7 +258,7 @@ Such as:
 }
 ```
 
-With good documentation on what the API expects, and a recommended design pattern showing the two fields with '`first-name`' and '`last-name`', for most services they will all implement the pattern as standard.
+With good documentation on what the API expects, and a recommended design pattern showing the two fields with &lsquo;`first-name`&rsquo; and &lsquo;`last-name`&rsquo;, for most services they will all implement the pattern as standard.
 
 So, you have your ownership of the design, you have your consistency for your user, and you have the data in the format you need.
 
