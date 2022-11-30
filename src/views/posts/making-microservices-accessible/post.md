@@ -230,7 +230,7 @@ The requesting application should have full control over the user interface. The
 
 If you're passing back markup which doesn't fit the design of the requesting application, then they're going to have to do a lot of clean-up work to make it usable for their own context.
 
-## Failing gracefully
+### Failing gracefully
 
 Any application using an API should not be dependent on it for its own usability or accessibility compliance. 
 
@@ -242,7 +242,7 @@ The application should instead do the hard work, decipher the problem, and expla
 
 ![A side-by-side comparison of two pages. One reads: HTTP error 503. The API is unavailable. The other reads: Sorry there is a problem with this service. We cannot automatically verify your bank details at the moment. You can still apply online and we will check them manually, but there may be a delay in processing your application. Do you want to continue? Yes. No](/images/microservices-503-error.jpg)
 
-## Design patterns for the win
+### Design patterns for the win
 
 The easiest way to build an accessible microservice is to build a robust API and publish good documentation and design patterns for people wanting to use it.
 
