@@ -147,7 +147,7 @@ If at any point the end-to-end service breaks because the user was redirected to
 
 To pass [2.4.2]({wcagify}), the title needs to describe topic or purpose. It expects that:
 
-> 'Titles identify the current location without requiring users to read or interpret page content'.
+> 'Titles identify the current location without requiring users to read or interpret page content.'
 
 This one can get a bit subjective, so here are some things to consider.
 
@@ -159,7 +159,7 @@ A real-world example might be:
 
 This provides 3 levels of context for screen reader users. You know what the page relates to, what service you're currently on, and that it's part of GOV.UK.
 
-Now, imagine there's a '*seamless redirect*', the title is now: 
+Now, imagine there's a *'seamless redirect'*, the title is now: 
 `What is your address? - Verify your identity`
 
 To a blind user, the entire context of the service is gone. They will likely have questions:
