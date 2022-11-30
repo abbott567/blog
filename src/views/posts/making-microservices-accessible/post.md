@@ -86,11 +86,11 @@ The context of every service is different. Not all users are the same, so if you
 
 For example, when collecting names, in a service such as [Get your State Pension](https://www.gov.uk/get-state-pension), the majority of users will be from the UK. So, you're going to want to label your input fields '`first name`' and '`last name`' to fit with UK naming conventions.
 
-But, on a service such as [Apply for a National Insurance number](https://www.gov.uk/apply-national-insurance-number/how-to-apply), you're going to want to use '`given names`' and '`family names`', because it's likely that your users are not from the UK.
+But, on a service such as [Apply for a National Insurance number](https://www.gov.uk/apply-national-insurance-number/how-to-apply), you're going to want to use &lsquo;`given names`&rsquo; and &lsquo;`family names`&rsquo;, because it's likely that your users are not from the UK.
 
-This guidance is outlined in [GOV.UK Design Pattern for names](https://design-system.service.gov.uk/patterns/names/).
+This guidance is outlined in the [GOV.UK Design Pattern for names](https://design-system.service.gov.uk/patterns/names/).
 
-If you hard-code '`first name`' and '`last name`' labels into your microservice, it's too brittle. It's not going to cater for other cultures or nationalities where their names don't fit the UK conventions.
+If you hard-code &lsquo;`first name`&rsquo; and &lsquo;`last name`&rsquo; labels into your microservice, it's too brittle. It's not going to cater for other cultures or nationalities where their names don't fit the UK conventions.
 
 ![A side-by-side comparison of two text inputs on a HTML form. The title on the top of each reads: What is your name? The labels on one set of fields reads: first name and last name. On the other, it reads: given names and family name](/images/microservices-labels.jpg)
 
@@ -192,7 +192,7 @@ If the wording is even slightly different, or if one microservice uses a button 
 
 To meet [3.3.4]({wcagify}) Users need to be able to check their answers before submitting anything which causes legal commitments or financial transactions. For example, applying for a benefit with a declaration of truth, or making a credit card payment.
 
-In most digital services, we'd use the '[check answers](https://design-system.service.gov.uk/patterns/check-answers/)' pattern. But, a more rudimentary solution is to just make sure the back button works and whatever was previously answered is re-populated. 
+In most digital services, we'd use the &lsquo;[check answers](https://design-system.service.gov.uk/patterns/check-answers/)&rsquo; pattern. But, a more rudimentary solution is to just make sure the back button works and whatever was previously answered is re-populated. 
 
 Again, this ties in with session management. A user needs to be able to go back, review and amend any information they've entered before the final submission. If they cannot and they're forced to start again, you'd fail this criterion.
 
@@ -226,7 +226,7 @@ If your API is passing back markup, such as blocks of HTML, and expecting the re
 
 Although, if you're doing this, you probably have bigger issues to worry about than just accessibility! Most applications should automatically escape any markup that comes in like this for security purposes. You don't want any bad actors injecting a whole bunch of markup into your page!
 
-The requesting application should have full control over the user interface. They should be able to decide which elements are right for the way they lay out the content out in the interface.
+The requesting application should have full control over the user interface. They should be able to decide which elements are right for the way they lay out the content out on the page.
 
 If you're passing back markup which doesn't fit the design of the requesting application, then they're going to have to do a lot of clean-up work to make it usable for their own context.
 
