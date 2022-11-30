@@ -192,7 +192,7 @@ If the wording is even slightly different, or if one microservice uses a button 
 
 To meet [3.3.4]({wcagify}) Users need to be able to check their answers before submitting anything which causes legal commitments or financial transactions. For example, applying for a benefit with a declaration of truth, or making a credit card payment.
 
-In most digital services, we'd use the &lsquo;[check answers](https://design-system.service.gov.uk/patterns/check-answers/)&rsquo; pattern. But, a more rudimentary solution is to just make sure the back button works and whatever was previously answered is re-populated. 
+In most digital services, we'd use the &lsquo;[check answers pattern](https://design-system.service.gov.uk/patterns/check-answers/)&rsquo;. But, a more rudimentary solution is to just make sure the back button works and whatever was previously answered is re-populated. 
 
 Again, this ties in with session management. A user needs to be able to go back, review and amend any information they've entered before the final submission. If they cannot and they're forced to start again, you'd fail this criterion.
 
