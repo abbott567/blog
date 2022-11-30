@@ -2,6 +2,14 @@
 
 module.exports = [
   {
+    title: 'Making microservices accessible',
+    slug: 'making-microservices-accessible',
+    createdAt: '2022-11-30T00:00:00.00Z',
+    categories: [
+      'accessibility'
+    ]
+  },
+  {
     title: 'Partially supported is not supported',
     slug: 'partially-supported-is-not-supported',
     createdAt: '2022-03-02T00:00:00.00Z',
