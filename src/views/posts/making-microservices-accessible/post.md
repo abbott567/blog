@@ -178,9 +178,9 @@ Remember, to a blind user, it could be perceived as a completely different servi
 
 ![The GOV.UK footer showing a navigation menu containing links for: Help, Privacy, Cookies, Accessibility Statement, Contact, Terms and Conditions.](/images/microservices-navigation.jpg)
 
-##### 3.2.3 Consistent Identification
+##### 3.2.4 Consistent Identification
 
-To pass [3.2.3]({wcagify}), components which have common functionality need to be consistent across the whole service.
+To pass [3.2.4]({wcagify}), components which have common functionality need to be consistent across the whole service.
 
 For example, if the user can sign in and sign out via a component in the header, then it needs to be consistently identified on each page via its name and role. 
 
