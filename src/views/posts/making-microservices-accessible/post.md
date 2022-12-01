@@ -165,7 +165,7 @@ Now, imagine there's a *'seamless redirect'*, the title is now:
 To a blind user, the entire context of the service is gone. They will likely have questions:
 - What has happened?
 - Am I still applying for Universal Credit?
-- Have I clicked one something by mistake? 
+- Have I clicked on something by mistake? 
 - Is it a cyber-attack, and is my personal information safe?
 
 ##### 3.2.3 Consistent Navigation
@@ -176,7 +176,7 @@ Common examples are headers and footers. These are likely going to have differen
 
 Remember, to a blind user, it could be perceived as a completely different service, even if it looks pretty much the same as the previous page to a sighted user.
 
-![Menus](/images/microservices-navigation.jpg)
+![The GOV.UK footer showing a navigation menu containing links for: Help, Privacy, Cookies, Accessibility Statement, Contact, Terms and Conditions.](/images/microservices-navigation.jpg)
 
 ##### 3.2.3 Consistent Identification
 
