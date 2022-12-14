@@ -10,9 +10,10 @@ You can read my [blog](blog) posts, check out my [talks](talks) or have a look a
 
 If you get stuck with anything or just want to say _"Hi"_, please reach out. Ways to contact me:
 
-- <a href="https://twitter.com/abbott567"><span class="visually-hidden">abbott567 on </span>Twitter</a>
-- <a href="https://uk.linkedin.com/in/abbott567"><span class="visually-hidden">abbott567 on </span>LinkedIn</a>
-- <a href="https://instagram.com/abbott567"><span class="visually-hidden">abbott567 on </span>Instagram</a>
+- <a href="https://a11y.info/@craigabbott" rel=”me”><span class="visually-hidden">a11y.info/@craigabbott on </span>Mastodon</a>
+- <a href="https://twitter.com/abbott567" rel=”me”><span class="visually-hidden">abbott567 on </span>Twitter</a>
+- <a href="https://uk.linkedin.com/in/abbott567" rel=”me”><span class="visually-hidden">abbott567 on </span>LinkedIn</a>
+- <a href="https://instagram.com/abbott567" rel=”me”><span class="visually-hidden">abbott567 on </span>Instagram</a>
 
 Thanks,  
 Craig
