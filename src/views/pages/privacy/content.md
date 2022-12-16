@@ -17,6 +17,8 @@ I use [Clicky](https://clicky.com/101390938) for basic analytics.
 
 Clicky is GDPR compliant. All analytics are scopped to craigabbott.co.uk, it does not log any 'personal data' or attempt to track you across multiple websites. It does not track your IP address or drop any cookies on your device.
 
+You can use the [Clicky global opt-out](https://clicky.com/optout) feature if you wish to block Clicky on every website using it, including this one.
+
 ## Links to other websites
 
 This privacy policy only applies to craigabbott.co.uk, and does not cover other websites or services that I link to.
