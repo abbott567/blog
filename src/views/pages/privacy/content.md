@@ -6,14 +6,16 @@ I don't use cookies anywhere on this website.
 
 If you decide to switch between light and dark mode, your preferences will be saved in your browsers local storage. There is nothing personally identifiable, just a single key value pair.
 
-```
-'theme': 'light'
-'theme': 'dark'
+```json
+"theme": "light"
+"theme": "dark"
 ```
 
-## Types of personal information I collect
+## Tracking
 
-I don’t collect any personal information about you... ever. I don’t use cookies and I don’t track or analyse your browsing behaviour.
+I use [Clicky](https://clicky.com/101390938) for basic analytics.
+
+Clicky is GDPR compliant. All analytics are scopped to craigabbott.co.uk, it does not log any 'personal data' or attempt to track you across multiple websites. It does not track your IP address or drop any cookies on your device.
 
 ## Links to other websites
 
