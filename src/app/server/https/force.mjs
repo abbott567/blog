@@ -8,10 +8,11 @@ function forcehttps (req, res, next) {
     protocol = protocol.split(',').shift()
   }
 
-  if (protocol !== 'https') {
-    if (process.env.NODE_ENV !== 'test') console.log('Redirecting request to https')
-    // 301 permanent
-    return res.redirect(301, 'https://' + host + req.url)
+  if (process.env.NODE_ENV === 'production' && !host.includes('localhost')) {
+    if (protocol !== 'https') {
+      console.log('Redirecting request to https')
+      return res.redirect(301, 'https://' + host + req.url)
+    }
   }
 
   // Mark proxy as secure (allows secure cookies)
