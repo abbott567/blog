@@ -27,18 +27,6 @@ a {
   }
 }
 
-a[role="button"] {
-  min-height: 44px;
-  min-width: 44px;
-  padding: var(--s-3);
-  &:hover {
-    > svg {
-      transform: scale(1.4);
-      outline-offset: var(--s-4);
-    }
-  }
-}
-
 p code {
   background-color: var(--barely-visible);
   padding: 0 var(--s-6);

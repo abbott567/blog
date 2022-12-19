@@ -2,7 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="/css/style.{{version.css}}.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="/css/style.{{version.css}}.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    
+    <noscript>
+      <link rel="stylesheet" href="/css/style.{{version.css}}.css">
+      <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </noscript>
+
     <link rel="canonical" href="{{site.url}}{{page.href}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     
@@ -46,6 +58,6 @@
     </main>
     {%- block afterMain -%}{%- endblock -%}
     {%- include 'components/footer.njk' -%}
-    <script src="/scripts/bundle.min.{{version.js}}.js"></script>
+    <script defer src="/scripts/bundle.min.{{version.js}}.js"></script>
   </body>
 </html>

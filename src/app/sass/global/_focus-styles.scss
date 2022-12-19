@@ -31,12 +31,14 @@ pre > code {
 
 a[role="button"] {
   &:focus {
-    box-shadow: 0 0 0 var(--s-7) var(--focus-highlight-colour);
+    box-shadow: 0 0 0 var(--s-4) var(--focus-highlight-colour);
     > svg {
       background-color: var(--text-colour-primary);
       outline: thick solid var(--text-colour-primary);
-      outline-offset: var(--s-3);
+      outline-offset: var(--s-4);
       fill: var(--focus-highlight-colour);
+      position: relative;
+      z-index: 1;
     }
   }
 }

@@ -45,13 +45,27 @@
       justify-content: center;
     }
   }
+  nav li {
+    margin-bottom: 0;
+  }
   menu {
     @include cluster;
     padding-left: 0;
     margin-bottom: 0; 
     margin-top: 0; 
-    font-size: var(--s2);
-    gap: 0;
+    font-size: 2rem;
+    line-height: 1rem;
+    gap: .5rem;
+  }
+
+  a[role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    &:hover {
+      > svg {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__social-icon {
