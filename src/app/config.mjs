@@ -6,10 +6,12 @@ import cacheControl from './server/cache-control/functions.mjs'
 
 const app = express()
 useHttpsInProd(app)
-cacheControl(app)
 
 // Middleware
 app.use(compression())
+
+// Cache control
+cacheControl(app)
 
 // Routes
 app.use(routes)
