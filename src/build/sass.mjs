@@ -4,6 +4,7 @@ import postcss from 'postcss'
 import cssnano from 'cssnano'
 import litePreset from 'cssnano-preset-lite'
 import autoprefixer from 'autoprefixer'
+import version from '../app/server/cache-control/config.mjs'
 
 async function buildSass () {
   const sassResult = sass.compile('src/app/sass/app.scss')
@@ -23,7 +24,7 @@ async function compileCSS () {
   console.log('Compiling SASS'.yellow)
   const css = await buildSass()
   const compressed = await compressCSS(css)
-  await fs.write('dist/css/style.css', compressed)
+  await fs.write(`dist/css/style.${version.css}.css`, compressed)
   console.log('SASS compiled'.green)
 }
 

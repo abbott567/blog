@@ -1,6 +1,7 @@
 import Site from '../../../src/app/model/constructors/Site.mjs'
 import buildDataModel from '../../../src/build/data-model.mjs'
 import buildEnv from '../../../src/build/nunjucks.mjs'
+import version from '../../../src/app/server/cache-control/config.mjs'
 
 import { expect } from 'chai'
 import { JSDOM } from 'jsdom'
@@ -40,7 +41,7 @@ export default {
                 const dom = new JSDOM(html)
                 const document = dom.window.document
                 const link = document.querySelector('link[rel="stylesheet"]')
-                expect(link.getAttribute('href')).to.eql('/css/style.css')
+                expect(link.getAttribute('href')).to.eql(`/css/style.${version.css}.css`)
               },
               canonical: () => {
                 Site.clean()

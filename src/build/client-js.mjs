@@ -1,6 +1,7 @@
 import path from 'path'
 import webpack from 'webpack'
 import TerserPlugin from 'terser-webpack-plugin'
+import version from '../app/server/cache-control/config.mjs'
 
 const config = {
   entry: path.resolve('src/app/client/scripts.mjs'),
@@ -8,7 +9,7 @@ const config = {
   stats: 'minimal',
   output: {
     path: path.resolve('dist/scripts'),
-    filename: 'bundle.min.js'
+    filename: `bundle.min.${version.js}.js`
   },
   module: {
     rules: [
@@ -22,10 +23,10 @@ const config = {
       }
     ]
   },
-  // optimization: {
-  //   minimize: true,
-  //   minimizer: [new TerserPlugin()]
-  // }
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()]
+  }
 }
 
 function compileJS () {

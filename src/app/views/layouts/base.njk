@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.{{version.css}}.css" rel="stylesheet" type="text/css" />
     <link rel="canonical" href="{{site.url}}{{page.href}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     
@@ -33,7 +33,6 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😸</text></svg>">
     {%- block headEnd -%}{%- endblock -%}
   </head>
-
   <body>
     <div class="container">
       <a class="skip-link" href="#main">Skip to main content</a>
@@ -47,7 +46,7 @@
     </main>
     {%- block afterMain -%}{%- endblock -%}
     {%- include 'components/footer.njk' -%}
-    <script src="/scripts/bundle.min.js"></script>
+    <script src="/scripts/bundle.min.{{version.js}}.js"></script>
     <script async src="//static.getclicky.com/101390938.js"></script>
   </body>
 </html>
