@@ -11,7 +11,11 @@ useHttpsInProd(app)
 app.use(compression())
 
 // Static files
-app.use(express.static(path.resolve('dist')))
+if (process.env.NODE_ENV === 'dev') {
+  app.use(express.static(path.resolve('dist')))
+} else {
+  app.use(express.static(path.resolve('dist'), { maxAge: '30m' }))
+}
 
 // Routes
 app.use(routes)
