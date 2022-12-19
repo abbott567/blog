@@ -13,9 +13,10 @@ function cacheControl (app) {
     app.use(express.static(path.resolve('dist/css'), cacheConfig))
     app.use(express.static(path.resolve('dist/images'), cacheConfig))
     app.use(express.static(path.resolve('dist/scripts'), cacheConfig))
+    app.use(express.static(path.resolve('dist')))
+  } else {
+    app.use(express.static(path.resolve('dist')))
   }
-
-  app.use(express.static(path.resolve('dist')))
 }
 
 export default cacheControl
