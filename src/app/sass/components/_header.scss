@@ -48,10 +48,13 @@
   nav li {
     margin-bottom: 0;
   }
+  nav {
+    margin-bottom: var(--s0);
+  }
   menu {
     @include cluster;
     padding-left: 0;
-    margin-bottom: 0; 
+    margin-bottom: var(--s0);
     margin-top: 0; 
     font-size: 2rem;
     line-height: 1rem;

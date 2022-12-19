@@ -1,24 +1,26 @@
-@use '../layout/stack' as *;
-@use '../layout/switcher' as *;
+@use '../layout/sidebar' as *;
 
 .article-info {
-  font-size: var(--s-1);
+  @include with-sidebar;
   opacity: .7;
-  margin-top: var(--s0);
-  margin-bottom: var(--s0);
+  font-size: var(--s-1);
   border-bottom: thin solid var(--border-colour);
-  dl {
-    @include stack--collapsed;
-    dt {
-      max-width: 8ch;
-    }
-    dd {
-      margin-bottom: 0;
-      padding-left: 0;
-      max-width: 14ch;
-    }
-    > div {
-      @include switcher;
-    }
+  gap: 0 var(--s-5);
+  margin-bottom: var(--s-2);
+  dt {
+    @include sidebar;
+    flex-basis: 10ch;
+    margin-bottom: 0;
+    padding-left: 0;
   }
+  dd {
+    @include not-sidebar;
+    padding-left: 0;
+    margin-bottom: 0;
+    min-inline-size: 60%;
+  }
+}
+
+.post .article-info {
+  border-bottom: 0;
 }

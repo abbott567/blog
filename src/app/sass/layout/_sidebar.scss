@@ -1,0 +1,30 @@
+@mixin with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@mixin sidebar {
+  /* ↓ The width when the sidebar _is_ a sidebar */
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+@mixin not-sidebar {
+  /* ↓ Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 50%;
+}
+
+.with-sidebar {
+  @include with-sidebar;
+  & > .sidebar {
+    @include sidebar;
+  }
+  
+  & > .not-sidebar {
+    @include not-sidebar;
+  }
+}
