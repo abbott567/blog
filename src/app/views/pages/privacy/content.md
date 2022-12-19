@@ -11,13 +11,9 @@ If you decide to switch between light and dark mode, your preferences will be sa
 "theme": "dark"
 ```
 
-## Tracking
+## Types of personal information I collect
 
-I use [Clicky](https://clicky.com/101390938) for basic analytics.
-
-Clicky is GDPR compliant. All analytics are scoped to craigabbott.co.uk. It does not log any 'personal data' or attempt to track you across multiple sites. It does not track your IP address or drop any cookies on your device.
-
-You can use the [Clicky global opt-out](https://clicky.com/optout) feature if you wish to block Clicky on every website using it, including this one.
+I don’t collect any personal information about you... ever. I don’t use cookies and I don’t track or analyse your browsing behaviour.
 
 ## Links to other websites
 
