@@ -1,47 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.craigabbott.co.uk</loc>
+    <loc>https://www.craigabbott.co.uk/home</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.ukblog</loc>
+    <loc>https://www.craigabbott.co.uk/blog</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uktalks</loc>
+    <loc>https://www.craigabbott.co.uk/talks</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.ukwork</loc>
+    <loc>https://www.craigabbott.co.uk/work</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.ukaccessibility</loc>
+    <loc>https://www.craigabbott.co.uk/sitemap</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.ukprivacy</loc>
+    <loc>https://www.craigabbott.co.uk/privacy</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uksitemap</loc>
+    <loc>https://www.craigabbott.co.uk/accessibility</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/</loc>
+    <loc>https://www.craigabbott.co.uk/blog/making-microservices-accessible</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/blog</loc>
+    <loc>https://www.craigabbott.co.uk/blog/partially-supported-is-not-supported</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/talks</loc>
+    <loc>https://www.craigabbott.co.uk/blog/using-the-language-attribute-to-make-your-website-accessible</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/work</loc>
+    <loc>https://www.craigabbott.co.uk/blog/my-adhd-and-me</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/accessibility</loc>
+    <loc>https://www.craigabbott.co.uk/blog/accessibility-and-font-sizes</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/privacy</loc>
+    <loc>https://www.craigabbott.co.uk/blog/rising-disability-statistics</loc>
   </url>
   <url>
-    <loc>https://www.craigabbott.co.uk/blog/sitemap</loc>
+    <loc>https://www.craigabbott.co.uk/blog/combining-axe-core-and-pa11y</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/axe-core-vs-pa11y</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/5-arguments-against-accessibility-and-why-they-are-wrong</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/defining-a-strategy-for-accessibility</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/back-to-blogging</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/designing-the-impossible-makes-it-possible</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/what-is-it-like-to-use-a-screen-reader-on-an-inaccessible-website</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/one-page-applications-are-not-accessible</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/what-can-baloo-teach-us-about-design</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/mental-health-and-flexible-working-hours</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/validation-for-prototypes</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/ive-stopped-calling-myself-vegan</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/own-your-alpha</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/semantics-and-accessibility</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/accessibility-is-not-an-edge-case</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/bug-fixes-and-performance-improvements</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/how-to-calculate-reading-time-like-medium</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/design-is-not-art</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/death-of-the-notes-box</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/error-messages-are-not-funny</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/some-thoughts-on-primary-buttons</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/hear-no-see-no-techno</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/blog/what-is-normal-anyway</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/accessibility-clinics</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/accessibility-reporting</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/a11y-palette</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/dwp-design-patterns</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/dwp-accessibility-manual</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/govuk-wireframing-kit-for-sketch</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/service-blueprints</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/standards-and-strategy</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/user-journey-maps</loc>
+  </url>
+  <url>
+    <loc>https://www.craigabbott.co.uk/work/wcagify</loc>
   </url>
 </urlset>

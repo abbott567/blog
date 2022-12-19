@@ -1,1 +1,0 @@
-A detailed comparison between axe-core and PA11Y to see which accessibility errors each tool can find.

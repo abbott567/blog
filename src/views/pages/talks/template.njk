@@ -1,9 +1,0 @@
-{% extends 'layouts/markdown-page.njk' %}
-
-{%- set metaDescription -%}
-  {%- include './meta-description.txt' -%}
-{%- endset -%}
-
-{% block markdown %}
-    {{content|markdown|safe}}
-{% endblock %}

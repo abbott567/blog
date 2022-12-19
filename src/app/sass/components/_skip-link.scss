@@ -1,0 +1,32 @@
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  padding: var(--s0) var(--s1);
+
+  &:focus {
+    padding: var(--s1);
+    text-decoration: underline;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: inherit;
+    margin-bottom: var(--s2);
+    overflow: visible;
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    white-space: inherit;
+    outline: thick solid transparent;
+    text-decoration: none;
+  }
+}

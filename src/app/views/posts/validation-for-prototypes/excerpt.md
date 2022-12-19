@@ -1,0 +1,3 @@
+I made a jQuery plugin a couple of years back. It picked up a data attribute called `data-required`. It also picked up an error message you passed into `data-error`. Then, it checked if the input was blank or unchecked. If it was, it would append the error messages and prevent the user from submitting the form.
+
+The thing is, I thought I built the plugin off the back of a user need, and I was happy when people praised my work. But in reality, I think I missed the point. As did everybody that used it.

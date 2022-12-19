@@ -1,1 +1,0 @@
-Error messages should be clear an concise. They are not a place for humour or "brand voice".

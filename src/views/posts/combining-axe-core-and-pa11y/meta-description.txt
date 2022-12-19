@@ -1,1 +1,0 @@
-A tutorial on how to use axe-core and PA11Y together for automated accessibility testing.

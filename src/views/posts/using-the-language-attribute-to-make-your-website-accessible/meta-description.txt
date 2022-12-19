@@ -1,1 +1,0 @@
-How to set the language of your website using the lang attribute to make it accessible.

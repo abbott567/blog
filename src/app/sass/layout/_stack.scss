@@ -1,0 +1,26 @@
+@mixin stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  > * + * {
+    margin-block-start: var(--s0);
+  }
+
+  > :last-child {
+    margin-block-end: auto;
+  }
+}
+
+@mixin stack--collapsed {
+  margin-block-start: 0;
+}
+
+.stack {
+  @include stack;  
+  &--collapsed {
+    @include stack--collapsed;  
+  }
+}
+
+

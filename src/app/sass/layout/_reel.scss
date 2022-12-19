@@ -1,0 +1,8 @@
+.reel {
+  display: flex;
+  overflow-x: auto;
+}
+
+.reel::-webkit-scrollbar {
+  block-size: 1rem;
+}

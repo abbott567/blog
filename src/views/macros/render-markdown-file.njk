@@ -1,4 +1,0 @@
-{% macro renderMarkdownFile(pathToFile) %}
-  {%- set mdContent -%}{%- include pathToFile -%}{%- endset -%}
-  {{mdContent|markdown|safe}}
-{% endmacro %}

@@ -1,0 +1,64 @@
+@use '../layout/box' as *;
+@use '../layout/container' as *;
+@use '../layout/cluster' as *;
+@use '../layout/icon' as *;
+
+.header {
+  &__container {
+    @include container;
+    @include box;
+    border-bottom: medium solid var(--border-colour);
+  }
+  &__logo {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--s0);
+    .text-colour {
+      fill: var(--text-colour-primary);
+    }
+    .highlight-colour {
+      fill: var(--link-colour);
+    }
+    > svg {
+      display: block;
+      max-width: 15ch;
+      @media (max-width: 540px) {
+        margin: auto;
+      }
+    }
+  }
+  &__nav-container {
+    @include cluster;
+    padding-top: var(--s-1);
+    justify-content: space-between;
+    @media (max-width: 540px) {
+      justify-content: center;
+    }
+  }
+  nav > * {
+    @include cluster;
+    font-size: var(--s1);
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    @media (max-width: 540px) {
+      justify-content: center;
+    }
+  }
+  menu {
+    @include cluster;
+    padding-left: 0;
+    margin-bottom: 0; 
+    margin-top: 0; 
+    font-size: var(--s2);
+    gap: 0;
+  }
+
+  &__social-icon {
+    @include with-icon;
+    svg {
+      background-color: var(--page-colour);
+      fill: var(--link-colour);
+    }
+  }
+}

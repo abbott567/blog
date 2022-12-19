@@ -1,1 +1,0 @@
-Analysis of data to show why accessibility is not an edge case.

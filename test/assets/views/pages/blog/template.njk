@@ -1,0 +1,46 @@
+{%- extends 'layouts/base.njk' -%}
+
+{%- block main -%}
+
+  <h1>Blog</h1>
+  {%- for post in posts -%}
+    <article>
+      <header>
+        <h2>{{post.title}}</h2>
+      </header>
+      
+      {{post.excerpt|markdown}}
+      
+      <a href="{{post.href}}">
+        Read full article
+        <span class="visually-hidden">
+          : {{post.title}}
+        </span>
+      </a>
+      
+      <footer>
+        <dl class="article-info">
+          <dt class="article-info__text">Published:</dt>
+          <dd class="article-info__text">
+            <time datetime="{{post.date.timestamp}}">{{post.date.pretty}}</time>
+          </dd>
+
+          <dt class="article-info__text">Read time:</dt>
+          <dd class="article-info__text">{{post.readTime}}</dd>
+        </dl>
+      </footer>
+    </article>
+  {%- endfor -%}
+
+  {%- if newer or older -%}
+  <div>
+    {%- if older -%}
+      <a href="/blog-{{pageNo + 1}}">Older</a>
+    {%- endif -%}
+    {%- if newer -%}
+      <a href="/blog-{{pageNo - 1}}">Newer</a>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+
+{%- endblock -%}

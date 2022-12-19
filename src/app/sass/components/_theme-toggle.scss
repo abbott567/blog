@@ -1,0 +1,23 @@
+@use '../layout/container' as *;
+
+.theme-toggle__placeholder {
+  margin-bottom: 44px;
+}
+.theme-toggle__container {
+  @include container;
+  text-align: right;
+  padding: 0 var(--s1);
+}
+.theme-toggle__button {
+  height: 44px;
+  color: var(--button-text-colour);
+  background-color: var(--button-background-colour);
+  font-size: var(--s-1);
+  padding: 0 var(--s-1);
+  border-bottom-left-radius: var(--s-6);
+  border-bottom-right-radius: var(--s-6);
+  box-shadow: 0 .1rem .1rem 0 black;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}

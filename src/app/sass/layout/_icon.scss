@@ -1,0 +1,22 @@
+@mixin icon {
+  width: 0.75em;
+  width: 1cap;
+  height: 0.75em;
+  height: 1cap;
+}
+
+@mixin with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.icon {
+  @include icon;
+}
+
+.with-icon {
+  @include with-icon;
+  .icon {
+    margin-inline-end: 1rem;
+  }
+}

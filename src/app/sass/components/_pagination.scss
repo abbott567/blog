@@ -1,0 +1,20 @@
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding-left: 0;
+  &__older {
+    grid-column-start: 2;
+    text-align: right;
+  }
+  &__newer {
+    grid-column-start: 1;
+  }
+  &__page-no {
+    display: block;
+    font-size: var(--s-1)
+  }
+  a {
+    display: inline-block;
+  }
+}

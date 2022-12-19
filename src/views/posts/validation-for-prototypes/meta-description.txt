@@ -1,1 +1,0 @@
-Why I stopped advocating for validation in prototypes despite contributing by publishing a popular plugin.

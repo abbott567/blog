@@ -1,0 +1,24 @@
+@use '../layout/stack' as *;
+@use '../layout/switcher' as *;
+
+.article-info {
+  font-size: var(--s-1);
+  opacity: .7;
+  margin-top: var(--s0);
+  margin-bottom: var(--s0);
+  border-bottom: thin solid var(--border-colour);
+  dl {
+    @include stack--collapsed;
+    dt {
+      max-width: 8ch;
+    }
+    dd {
+      margin-bottom: 0;
+      padding-left: 0;
+      max-width: 14ch;
+    }
+    > div {
+      @include switcher;
+    }
+  }
+}

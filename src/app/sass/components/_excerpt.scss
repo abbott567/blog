@@ -1,0 +1,7 @@
+main article {
+  padding-bottom: var(--s1);
+  border-bottom: thin solid var(--border-colour);
+  .article-info {
+    border-bottom: 0;
+  }
+}

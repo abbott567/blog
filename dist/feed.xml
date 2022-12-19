@@ -13,7 +13,7 @@
     </image>
     <item>
       <title>Making microservices accessible</title>
-      <description><![CDATA[<p></p>]]></description>
+      <description><![CDATA[<p>Accessibility considerations and different approaches to developing microservices.</p>]]></description>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       <link>https://www.craigabbott.co.uk/blog/making-microservices-accessible</link>
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/making-microservices-accessible</guid>    </item>
@@ -54,7 +54,7 @@
       <link>https://www.craigabbott.co.uk/blog/combining-axe-core-and-pa11y</link>
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/combining-axe-core-and-pa11y</guid>    </item>
     <item>
-      <title>Axe-core vs PA11Y: Which one should you choose?</title>
+      <title>Axe-core vs PA11Y</title>
       <description><![CDATA[<p>A detailed comparison between axe-core and PA11Y to see which accessibility errors each tool can find.</p>]]></description>
       <pubDate>Sun, 05 Sep 2021 01:00:00 +0000</pubDate>
       <link>https://www.craigabbott.co.uk/blog/axe-core-vs-pa11y</link>
@@ -87,8 +87,8 @@
       <title>What is it like to use a screen reader on an inaccessible website?</title>
       <description><![CDATA[<p>Ever wondered what it must be like to use a screen reader? Hopefully this metaphor will help!</p>]]></description>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      <link>https://www.craigabbott.co.uk/blog/what-is-it-like-to-use-a-screen-reader</link>
-      <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/what-is-it-like-to-use-a-screen-reader</guid>    </item>
+      <link>https://www.craigabbott.co.uk/blog/what-is-it-like-to-use-a-screen-reader-on-an-inaccessible-website</link>
+      <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/what-is-it-like-to-use-a-screen-reader-on-an-inaccessible-website</guid>    </item>
     <item>
       <title>One-page-applications are not accessible</title>
       <description><![CDATA[<p>A short article explaining the pitfalls of one page applications and accessibility.</p>]]></description>
@@ -145,7 +145,7 @@
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/bug-fixes-and-performance-improvements</guid>    </item>
     <item>
       <title>How to calculate reading time, like Medium</title>
-      <description><![CDATA[<p>How to calculate the reading time for your users on blog posts. Like medium. </p>]]></description>
+      <description><![CDATA[<p>How to calculate the reading time for your users on blog posts. Like medium.</p>]]></description>
       <pubDate>Sun, 20 Aug 2017 01:00:00 +0000</pubDate>
       <link>https://www.craigabbott.co.uk/blog/how-to-calculate-reading-time-like-medium</link>
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/how-to-calculate-reading-time-like-medium</guid>    </item>
@@ -163,7 +163,7 @@
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/death-of-the-notes-box</guid>    </item>
     <item>
       <title>Error messages are not funny</title>
-      <description><![CDATA[<p>Error messages should be clear an concise. They are not a place for humour or "brand voice".</p>]]></description>
+      <description><![CDATA[<p>Error messages should be clear an concise. They are not a place for humour or 'brand voice'.</p>]]></description>
       <pubDate>Mon, 07 Aug 2017 01:00:00 +0000</pubDate>
       <link>https://www.craigabbott.co.uk/blog/error-messages-are-not-funny</link>
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/error-messages-are-not-funny</guid>    </item>
@@ -175,7 +175,7 @@
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/some-thoughts-on-primary-buttons</guid>    </item>
     <item>
       <title>Hear no, see no, techno</title>
-      <description><![CDATA[<p>A review of Molly Watts talk at Camp Digital called "Hear no, see no, techno."</p>]]></description>
+      <description><![CDATA[<p>A review of Molly Watts talk at Camp Digital called 'Hear no, see no, techno.'</p>]]></description>
       <pubDate>Thu, 31 Mar 2016 01:00:00 +0000</pubDate>
       <link>https://www.craigabbott.co.uk/blog/hear-no-see-no-techno</link>
       <guid isPermaLink="false">https://www.craigabbott.co.uk/blog/hear-no-see-no-techno</guid>    </item>

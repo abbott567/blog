@@ -1,0 +1,43 @@
+<header class="header theme-toggle__placeholder" role="banner">
+  <div class="header__container">
+
+    <div class="header__logo">
+      {%- include 'svgs/logo.njk' -%}
+    </div>
+
+    <div class="header__nav-container">
+      <nav>
+        <ul>
+          {%- for page in site.pages -%}
+            {%- if page.navHeader === true -%}
+                <li><a class="no-visited-state" href="{{page.href}}">{{page.title}}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </nav>
+      
+      <menu aria-label="Find me on social media">
+        <li class="header__social-icon">
+          <a role="button" aria-label="Twitter - @abbott567" class="icon" href="https://twitter.com/abbott567" rel="me">
+            {%- include 'svgs/icon-twitter.njk' -%}
+          </a>
+        </li>
+        <li class="header__social-icon">
+          <a role="button" aria-label="LinkedIn - @abbott567" class="icon" href="https://uk.linkedin.com/in/abbott567" rel="me">
+            {%- include 'svgs/icon-linkedin.njk' -%}
+          </a>
+        </li>
+        <li class="header__social-icon">
+          <a role="button" aria-label="Mastodon - a11y.info/@craigabbott" class="icon" href="https://a11y.info/@craigabbott" rel="me">
+            {%- include 'svgs/icon-mastodon.njk' -%}
+          </a>
+        </li>
+        <li class="header__social-icon">
+          <a role="button" aria-label="Instagram - @abbott567" class="icon" href="https://instagram.com/abbott567" rel="me">
+            {%- include 'svgs/icon-instagram.njk' -%}
+          </a>
+        </li>
+      </menu>
+    </div>
+  </div>
+</header>

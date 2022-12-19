@@ -1,0 +1,70 @@
+{%- extends 'layouts/base.njk' -%}
+
+{%- block main -%}
+  <div id="blog-page">
+    <h1>Blog</h1>
+    {%- for post in posts -%}
+      <article aria-labelledby="{{post.slug}}">
+        <header>
+          <h2 id="{{post.slug}}">{{post.title}}</h2>
+        </header>
+        
+        <section>
+          <p class="visually-hidden">Excerpt:</p>
+          {{post.excerpt|markdown}}
+        </section>
+        
+        <a href="{{post.href}}">
+          Read full article
+          <span class="visually-hidden">
+            : {{post.title}}
+          </span>
+        </a>
+        
+        <footer>
+          {%- include 'components/article-info.njk' -%}
+        </footer>
+      </article>
+    {%- endfor -%}
+
+    {%- if newer or older -%}
+
+      <div>
+        <menu class="pagination" aria-label="See more posts">
+          {%- if newer -%}
+            <li class="pagination__newer">
+              <a href="/blog/?page={{pageNo - 1}}" rel="prev" class="no-visited-state">
+                <span>
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                    <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                  </svg>
+                  Newer posts
+                </span>
+                <span class="visually-hidden">: </span>
+                <span class="pagination__page-no">
+                  page {{pageNo - 1}}
+                </span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if older -%}
+            <li class="pagination__older">
+              <a href="/blog/?page={{pageNo + 1}}" rel="next" class="no-visited-state">
+                <span>
+                  Older posts
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                    <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                  </svg>
+                </span>
+                <span class="visually-hidden">: </span>
+                <span class="pagination__page-no">
+                  page {{pageNo + 1}}
+                </span>
+              </a>
+            </li>
+          {%- endif -%}
+        </menu>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endblock -%}

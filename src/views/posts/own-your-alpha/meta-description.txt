@@ -1,1 +1,0 @@
-A short article on how to design a digital service if you're doing Alpha correctly.

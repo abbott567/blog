@@ -1,0 +1,79 @@
+@use 'dark-mode-detection' as *;
+@use 'code-highlight.scss' as *;
+
+$off-white: #FAF9F6;
+$matte-black: #28282B;
+$grey-light: #D3D3D3;
+$grey-dark: #A9A9A9;
+$yellow-light: #fff36e;
+$yellow-dark: #ffbb00;
+$red-light: #be1622;
+$red-dark: #811818;
+$blue-light: #569cd6;
+$blue-dark: #015692;
+$white-transparent: rgba(255, 255, 255, .05);
+$black-transparent: rgba(1, 1, 1, .05);
+$white-translucent: rgba(255, 255, 255, .25);
+$black-translucent: rgba(1, 1, 1, .25);
+
+// Themes
+@mixin _theme-light {
+  @include code-light;
+  --page-colour: #{$off-white};
+  --text-colour-primary: #{$matte-black};
+  --border-colour: #{$grey-dark};
+  --input-border-colour: #{$matte-black};
+  --link-colour: #{$red-light};
+  --visited-link-colour: #{$red-dark};
+  --focus-highlight-colour: #{$yellow-light};
+  --focus-contrasting-colour: var(--text-colour-primary);
+  --barely-visible: #{$black-transparent};
+  --partially-visible: #{$black-translucent};
+  --button-text-colour: #{$matte-black};
+  --button-background-colour: #{$grey-dark};
+  --button-shadow-colour: #{$grey-light};
+  --inline-code-colour: #{$blue-dark};
+}
+
+@mixin _theme-dark {
+  @include code-dark;
+  --page-colour: #{$matte-black};
+  --text-colour-primary: #{$off-white};
+  --border-colour: #{$grey-light};
+  --input-border-colour: black;
+  --link-colour: #{$yellow-dark};
+  --visited-link-colour: #{$yellow-light};
+  --focus-highlight-colour: #{$red-dark};
+  --focus-contrasting-colour: var(--text-colour-primary);
+  --barely-visible: #{$white-transparent};
+  --partially-visible: #{$white-translucent};
+  --button-text-colour: #{$matte-black};
+  --button-background-colour: #{$grey-light};
+  --button-shadow-colour: #{$grey-dark};
+  --inline-code-colour: #{$blue-light};
+  img {
+    opacity: .8;
+  }
+}
+
+/* Embed themes for auto detection
+and Javascript switching */
+:root {
+  --white: #{$off-white};
+  --black: #{$matte-black};
+  --black-translucent: #{$black-translucent};
+  --kbd-background-colour: #{$grey-light};
+  --kbd-border-colour: #{$grey-dark};
+  --kbd-text-colour: #{$matte-black};
+  @include _theme-light;
+  @include dark-mode {
+    @include _theme-dark;
+  }
+}
+
+body.theme--light {
+  @include _theme-light;
+}
+body.theme--dark {
+  @include _theme-dark;
+}

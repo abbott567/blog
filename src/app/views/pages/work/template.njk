@@ -1,0 +1,167 @@
+{%- extends 'layouts/base.njk' -%}
+
+{%- block main -%}
+
+  <h1>Work</h1>
+
+  <p>
+    This is my portfolio and everything in here is my work, but I believe 
+    collaboration is key.
+  </p>
+  <p>
+    I've worked in small start-ups with just 4 people, and I've worked in huge 
+    organisations with close to 96,000 employees.
+  </p>
+  <p>
+    Whatever the size of the organisation, I never work in isolation. 
+    Every piece of work listed here will have had input and 
+    influence from some of the amazing people I've worked with over the years.
+  </p>
+
+  <h2>Contents</h2>
+  <h3>Design Work</h3>
+  <ul>
+    <li>
+      <a href="#dwp-design-patterns">
+        Design Patterns - Department for Work and Pensions
+      </a>
+    </li>
+    <li>
+      <a href="#govuk-wireframing-kit-for-sketch">
+        GOV.UK Wireframing Kit for Sketch
+      </a>
+    </li>
+    <li>
+      <a href="#service-blueprints">
+        Service Blueprints
+      </a>
+    </li>
+    <li>
+      <a href="#user-journey-maps">
+        User Journey Maps
+      </a>
+    </li>
+  </ul>
+
+  <h3>Accessibility Work</h3>
+  <ul>
+    <li>
+      <a href="#dwp-accessibility-manual">
+        DWP Accessibility Manual
+      </a>
+    </li>
+  
+    <li>
+      <a href="#accessibility-reporting">
+        Accessibility Reporting
+      </a>
+    </li>
+  
+    <li>
+      <a href="#standards-and-strategy">
+        Standards and strategy
+      </a>
+    </li>
+  
+    <li>
+      <a href="#accessibility-clinics">
+        Accessibility Clinics
+      </a>
+    </li>
+  
+    <li>
+      <a href="#wcagify">
+        WCAGify
+      </a>
+    </li>
+  </ul>
+
+  <h2>Design work</h2>
+  <p>
+    I've worked in multidisciplinary teams doing agile delivery on individual 
+    services, and across entire portfolios of products.
+  </p>
+  <p>
+    I work with many other people in their roles, including Designers, 
+    Researchers, Developers, Product Managers, Architects, Test Engineers and 
+    Stakeholders, and across various communities in larger organisations.
+  </p>
+  <p>
+    A lot of what I do is about bringing people together and breaking down silos. 
+    I organise and facilitate community meetings, workshops and training sessions 
+    to make sure services are designed consistently and built to the right standards.
+  </p>
+  <p>
+    Depending on the phase and the scope of a project, I design for the big 
+    picture, or for the detail.
+  </p>
+  <p>
+    I design interactions, content, visuals, maps and blueprints for products 
+    and services.
+  </p>
+  <p>
+    I was part of the original <a href="https://design-system.service.gov.uk/community/design-system-working-group/">
+    GOV.UK Design System Working Group</a> and reviewed and provided feedback on 
+    dozens of submissions for the <a href="https://design-system.service.gov.uk">
+    GOV.UK Design System</a> against their <a href="https://design-system.service.gov.uk/community/contribution-criteria/">
+    contribution criteria</a>.
+  </p>
+  <p>
+    I've assessed the design on over 40 services at <a href="https://www.gov.uk/service-manual/service-assessments">
+    GOV.UK Service Assessments</a>, to make sure they are designed correctly in 
+    line with the <a href="https://www.gov.uk/service-manual/service-standard">
+    GOV.UK Service Standard</a>, and that they use common patterns, components 
+    and best practice wherever possible.
+  </p>
+
+  {%- for project in site.projects -%}
+    {%- if 'design' in project.categories -%}
+    <article>
+      <header>
+        <h3 id="{{project.slug}}">{{project.title}}</h3>
+      </header>
+
+      {{project.excerpt|markdown}}
+    </article>
+    {%- endif -%}
+  {%- endfor -%}
+
+  <h2>Accessibility work</h2>
+  <p>
+    I work to embed accessibility in User Centred Design across large 
+    organisations. I've built communities, practices, and lead on accessibility 
+    strategy, implementing best practice, training and support for product teams.
+  </p>
+  <p>
+    I work with Directors and Deputy Directors to implement accessibility 
+    strategy, set Objective Key Results and define Key Performance Indicators.
+  </p>
+  <p>
+    I work with product teams, senior stakeholders and communities of practice. 
+    I run meet-ups, workshops and training sessions to make sure accessibility 
+    standards are understood and adhered to.
+  </p>
+  <p>
+    I worked to create the 'Accessibility Specialist' job role in DWP and 
+    collaborated with other departments to define it as a 
+    <a href="https://www.gov.uk/guidance/accessibility-specialist">Digital, Data 
+    and Technology (DDaT) role</a> in Government.
+  </p>
+  <p>
+    I designed, built and maintain the DWP Accessibility Manual, and I give 
+    <a href="/talks">talks</a> regularly on the topics of accessibility, 
+    inclusion and neurodiversity.
+  </p>
+
+  {%- for project in site.projects -%}
+    {%- if 'accessibility' in project.categories -%}
+    <article>
+      <header>
+        <h3 id="{{project.slug}}">{{project.title}}</h3>
+      </header>
+
+      {{project.excerpt|markdown}}
+    </article>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endblock -%}

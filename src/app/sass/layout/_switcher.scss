@@ -1,0 +1,17 @@
+@mixin switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  > * {
+    flex-grow: 1;
+    flex-basis: calc(( 30rem - 100%) * 999);
+  }
+  > :nth-last-child(n+ 5),
+  > :nth-last-child(n+ 5) ~ * {
+    flex-basis: 100%;
+  }
+}
+
+.switcher {
+  @include switcher;
+}

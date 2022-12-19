@@ -1,1 +1,0 @@
-Accessibility considerations and different approaches to developing microservices.

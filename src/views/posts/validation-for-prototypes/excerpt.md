@@ -1,3 +1,0 @@
-The plugin went down well. At least, it did, until the GOVUK frontend styles got updated. Since then, a dozen or so people have tried to use the plugin but found it doesn't work anymore. It's been sat in my Trello board of to-do's for the best part of a year.
-
-The thing is, I thought I built the plugin off the back of a user need, and I was happy when people praised my work. But in reality, I think I missed the point. As did everybody that used it.

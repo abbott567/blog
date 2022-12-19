@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="{{site.url}}{{page.href}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    
+    <title>{{page.title}} - {{site.title}}</title>
+    <meta name="title" content="{{page.title}}">
+    <meta name="description" content="{{page.meta.description}}">
+
+    <meta name="theme-color" content="#f9f9f9">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9f9f9">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#222222">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{site.url}}{{page.href}}">
+    <meta name="twitter:title" content="{{page.title}}" />
+    <meta name="twitter:image" content="{{site.url}}{{page.meta.image.href}}" />
+    <meta name="twitter:image:alt" content="{{page.meta.image.alt}}">
+    <meta name="twitter:site" content="{{site.meta.twitter}}" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{site.url}}{{page.href}}">
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.meta.description}}">
+    <meta property="og:image" content="{{site.url}}{{page.meta.image.href}}">
+    <meta property="og:image:alt" content="{{page.meta.image.alt}}">
+    <meta property="og:site_name" content="{{site.title}}">
+
+    <link rel="alternate" type="application/rss+xml" href="{{site.meta.rss}}" title="RSS Feed">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😸</text></svg>">
+    {%- block headEnd -%}{%- endblock -%}
+  </head>
+
+  <body>
+    <div class="container">
+      <a class="skip-link" href="#main">Skip to main content</a>
+    </div>
+    {%- include 'components/header.njk' -%}
+    {%- block beforeMain -%}{%- endblock -%}
+    <main id="main">
+      <div class="box container">
+        {%- block main -%}{%- endblock -%}
+      </div>
+    </main>
+    {%- block afterMain -%}{%- endblock -%}
+    {%- include 'components/footer.njk' -%}
+    <script src="/scripts/bundle.min.js"></script>
+    <script async src="//static.getclicky.com/101390938.js"></script>
+  </body>
+</html>

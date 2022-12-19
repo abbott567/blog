@@ -1,65 +1,85 @@
 {
   "name": "blog",
-  "version": "0.0.0",
+  "version": "2.0.0",
+  "author": "Craig Abbott - @abbott567",
   "private": true,
+  "license": "ISC",
   "engines": {
-    "node": "16.15.0"
+    "node": "18.12.1"
   },
   "scripts": {
-    "start": "node bin/www",
-    "gulp": "gulp",
-    "test": "PORT=8080 mocha --timeout 60000 --exit",
-    "coverage": "PORT=8080 nyc --reporter=html --reporter=text mocha --timeout 60000 --exit"
+    "start": "node scripts/start.mjs",
+    "dev": "node src/dev/launch.mjs",
+    "build": "node scripts/build.all.mjs",
+    "test": "NODE_ENV=test node scripts/build.all.mjs && NODE_ENV=test mocha",
+    "coverage": "NODE_ENV=test c8 mocha"
   },
   "dependencies": {
     "compression": "^1.7.4",
-    "date-fns": "^2.29.3",
-    "debug": "^4.3.3",
-    "errorhandler": "^1.5.1",
-    "express": "^4.18.2",
-    "fs-jetpack": "^5.1.0",
-    "highlight.js": "^11.6.0",
-    "marked": "^4.1.1",
-    "nunjucks": "^3.2.3",
-    "nunjucks-markdown": "^2.0.1",
-    "serve-favicon": "^2.5.0",
-    "slugify": "^1.6.5",
-    "wcagify": "^1.4.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
-    "babel-loader": "^8.2.5",
-    "chai": "^4.3.4",
-    "got": "^12.5.2",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-nodemon": "^2.5.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-terser": "^2.1.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^10.1.0",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.11.2",
+    "c8": "^7.12.0",
+    "chai": "^4.3.7",
+    "cheerio": "^1.0.0-rc.12",
+    "cmark-gfm": "^0.9.0",
+    "colors": "^1.4.0",
+    "cssnano": "^5.1.14",
+    "cssnano-preset-lite": "^2.1.3",
+    "date-fns": "^2.29.3",
+    "deep-clone": "^3.0.3",
+    "fs-jetpack": "^5.1.0",
+    "got": "^12.5.3",
+    "highlight.js": "^11.7.0",
+    "html-minifier": "^4.0.0",
+    "jsdom": "^20.0.3",
+    "mocha": "^10.2.0",
+    "mocha-suppress-logs": "^0.3.1",
+    "node-watch": "^0.7.3",
+    "nodemon": "^2.0.20",
+    "normalize.css": "^8.0.1",
+    "nunjucks": "^3.2.3",
     "nyc": "^15.1.0",
-    "pump": "^3.0.0",
-    "require-dir": "^1.2.0",
-    "sass": "^1.55.0",
+    "postcss": "^8.4.20",
+    "rss-parser": "^3.12.0",
+    "sass": "^1.56.2",
+    "slugify": "^1.6.5",
     "standard": "^17.0.0",
-    "webpack-stream": "^7.0.0"
+    "url-parse": "^1.5.10",
+    "url-toolkit": "^2.2.5",
+    "wcagify": "^1.4.1",
+    "webp-converter": "^2.3.3",
+    "webpack": "^5.75.0"
+  },
+  "mocha": {
+    "timeout": "120000",
+    "exit": true,
+    "require": "mocha-suppress-logs"
+  },
+  "c8": {
+    "extension": [
+      ".mjs"
+    ],
+    "include": [
+      "src**/*",
+      "lib**/*",
+      "!src/data*"
+    ],
+    "all": true,
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "report-dir": "coverage"
   },
   "standard": {
-    "env": {
-      "mocha": true,
-      "browser": true
-    },
+    "env": [
+      "mocha"
+    ],
     "ignore": [
       "**/html5shiv.js"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
     ]
   }
 }

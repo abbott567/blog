@@ -1,1 +1,0 @@
-A short article explaining the pitfalls of one page applications and accessibility.

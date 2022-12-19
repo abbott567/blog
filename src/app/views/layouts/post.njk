@@ -1,0 +1,10 @@
+{%- extends 'layouts/base.njk' -%}
+
+{%- set page = post -%}
+
+{%- block main -%}
+  <div class="post">
+    <!-- injects readtime in build -->
+    {{- post.content|markdown -}}
+  </div>
+{%- endblock -%}
