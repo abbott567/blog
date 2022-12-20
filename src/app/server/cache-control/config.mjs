@@ -1,5 +1,5 @@
 const version = {
-  css: '1.0.4',
+  css: '1.1.0',
   js: '1.0.0'
 }
 

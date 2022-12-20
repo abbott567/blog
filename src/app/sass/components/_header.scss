@@ -24,12 +24,13 @@
       max-width: 200px;
       @media (max-width: 540px) {
         margin: auto;
+        width: 150px;
       }
     }
   }
   &__nav-container {
     @include cluster;
-    padding-top: var(--s-1);
+    padding-top: var(--s-2);
     justify-content: space-between;
     @media (max-width: 540px) {
       justify-content: center;
@@ -49,12 +50,12 @@
     margin-bottom: 0;
   }
   nav {
-    margin-bottom: var(--s0);
+    margin-bottom: var(--s-2);
   }
   menu {
     @include cluster;
     padding-left: 0;
-    margin-bottom: var(--s0);
+    margin-bottom: var(--s-2);
     margin-top: 0; 
     font-size: 2rem;
     line-height: 1rem;
