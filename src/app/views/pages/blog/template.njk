@@ -9,10 +9,8 @@
           <h2 id="{{post.slug}}">{{post.title}}</h2>
         </header>
         
-        <section>
-          <p class="visually-hidden">Excerpt:</p>
-          {{post.excerpt|markdown}}
-        </section>
+        <p class="visually-hidden">Excerpt:</p>
+        {{post.excerpt|markdown}}
         
         <a href="{{post.href}}">
           Read full article
