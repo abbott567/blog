@@ -1,5 +1,6 @@
 import webp from 'webp-converter'
 import fs from 'fs-jetpack'
+import slash from 'slash'
 
 webp.grant_permission()
 
@@ -14,7 +15,8 @@ async function convertToWebp () {
   const images = fs.find(srcPath, { matching: ['**/*.jpg', '**/*.jpeg', '**/*.png'] })
   // Loop through each image
   for (const image of images) {
-    const filenameWithExt = image.substring(image.lastIndexOf('/') + 1)
+    const cleanedPath = slash(image)
+    const filenameWithExt = cleanedPath.substring(cleanedPath.lastIndexOf('/') + 1)
     const filenameWithoutExt = filenameWithExt.split('.')[0]
     const foldersFullPath = image.substring(0, image.lastIndexOf(filenameWithExt))
     const foldersRelPath = foldersFullPath.split(`${srcPath}/`)[1]
@@ -41,7 +43,8 @@ async function moveOthers () {
   const images = fs.find(srcPath, { matching: ['!**/*.jpg', '!**/*.jpeg', '!**/*.png', '!.DS_Store'] })
   // Loop through each image
   for (const image of images) {
-    const filenameWithExt = image.substring(image.lastIndexOf('/') + 1)
+    const cleanedPath = slash(image)
+    const filenameWithExt = cleanedPath.substring(cleanedPath.lastIndexOf('/') + 1)
     const foldersFullPath = image.substring(0, image.lastIndexOf(filenameWithExt))
     const foldersRelPath = foldersFullPath.split(`${srcPath}/`)[1]
     const outPutFolder = `${distpath}/${foldersRelPath}`

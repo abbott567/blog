@@ -45,6 +45,7 @@
     "postcss": "^8.4.20",
     "rss-parser": "^3.12.0",
     "sass": "^1.56.2",
+    "slash": "^5.0.0",
     "slugify": "^1.6.5",
     "standard": "^17.0.0",
     "url-parse": "^1.5.10",
