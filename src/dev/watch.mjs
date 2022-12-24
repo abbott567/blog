@@ -8,7 +8,8 @@ import buildProjects from '../build/html.projects.mjs'
 import buildRSSFeed from '../build/rss.feed.mjs'
 import buildSitemap from '../build/sitemap.mjs'
 import images from '../build/images.webp.mjs'
-import browserSync from './browser-sync.mjs'
+import browserSync from 'browser-sync'
+import createBSServer from './browser-sync.mjs'
 
 function watchPages (site) {
   console.log(colours.yellow('Watching src/app/pages for changes'))
@@ -20,7 +21,7 @@ function watchPages (site) {
     console.log(colours.yellow(`${name} changed.`))
     buildPages(site)
     buildSitemap()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -32,7 +33,7 @@ function watchPosts (site) {
     buildPosts(site)
     buildRSSFeed()
     buildSitemap()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -43,7 +44,7 @@ function watchProjects (site) {
     console.log(colours.yellow(`${name} changed.`))
     buildProjects(site)
     buildSitemap()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -54,7 +55,7 @@ function watchImages () {
     console.log(colours.yellow(`${name} changed.`))
     images.convertToWebp()
     images.moveOthers()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -64,7 +65,7 @@ function watchSass () {
   watch('src/app/sass', { recursive: true }, (evt, name) => {
     console.log(colours.yellow(`${name} changed.`))
     compileCSS()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -74,7 +75,7 @@ function watchFrontendJS () {
   watch('src/app/client', { recursive: true }, (evt, name) => {
     console.log(colours.yellow(`${name} changed.`))
     compileJS()
-    const bs = browserSync()
+    const bs = browserSync.get('server')
     bs.reload()
   })
 }
@@ -86,7 +87,7 @@ function watchAll (site) {
   watchSass()
   watchFrontendJS()
   watchImages()
-  browserSync()
+  createBSServer()
 }
 
 export default watchAll
