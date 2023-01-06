@@ -18,9 +18,10 @@ async function convertToWebp () {
     const cleanedPath = slash(image)
     const filenameWithExt = cleanedPath.substring(cleanedPath.lastIndexOf('/') + 1)
     const filenameWithoutExt = filenameWithExt.split('.')[0]
-    const foldersFullPath = image.substring(0, image.lastIndexOf(filenameWithExt))
+    const foldersFullPath = cleanedPath.substring(0, image.lastIndexOf(filenameWithExt))
     const foldersRelPath = foldersFullPath.split(`${srcPath}/`)[1]
     const outPutFolder = `${distpath}/${foldersRelPath}`
+
     const outputFile = `${outPutFolder}${filenameWithoutExt}.webp`
     // Make sure output folder exists
     fs.dir(outPutFolder)
@@ -45,7 +46,7 @@ async function moveOthers () {
   for (const image of images) {
     const cleanedPath = slash(image)
     const filenameWithExt = cleanedPath.substring(cleanedPath.lastIndexOf('/') + 1)
-    const foldersFullPath = image.substring(0, image.lastIndexOf(filenameWithExt))
+    const foldersFullPath = cleanedPath.substring(0, image.lastIndexOf(filenameWithExt))
     const foldersRelPath = foldersFullPath.split(`${srcPath}/`)[1]
     const outPutFolder = `${distpath}/${foldersRelPath}`
     const outputFile = `${outPutFolder}${filenameWithExt}`

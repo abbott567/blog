@@ -7,7 +7,7 @@ export default [
     meta: {
       description: 'Test meta description',
       image: {
-        href: '/images/test-share-image-1.jpg',
+        href: '/images/test-share-image-1.webp',
         alt: 'Alt for test share image'
       }
     }
@@ -20,7 +20,7 @@ export default [
     meta: {
       description: 'Test blog description',
       image: {
-        href: '/images/test-share-image-1.jpg',
+        href: '/images/test-share-image-1.webp',
         alt: 'Alt for test share image'
       }
     }

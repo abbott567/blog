@@ -7,7 +7,7 @@ export default [
     meta: {
       description: 'My personal website. Check out my blog, talks or portfolio work.',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -20,7 +20,7 @@ export default [
     meta: {
       description: 'My personal blog. Topics cover Accessibility, Design and Frontend Development.',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -33,7 +33,7 @@ export default [
     meta: {
       description: 'My talks. Topics cover Accessibility, Design, Frontend Development and Mental Health.',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -46,7 +46,7 @@ export default [
     meta: {
       description: 'My work. Check out a the stuff I\'ve been working on',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -59,7 +59,7 @@ export default [
     meta: {
       description: 'Sitemap for craigabbott.co.uk',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -72,7 +72,7 @@ export default [
     meta: {
       description: 'Privacy statement for craigabbott.co.uk',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }
@@ -85,7 +85,7 @@ export default [
     meta: {
       description: 'Accessibility statement for craigabbott.co.uk',
       image: {
-        href: '/images/share-image-1.jpg',
+        href: '/images/share-image-1.webp',
         alt: 'Craig Abbott presenting at a conference'
       }
     }

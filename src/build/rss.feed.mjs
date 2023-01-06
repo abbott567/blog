@@ -16,7 +16,7 @@ function buildRSSFeed () {
   xml += '    <image>\n'
   xml += '      <title>Blog - craigabbott.co.uk</title>\n'
   xml += '      <link>https://www.craigabbott.co.uk/blog</link>\n'
-  xml += '      <url>https://www.craigabbott.co.uk/images/share-image-1.jpg</url>\n'
+  xml += '      <url>https://www.craigabbott.co.uk/images/share-image-1.webp</url>\n'
   xml += '    </image>\n'
   site.posts.forEach(post => {
     xml += '    <item>\n'
