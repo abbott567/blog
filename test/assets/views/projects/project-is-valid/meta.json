@@ -1,7 +1,7 @@
 {
   "description": "Test meta description for portfolio-1",
   "image": {
-    "href": "/images/test-share-image-1.webp",
+    "href": "/images/share-image-1.webp",
     "alt": "Alt for test share image"
   }
 }
