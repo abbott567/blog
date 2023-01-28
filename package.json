@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node lib/scripts/all && eleventy --serve",
+    "start": "set NODE_ENV=dev&&node lib/scripts/all&&eleventy --serve",
     "build": "node lib/scripts/all && eleventy"
   },
   "devDependencies": {
