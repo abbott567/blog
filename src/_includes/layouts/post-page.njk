@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+
+{%- from 'components/article-info.njk' import articleInfo -%}
+{%- block main -%}
+  <div class="post">
+
+    {{content|safe}}
+
+    <hr>
+    
+    <h2 class="visually-hidden">
+      Post details
+    </h2>
+    {{- articleInfo({
+      date: page.date,
+      content: content,
+      tags: tags
+    }) -}}
+  </div>
+{%- endblock -%}

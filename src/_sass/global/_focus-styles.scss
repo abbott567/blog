@@ -1,0 +1,51 @@
+a {
+  &:focus {
+    color: var(--text-colour-primary);
+    outline: thick solid var(--text-colour-primary);
+    outline-offset: .2em;
+    text-decoration: none;
+    background-color: var(--focus-highlight-colour);
+  }
+}
+
+pre > code {
+  &:focus {
+    border-style: solid;
+    border-color: black;
+    outline: thick solid var(--text-colour-primary);
+    outline-offset: var(--s-4);
+    box-shadow: 0 0 0 var(--s-4) var(--focus-highlight-colour);
+  }
+}
+
+.theme-toggle__button {
+  &:focus:focus-visible {
+    color: var(--focus-contrasting-colour);
+    background-color: var(--focus-highlight-colour);
+    outline-offset: -2px;
+    border-radius: 0;
+    outline: thick solid var(--text-colour-primary);
+  }
+}
+
+a[role="button"] {
+  &:focus {
+    box-shadow: 0 0 0 var(--s-4) var(--focus-highlight-colour);
+    > svg {
+      outline-offset: var(--s-3);
+      background-color: var(--text-colour-primary);
+      fill: var(--focus-highlight-colour);
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.tags-list {
+  a:visited:focus,
+  a:focus {
+    color: var(--text-colour-primary);
+    background-color: var(--focus-highlight-colour);
+    border-radius: 0;
+  }
+}

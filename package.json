@@ -1,86 +1,22 @@
 {
-  "name": "blog",
-  "version": "2.0.0",
-  "author": "Craig Abbott - @abbott567",
-  "private": true,
-  "license": "ISC",
-  "engines": {
-    "node": "18.12.1"
-  },
   "scripts": {
-    "start": "node scripts/start.mjs",
-    "dev": "node src/dev/launch.mjs",
-    "build": "node scripts/build.all.mjs",
-    "test": "NODE_ENV=test node scripts/build.all.mjs && NODE_ENV=test mocha",
-    "coverage": "NODE_ENV=test c8 mocha"
-  },
-  "dependencies": {
-    "colors": "^1.4.0",
-    "compression": "^1.7.4",
-    "express": "^4.18.2"
+    "start": "node lib/scripts/all && eleventy --serve",
+    "build": "node lib/scripts/all && eleventy"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "browser-sync": "^2.11.2",
-    "c8": "^7.12.0",
-    "chai": "^4.3.7",
-    "cheerio": "^1.0.0-rc.12",
-    "cmark-gfm": "^0.9.0",
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "cssnano": "^5.1.14",
-    "cssnano-preset-lite": "^2.1.3",
     "date-fns": "^2.29.3",
-    "deep-clone": "^3.0.3",
+    "eleventy-sass": "^2.1.6",
     "fs-jetpack": "^5.1.0",
-    "got": "^12.5.3",
-    "highlight.js": "^11.7.0",
+    "gray-matter": "^4.0.3",
     "html-minifier": "^4.0.0",
-    "jsdom": "^20.0.3",
-    "mocha": "^10.2.0",
-    "mocha-suppress-logs": "^0.3.1",
-    "node-watch": "^0.7.3",
-    "nodemon": "^2.0.20",
     "normalize.css": "^8.0.1",
-    "nunjucks": "^3.2.3",
-    "nyc": "^15.1.0",
-    "postcss": "^8.4.20",
-    "rss-parser": "^3.12.0",
-    "sass": "^1.56.2",
-    "slash": "^5.0.0",
-    "slugify": "^1.6.5",
+    "postcss": "^8.4.21",
+    "sharp": "^0.31.3",
     "standard": "^17.0.0",
-    "url-parse": "^1.5.10",
-    "url-toolkit": "^2.2.5",
-    "wcagify": "^1.4.1",
-    "webp-converter": "^2.3.3",
+    "string-similarity": "^4.0.4",
     "webpack": "^5.75.0"
-  },
-  "mocha": {
-    "timeout": "120000",
-    "exit": true,
-    "require": "mocha-suppress-logs"
-  },
-  "c8": {
-    "extension": [
-      ".mjs"
-    ],
-    "include": [
-      "src**/*",
-      "lib**/*",
-      "!src/data*"
-    ],
-    "all": true,
-    "reporter": [
-      "html",
-      "text"
-    ],
-    "report-dir": "coverage"
-  },
-  "standard": {
-    "env": [
-      "mocha"
-    ],
-    "ignore": [
-      "**/html5shiv.js"
-    ]
   }
 }

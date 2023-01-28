@@ -1,7 +1,0 @@
-{%- extends 'layouts/base.njk' -%}
-
-{%- set page = { title: post.title } -%}
-
-{%- block main -%}
-  {{- post.content|markdown -}}
-{%- endblock -%}

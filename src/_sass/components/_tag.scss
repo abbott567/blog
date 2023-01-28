@@ -1,0 +1,10 @@
+.tag, a.tag:visited {
+  background-color: var(--link-colour);
+  color: var(--page-colour);
+  padding: .4em;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--s-1);
+  font-family: Courier, monospace;
+}

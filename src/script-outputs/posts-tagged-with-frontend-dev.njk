@@ -1,0 +1,16 @@
+---
+layout: layouts/blog-page.njk
+pagination:
+  data: collections.frontend-dev
+  alias: post
+  size: 10
+  reverse: true
+permalink: >-
+  /blog/tags/frontend-dev/{{"page-" + (pagination.pageNumber + 1) if
+  pagination.pageNumber > 0}}/
+eleventyComputed:
+  title: >-
+    Posts tagged with ‘frontend-dev’ {{"- Page " + (pagination.pageNumber + 1)
+    if pagination.pageNumber > 0}}
+---
+

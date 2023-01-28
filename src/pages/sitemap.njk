@@ -1,0 +1,138 @@
+---
+permalink: /sitemap/
+layout: 'layouts/base.njk'
+title: Sitemap
+meta:
+  description: Sitemap for craigabbott.co.uk
+  image:
+    href: '/images/share-image-1.webp'
+    alt: 'Craig Abbott presenting at a conference'
+---
+
+<div class="container box">
+  
+  <h1>
+    Sitemap
+  </h1>
+
+  <h2>
+    Table of contents
+  </h2>
+  <ul>
+    <li>
+      <a href="#pages">
+        Pages
+      </a>
+    </li>
+    <li>
+      <a href="#posts">
+        Posts
+      </a>
+    </li>
+    <li>
+      <a href="#talks">
+        Talks
+      </a>
+    </li>
+    <li>
+      <a href="#decks">
+        Decks
+      </a>
+    </li>
+    <li>
+      <a href="#work">
+        Work
+      </a>
+    </li>
+  </ul>
+  
+  <h3 id="pages">
+    Pages
+  </h3>
+  <p>
+    Pages are ordered alphabetically:
+  </p>
+  <ul>
+    {% for page in collections._pages|sortByTitle %}
+      {% if loc !== '.' %}
+        <li>
+          <a href="{{page.url}}">
+            {{page.data.title}}<span class="visually-hidden">: Page</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3 id="work">
+    Work
+  </h3>
+  <p>
+    Work is ordered alphabetically:
+  </p>
+  <ul>
+    {% for work in collections._work|sortByTitle %}
+      {% if loc !== '.' %}
+        <li>
+          <a href="/work/{{work.data.title|slugify}}">
+            {{work.data.title}}<span class="visually-hidden">: Work</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3 id="talks">
+    Talks
+  </h3>
+  <p>
+    Talks are ordered alphabetically:
+  </p>
+  <ul>
+    {% for talk in collections._talks|sortByTitle %}
+      {% if loc !== '.' %}
+        <li>
+          <a href="/talks/{{talk.data.title|slugify}}">
+            {{talk.data.title}}<span class="visually-hidden">: Talk</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3 id="decks">
+    Decks
+  </h3>
+  <p>
+    Decks are ordered alphabetically:
+  </p>
+  <ul>
+    {% for deck in collections._decks|sortByTitle %}
+      {% if loc !== '.' %}
+        <li>
+          <a href="/decks/{{deck.data.title|slugify}}">
+            {{deck.data.title}}<span class="visually-hidden">: Deck</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3 id="posts">
+    Posts
+  </h3>
+  <p>
+    Posts are ordered by published date:
+  </p>
+  <ul>
+    {% for post in collections._posts|reverse %}
+      {% if loc !== '.' %}
+        <li>
+          <a href="/blog/{{post.data.title|slugify}}">
+            {{post.data.title}}<span class="visually-hidden">: Post</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,34 @@
+---
+permalink: "/feed.xml"
+eleventyExcludeFromCollections: true,
+title: 'Blog posts - craigabbott.co.uk'
+description: I write about accessibility and user centred design.
+url: 'https://www.craigabbott.co.uk/'
+meta: 
+  author: 
+    name: Craig abbott
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{url}}">
+  <title>{{title}}</title>
+  <subtitle>{{description}}</subtitle>
+  <link href="{{permalink|absoluteUrl(url)}}" rel="self"/>
+  <link href="{{url}}"/>
+  <updated>{{collections._posts|getNewestCollectionItemDate|dateToRfc3339}}</updated>
+  <id>{{url}}</id>
+  <author>
+    <name>{{meta.author.name}}</name>
+  </author>
+  {%- for post in collections._posts|reverse %}
+  {%- set absolutePostUrl = post.url|absoluteUrl(url) %}
+  <entry>
+    <title>{{post.data.title}}</title>
+    <link href="{{absolutePostUrl}}"/>
+    <updated>{{post.date|dateToRfc3339}}</updated>
+    <id>{{absolutePostUrl}}</id>
+    <content xml:lang="en" type="html">
+      {{post.templateContent|htmlToAbsoluteUrls(absolutePostUrl)}}
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>

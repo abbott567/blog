@@ -1,0 +1,18 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__container">
+    <h2 class="visually-hidden">Support links</h2>
+      <ul>
+        {%- for page in navFooter -%}
+          <li>
+            <a class="no-visited-state" href="{{page.url}}">
+              {{page.title}}
+            </a>
+          </li>
+        {%- endfor -%}
+    </ul>
+    
+    <p class="footer__copyright">
+      <i>&copy;</i> Craig Abbott {{site.copyYear}}. All rights reserved.
+    </p>
+  </div> 
+</footer>

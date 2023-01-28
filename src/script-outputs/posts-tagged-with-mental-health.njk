@@ -1,0 +1,16 @@
+---
+layout: layouts/blog-page.njk
+pagination:
+  data: collections.mental-health
+  alias: post
+  size: 10
+  reverse: true
+permalink: >-
+  /blog/tags/mental-health/{{"page-" + (pagination.pageNumber + 1) if
+  pagination.pageNumber > 0}}/
+eleventyComputed:
+  title: >-
+    Posts tagged with ‘mental-health’ {{"- Page " + (pagination.pageNumber + 1)
+    if pagination.pageNumber > 0}}
+---
+

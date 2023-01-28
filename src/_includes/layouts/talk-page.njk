@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>
+  {{title}}
+</h1>
+{{excerpt|safe}}
+
+<h2>
+  Slides
+</h2>
+<p>
+  The deck for this talk is available as accessible HTML.
+</p>
+<p>
+  <a href="/decks/{{title|slugify}}/">
+    View slides for '{{title}}'
+  </a>
+</p>
+
+<h2>
+  Previous dates
+</h2>
+<p>
+  This talk was delivered for:
+</p>
+<ul>
+  {%- for item in previous -%}
+    <li>
+      {%- if item.link -%}
+        <a href="{{item.link}}">
+          {{item.where}}
+        </a>
+        - {{item.when}}
+      {% else %}
+        {{item.where}} - {{item.when}}
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>

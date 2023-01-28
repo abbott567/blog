@@ -1,0 +1,7 @@
+@use '../layout/cluster' as *;
+
+.tags-list {
+  @include cluster;
+  list-style: none;
+  margin: 0;
+}

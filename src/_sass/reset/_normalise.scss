@@ -1,0 +1,33 @@
+/* Normalise 
+–––––––––––––– */
+
+/*! Use normalize.css | MIT License | github.com/necolas/normalize.css */
+@use '../../../node_modules/normalize.css/normalize.css';
+
+/* Custom normalisation */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+details {
+  cursor: pointer;
+  > summary {
+    text-decoration: underline solid;
+  }
+  &:hover > summary {
+    text-decoration: underline wavy;
+  }
+}

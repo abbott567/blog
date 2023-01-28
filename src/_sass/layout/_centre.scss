@@ -1,0 +1,10 @@
+@mixin centre {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+.center,
+.centre {
+  @include centre;
+}

@@ -1,0 +1,16 @@
+---
+layout: layouts/blog-page.njk
+pagination:
+  data: collections.design
+  alias: post
+  size: 10
+  reverse: true
+permalink: >-
+  /blog/tags/design/{{"page-" + (pagination.pageNumber + 1) if
+  pagination.pageNumber > 0}}/
+eleventyComputed:
+  title: >-
+    Posts tagged with ‘design’ {{"- Page " + (pagination.pageNumber + 1) if
+    pagination.pageNumber > 0}}
+---
+

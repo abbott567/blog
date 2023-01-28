@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+---
+{%- from 'components/article-info.njk' import articleInfo -%}
+
+<div id="blog-page">
+  <h1>{{title}}</h1>
+  {%- for post in pagination.items -%}
+    {%- set slug -%}{{post.data.title|slugify}}{%- endset -%}
+    <article aria-labelledby="{{slug}}">
+      <header>
+        <h2 id="{{slug}}">{{post.data.title}}</h2>
+      </header>
+      
+      <p class="visually-hidden">Excerpt:</p>
+
+      {{post.data.excerpt|markdown|safe}}
+
+      <a href="/blog/{{slug}}">
+        Read full article
+        <span class="visually-hidden">
+          : {{post.data.title}}
+        </span>
+      </a>
+      
+      <footer>
+        {%- include 'components/article-info.njk' -%}
+        {{- articleInfo({
+          date: post.date,
+          content: post._templateContent,
+          tags: post.data.tags
+        }) -}}
+      </footer>
+    </article>
+  {%- endfor -%}
+
+  {%- if pagination.href.next or pagination.href.previous -%}
+    <div>
+      <menu class="pagination" aria-label="See more posts">
+        {%- if pagination.href.previous -%}
+          <li class="pagination__newer">
+            <a href="{{pagination.href.previous}}" rel="prev" class="no-visited-state">
+              <span>
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                  <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                </svg>
+                Newer posts
+              </span>
+              <span class="visually-hidden">: </span>
+              <span class="pagination__page-no">
+                page {{pagination.pageNumber}}
+              </span>
+            </a>
+          </li>
+        {%- endif -%}
+        {%- if pagination.href.next -%}
+          <li class="pagination__older">
+            <a href="{{pagination.href.next}}" rel="next" class="no-visited-state">
+              <span>
+                Older posts
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                  <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                </svg>
+              </span>
+              <span class="visually-hidden">: </span>
+              <span class="pagination__page-no">
+                page {{pagination.pageNumber + 2}}
+              </span>
+            </a>
+          </li>
+        {%- endif -%}
+      </menu>
+    </div>
+  {%- endif -%}
+</div>

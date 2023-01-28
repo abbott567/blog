@@ -1,0 +1,45 @@
+{%- macro projectGrid (params) -%}
+
+<div class="box grid padding-top:0">
+  {%- for project in collections._work|sortByTitle -%}
+    {%- if params.tag in project.data.tags -%}
+      <div 
+        class="card"
+        id="{{project.data.title|slugify}}"
+        aria-describedby="heading-{{project.data.title|slugify}}">
+        <div class="card__image">
+          <img 
+            src="{{project.data.meta.image.href}}" 
+            alt=""
+            aria-hidden="true"
+          >
+        </div>
+
+        <div class="card__info">
+          <h3 id="heading-{{project.data.title|slugify}}">
+            {{project.data.title}}
+          </h3>
+
+          <details>
+            <summary role="link">
+              Summary 
+              <span class="visually-hidden">: for {{project.data.title}}</span>
+            </summary>
+            <div class="card__summary">
+              {{project.data.excerpt|markdown|safe}}
+            </div>
+          </details>
+
+          <p>
+            <a href="/work/{{project.data.title|slugify}}">
+              Read deep-dive
+              <span class="visually-hidden">: on {{project.data.title}}</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+{%- endmacro -%}

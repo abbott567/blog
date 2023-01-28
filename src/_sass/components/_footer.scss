@@ -1,0 +1,23 @@
+@use '../layout/box' as *;
+@use '../layout/container' as *;
+@use '../layout/cluster' as *;
+
+.footer {
+  margin-top: var(--s5);
+  &__container {
+    @include container;
+    @include box;
+    border-top: medium solid var(--border-colour)
+  }
+  ul {
+    @include cluster;
+    list-style: none;
+    margin-left: 0;
+  }
+  &__copyright {
+    font-size: var(--s-1)
+  }
+  i {
+    font-family: Courier, monospace;
+  }
+}

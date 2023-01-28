@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: 'All tags for blog posts'
+permalink: /blog/tags/
+meta:
+  description: A list of tags for blog posts on craigabbott.co.uk,
+  canonicalURL: 'https://craigabbott.co.uk/blog/tags/'
+  image:
+    href: '/images/share-image-1.webp'
+    alt: 'Craig Abbott presenting at a conference'
+---
+
+<h1>
+  All tags for blog posts
+</h1>
+<ol class="list list--blank">
+  {%- for tag in postTags.sort() -%}
+    <li>
+      <a class="tag" href="/blog/tags/{{tag}}/">
+        {{tag}}
+      </a>
+    </li>  
+  {%- endfor -%}
+</ol>

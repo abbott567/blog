@@ -1,0 +1,27 @@
+@use '../layout/sidebar' as *;
+
+.article-info {
+  @include with-sidebar;
+  font-size: var(--s-1);
+  border-bottom: thin solid var(--border-colour);
+  gap: 0 var(--s-5);
+  margin-bottom: var(--s-2);
+  dt {
+    @include sidebar;
+    flex-basis: 10ch;
+    margin-bottom: 0;
+    padding-left: 0;
+    color: var(--text-colour-faded);
+  }
+  dd {
+    @include not-sidebar;
+    padding-left: 0;
+    margin-bottom: 0;
+    min-inline-size: 60%;
+    color: var(--text-colour-faded);
+  }
+}
+
+.post .article-info {
+  border-bottom: 0;
+}
