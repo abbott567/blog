@@ -23,9 +23,9 @@ html {
 }
 
 details {
-  cursor: pointer;
   > summary {
     text-decoration: underline solid;
+    cursor: pointer;
   }
   &:hover > summary {
     text-decoration: underline wavy;

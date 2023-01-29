@@ -3,3 +3,5 @@ node_modules
 package-lock.json
 log.txt
 _draft
+_drafts
+_site
