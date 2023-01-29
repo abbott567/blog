@@ -4,7 +4,6 @@ pagination:
   data: collections._posts
   alias: post
   size: 10
-  reverse: true
 permalink: '/blog/{{"page-" + (pagination.pageNumber + 1) if pagination.pageNumber > 0}}/'
 eleventyComputed: 
   title: 'Blog {{"page-" + (pagination.pageNumber + 1) if pagination.pageNumber > 0}}'

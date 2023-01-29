@@ -1,10 +1,9 @@
 ---
 layout: layouts/blog-page.njk
 pagination:
-  data: collections.mental-health
+  data: collections.mental-health-posts
   alias: post
   size: 10
-  reverse: true
 permalink: >-
   /blog/tags/mental-health/{{"page-" + (pagination.pageNumber + 1) if
   pagination.pageNumber > 0}}/
