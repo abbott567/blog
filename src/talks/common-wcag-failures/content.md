@@ -6,7 +6,7 @@ meta:
   description: >-
     A talk on common WCAG failures, and how to fix them.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-05-01
 tags:

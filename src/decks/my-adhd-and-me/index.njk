@@ -1,16 +1,31 @@
 ---
 eleventyComputed:
   title: 'My ADHD and Me'
+  meta:
+    description: Session on ADHD, how it affects me and getting a diagnosis.
 ---
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="UTF-8">
+    
     <title>Deck: {{title}} - {{site.name}}</title>
-    <meta name="description" content="Session on my ADHD and some coping strategies I have put in place.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%- if meta.canonicalURL -%}
+      <link rel="canonical" href="{{meta.canonicalURL}}" />
+    {%- else -%}
+      <link rel="canonical" href="https://craigabbott.co.uk{{page.url}}" />
+    {%- endif -%}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="title" content="{{title}}">
+    <meta name="description" content="{{meta.description}}">
+
+    {%- include 'meta/theme.njk' -%}
+    {%- include 'meta/card-twitter.njk' -%}
+    {%- include 'meta/card-og.njk' -%}
+    
     <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E😸%3C/text%3E%3C/svg%3E">
     <style>
       div.marpit>section {

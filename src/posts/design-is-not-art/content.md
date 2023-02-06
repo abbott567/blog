@@ -4,9 +4,9 @@ title: Design is not art
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    We often confuse design with art. But art is subjective. Design is good or bad.
+    Confusing design with art. Art is subjective. Design is good or bad.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-08-16
 tags:

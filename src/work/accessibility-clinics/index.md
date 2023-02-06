@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Accessibility Clinics
 meta:
   description: >-
-    'Work by Craig Abbott: Accessibility Clinics.'
+    'Accessibility Clinics. A safe space to discuss accessibility.'
   image:
     href: /images/work/accessibility-clinic.webp
     alt: 'A simple Microsoft form titled: Book an appointment for the accessibility clinic.'

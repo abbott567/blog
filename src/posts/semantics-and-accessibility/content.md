@@ -4,9 +4,9 @@ title: Semantics and accessibility
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Why semantics matters for accessibility, and how as designers we often get it wrong.
+    Why semantics matters for accessibility, and how we get it wrong.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-10-10
 tags:

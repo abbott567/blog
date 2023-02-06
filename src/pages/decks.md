@@ -6,7 +6,7 @@ meta:
   description: A collection of slide decks from presentations by Craig Abbott.,
   canonicalURL: 'https://craigabbott.co.uk/decks/'
   image:
-    href: '/images/share-image-1.webp'
+    href: '/images/share-image-1.jpg'
     alt: 'Craig Abbott presenting at a conference'
 ---
 

@@ -4,9 +4,9 @@ title: Own your Alpha
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A short article on how to design a digital service if you're doing Alpha correctly.
+    How to design a digital service if you're doing Alpha correctly.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-11-22
 tags:

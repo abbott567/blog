@@ -4,9 +4,9 @@ title: Bug fixes and performance improvements
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A short post looking at how release notes have become lazy and pointless.
+    Looking at how release notes have become lazy and pointless.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-08-22
 tags:

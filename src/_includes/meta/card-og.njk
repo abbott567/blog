@@ -1,5 +1,9 @@
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{meta.canonicalURL}}">
+{%- if meta.canonicalURL -%}
+  <meta property="og:url" content="{{meta.canonicalURL}}">
+{%- else -%}
+  <meta property="og:url" content="https://craigabbott.co.uk{{page.url}}">
+{%- endif -%}
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{meta.description}}">
 <meta name="image" property="og:image" content="{{site.url}}{{meta.image.href}}">

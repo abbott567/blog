@@ -3,9 +3,9 @@ title: What is 'normal' anyway?
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A personal blog post about anxiety and depression and how it has always impacted me.
+    Anxiety and depression and how it has always impacted me.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2014-10-29
 tags:

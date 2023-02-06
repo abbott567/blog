@@ -4,9 +4,9 @@ title: Rising disability statistics
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    My analysis of the official statistics which show the number of people with disabilities in the UK is rising.
+    Analysis of the UK statistics which shows disability is on the rise.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-11-03
 tags:

@@ -4,9 +4,9 @@ title: One-page-applications are not accessible
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A short article explaining the pitfalls of one page applications and accessibility.
+    The pitfalls of one page applications and accessibility.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-03-14
 tags:

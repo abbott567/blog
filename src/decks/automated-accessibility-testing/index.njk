@@ -1,6 +1,12 @@
 ---
 eleventyComputed:
   title: 'Automated Accessibility Testing'
+  meta:
+    description: >-
+      'Session on automated accessibility testing for National Coding Week.'
+    image:
+      href: /images/share-image-1.jpg
+      alt: Craig Abbott talking at a conference.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +14,23 @@ eleventyComputed:
   <head>
     <meta charset="UTF-8">
     <title>Deck: {{title}} - {{site.name}}</title>
-    <meta name="description" content="Session on automated accessibility testing for National Coding Week.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%- if meta.canonicalURL -%}
+      <link rel="canonical" href="{{meta.canonicalURL}}" />
+    {%- else -%}
+      <link rel="canonical" href="https://craigabbott.co.uk{{page.url}}" />
+    {%- endif -%}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="title" content="{{title}}">
+    <meta name="description" content="{{meta.description}}">
+
+    {%- include 'meta/theme.njk' -%}
+    {%- include 'meta/card-twitter.njk' -%}
+    {%- include 'meta/card-og.njk' -%}
+
     <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E😸%3C/text%3E%3C/svg%3E">
-    <style>
+    <style>    
       div.marpit>section {
         width: 1280px;
         height: 720px;

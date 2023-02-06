@@ -1,5 +1,9 @@
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="{{meta.canonicalURL}}">
+{%- if meta.canonicalURL -%}
+  <meta name="twitter:url" content="{{meta.canonicalURL}}">
+{%- else -%}
+  <meta name="twitter:url" content="https://craigabbott.co.uk{{page.url}}">
+{%- endif -%}
 <meta name="twitter:title" content="{{title}}" />
 <meta name="twitter:image" content="{{site.url}}{{meta.image.href}}" />
 <meta name="twitter:image:alt" content="{{meta.image.alt}}">

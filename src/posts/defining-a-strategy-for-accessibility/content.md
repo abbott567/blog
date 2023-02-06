@@ -4,9 +4,9 @@ title: Defining a strategy for accessibility
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A detailed article on implementing a sustainable strategy for accessibility in a large organisation.
+    A sustainable strategy for accessibility in a large organisation.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-04-01
 tags:

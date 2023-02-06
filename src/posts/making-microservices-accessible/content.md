@@ -4,9 +4,9 @@ title: Making microservices accessible
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Accessibility considerations and different approaches to developing microservices.
+    Accessibility and different approaches to developing microservices.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-11-30
 tags:

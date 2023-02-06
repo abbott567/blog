@@ -4,9 +4,9 @@ title: 'My ADHD and Me'
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    A talk on ADHD and how it affects me. Some of the coping symptoms, coping strategies and how I got a diagnosis. 
+    Living with ADHD. How it affects me and how I got a diagnosis.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-05-01
 tags:

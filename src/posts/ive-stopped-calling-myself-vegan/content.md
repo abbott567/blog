@@ -4,9 +4,9 @@ title: I've stopped calling myself vegan
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Why I stopped calling myself vegan, and the mental health toll that comes with it.
+    Being vegan, and the mental health toll that comes with it.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-01-26
 tags:

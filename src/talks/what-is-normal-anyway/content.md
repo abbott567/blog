@@ -4,9 +4,9 @@ title: What is 'normal' anway?
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    In this, I talk about dealing with mental health and my personal journey. It is based on a blog post of the same name.
+    Dealing with mental health and my personal journey.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-10-03
 tags:

@@ -3,9 +3,10 @@ layout: layouts/base.njk
 title: Accessibility
 permalink: '/accessibility/'
 meta:
+  description: Accessibility Statement for www.craigabbott.co.uk.
   canonicalURL: 'https://craigabbott.co.uk/accessibility/'
   image:
-    href: '/images/share-image-1.webp'
+    href: '/images/share-image-1.jpg'
     alt: 'Craig Abbott presenting at a conference'
 ---
 

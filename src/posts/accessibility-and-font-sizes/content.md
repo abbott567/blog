@@ -4,9 +4,9 @@ title: Accessibility and font sizes
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Using pixels for font sizes can make your website inaccessible. Stop it!
+    Using px for font sizes can make your website inaccessible. Stop it!
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-01-03
 tags:

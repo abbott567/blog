@@ -4,9 +4,9 @@ title: How to calculate reading time, like Medium
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    How to calculate the reading time for your users on blog posts. Like medium.
+    How to calculate the reading time on blog posts, like medium.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2016-03-31
 tags:

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: WCAGify
 meta:
   description: >-
-    'Work by Craig Abbott: WCAGify.'
+    'A simple tool for people who write accessibility audits.'
   image:
     href: /images/work/wcagify.webp
     alt: 'A code example showing that if you run WCAGify against a string representing a WCAG criteria such as 1.1.1 Non-text content, you get a return object which lists the criterion, reference, name, link, level and an array of impacts.'

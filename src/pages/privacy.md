@@ -3,10 +3,10 @@ layout: layouts/base.njk
 title: Privacy
 permalink: '/privacy/'
 meta:
-  description: Privacy policy for craigabbott.co.uk,
+  description: Privacy policy for craigabbott.co.uk. SPOILER I don't collect any data
   canonicalURL: 'https://craigabbott.co.uk/privacy/'
   image:
-    href: '/images/share-image-1.webp'
+    href: '/images/share-image-1.jpg'
     alt: 'Craig Abbott presenting at a conference'
 ---
 

@@ -4,9 +4,9 @@ title: What can Baloo teach us about design?
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Component reuse is not a new idea. Walt Disney used to regularly reuse characters and scenes.
+    Component reuse is not new. Walt Disney used to do it regularly.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-02-20
 tags:

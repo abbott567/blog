@@ -4,9 +4,9 @@ title: 'Empathy in Accessibility'
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    This talk is about building empathy for users with impairments, making sure we are aware of how to design services that don’t disable people.
+    A talk on how to build empathy for users with impairments.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2020-11-01
 tags:

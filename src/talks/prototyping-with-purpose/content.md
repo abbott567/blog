@@ -4,9 +4,9 @@ title: 'Prototyping with purpose'
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    A talk about what prototypes are, why we use them, and how to avoid some common mistakes.
+    A talk about what prototypes are and why we use them.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-10-10
 tags:

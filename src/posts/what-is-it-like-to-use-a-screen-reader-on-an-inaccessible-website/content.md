@@ -4,9 +4,9 @@ title: What is it like to use a screen reader on an inaccessible website?
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Ever wondered what it must be like to use a screen reader? Hopefully this metaphor will help!
+    Behind the scenes, understanding how screen readers work.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-03-15
 tags:

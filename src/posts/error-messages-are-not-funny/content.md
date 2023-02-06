@@ -4,9 +4,9 @@ title: Error messages are not funny
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Error messages should be clear an concise. They are not a place for humour or 'brand voice'.
+    Error messages should be clear an concise, not funny.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-08-07
 tags:

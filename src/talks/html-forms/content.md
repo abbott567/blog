@@ -6,7 +6,7 @@ meta:
   description: >-
     A talk on HTML forms, and how to make them accessible.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-09-14
 tags:

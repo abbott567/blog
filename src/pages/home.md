@@ -6,7 +6,7 @@ meta:
   description: 'My personal website. Check out my blog, talks or portfolio work.'
   canonicalURL: 'https://craigabbott.co.uk/'
   image:
-    href: '/images/share-image-1.webp'
+    href: '/images/share-image-1.jpg'
     alt: 'Craig Abbott presenting at a conference'
 ---
 

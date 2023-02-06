@@ -6,7 +6,7 @@ meta:
   description: >-
     A talk on WAI-ARIA, what it is, and how to use it.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-09-15
 tags:

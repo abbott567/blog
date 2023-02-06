@@ -4,9 +4,9 @@ title: Using the language attribute to make your website accessible
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    How to set the language of your website using the lang attribute to make it accessible.
+    Using the lang attribute to make your page accessible.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-02-11
 tags:

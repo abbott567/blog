@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: User Journey Maps
 meta:
   description: >-
-    'Work by Craig Abbott: User Journey Maps.'
+    'Simple user journey maps for moods, pain points and quotes.'
   image:
     href: /images/work/user-journey-map-full.webp
     alt: 'Overview of a full user journey map. It’s too small to read, but it shows a grid layout with rows and columns. The map is broken down into more understandable chunks further on in this article.'

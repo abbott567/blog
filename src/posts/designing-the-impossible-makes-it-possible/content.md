@@ -4,9 +4,9 @@ title: Designing the impossible makes it possible
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A short post on how to push the boundaries of UX Design to make sure you get the correct outcome.
+    How to push UX Design to make sure you get the correct outcome.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-05-02
 tags:

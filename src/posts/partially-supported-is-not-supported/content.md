@@ -4,9 +4,9 @@ title: Partially supported is not supported
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A rant about accessibility conformance reports using the phrase 'partially supports'.
+    Stop using the phrase 'partially supports' in accessibility.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-03-02
 tags:

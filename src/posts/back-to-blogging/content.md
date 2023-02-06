@@ -4,9 +4,9 @@ title: Back to blogging
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A short article explaining why I have been absent from blogging for a quite a while.
+    Why I have been absent from blogging for a quite a while.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-03-19
 tags:

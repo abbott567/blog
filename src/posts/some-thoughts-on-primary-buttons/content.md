@@ -4,9 +4,9 @@ title: Some thoughts on primary buttons
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Interactions should be obvious. Primary buttons get overused in UX Design.
+    Interactions should be obvious. Primary buttons get overused in UX.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-07-26
 tags:

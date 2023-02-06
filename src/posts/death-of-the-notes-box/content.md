@@ -6,7 +6,7 @@ meta:
   description: >-
     A post about designing for user needs not for what users want.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-08-14
 tags:

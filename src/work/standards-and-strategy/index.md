@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Standards and Strategy
 meta:
   description: >-
-    'Work by Craig Abbott: Accessibility Clinics.'
+    'Accessibility strategy focusing on compliance, culture and education'
   image:
     href: /images/work/strategy-and-standards.webp
     alt: 'A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'

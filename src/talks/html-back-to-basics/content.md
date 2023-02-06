@@ -4,9 +4,9 @@ title: 'HTML: Back to basics'
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    A talk on HTML, and how going back to the basics will help with accessibility.
+    How going back to the basics will help with accessibility.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-09-13
 tags:

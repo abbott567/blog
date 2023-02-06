@@ -4,9 +4,9 @@ title: Validation for prototypes
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Why I stopped advocating for validation in prototypes despite contributing by publishing a popular plugin.
+    Why I stopped advocating for validation in prototypes.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-02-15
 tags:

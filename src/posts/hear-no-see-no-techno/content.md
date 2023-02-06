@@ -4,9 +4,9 @@ title: Hear no, see no, techno
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    A review of Molly Watts talk at Camp Digital called 'Hear no, see no, techno.'
+    Molly Watts talk at Camp Digital called 'Hear no, see no, techno.'
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2016-03-31
 tags:

@@ -4,9 +4,9 @@ title: 'Automated accessibility testing'
 permalink: '/talks/{{title|slugify}}/'
 meta:
   description: >-
-    A talk on automated accessibility testing, how to do it and some common pitfalls.
+    Automated accessibility testing, how to do it and some pitfalls.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-09-16
 tags:

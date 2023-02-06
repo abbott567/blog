@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Service Blueprints
 meta:
   description: >-
-    'Work by Craig Abbott: Accessibility Clinics.'
+    'Full end-to-end service blueprints for large and complex services.'
   image:
     href: /images/work/service-blueprint-full.webp
     alt: A full service blueprint. It represents an entire end-to-end service using a grid system. Its zoomed out so far nothing is legible, but it highlights how big it is. The rest of this article breaks each section down so it is understandable.

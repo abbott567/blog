@@ -4,9 +4,9 @@ title: Mental health and flexible working hours
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Flexible working patterns help my mental health by reducing my anxiety.
+    Flexible working patterns help mental health by reducing anxiety.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-02-19
 tags:

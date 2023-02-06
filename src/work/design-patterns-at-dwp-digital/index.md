@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Design Patterns at DWP Digital
 meta:
   description: >-
-    Using pixels for font sizes can make your website inaccessible. Stop it!
+    DWP Design Patterns and how we made common components.
   image:
     href: /images/work/design-patterns-workshop-2.webp
     alt: A group of about 50 designers around tables working on design problems. There is a large projected screen which reads DWP Design Patterns Meet.

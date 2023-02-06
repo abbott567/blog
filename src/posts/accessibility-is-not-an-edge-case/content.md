@@ -6,7 +6,7 @@ meta:
   description: >-
     Analysis of data to show why accessibility is not an edge case.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2017-09-27
 tags:

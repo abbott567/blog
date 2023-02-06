@@ -3,10 +3,9 @@ title: 5 arguments against accessibility and why they are wrong
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    5 arguments against common reasons people use to try to get out of doing
-    accessibility work.
+    5 arguments people use to try to get out of doing accessibility work.
   image:
-    href: /images/share-image-1.webp
+    href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-06-03
 tags:

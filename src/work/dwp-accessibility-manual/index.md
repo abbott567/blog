@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: DWP Accessibility Manual
 meta:
   description: >-
-    Using pixels for font sizes can make your website inaccessible. Stop it!
+    How, and why I built the DWP Accessibility Manual.
   image:
     href: /images/work/dwp-accessibility-manual.webp
     alt: The homepage of the DWP Accessibility Manual.
