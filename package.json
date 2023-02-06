@@ -6,8 +6,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "cheerio": "^1.0.0-rc.12",
     "cssnano": "^5.1.14",
     "date-fns": "^2.29.3",
+    "eleventy-plugin-highlightjs": "^1.1.0",
     "eleventy-sass": "^2.1.6",
     "fs-jetpack": "^5.1.0",
     "gray-matter": "^4.0.3",
@@ -17,6 +19,7 @@
     "sharp": "^0.31.3",
     "standard": "^17.0.0",
     "string-similarity": "^4.0.4",
+    "wcagify": "^1.4.1",
     "webpack": "^5.75.0"
   }
 }
