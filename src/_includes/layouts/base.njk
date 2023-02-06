@@ -16,25 +16,9 @@
     <meta name="title" content="{{page.title}}">
     <meta name="description" content="{{meta.description}}">
 
-    <meta name="theme-color" content="#f9f9f9">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9f9f9">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#222222">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="{{canonical}}">
-    <meta name="twitter:title" content="{{title}}" />
-    <meta name="twitter:image" content="{{meta.image.href}}" />
-    <meta name="twitter:image:alt" content="{{meta.image.alt}}">
-    <meta name="twitter:creator" content="@abbott567" />
-    <meta name="twitter:site" content="@abbott567" />
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{canonical}}">
-    <meta property="og:title" content="{{title}}">
-    <meta property="og:description" content="{{meta.description}}">
-    <meta property="og:image" content="{{meta.image.href}}">
-    <meta property="og:image:alt" content="{{meta.image.alt}}">
-    <meta property="og:site_name" content="{{site.name}}">
+    {%- include 'meta/theme.njk' -%}
+    {%- include 'meta/card-twitter.njk' -%}
+    {%- include 'meta/card-og.njk' -%}
 
     <link rel="alternate" type="application/rss+xml" href="{{site.meta.rss}}" title="RSS Feed">
     <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E😸%3C/text%3E%3C/svg%3E">
