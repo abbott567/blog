@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: GOVUK Wireframing Kit for Sketch
-meta:
-  description: >-
-    Work by Craig Abbott: GOVUK Wireframing Kit for Sketch
-  image:
-    href: /images/work/wireframing-kit-full.webp
-    alt: The homepage of the DWP Accessibility Manual.
-excerpt: >-
-  The GOV.UK Wireframing Kit for Sketch. It shows a series of mock up screens which look like GOV.UK services.
 tags:
   - design
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      Work by Craig Abbott: GOVUK Wireframing Kit for Sketch
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: The homepage of the DWP Accessibility Manual.
+  excerpt: >-
+    The GOV.UK Wireframing Kit for Sketch. It shows a series of mock up screens which look like GOV.UK services.
 ---
 
 # {{title}}
@@ -53,27 +55,27 @@ Each component was mapped to the same examples featured in GOV.UK Elements so th
 
 There were examples for both desktop and mobile screens.
 
-![A screenshot of version 1 of the GOV.UK Wireframing Kit for Sketch. It shows a collection of elements such as inputs and radios. They are scaled for desktop screens.](/images/work/wireframing-kit-v1-desktop.webp)
+![A screenshot of version 1 of the GOV.UK Wireframing Kit for Sketch. It shows a collection of elements such as inputs and radios. They are scaled for desktop screens.]({{imgPath}}/wireframing-kit-v1-desktop.webp)
 
-![Version 1 of the GOV.UK Wireframing Kit for Sketch. It shows a collection of elements such as inputs and radios. They are scaled for mobile screens.](/images/work/wireframing-kit-v1-mobile.webp)
+![Version 1 of the GOV.UK Wireframing Kit for Sketch. It shows a collection of elements such as inputs and radios. They are scaled for mobile screens.]({{imgPath}}/wireframing-kit-v1-mobile.webp)
 
 ### Version 2.0
 
 In version 2.0, the radio buttons and checkboxes were updated to the larger styles inline with an update to GOV.UK Frontend.
 
-![Version 2 of the GOV.UK Wireframing Kit for Sketch. It shows large radios buttons to match the GOV.UK style.](/images/work/wireframing-kit-v2.webp)
+![Version 2 of the GOV.UK Wireframing Kit for Sketch. It shows large radios buttons to match the GOV.UK style.]({{imgPath}}/wireframing-kit-v2.webp)
 
 ### Version 3.0
 
 In version 3.0 the kit was ported from GOV.UK Elements to the GOV.UK Design System. Elements were mapped to 'styles', 'components' and 'patterns' to again make it familiar and easy to be cross referenced.
 
-![Version 3 of the GOV.UK Wireframing Kit for Sketch. It shows updated categories for styles, components and patterns. The panel component shows the teal background colour which was not updated until GOV.UK Frontend Version 3.0](/images/work/wireframing-kit-v3.webp)
+![Version 3 of the GOV.UK Wireframing Kit for Sketch. It shows updated categories for styles, components and patterns. The panel component shows the teal background colour which was not updated until GOV.UK Frontend Version 3.0]({{imgPath}}/wireframing-kit-v3.webp)
 
 ### Version 4.0
 
 In version 4.0 the colour palette and the focus styles were updated to align with an update to GOV.UK Frontend and to meet the Web Content Accessibility Guidelines 2.1.
 
-![Version 4 of the GOV.UK Wireframing Kit for Sketch. It shows an updated panel component with a darker green background colour to align with GOV.UK Frontend Version 3.0](/images/work/wireframing-kit-v4.webp)
+![Version 4 of the GOV.UK Wireframing Kit for Sketch. It shows an updated panel component with a darker green background colour to align with GOV.UK Frontend Version 3.0]({{imgPath}}/wireframing-kit-v4.webp)
 
 ## Result
 

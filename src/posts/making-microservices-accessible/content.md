@@ -1,13 +1,14 @@
 ---
-
+eleventyComputed:
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    description: >-
+      Accessibility and different approaches to developing microservices.
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.
 title: Making microservices accessible
 permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Accessibility and different approaches to developing microservices.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2022-11-30
 tags:
   - accessibility
@@ -54,7 +55,7 @@ I saw a great talk by [Fritz Von Runte](https://twitter.com/vonRunte), which was
 
 The idea is that each brick is a little self-contained application, and you can very quickly stick them together to build digital services which should, *in theory*, just work.
 
-![Fritz Von Runte presenting at SD in Gov. On the screen is a collection of Lego bricks representing a digital service. Each brick is a microservice, such as secure sign-on, eligibility questions, identity verification and decision making system.](/images/post/microservices-lego-bricks.webp)
+![Fritz Von Runte presenting at SD in Gov. On the screen is a collection of Lego bricks representing a digital service. Each brick is a microservice, such as secure sign-on, eligibility questions, identity verification and decision making system.]({{imgPath}}/microservices-lego-bricks.webp)
 
 Several Government departments, and several large organisations I've spoken to recently, are all looking at this approach; because, if executed well, it saves time and money, and they create consistency for users.
 
@@ -70,7 +71,7 @@ Where the user interface sits and who owns the codebase is key. If you get it wr
 
 It becomes a single point of failure, and it will also bring down any service which integrates with it.
 
-![A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.](/images/post/microservices-single-point-of-failure.webp)
+![A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.]({{imgPath}}/microservices-single-point-of-failure.webp)
 
 To stick with Fritz's analogy, while it's easy to make each Lego brick accessible on its own, people often fail to take a step backwards and look at the accessibility of the end-to-end journey once you stick all the bricks together. 
 
@@ -113,7 +114,7 @@ This guidance is outlined in the [GOV.UK Design Pattern for names](https://desig
 
 If you hard-code '`first name`' and '`last name`' labels into your microservice, it's too brittle. It's not going to cater for other cultures or nationalities where their names don't fit the UK conventions.
 
-![A side-by-side comparison of two text inputs on a HTML form. The title on the top of each reads: What is your name? The labels on one set of fields reads: first name and last name. On the other, it reads: given names and family name](/images/post/microservices-labels.webp)
+![A side-by-side comparison of two text inputs on a HTML form. The title on the top of each reads: What is your name? The labels on one set of fields reads: first name and last name. On the other, it reads: given names and family name]({{imgPath}}/microservices-labels.webp)
 
 Another thing to note, is if the User Researchers and Designers can't influence the user interface, you're effectively shutting down your organisations ability to do User Centred Design.
 
@@ -152,7 +153,7 @@ If the session times out on one microservice while the user is currently active 
 
 Assistive technology is great. But for a lot of users, it's substantially slower. You need to take this into account, or it could be impossible for them to complete the service.
 
-![A flow diagram showing a 1 hour timeout on the initial service. It then illustrates that the user takes 25 minutes on each of the 3 microservices, so when they come back to the original application after 85 minutes the session has timed out and they need to start again.](/images/post/microservices-timeout.webp)
+![A flow diagram showing a 1 hour timeout on the initial service. It then illustrates that the user takes 25 minutes on each of the 3 microservices, so when they come back to the original application after 85 minutes the session has timed out and they need to start again.]({{imgPath}}/microservices-timeout.webp)
 
 #### WCAG considerations
 
@@ -197,7 +198,7 @@ Common examples are headers and footers. These are likely going to have differen
 
 Remember, to a blind user, it could be perceived as a completely different service, even if it looks pretty much the same as the previous page to a sighted user.
 
-![The GOV.UK footer showing a navigation menu containing links for: Help, Privacy, Cookies, Accessibility Statement, Contact, Terms and Conditions.](/images/post/microservices-navigation.webp)
+![The GOV.UK footer showing a navigation menu containing links for: Help, Privacy, Cookies, Accessibility Statement, Contact, Terms and Conditions.]({{imgPath}}/microservices-navigation.webp)
 
 ##### 3.2.4 Consistent Identification
 
@@ -207,7 +208,7 @@ For example, if the user can sign in and sign out via a component in the header,
 
 If the wording is even slightly different, or if one microservice uses a button while one uses a link, you're going to fail this criterion.
 
-![A comparison of sign out functionality on two similar looking headers. One is a link which reads: Sign out. The other is a green button which reads: Sign out.](/images/post/microservices-consistent-identification.webp)
+![A comparison of sign out functionality on two similar looking headers. One is a link which reads: Sign out. The other is a green button which reads: Sign out.]({{imgPath}}/microservices-consistent-identification.webp)
 
 ##### 3.3.4 Error Prevention (Legal, Financial, Data)
 
@@ -223,7 +224,7 @@ In this scenario, the microservices exist purely as back-end applications and th
 
 The user interacts with a relatively simple front-end. It handles the session and the routing, but when it comes to complex business logic like verifying somebodies' identity, it hands over all the data and waits for the microservice to do its job, and routes the user accordingly based on the response.
 
-![A user flow. It lists 4 pages for: what is your name? what is your date of birth? what is your national insurance number? and success. Between the last 2 pages it routes through an API labelled: verification API.](/images/post/microservices-api-example.webp)
+![A user flow. It lists 4 pages for: what is your name? what is your date of birth? what is your national insurance number? and success. Between the last 2 pages it routes through an API labelled: verification API.]({{imgPath}}/microservices-api-example.webp)
 
 The main reason I see people resisting this approach is control. They want to own the user interface so that everything is in a tidy little silo and us pesky designers can't mess with it!
 
@@ -261,7 +262,7 @@ For example, if the API is unavailable and the client application gets a 503 err
 
 The application should instead do the hard work, decipher the problem, and explain it to the user in a way which makes sense.
 
-![A side-by-side comparison of two pages. One reads: HTTP error 503. The API is unavailable. The other reads: Sorry there is a problem with this service. We cannot automatically verify your bank details at the moment. You can still apply online and we will check them manually, but there may be a delay in processing your application. Do you want to continue? Yes. No](/images/post/microservices-503-error.webp)
+![A side-by-side comparison of two pages. One reads: HTTP error 503. The API is unavailable. The other reads: Sorry there is a problem with this service. We cannot automatically verify your bank details at the moment. You can still apply online and we will check them manually, but there may be a delay in processing your application. Do you want to continue? Yes. No]({{imgPath}}/microservices-503-error.webp)
 
 ### Design patterns for the win
 

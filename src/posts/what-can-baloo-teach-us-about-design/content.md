@@ -1,22 +1,23 @@
 ---
-
 title: What can Baloo teach us about design?
 permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Component reuse is not new. Walt Disney used to do it regularly.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2018-02-20
 tags:
   - design
-excerpt: |
-  The idea of design-reuse has been around for many years. Walt Disney reused many scenes. They also reused entire characters. Cartoon creators called this reanimation. It's the process of tracing over existing frames to save time and money. 
+eleventyComputed:
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    description: >-
+      Component reuse is not new. Walt Disney used to do it regularly.
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.
+  excerpt: |
+    The idea of design-reuse has been around for many years. Walt Disney reused many scenes. They also reused entire characters. Cartoon creators called this reanimation. It's the process of tracing over existing frames to save time and money. 
 
-  You may not have noticed before, but Disney's Baloo and Little John are almost identical. They were even voiced by the same person, Phil Harris.
+    You may not have noticed before, but Disney's Baloo and Little John are almost identical. They were even voiced by the same person, Phil Harris.
 
-  ![An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.](/images/post/baloo-little-john.webp)
+    ![An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.]({{imgPath}}/baloo-little-john.webp)
 ---
 
 # {{title}}
@@ -39,7 +40,7 @@ Walt Disney reused many scenes. They also reused entire characters. Cartoon crea
 
 You may not have noticed before, but Disney's Baloo and Little John are almost identical. They were even voiced by the same person, Phil Harris.
 
-![An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.](/images/post/baloo-little-john.webp)
+![An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.]({{imgPath}}/baloo-little-john.webp)
 
 When I've pointed this out, some people say they feel cheated. There's an impact on the nostalgic childhood memories of our most beloved characters. But, like identical twins, Baloo and Little John have their own loveable personalities. They may look and move the same, but they're very unique in their characters.
 

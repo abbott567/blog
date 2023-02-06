@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Accessibility Reporting
-meta:
-  description: >-
-    'Reporting tool for accessibility compliance for large organisations.'
-  image:
-    href: /images/work/accessibility-reporting-overview.webp
-    alt: Data visualisation for accessibility compliance across an organisation. It shows the number of services categorised as very high risk, high risk, medium risk, low risk and compliant. It also shows progress bars and percentages for the number of services which are citizen facing and staff facing. A break down of the report is covered in the deep-dive.
-excerpt: >-
-  Accessible compliance reporting for large organisations and the tools I built to make it easier.
 tags:
   - accessibility
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'Reporting tool for accessibility compliance for large organisations.'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: Data visualisation for accessibility compliance across an organisation. It shows the number of services categorised as very high risk, high risk, medium risk, low risk and compliant. It also shows progress bars and percentages for the number of services which are citizen facing and staff facing. A break down of the report is covered in the deep-dive.
+  excerpt: >-
+    Accessible compliance reporting for large organisations and the tools I built to make it easier.
 ---
 
 # {{title}}
@@ -61,7 +63,7 @@ The algorithm for working out how close a service was to meeting the standard is
 
 In the following screen shot, it shows an example service for a fictional organisation called the Ministry of Big Cats. It shows their 'Adopt a Cheetah' digital service is non-compliant. It also shows that it is currently live, categorised as high risk, is citizen facing and is a critical service to the organisation.
 
-![Data visualisation an example service called adopt a cheetah. As described in the previous paragraph.](/images/work/accessibility-reporting-evidence.webp)
+![Data visualisation an example service called adopt a cheetah. As described in the previous paragraph.]({{imgPath}}/accessibility-reporting-evidence.webp)
 
 It has it's progress marked as 70% because it has failures against several pieces of evidence. So the maths would be as follows:
 - +10% - WCAG 2.1 tests failed
@@ -82,7 +84,7 @@ Now each team contributes to the accessibility of an area, there is a accountabi
 
 I repeated this for each level of the organisation and reported the organisation as a whole right at the top of the pyramid.
 
-![A pyramid with 4 tiers, labelled from bottom to top as: products or teams, product development units, directorates, organisation.](/images/work/accessibility-reporting-pyramid.webp)
+![A pyramid with 4 tiers, labelled from bottom to top as: products or teams, product development units, directorates, organisation.]({{imgPath}}/accessibility-reporting-pyramid.webp)
 
 ### Building the reporting tool
 
@@ -162,7 +164,7 @@ An example of the folder structure:
 3. Each PDU folder has a config file and a folder called services to hold it's services.
 4. Each service folder contains a config file which represents the data and evidence for that service.
 
-![A pyramid with 4 tiers, labelled from bottom to top as: products or teams, product development units, directorates, organisation.](/images/work/accessibility-reporting-structure.webp)
+![A pyramid with 4 tiers, labelled from bottom to top as: products or teams, product development units, directorates, organisation.]({{imgPath}}/accessibility-reporting-structure.webp)
 
 Building it as a relationship data model allows you to assign methods which make sorting through the data much easier.
 
@@ -184,7 +186,7 @@ Service.getPDU()
 
 If you put all the data in the right place and run `npm run build` you get a fully accessible report on the compliance of your organisation.
 
-![A full page screen shot of the accessibility report. It shows all of the bits already covered, but also shows a side navigation menu for moving between the different directorates and PDUs.](/images/work/accessibility-reporting-full.webp)
+![A full page screen shot of the accessibility report. It shows all of the bits already covered, but also shows a side navigation menu for moving between the different directorates and PDUs.]({{imgPath}}/accessibility-reporting-full.webp)
 
 ## Result
 

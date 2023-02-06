@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: DWP Accessibility Manual
-meta:
-  description: >-
-    How, and why I built the DWP Accessibility Manual.
-  image:
-    href: /images/work/dwp-accessibility-manual.webp
-    alt: The homepage of the DWP Accessibility Manual.
-excerpt: >-
-  The [DWP Accessibility Manual](https://accessibility-manual.dwp.gov.uk/) is one of the projects I’m most proud of. It is a collection of accessibility guidance and best practice all in one place.
 tags:
   - accessibility
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      How, and why I built the DWP Accessibility Manual.
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: The homepage of the DWP Accessibility Manual.
+  excerpt: >-
+    The [DWP Accessibility Manual](https://accessibility-manual.dwp.gov.uk/) is one of the projects I’m most proud of. It is a collection of accessibility guidance and best practice all in one place.
 ---
 
 # {{title}}
@@ -23,7 +25,7 @@ I've contributed countless hours, pushed over 60,000 lines of code, written page
 
 The project is based heavily on the [GOV.UK Design System](https://design-system.service.gov.uk/), only it is using a different configuration behind the scenes to make it feel more like the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/docs). It uses [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) and [Markdown](https://www.markdownguide.org/), so pages and guidance are easy to update and contribute to.
 
-![The homepage of the DWP Accessibility Manual.](/images/work/dwp-accessibility-manual.webp)
+![The homepage of the DWP Accessibility Manual.]({{imgPath}}/dwp-accessibility-manual.webp)
 
 ## Situation
 
@@ -54,7 +56,7 @@ It showed that:
 - 53% of people lacked access to software and tools
 - 10% of people struggled to recruit users
 
-![A page of research showing a pie chart with the figures described above. They are: 37% lack guidance information and training. 53% lack software and tools. 10% struggle to recruit users.](/images/work/dwp-accessibility-manual-research.webp)
+![A page of research showing a pie chart with the figures described above. They are: 37% lack guidance information and training. 53% lack software and tools. 10% struggle to recruit users.]({{imgPath}}/dwp-accessibility-manual-research.webp)
 
 ### Building an application
 I initially started building an application using the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/docs). But it quickly became bloated and unwieldy. 
@@ -63,7 +65,7 @@ Because the Prototype Kit uses vanilla HTML and [Nunjucks](https://mozilla.githu
 
 So, I started again with a fork of the [GOV.UK Design System](https://design-system.service.gov.uk/). I was able to utilise all the hard work already done across Government and quickly start to build out an app structured for documentation using Markdown as the primary format.
 
-![The Accessibility Manual open in Visual Studio Code. It shows the content to explain labels or instructions to an Interaction Designer, but it is written in Markdown format.](/images/work/dwp-accessibility-manual-markdown.webp)
+![The Accessibility Manual open in Visual Studio Code. It shows the content to explain labels or instructions to an Interaction Designer, but it is written in Markdown format.]({{imgPath}}/dwp-accessibility-manual-markdown.webp)
 
 ### Guidance for your job role
 
@@ -78,7 +80,7 @@ For example, in the [guidance for an Interaction Designer](https://accessibility
 - Use of columns
 - Colour contrast
 
-![The guidance for your job role page for an Interaction Designer in the DWP Accessibility Manual.](/images/work/dwp-accessibility-manual-interaction-designer.webp)
+![The guidance for your job role page for an Interaction Designer in the DWP Accessibility Manual.]({{imgPath}}/dwp-accessibility-manual-interaction-designer.webp)
 
 
 ### Best practice
@@ -94,7 +96,7 @@ I wrote guidance on:
 - [voice controller testing](https://accessibility-manual.dwp.gov.uk/best-practice/voice-controller-testing)
 - [screen magnifier testing](https://accessibility-manual.dwp.gov.uk/best-practice/screen-magnifier-testing)
 
-![The best practice section in the accessibility manual. It shows the screen for how to do accessibility testing.](/images/work/dwp-accessibility-manual-how-to-test.webp)
+![The best practice section in the accessibility manual. It shows the screen for how to do accessibility testing.]({{imgPath}}/dwp-accessibility-manual-how-to-test.webp)
 
 
 ### Humanising accessibility

@@ -1,23 +1,24 @@
 ---
+eleventyComputed:
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    description: >-
+      A sustainable strategy for accessibility in a large organisation.
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: 'A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
+  excerpt: |
+    I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat are required to make a fire burn. If you remove any of those things  from the equation, the fire will use up what it has left and eventually burn out.
 
+    We can think of accessibility in a large organisation in the same way. There are 3 core parts. Compliance, education, and culture. If you lack any of these 3 things over a sustained period of time, the strategy is unsustainable and your ability to consistently deliver accessible services will burn out.
+
+    ![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.]({{imgPath}}/a11y-strategy-3-pillars.webp)
 title: Defining a strategy for accessibility
 permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    A sustainable strategy for accessibility in a large organisation.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2021-04-01
 tags:
   - accessibility
   - strategy
-excerpt: |
-  I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat are required to make a fire burn. If you remove any of those things  from the equation, the fire will use up what it has left and eventually burn out.
-
-  We can think of accessibility in a large organisation in the same way. There are 3 core parts. Compliance, education, and culture. If you lack any of these 3 things over a sustained period of time, the strategy is unsustainable and your ability to consistently deliver accessible services will burn out.
-
-  ![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.](/images/post/a11y-strategy-3-pillars.webp)
 ---
 
 # {{title}}
@@ -97,7 +98,7 @@ I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat a
 
 We can think of accessibility in a large organisation in the same way. There are 3 core parts. Compliance, education, and culture. If you lack any of these 3 things over a sustained period of time, the strategy is unsustainable and your ability to consistently deliver accessible services will burn out.
 
-![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.](/images/post/a11y-strategy-3-pillars.webp)
+![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.]({{imgPath}}/a11y-strategy-3-pillars.webp)
 
 ### Compliance
 Compliance is checking your digital service against a defined standard or law. At the time of writing this, the standard is the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) to the level of AA, and the main piece of legislation is the [Public Sector Bodies Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/made).
@@ -126,7 +127,7 @@ When you map these out, really look at everything you're working on and understa
 
 By mapping your aspirations to a timeline and a category, you can quickly start to spot the holes. If your entire plan for the next 3 years only has things which contribute towards compliance, perhaps you need to reprioritise. You want to have high impact things in all 3 categories for each of your timed chunks.
 
-![A diagram of a roadmap. It has the title January to March and a collection of tasks. Each task is tagged with categories of compliance, culture and education.](/images/post/a11y-strategy-roadmap.webp)
+![A diagram of a roadmap. It has the title January to March and a collection of tasks. Each task is tagged with categories of compliance, culture and education.]({{imgPath}}/a11y-strategy-roadmap.webp)
 
 
 ### Guidance and training - Education

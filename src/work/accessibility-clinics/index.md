@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Accessibility Clinics
-meta:
-  description: >-
-    'Accessibility Clinics. A safe space to discuss accessibility.'
-  image:
-    href: /images/work/accessibility-clinic.webp
-    alt: 'A simple Microsoft form titled: Book an appointment for the accessibility clinic.'
-excerpt: >-
-  Creating a safe space where teams can bring designs, idea, code or product and receive accessibility feedback from experts.
 tags:
   - accessibility
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'Accessibility Clinics. A safe space to discuss accessibility.'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: 'A simple Microsoft form titled: Book an appointment for the accessibility clinic.'
+  excerpt: >-
+    Creating a safe space where teams can bring designs, idea, code or product and receive accessibility feedback from experts.
 ---
 
 # {{title}}
@@ -44,7 +46,7 @@ If teams could understand potential issues before they are designed or built, th
 
 A lot of feedback in Government is in the form of Governance. Teams needed somewhere to be curious. Ask questions and be honest. Governance often creates anxiety and people are afraid that ideas will be judged harshly.
 
-![A simple Microsoft form titled: Book an appointment for the accessibility clinic.](/images/work/accessibility-clinic.webp)
+![A simple Microsoft form titled: Book an appointment for the accessibility clinic.]({{imgPath}}/accessibility-clinic.webp)
 
 ## Action
 

@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: User Journey Maps
-meta:
-  description: >-
-    'Simple user journey maps for moods, pain points and quotes.'
-  image:
-    href: /images/work/user-journey-map-full.webp
-    alt: 'Overview of a full user journey map. It’s too small to read, but it shows a grid layout with rows and columns. The map is broken down into more understandable chunks further on in this article.'
-excerpt: >-
-  Some of my work on user journey maps. They are similar to Service Blueprints but focus more on qualitative insights gleaned from user research. They feature actions, moods, pain points and quotes.
 tags:
   - design
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'Simple user journey maps for moods, pain points and quotes.'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: 'Overview of a full user journey map. It’s too small to read, but it shows a grid layout with rows and columns. The map is broken down into more understandable chunks further on in this article.'
+  excerpt: >-
+    Some of my work on user journey maps. They are similar to Service Blueprints but focus more on qualitative insights gleaned from user research. They feature actions, moods, pain points and quotes.
 ---
 
 # {{title}}
@@ -23,7 +25,7 @@ Unlike a Service Blueprint, they won't show you a full end-to-end service. Inste
 
 They feature actions, pain points, mood and quotes. All that good stuff you need as a designer!
 
-![Overview of a full user journey map. It's too small to read, but it shows a grid layout with rows and columns. The map is broken down into more understandable chunks further on in this article.](/images/work/user-journey-map-full.webp)
+![Overview of a full user journey map. It's too small to read, but it shows a grid layout with rows and columns. The map is broken down into more understandable chunks further on in this article.]({{imgPath}}/user-journey-map-full.webp)
 
 ## Situation
 
@@ -51,7 +53,7 @@ Each team has 1 or 2 Workflow Managers. They have access to the tracker and shar
 - customer queries
 - the safety of Visiting Officers on the road
 
-![A cartoon image of a person with the title Workflow Manager and the information of what they do as above.](/images/work/user-journey-map-persona.webp)
+![A cartoon image of a person with the title Workflow Manager and the information of what they do as above.]({{imgPath}}/user-journey-map-persona.webp)
 
 ### Rows
 
@@ -59,7 +61,7 @@ Each row represents a particular insight tied to the user and their journey. For
 
 You can also collect any notes which don't fit into a particular category.
 
-![3 rows, with the headings 'Actions', 'Feels or Says' and 'Pain Points'.](/images/work/user-journey-map-rows.webp)
+![3 rows, with the headings 'Actions', 'Feels or Says' and 'Pain Points'.]({{imgPath}}/user-journey-map-rows.webp)
 
 
 ### Columns
@@ -74,13 +76,13 @@ For example:
 5. Opens up virtual version of Windows 7
 6. Opens the tracker document
 
-![A collection of actions running left to right. Each one is written on a separate card and contain the same information listed above.](/images/work/user-journey-map-actions.webp)
+![A collection of actions running left to right. Each one is written on a separate card and contain the same information listed above.]({{imgPath}}/user-journey-map-actions.webp)
 
 ### Tasks or themes
 
 If a task has more than one step or action, then you can group them to help people understand what it is the user was doing at the time.
 
-![A title spanning multiple columns, grouping the first two actions under a category titled: Quality Check, cut and paste relevant files.](/images/work/user-journey-map-tasks.webp)
+![A title spanning multiple columns, grouping the first two actions under a category titled: Quality Check, cut and paste relevant files.]({{imgPath}}/user-journey-map-tasks.webp)
 
 ### Feelings and Quotes
 
@@ -88,7 +90,7 @@ Feelings and quotes are tracked at each step of the journey, and any particularl
 
 Positioning them high, medium and low in the row can help to illustrate whether a feeling was positive or negative.
 
-![A series of emojis positioned top middle and bottom of a column. They show neutral faces in the middle, angry faces at the bottom and would show happy faces at the top. There is a straight line drawn from each one to the next creating a line graph.](/images/work/user-journey-map-feels.webp)
+![A series of emojis positioned top middle and bottom of a column. They show neutral faces in the middle, angry faces at the bottom and would show happy faces at the top. There is a straight line drawn from each one to the next creating a line graph.]({{imgPath}}/user-journey-map-feels.webp)
 
 ## Result
 

@@ -9,7 +9,7 @@
         aria-describedby="heading-{{project.data.title|slugify}}">
         <div class="card__image">
           <img 
-            src="{{project.data.meta.image.href}}" 
+            src="{{project.data.meta.image.href|replace('.jpg', '.webp')}}" 
             alt=""
             aria-hidden="true"
           >

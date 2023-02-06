@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Design Patterns at DWP Digital
-meta:
-  description: >-
-    DWP Design Patterns and how we made common components.
-  image:
-    href: /images/work/design-patterns-workshop-2.webp
-    alt: A group of about 50 designers around tables working on design problems. There is a large projected screen which reads DWP Design Patterns Meet.
-excerpt: >-
-  This work on Design Patterns at the Department for Work and Pensions predates the [GOV.UK Design System](https://design-system.service.gov.uk/), but showcases some of the work that was done which built some of those foundations.
 tags:
   - design
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      DWP Design Patterns and how we made common components.
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: A group of about 50 designers around tables working on design problems. There is a large projected screen which reads DWP Design Patterns Meet.
+  excerpt: >-
+    This work on Design Patterns at the Department for Work and Pensions predates the [GOV.UK Design System](https://design-system.service.gov.uk/), but showcases some of the work that was done which built some of those foundations.
 ---
 
 # {{title}}
@@ -32,7 +34,7 @@ For example. We had a simple user story such as:
 
 Designers would go through the process, and inevitably design a solution which worked. But, like the [Tenrec of Madagascar](https://blog.rsb.org.uk/species-of-the-week-tenrecs), the evolution of the design was done in isolation and just happened to be *very* similar to other designs which worked.
 
-![example of banners](/images/work/design-patterns-key-details.webp)
+![example of banners]({{imgPath}}/design-patterns-key-details.webp)
 
 ### Design maturity was a problem
 
@@ -40,7 +42,7 @@ There was no [DWP Design System](https://design-system.dwp.gov.uk) or [GOV.UK De
 
 [GOV.UK Elements](https://govuk-elements.herokuapp.com) *did* exist. But it was just a collection of HTML Elements, not consumable components or patterns. There were no patterns listed anywhere at the time for internal systems.
 
-![A screenshot of the landing page of GOV.UK Elements.](/images/work/design-patterns-govuk-elements.webp)
+![A screenshot of the landing page of GOV.UK Elements.]({{imgPath}}/design-patterns-govuk-elements.webp)
 
 
 ## Task
@@ -61,7 +63,7 @@ We changed the language (temporarily) around patterns and components, and just s
 
 What mattered was that designers understood the design intent and could re-use it easily. When I started calling them 'Design Examples meet-ups' attendance jumped by 340%.
 
-![A group of 10 designers sat around a table waving at the camera.](/images/work/design-patterns-workshop-1.webp)
+![A group of 10 designers sat around a table waving at the camera.]({{imgPath}}/design-patterns-workshop-1.webp)
 
 ### Workshops
 
@@ -69,11 +71,11 @@ Once we had the numbers, we started to run workshops with up to 50 designers at 
 
 We'd consolidate ideas, grouping similar designs to discuss how the research had informed each one.
 
-![A group of about 50 designers around tables working on design problems. There is a large projected screen which reads DWP Design Patterns Meet.](/images/work/design-patterns-workshop-2.webp)
+![A group of about 50 designers around tables working on design problems. There is a large projected screen which reads DWP Design Patterns Meet.]({{imgPath}}/design-patterns-workshop-2.webp)
 
-![A group of about 50 designers around tables working on design problems. It's another angle of the image above.](/images/work/design-patterns-workshop-3.webp)
+![A group of about 50 designers around tables working on design problems. It's another angle of the image above.]({{imgPath}}/design-patterns-workshop-3.webp)
 
-![A collection of printed screenshots showing similar search components. There's hand written sticky notes all over the designs and they're grouped together into themes.](/images/work/design-patterns-workshop-4.webp)
+![A collection of printed screenshots showing similar search components. There's hand written sticky notes all over the designs and they're grouped together into themes.]({{imgPath}}/design-patterns-workshop-4.webp)
 
 ### Tracking progress
 
@@ -89,7 +91,7 @@ We tracked designs as issues with tags and once they were proven to work in seve
 
 *Recommended* was similar to the Live phase. These patterns had been used in multiple services without issue and had reached a state of maturity where they were very rarely being iterated.
 
-![A GitHub projects KanBan board. It shows 4 columns labelled: backlog, experimental, tried and tested, and recommended. In each column there are design patterns being worked on such as Key Details Bar, Timeline, Tabs, Tags and Navigation Menu.](/images/work/design-patterns-github.webp)
+![A GitHub projects KanBan board. It shows 4 columns labelled: backlog, experimental, tried and tested, and recommended. In each column there are design patterns being worked on such as Key Details Bar, Timeline, Tabs, Tags and Navigation Menu.]({{imgPath}}/design-patterns-github.webp)
 
 ### Documentation
 
@@ -101,7 +103,7 @@ We documented each example with typical content on:
 - SASS
 - JavaScript
 
-![A screenshot of the DWP Design Examples app. It shows the Timeline pattern. There is an example of the design at the top, then a paragraph on how to use and how not to use the component. At the bottom there is a codeblock which shows HTML, CSS and SASS code.](/images/work/design-patterns-documentation-1.webp)
+![A screenshot of the DWP Design Examples app. It shows the Timeline pattern. There is an example of the design at the top, then a paragraph on how to use and how not to use the component. At the bottom there is a codeblock which shows HTML, CSS and SASS code.]({{imgPath}}/design-patterns-documentation-1.webp)
 
 This was 'documentation by designers, for designers'. So, based on user needs, I also included artefacts and additional information such as:
 - A Sketch file
@@ -110,7 +112,7 @@ This was 'documentation by designers, for designers'. So, based on user needs, I
 - Which services it was being used in
 - Links to the discussions informing the design
 
-![A screenshot of the DWP Design Examples app. It shows the Timeline pattern. It shows a download link for a Sketch file and it states: it is for Agent facing services. It has been tested on JAWS, Dragon, ZoomText and Read & Write. It is being used on Manage Bereavement Support Payment, Access To Work, Prepare for Universal Credit and Support for Mortgage Interest. At the very bottom is a link to the GitHub discussion.](/images/work/design-patterns-documentation-2.webp)
+![A screenshot of the DWP Design Examples app. It shows the Timeline pattern. It shows a download link for a Sketch file and it states: it is for Agent facing services. It has been tested on JAWS, Dragon, ZoomText and Read & Write. It is being used on Manage Bereavement Support Payment, Access To Work, Prepare for Universal Credit and Support for Mortgage Interest. At the very bottom is a link to the GitHub discussion.]({{imgPath}}/design-patterns-documentation-2.webp)
 
 ## Result
 
@@ -124,13 +126,13 @@ I'd regularly feed back our work at the X-Gov Design Meet-ups and to GDS.
 
 A lot of what we did helped to inform some of the early work in the GOV.UK Design System.
 
-![Craig Abbott presenting DWP Design Examples at GDS in the Whitechapel Building.](/images/work/design-patterns-craig-at-gds.webp)
+![Craig Abbott presenting DWP Design Examples at GDS in the Whitechapel Building.]({{imgPath}}/design-patterns-craig-at-gds.webp)
 
 ### Aligning with the rest of Gov
 
 When GDS published similar components we'd review ours to see if they could be retired.
 
-![A Slack conversation between Craig Abbott and Steve Borthwick discussing that GDS had released a Tabs component so we should look at retiring the DWP Tabs component once the feature set is the same.](/images/work/design-patterns-slack.webp)
+![A Slack conversation between Craig Abbott and Steve Borthwick discussing that GDS had released a Tabs component so we should look at retiring the DWP Tabs component once the feature set is the same.]({{imgPath}}/design-patterns-slack.webp)
 
 ### DWP Design System
 

@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: WCAGify
-meta:
-  description: >-
-    'A simple tool for people who write accessibility audits.'
-  image:
-    href: /images/work/wcagify.webp
-    alt: 'A code example showing that if you run WCAGify against a string representing a WCAG criteria such as 1.1.1 Non-text content, you get a return object which lists the criterion, reference, name, link, level and an array of impacts.'
-excerpt: >-
-  WCAGify is a plugin for people who need to reference the Web Content Accessibility Guidelines frequently and are tired of copying and pasting.
 tags:
   - accessibility
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'A simple tool for people who write accessibility audits.'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: 'A code example showing that if you run WCAGify against a string representing a WCAG criteria such as 1.1.1 Non-text content, you get a return object which lists the criterion, reference, name, link, level and an array of impacts.'
+  excerpt: >-
+    WCAGify is a plugin for people who need to reference the Web Content Accessibility Guidelines frequently and are tired of copying and pasting.
 ---
 
 # {{title}}

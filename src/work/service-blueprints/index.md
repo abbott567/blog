@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Service Blueprints
-meta:
-  description: >-
-    'Full end-to-end service blueprints for large and complex services.'
-  image:
-    href: /images/work/service-blueprint-full.webp
-    alt: A full service blueprint. It represents an entire end-to-end service using a grid system. Its zoomed out so far nothing is legible, but it highlights how big it is. The rest of this article breaks each section down so it is understandable.
-excerpt: >-
-  Government services are huge with many complex processes. Service Blueprints outline end-to-end service design and how a user interacts with all the different parts of the organisation.
 tags:
   - design
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'Full end-to-end service blueprints for large and complex services.'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: A full service blueprint. It represents an entire end-to-end service using a grid system. Its zoomed out so far nothing is legible, but it highlights how big it is. The rest of this article breaks each section down so it is understandable.
+  excerpt: >-
+    Government services are huge with many complex processes. Service Blueprints outline end-to-end service design and how a user interacts with all the different parts of the organisation.
 ---
 
 # {{title}}
@@ -43,7 +45,7 @@ The image below shows a full service blueprint. It represents an entire end-to-e
 
 Its zoomed out so far nothing is legible, but it highlights how big it is. The rest of this article breaks each section down so it is understandable.
 
-![A full service blueprint as described above.](/images/work/service-blueprint-full.webp)
+![A full service blueprint as described above.]({{imgPath}}/service-blueprint-full.webp)
 
 ### Rows
 
@@ -51,7 +53,7 @@ Each row represents an actor, a system, or a piece of data. They can be high lev
 
 They can show actions. In the next image, it shows a row for citizen actions, stating that they are things the user will have to do to use the service and interact with DWP. 
 
-![Part of a service blueprint showing rows, as described above. The 2 example actions shown are: look at online resources, and, talk to support agencies.](/images/work/service-blueprint-row-action.webp)
+![Part of a service blueprint showing rows, as described above. The 2 example actions shown are: look at online resources, and, talk to support agencies.]({{imgPath}}/service-blueprint-row-action.webp)
 
 They can also show data or notes. In the next image, it shows a row for user needs stating they are things the things a user needs at various points in the journey. 
 
@@ -60,7 +62,7 @@ The 3 examples shown are:
 - I need to know I am entitled to Carers Allowance
 - I need to know how Carers Allowance affects my other benefits
 
-![Part of a service blueprint showing user needs, as described above ](/images/work/service-blueprint-row-data.webp)
+![Part of a service blueprint showing user needs, as described above ]({{imgPath}}/service-blueprint-row-data.webp)
 
 ### Columns
 
@@ -72,7 +74,7 @@ In the next image, it illustrates how actions can be sorted into columns. It sho
 3. Check claimant age
 4. Check claimant benefits
 
-![Part of a service blueprint showing columns, as described above.](/images/work/service-blueprint-col-actions.webp)
+![Part of a service blueprint showing columns, as described above.]({{imgPath}}/service-blueprint-col-actions.webp)
 
 ### Line of visibility
 
@@ -82,7 +84,7 @@ If it's above the line, the user is directly involved. If it's below the line, i
 
 The next image shows a horizontal line labelled 'visible to citizen'. The actions above the line can be seen by the citizen, such as requests additional information. The clerical process below the line is not visible to the citizen, only to the member of staff.
 
-![Part of a service blueprint showing the line of visibility, as described above.](/images/work/service-blueprint-line-of-visibility.webp)
+![Part of a service blueprint showing the line of visibility, as described above.]({{imgPath}}/service-blueprint-line-of-visibility.webp)
 
 ### Tasks or themes
 
@@ -93,7 +95,7 @@ The next image shows multiple columns grouped into tasks or themes. There are 3 
 - Apply
 - Eligibility and Awareness.
 
-![Part of a service blueprint showing tasks or themes, as described above.](/images/work/service-blueprint-themes.webp)
+![Part of a service blueprint showing tasks or themes, as described above.]({{imgPath}}/service-blueprint-themes.webp)
 
 ### Data mapping
 
@@ -113,7 +115,7 @@ For example:
 6. The interaction type is what the user will need to do with the data. For the invite code, the user will enter it into an input on the digital service.
 7. The description or context column can be used to list things like HTML labels on forms etc.
 
-![Part of a service blueprint showing data mapping, as described above.](/images/work/service-blueprint-data-mapping.webp)
+![Part of a service blueprint showing data mapping, as described above.]({{imgPath}}/service-blueprint-data-mapping.webp)
 
 ### Making it flexible
 

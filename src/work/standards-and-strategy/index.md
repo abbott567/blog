@@ -1,16 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Standards and Strategy
-meta:
-  description: >-
-    'Accessibility strategy focusing on compliance, culture and education'
-  image:
-    href: /images/work/strategy-and-standards.webp
-    alt: 'A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
-excerpt: >-
-  My strategy which focuses on compliance, culture and education, to measure and improve accessibility across large organisations.
 tags:
   - accessibility
+eleventyComputed:
+  imgPath: '/work/{{title|slugify}}/images'
+  meta:
+    description: >-
+      'Accessibility strategy focusing on compliance, culture and education'
+    image:
+      href: '{{imgPath}}/share-image.jpg'
+      alt: 'A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
+  excerpt: >-
+    My strategy which focuses on compliance, culture and education, to measure and improve accessibility across large organisations.
 ---
 
 # {{title}}
@@ -57,7 +59,7 @@ We found that the organisation was attempting to do compliance with no focus on 
 
 I created a strategy to deliver improve the organisation in 3 key areas: compliance, culture and education.
 
-![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.](/images/work/strategy-and-standards.webp)
+![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.]({{imgPath}}/strategy-and-standards.webp)
 
 High impact work was mapped to each category and a timeline to create a series of short and long term goals. Each goal was attached to an Objective Key Result (OKR) and measured using Key Performance Indicators (KPI).
 
