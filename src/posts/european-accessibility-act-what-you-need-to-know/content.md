@@ -9,7 +9,7 @@ meta:
     alt: Craig Abbott talking at a conference.
 date: 2023-08-20
 tags:
-  - design
+  - accessibility
 excerpt: |
   Explore the European Accessibility Act and its impact on the private sector.
   
