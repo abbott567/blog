@@ -3,7 +3,7 @@ title: 'European Accessibility Act: What you need to know'
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    Explore the European Accessibility Act and its impact on the private sector.
+    The European Accessibility Act and its impact on the private sector.
   image:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
@@ -11,29 +11,25 @@ date: 2023-08-20
 tags:
   - accessibility
 excerpt: |
-  Explore the European Accessibility Act and its impact on the private sector.
+  The European Accessibility Act and its impact on the private sector.
   
   Learn the differences between the EAA, EU Accessibility Directive, Public Sector Bodies Accessibility Regulations, and EN 301 549, and discover top tips to prepare your business for compliance with the EAA.
 ---
 # {{title}}
 
-Alright, it's time I wrote some stuff down that's been on my mind for a while!
+The [European Accessibility Act (EAA)](https://en.wikipedia.org/wiki/European_Accessibility_Act) has been on my mind for a while now.
 
-I've been wanting to talk about the [European Accessibility Act (EAA)](https://en.wikipedia.org/wiki/European_Accessibility_Act) and how it's changing the landscape of accessibility in Europe.
-
-For those who are new to this topic, the EAA is a pretty big deal. But why? Let's look at the complex world of accessibility regulations, including the EAA. 
-
-I'll try to explain why it matters, especially for private sector organisations, and I'll even share some tips to help you prepare for the deadline in 2025, so you're not left scrambling at the last minute!
+Weirdly, not many people have heard of it, but the scope of it is huge! So lets look at it in more detail. I'll try to explain what it means, especially for private sector organisations, and I'll also share some tips to help you prepare for the deadline in 2025, so you're not left scrambling at the last minute!
 
 ## What is the European Accessibility Act?
 
-The European Accessibility Act is a piece of legislation brought into force by the European Union (EU) in 2019 to make sure that products and services are more accessible.
+The European Accessibility Act is new legislation which was brought in by the European Union (EU) in 2019 with the aim to make sure that products and services are more accessible.
 
 It goal is mainly to help people with disabilities, but it will make things better for everybody! 
 
-Somehow, it has flown under the radar, and a lot of people are not aware of it. But, there is a deadline of 28 June 2025 in order to comply with it. So, if this is the first time you're hearing of it, please take note!
+Somehow, it has flown under the radar. A lot of people are not aware of it, but, there is a deadline of 28 June 2025 in order to comply with it. So, if this is the first time you're hearing of it, please take note!
 
-The whole purpose of the EAA is to create a more inclusive environment where everyone can participate on a level playing field. It is supposed to bring accessibility to the likes of websites, mobile apps, ticket kiosks, ATM’s (cash machines), Smart TV's, and… Well… Pretty much anything that is a digital device, application or service.
+The idea is to finally create an environment where everyone finally has equal opportunities. It is supposed to bring accessibility to the likes of websites, mobile apps, ticket kiosks, ATM’s (cash machines), Smart TV's, and… Well… Pretty much anything that is a digital device, application or service.
 
 Before the EAA, there were already some accessibility regulations in place, but they were heavily focused on public sector bodies.
 
@@ -46,12 +42,12 @@ You're probably thinking
 - What's the difference between the EAA, the EU Web Accessibility Directive, the Public Sector Bodies Accessibility Regulations, and EN 301 549?
 - What impact does Brexit have on the EAA?
 
-These are all great questions to ask. So, let's try and break it down!
+So, let's try and break it down!
 
 ### The EU Web Accessibility Directive
 The [EU Web Accessibility Directive 2016](https://en.wikipedia.org/wiki/Web_Accessibility_Directive) is aimed at *public sector* websites and mobile applications in Europe.
 
-The focus is on both improving the accessibility of these things and making the user experience more consistent for people with disabilities.
+The intent behind the directive is mainly to improve the accessibility of websites and mobile apps. However, as a cool consolation prize, it also makes the user experience more consistent for people with disabilities.
 
 It only applies to you if you're a public sector body in Europe, including the UK, as it was implemented in 2016 before [Brexit](https://en.wikipedia.org/wiki/Brexit). 
 
@@ -84,47 +80,41 @@ Note here that it isn't organisations *based* in the EU, it's those *selling to 
 
 It came into force in 2019, making it the newest set of regulations, and the scope is larger than anything we've seen so far. 
 
-It covers a broad range of products and services, not just websites and mobile apps. And, it's the first time that, whether you provide public services to people in the EU, or you sell products or services to customers in the EU, you will all need to meet the same standard of accessibility.
+It covers a broad range of products and services, it isn't just limited to websites and mobile apps. It's also the first time that, whether you provide public services to people in the EU, or you sell products or services to customers in the EU, you will all need to meet the same standard of accessibility.
 
-It's a significant step towards making the digital world more inclusive for everyone and I couldn't be more excited for it to arrive!
+It's probably the most ambitious attempt we've seen at accessibility legislation!
 
-## What's the impact on private sector organisations?
+## What is the impact on private sector organisations?
 
-The European Accessibility Act is a game-changer for private sector organisations within the EU. It mandates accessibility requirements for a wide range of products and services, from websites and mobile apps to electronic communication services and more.
+For private sector organisations, the European Accessibility Act is a big change. It mandates accessibility for a huge range of products and services. Like the other regulations, it also includes websites and mobile apps, but now, it also includes physical devices such as ticket machines, smart phones and TV's.
 
-Simply put, if you're in the private sector and you operate within the EU, you'll have to make sure your products and services meet the EAA's accessibility requirements. That means more than just making your website accessible.
+Simply put, if you're in the private sector and you operate within the EU, you'll have to make sure your products and services meet the EAA's requirements.
 
-The EAA's impact is huge, and by embracing these regulations and incorporating accessibility into your digital products and services, you can provide a more inclusive experience for your customers, reach new markets, enhance your brand reputation, and drive innovation.
-
-Here's a closer look at what this means:
+By getting on board with these guidelines early, and building accessibility in by design, means you're not just ticking a box. You're providing a more inclusive experience for more people, reaching new markets, enhancing your brands reputation, and driving innovation.
 
 ### Broader Scope of Compliance
-The EAA goes beyond just making your website and apps accessible. It extends to other digital products, like physical devices and e-books. 
+The EAA goes beyond just making your website and apps accessible. It includes other digital products, like physical devices and e-books. 
 
-Private sector organisations will need to ensure that all their existing digital products now meet the new accessibility requirements, which may mean going through everything from website design to app development, and ensuring that accessibility is integrated throughout the process.
+Private sector organisations will need to make sure that all their existing digital products now meet the new accessibility requirements, which may mean going through everything from website design to app development, and ensuring that accessibility is integrated throughout the process.
 
 Whether you build digital hardware or software, it now needs to be accessible. It might be time to do some end-to-end user research to see which parts are challenging for people with disabilities.
 
 ### A More Inclusive User Experience
-By complying with the EAA, private sector organisations will provide a more inclusive and user-friendly experience for all customers, not just those with disabilities. 
+By complying with the EAA, your products and services will be more inclusive and user-friendly for everybody, not just those with disabilities. Because accessible design often leads to better usability for everyone, it will make it easier for customers to find information or complete transactions.
 
-Accessible design often leads to better usability for everyone, making it easier for customers to find information, complete transactions, and interact with your digital products and services.
-
-At the moment, people with disabilities are often limited in their choices of products and services because so few are accessible. With the EAA, there should be more choice for users and more competition between brands.
-
-It will shift the power back into the hands of customers, and if you don’t keep up you lose your slice of the pie, because they will just be able to choose a better experience elsewhere.
+At the moment, people with disabilities are often limited in their choices of products and services because so few are accessible. With the EAA, there should be more choice for users and more competition between brands. It will shift the power back into the hands of customers, and if you don’t keep up you lose your slice of the pie, because they will just be able to choose a better experience elsewhere.
 
 ### Increased Market Reach
 With more than 80 million people in the EU living with disabilities, making your digital offerings accessible can significantly expand your customer base.
 
-Accessible products and services can also cater to an ageing population, people with temporary impairments, or those using different devices to access your content. By providing an inclusive experience, you can tap into new markets and reach a wider audience.
+Accessible products and services can also cater to an ageing population, people with temporary impairments, or those using different devices to access your content. By making things more inclusive, you can reach new markets and a wider audience.
 
 Again, I realise I’m making this about money, but we are talking about the private sector here, and unfortunately in private sector, money makes the world go round!
 
 ### Improved Brand Reputation
-By adopting accessibility practices and meeting the EAA requirements, private sector organisations can enhance their brand reputation and showcase their commitment to social responsibility.
+By meeting the EAA requirements, private sector organisations can enhance their brand reputation and showcase their commitment to social responsibility.
 
-Customers appreciate businesses that prioritise inclusivity and value all their users. This positive perception can boost brand loyalty and foster long-lasting relationships with your customers.
+Customers will appreciate businesses that prioritise inclusivity and value all of their users. This positive perception can boost brand loyalty and foster long-lasting relationships with your customers.
 
 At the moment, if you’re accessible, you’re an anomaly. There is a lot of positive hype for those companies that are doing it well. 
 
@@ -133,27 +123,25 @@ Over time, this will adjust. The positive hype will go away as it becomes normal
 There’s a whole lot of bad press on the horizons for those organisations that refuse to move with the culture shift. So ride the wave now whilst it's positive!
 
 ### Legal Compliance and Risk Mitigation
-Complying with the EAA not only enhances your reputation but also helps you avoid legal risks.
+If you don't make things accessible, it can result in fines, legal action, or negative publicity.
 
-Failing to meet accessibility requirements can result in fines, legal action, or negative publicity. 
-
-By proactively ensuring your digital products and services are accessible, you can mitigate these risks and stay compliant with the new regulations.
+However, if you're proactive in making your digital products and services are accessible, you can mitigate these risks and stay compliant with the new regulations.
 
 Most large organisations love a good risk management process. So, get ahead of the curve and start monitoring your progress.
 
 ### Innovation and Competitive Advantage
-Implementing accessibility features often leads to innovative products and services that can set your business apart from the competition.
+Implementing accessibility features often leads to innovative products and services. These can set your business apart from your competition. 
 
-By prioritising accessibility, you can stay ahead, drive innovation, and create unique offerings that cater to a broader audience. This can give you a competitive edge and help you stand out in the marketplace.
+By prioritising accessibility, you can stay ahead, drive innovation, and create unique products that cater to a broader audience. This will give you a competitive edge and help your business stand out in the market.
 
-There's a particular advantage to those products that cater to people who are Neurodivergent. As society catches up, it's becoming increasigly more evident that many people rely on simpler content and user interfaces.
+There's a particular advantage to those products that cater to people who are Neurodivergent. As society catches up, it's becoming increasingly more evident that many people rely on simpler content and user interfaces.
 
 So instead of just focusing on technical compliance, try implementing something like the [W3C Cognitive Accessibility Principles (CogA)](https://www.w3.org/TR/coga-usable/).
 
 ## What does it mean for UK organisations post-Brexit?
 Brexit has brought a lot of changes, and many of you might be wondering what the EAA means for organisations in Britain now that it's no longer part of the EU.
 
-As we just mentioned, the EAA affects organisations selling to customers in EU member states. So if thats your organisaion, then put simply, you need to comply! 
+As we just mentioned, the EAA affects organisations selling to customers in EU member states. So if thats your organisation, then put simply, you need to comply! 
 
 If that is not your company, you may still not be off the hook.
 
@@ -166,7 +154,7 @@ The downside of the Equality Act is that it is somewhat subjective as to what is
 ### Why should you still adopt the EAA standard, even if the UK laws do not?
 It’s likely that the UK will continue aligning with EU standards, because it's good practice, it's beneficial for users, and it's essential for businesses that operate both in the UK and the EU.
 
-This is just my opinion. I might be wrong. But I'm going to take this moment to gloat at the fact I predicted in a talk I did in 2016 that UK organisations would be regularly getting sued for accessibility by the year 2030. And it's looking pretty promising.
+This is just my opinion, and I might be wrong, but I'm going to take this moment to gloat at the fact I predicted in a talk I did in 2016 that UK organisations would be regularly getting sued for accessibility by the year 2030. And it's looking like we're on track!
 
 However, even if you disagree, here are a few things to consider.
 
@@ -181,27 +169,23 @@ It's a no-brainer really. I mean, who does not think it's a smart move to align 
 
 Even if you only ever plan on selling to people in the UK, your product is going to appear far inferior to your EU competitors if you don’t adopt the same standards. Trust me, there is no competitive advantage in having an ableist product or service in 2023!
 
-Accessibility is not just about ticking boxes; it's about inclusivity. Implementing these standards shows that your business values all customers, regardless of their physical abilities.
+Accessibility is not just about ticking boxes; it's about inclusivity. Implementing these standards shows that your business values all customers and respect their needs.
 
-In an increasingly digital world, having an accessible online presence is becoming the norm rather than the exception. It sends a strong message about your company's commitment to social responsibility.
+In an increasingly digital world, having an accessible online presence is becoming the norm rather than the exception. It sends a strong message about your company's responsibility and it's commitment to society.
 
-Implementing accessibility features often leads to innovative products and services that benefit all users, not just those with disabilities. It's a win-win for everyone involved.
-
-So, while the EAA might not be a legal requirement for UK businesses, the principles it embodies are still highly relevant. By embracing these standards, British organisations can not only gain access to new markets but also contribute to a more inclusive digital world.
+So, while the EAA might not be a legal requirement for UK businesses, the principles it embodies are still highly relevant. By embracing these standards, British organisations can gain access to new markets, and also contribute to a more inclusive digital world.
 
 ## 5 tips to prepare for the regulations
 
 So, how can you prepare for the EAA?
 
 ### Get familiar with the EAA requirements
-Start by reading through the EAA and understanding what it requires. This will give you a solid foundation to build upon.
+Start by reading through the EAA and understanding what it requires. It's important to understand them at least at a high level.
 
-It may sound scary, but if you drill down far enough through any of the legislation, standards or harmonised standards, you will eventually get to the Web Content Accessibility Guidelines.
-
-So, if you're ever unsure as to which regulations you need to be meeting, you can take some reassurance in the fact they all use the same way to measure accessibility of digital products.
+It may sound scary, but if you drill down far enough through any of the legislation, standards or harmonised standards, you will eventually get to the Web Content Accessibility Guidelines. So, if you're ever unsure as to which regulations you need to be meeting, you can take some reassurance in the fact they all use the same way to measure accessibility of digital products.
 
 ### Review your existing products and services
-Take a look at what you're currently offering and identify where you might need to make changes.
+Take a look at what products or services you're currently offering, and identify where you need to make changes.
 
 Think about everything from your website to your apps, but also consider other parts of the journey such as emails, marketing materials, SMS messages etc.
 
@@ -210,9 +194,9 @@ Basically if a user interacts with it, study it for what adjustments you might n
 ### Educate your team
 Make sure everyone in your organisation knows about the EAA and what it means for your teams. This includes senior stakeholders who likely hold the learning and development budgets, which you'll need to convince them to spend on some EAA preparation training.
 
-Consider getting help from an accessibility expert or external training organisation. They can provide guidance and help you avoid common pitfalls.
+Consider getting help from an accessibility expert or external training organisation. They can provide guidance and help you avoid common mistakes.
 
-If you can, upskill yourself so you can support your team. There are lots of courses on the Web Content Accessibility Guidelines which will go a long way towards meeting the EAA. 
+If you can, up-skill yourself so you can support your team. There are lots of courses on the Web Content Accessibility Guidelines which will go a long way towards meeting the EAA. 
 
 ### Don’t leave it until the last minute
 The deadline for meeting the EAA is 28 June 2025, so make sure you finish the work ahead of time.
@@ -224,16 +208,14 @@ The worst thing you can do is nothing, which is what most private sector organis
 You still have 2 years, so start now! If you wait until 2025, the demand for accessibility experts will increase exponentially, as will the cost to your organisation!
 
 ### Stay updated
-Keep an eye on any updates to the EAA and related regulations, and stay up-to-date with the Web Content Accessibility Guidelines.
+Watch for updates to the EAA and related regulations, and stay up-to-date with the Web Content Accessibility Guidelines.
 
 Most iterations to the regulations are small updates, but they almost always include tweaks to the referenced WCAG standard once new versions are released.
 
 So, work to [WCAG 2.2](https://www.w3.org/TR/WCAG22/) when it’s released, and this will help you avoid any surprises changes to standards down the line.
 
 ## Final thoughts
-The European Accessibility Act is a big step towards creating a more inclusive digital world, and it's important for private sector organisations to be prepared.
-
-With the right approach, you can turn this challenge into an opportunity and create a better experience for everyone!
+The European Accessibility Act is a big step, and it's important for private sector organisations to be prepared. With the right approach, you can this can be an opportunity to make things better for everybody!
 
 Organisations that bury their head and hope it goes away will be left behind. The EAA deadline is coming, whether you like it or not, so grab hold of the challenge, get ahead, and get the acolade for being one of those leading the way.
 
