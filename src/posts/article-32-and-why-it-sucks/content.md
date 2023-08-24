@@ -21,6 +21,13 @@ I recently wrote a blog post called [European Accessibility Act: What you need t
 
 Now, you might be thinking, 'Transitional what?' So let's dive into it together and try to make sense of it.
 
+## Caveat
+Before we start, I just want to caveat this article with the fact that I have a huge chip on my shoulder.
+
+I hate how much of the burden of accessibility is still on the user, and how little is on the organisations which offer the products or services, and this definitely is reflected in my writing style. My tone is one of frustration, and perhaps even a bit petty in places. I'm aware of this, and I'm trying to own it up-front.
+
+If you're an accessibility specialist, I know you'll get it. But, if you're not, and you're here to try and genuiely find out what you need to do to get your organisation ready for the changes, please accept my apologies and read on anyway, because despite my frustrated tone, I've genuinely tried to make this post informative.
+
 ## Breakdown
 
 ### Article 32, as it's written
