@@ -214,6 +214,11 @@ Most iterations to the regulations are small updates, but they almost always inc
 
 So, work to [WCAG 2.2](https://www.w3.org/TR/WCAG22/) when it’s released, and this will help you avoid any surprises changes to standards down the line.
 
+### Article 32
+There is a transitional period, which may mean extended deadlines in certain cases.
+
+You can read my blog post called [Article 32, and why it sucks](/blog/european-accessibility-act-article-32-and-why-it-sucks/) for more information.
+
 ## Final thoughts
 The European Accessibility Act is a big step, and it's important for private sector organisations to be prepared. With the right approach, you can this can be an opportunity to make things better for everybody!
 
@@ -221,5 +226,5 @@ Organisations that bury their head and hope it goes away will be left behind. Th
 
 I hope this was helpful!
 
-Thanks,
+Thanks,    
 Craig

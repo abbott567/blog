@@ -116,3 +116,7 @@ blockquote {
     margin-left: 0;
   }
 }
+
+blockquote caption {
+  margin-bottom: var(--s0);
+}
