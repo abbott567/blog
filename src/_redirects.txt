@@ -26,3 +26,4 @@
 /decks/html-forms/demos/asterix-and-required-fields   /decks/html-forms/demos/asterisks-and-required-fields   301 
 /work/design-patterns-dwp					                    /work/design-patterns-at-dwp-digital/				            301
 /work/dwp-design-patterns					                    /work/design-patterns-at-dwp-digital/				            301
+/blog/chatgpt-everybody-s-dirty-secret                /blog/chatgpt-everybodys-dirty-secret/                  301
