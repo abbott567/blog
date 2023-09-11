@@ -1,0 +1,15 @@
+---
+layout: layouts/blog-page.njk
+pagination:
+  data: collections.tools-posts
+  alias: post
+  size: 10
+permalink: >-
+  /blog/tags/tools/{{"page-" + (pagination.pageNumber + 1) if
+  pagination.pageNumber > 0}}/
+eleventyComputed:
+  title: >-
+    Posts tagged with ‘tools’ {{"- Page " + (pagination.pageNumber + 1) if
+    pagination.pageNumber > 0}}
+---
+

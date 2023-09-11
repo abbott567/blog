@@ -1,0 +1,15 @@
+---
+layout: layouts/blog-page.njk
+pagination:
+  data: collections.ai-posts
+  alias: post
+  size: 10
+permalink: >-
+  /blog/tags/ai/{{"page-" + (pagination.pageNumber + 1) if pagination.pageNumber
+  > 0}}/
+eleventyComputed:
+  title: >-
+    Posts tagged with ‘ai’ {{"- Page " + (pagination.pageNumber + 1) if
+    pagination.pageNumber > 0}}
+---
+
