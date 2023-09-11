@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT: Everybody's dirty secret"
-permalink: '/blog/{{title|slugify}}/'
+permalink: '/blog/chatgpt-everybodys-dirty-secret/'
 meta:
   description: >-
     My observations, fears and opinions on the sudden rise of ChatGPT.
