@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT: Everybody's dirty secret"
-permalink: '/blog/chatgpt-everybodys-dirty-secret/'
+title: "ChatGPT: Everybodys dirty secret"
+permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
     My observations, fears and opinions on the sudden rise of ChatGPT.
@@ -16,6 +16,7 @@ excerpt: |
 
   There appears to be a common fear that by admitting you use ChatGPT, your work no longer has value, that you somehow look less smart, or that you're now cheating when giving advice. But this couldn't be further from the truth, because ChatGPT is just a tool!
 ---
+
 # ChatGPT: Everybody's dirty secret
 In this post, we'll be specifically looking at my personal feelings and fears around the use of ChatGPT.
 
