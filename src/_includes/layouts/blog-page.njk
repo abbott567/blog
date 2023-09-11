@@ -16,7 +16,7 @@ layout: layouts/base.njk
 
       {{post.data.excerpt|markdown|safe}}
 
-      <a href="/blog/{{slug}}">
+      <a href="{{post.url}}">
         Read full article
         <span class="visually-hidden">
           : {{post.data.title}}
