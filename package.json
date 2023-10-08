@@ -19,7 +19,7 @@
     "sharp": "^0.31.3",
     "standard": "^17.0.0",
     "string-similarity": "^4.0.4",
-    "wcagify": "^1.4.1",
+    "wcagify": "^1.5.0",
     "webpack": "^5.75.0"
   }
 }
