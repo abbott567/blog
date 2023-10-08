@@ -90,7 +90,7 @@ This makes it very difficult to do with colour alone, if you make something a bi
 
 In the documentation, WCAG shows [examples of an outline to meet Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html#:~:text=Using%20a%20solid%20outline), or a change in size or shape to make the element visually different from it's siblings, whilst still maintaining a contrast ratio of 3:1 against the page.
 
-My concern is not necessarily that this is a AAA criterion, but more with the ever growing complexity of WCAG. This new criterion means focus states are now creeping into the same complexity as headings in labels, where you need to have a holistic understanding of 3 or 4 criteria and how they all piece together in order to achieve compliance.
+My concern is not necessarily that this is a AAA criterion, but more with the ever growing complexity of WCAG. This new criterion means focus states are now creeping into the same complexity as headings and labels, where you need to have a holistic understanding of 3 or 4 criteria and how they all piece together in order to achieve compliance.
 
 In my opinion, calling this criterion 'focus appearance' perhaps makes it even less obvious that non-text contrast still covers focus states. And, I worry that it will compound the problem I've already seen in that focus states are rarely accessible.
 
@@ -187,7 +187,7 @@ In most cases, if you're using good architectural practices, and you can pull se
 
 However, it could make things more tricky if you're implementing a microservice style architecture and relying on redirects rather than API calls. I've written more about this in [Making microservices accessible](http://localhost:8080/blog/making-microservices-accessible/).
 
-#### 3.3.8 Accessible Authentication (Minimum) (Level AA)
+### 3.3.8 Accessible Authentication (Minimum) (Level AA)
 
 CAPTCHAs drive us all crazy, and they're becoming increasingly more ridiculous. Solve this maths puzzle. Choose all the images of fire hydrants. Rotate the image of the cat in a hat until it matches the direction of cupids arrow.
 
@@ -237,15 +237,27 @@ What I would say though, is if you have code which is not written to spec, it ca
 
 The Central Digital and Data Office (CDDO), who are the monitoring and reporting body for the UK, released a blog post in December 2022 titled: [Some changes to the public sector digital accessibility regulations](https://accessibility.blog.gov.uk/2022/12/09/some-changes-to-the-public-sector-digital-accessibility-regulations/).
 
-In this blog post, CDDO talk about [changes made to the Public Sector Bodies Accessibility Regulations](https://www.legislation.gov.uk/uksi/2022/1097/made), were it now refers to the 'latest version' of WCAG rather than 2.1 specifically. 
+In this blog post, CDDO highlight that [the regulations reference the latest version of WCAG now](https://www.legislation.gov.uk/uksi/2022/1097/made), were it now refers to the 'latest version' of WCAG rather than 2.1 specifically. 
 
 This means the legislation does not need to be changed every time there is an update to WCAG, which is expensive and time consuming. It just means the day after a new version is brought in, thats the one that the legislation now refers to.
 
 CDDO state in this blog post that they are anticipating WCAG 2.2 in early 2023, and that they would give organisations until early 2024 to make the transition. 
 
+<del>
+
 So, although CDDO have not *explicitly* stated a timeframe for transition, we can infer that they are prepared to allow a 12 month period before they start to report organisations who are compliant to 2.1 rather than 2.2.
 
 With this logic, we can probably expect CDDO to start monitoring and reporting on WCAG 2.2 from October 2024. But we will need to wait for an official statement to know for sure.
+
+</del>
+
+There has been a quiet change to GOVUK Guidance which states that [monitoring against WCAG 2.2 will start from October 2024](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps), so with the delay of WCAG 2.2, they are still honouring their 12 month transition period.
+
+What is a little weird about the update, is that it states Government Digital Service (GDS) will be monitoring, not CDDO, so I'm not sure if there has been another re-shuffle in terms of responsibilities. But, regardless of who is doing the monitoring, at least we have confirmation of when it kicks in!
+
+The statement, published on on 5 October 2024, reads:
+
+> The Government Digital Service (GDS) is working on how to assess the new success criteria in WCAG 2.2 and will start monitoring for the extra criteria in October 2024. Until October 2024 we will monitor accessibility of websites and apps to WCAG 2.1 level AA.
 
 ## Final Thoughts
 
