@@ -185,7 +185,7 @@ There are a few exceptions, such as when the information is no longer relevant, 
 
 In most cases, if you're using good architectural practices, and you can pull session information through, there should be no reason to not be able to meet this criterion.
 
-However, it could make things more tricky if you're implementing a microservice style architecture and relying on redirects rather than API calls. I've written more about this in [Making microservices accessible](http://localhost:8080/blog/making-microservices-accessible/).
+However, it could make things more tricky if you're implementing a microservice style architecture and relying on redirects rather than API calls. I've written more about this in [Making microservices accessible](/blog/making-microservices-accessible/).
 
 ### 3.3.8 Accessible Authentication (Minimum) (Level AA)
 
