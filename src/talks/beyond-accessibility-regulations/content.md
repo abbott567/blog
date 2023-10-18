@@ -14,6 +14,9 @@ tags:
 eleventyComputed:
   deck: /decks/{{title|slugify}}/
 previous:
+  - where: Accessibility Scotland
+    when: September 2023
+    link: 'https://accessibility.scot/beyond-accessibility-regulations/'
   - where: NUX Newcastle
     when: May 2023
     link: 'https://nuxuk.org/2023/05/09/nux-newcastle-25-may-2023-neurodiversity-and-ux/'
