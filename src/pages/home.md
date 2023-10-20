@@ -24,7 +24,7 @@ But, I'm passionate about breaking down the stigma of mental health, so I think 
 
 ![Craig Abbott talking at a conference.](/images/share-image-2.webp)
 
-You can read my [blog](/blog) posts, check out my [talks](/talks) or have a look at some of the [work](/work) I've done.
+You can read my [blog](/blog) posts, check out my [talks](/talks), have a look at some of the [work](/work) I've done, or view content produced by others where I have been [featured](/featured).
 
 If you get stuck with anything or just want to say *"Hi"*, please reach out. Ways to contact me:
 
