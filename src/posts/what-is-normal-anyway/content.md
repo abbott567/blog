@@ -19,6 +19,7 @@ excerpt: |
 
   Type. Delete. Type. Delete.
 ---
+# {{title}}
 
 *I want to be normal*. How many people have muttered these words during times of turmoil? How many people have wanted to trade their noisy racing thoughts, for a brain that was more peaceful? A brain that was numb and void of opinion.
 
