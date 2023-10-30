@@ -1,12 +1,11 @@
 ---
-
 title: Combining axe-core and PA11Y
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-   How to use axe-core and PA11Y for automated accessibility testing.
+    How to use axe-core and PA11Y for automated accessibility testing.
   image:
-    href: /images/share-image-1.jpg
+    href: /images/share-image-cosmic-entities.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-09-06
 tags:

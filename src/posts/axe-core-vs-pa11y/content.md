@@ -6,8 +6,8 @@ meta:
   description: >-
     A detailed comparison between the axe-core and PA11Y tools.
   image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
+    href: /images/share-image-computer-with-code.jpg
+    alt: A computer on a desk in a darkened room, with code on the screen.
 date: 2021-09-05
 tags:
   - accessibility

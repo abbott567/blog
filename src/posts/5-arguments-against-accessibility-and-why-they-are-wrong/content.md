@@ -5,8 +5,8 @@ meta:
   description: >-
     5 arguments people use to try to get out of doing accessibility work.
   image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
+    href: /images/share-image-chair-with-fire.jpg
+    alt: A wheelchair on fire against a dark background.
 date: 2021-06-03
 tags:
   - accessibility
