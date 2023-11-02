@@ -141,6 +141,8 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+  background-color: black;
+  color: white;
 
   .focusable {
     &:active,

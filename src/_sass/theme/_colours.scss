@@ -2,9 +2,9 @@
 @use 'code-highlight.scss' as *;
 
 $off-white: #FAF9F6;
-$off-white-faded: change-color($off-white, $alpha: .5);
+$off-white-faded: change-color($off-white, $alpha: .6);
 $matte-black: #28282B;
-$matte-black-faded: change-color($matte-black, $alpha: .5);
+$matte-black-faded: change-color($matte-black, $alpha: .6);
 $grey-light: #D3D3D3;
 $grey-dark: #A9A9A9;
 $yellow-light: #fff36e;
@@ -38,6 +38,9 @@ $black-translucent: rgba(1, 1, 1, .25);
   --inline-code-colour: #{$blue-dark};
   --card-background-colour: white;
   --card-border-colour: var(--barely-visible);
+  img {
+    opacity: 1;
+  }
 }
 
 @mixin _theme-dark {

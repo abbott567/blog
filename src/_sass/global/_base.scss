@@ -17,6 +17,18 @@ p img {
   width: 100%;
 }
 
+figure img {
+  display:block;
+  width: 100%;
+}
+
+figcaption {
+  display: block;
+  padding: var(--s-4);
+  background-color: var(--barely-visible);
+  color: var(--text-colour-faded);
+}
+
 a {
   color: var(--link-colour);
   &:hover {
@@ -65,4 +77,3 @@ kbd {
   line-height: var(--s0);
   padding: .1rem .3rem;
 }
-

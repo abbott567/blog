@@ -22,6 +22,8 @@
     > svg {
       display: block;
       max-width: 200px;
+      background-color: var(--page-colour);
+      fill: var(--text-colour-primary);
       @media (max-width: 540px) {
         margin: auto;
         width: 150px;
@@ -77,6 +79,10 @@
     svg {
       background-color: var(--page-colour);
       fill: var(--link-colour);
+    }
+    desc {
+      fill: var(--text-colour-primary);
+      background-color: var(--page-colour);
     }
   }
 }

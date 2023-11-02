@@ -139,3 +139,7 @@ del::before {
 del::after {
   content: " [deletion end] ";
 }
+
+figcaption {  
+  text-align: center;
+}
