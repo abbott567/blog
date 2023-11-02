@@ -6,7 +6,7 @@ eleventyComputed:
       What is alt text? Why it matters. And, how to avoid common mistakes.
     image:
       href: '{{imgPath}}/cat.jpg'
-      alt: "A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and it's sunglasses reflect the dark orange clouds of a sunset."
+      alt: "A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset."
 excerpt: |
   In this post, I just want to talk through what alt text is, why it matters, and how to avoid some common mistakes!
 
@@ -42,17 +42,17 @@ You can see the alt text on any image by right clicking and choosing "inspect" t
   src="cat.jpg"
   alt="A close up headshot of a ginger cat 
   wearing mirrored sunglasses. It's in a 
-  car, and it's sunglasses reflect the 
+  car, and its sunglasses reflect the 
   dark orange clouds of a sunset."
 />
 ```
 
-Of course, I say *should*. But there is a strong possibility you wont see it, because people often don't add it, and thats part of the problem we will discuss a bit later on when we cover common mistakes!
+Of course, I say *'should'*. But there is a strong possibility you won't see it, because people often don't add it, and that's part of the problem we will discuss a bit later on when we cover common mistakes!
 
 ## Why alt text matters 
 The following image is what I was actually describing in the previous example. My hunch is that you imagined something very similar.
 
-![A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and it's sunglasses reflect the dark orange clouds of a sunset.]({{imgPath}}/share-image-cat.webp)
+![A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.]({{imgPath}}/share-image-cat.webp)
 
 If the alt text was not descriptive enough, or it didn't accurately describe the image, then that entire experience and your ability to imagine this majestic cat wearing sunglasses is broken.
 
@@ -79,7 +79,7 @@ Have a think about how the following example might read out on a screen reader:
 ### Vague alt text
 Looking back at our cat example, where the alt text read:
 
-> A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and it's sunglasses reflect the dark orange clouds of a sunset.
+> A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.
 
 Think about what you would have imagined if the alt text just said:
 
@@ -87,7 +87,7 @@ Think about what you would have imagined if the alt text just said:
 
 It will likely have altered what you imagined, which may have altered the context entirely.
 
-People often do this just to get validation errors or accessibility tools to shut up. But its not useful for screen reader users.
+People often do this just to get validation errors or accessibility tools to shut up. But it's not useful for screen reader users.
 
 ### Overly detailed alt text
 This is the opposite problem.
@@ -96,7 +96,7 @@ Some alt text reads like a novel, describing every single detail in the image. I
 
 Again, think about the cat example. Think about how concise it was to give you the gist, and then compare it to the following text. Decide if the additional words and the length of time it took you to read *really* added anything to your ability to imagine it.
 
-> An artistic portrait shot of a cat. Set against a subdued background which depicts a soft bokeh effect with an interplay of light and shadow. The cat, has meticulously detailed medium length fur, which displays varying shades of earthy browns and oranges against a white face mask and pink nose, reminiscent of the classic tabby pattern. What captures immediate attention are the round, reflective sunglasses it adorns. These mirrored glasses encapsulate a scene with a setting sun and thick dark orange clouds. The cat's whiskers appear prominent, adding symmetry of the image. It's sitting in a car, which offers a sense of sophistication by fusing the natural world with elements of human luxury.
+> An artistic portrait shot of a cat. Set against a subdued background which depicts a soft bokeh effect with an interplay of light and shadow. The cat has meticulously detailed medium length fur, which displays varying shades of earthy browns and oranges against a white face mask and pink nose, reminiscent of the classic tabby pattern. What captures immediate attention are the round, reflective sunglasses it adorns. These mirrored glasses encapsulate a scene with a setting sun and thick dark orange clouds. The cat's whiskers appear prominent, adding symmetry of the image. It's sitting in a car, which offers a sense of sophistication by fusing the natural world with elements of human luxury.
 
 ### Forgetting the Context
 Sometimes people describe the image well, but they forget why they chose that image in the first place. Or, they copy and paste the image along with the alt text, which might have been fine in the previous setting.
@@ -109,7 +109,7 @@ You could use the same image of a dog in two places, but have completely differe
 
 When describing the image on the page about the breed, you might use something like the following:
 
-> A Rottweiler. A large muscular dog with short black sleek fur and distinctive tan markings on the face, chest, and paws. It's head is strong and broad with a kind face and medium sized ears that flop loosely either side.
+> A Rottweiler. A large muscular dog with short black sleek fur and distinctive tan markings on the face, chest, and paws. Its head is strong and broad with a kind face and medium sized ears that flop loosely on either side.
 
 Whereas on the page where you're trying to sell the collar, the exact same image may be described as:
 
@@ -118,7 +118,7 @@ Whereas on the page where you're trying to sell the collar, the exact same image
 In the first example, I didn't even mention the collar. Because we're trying to describe the look of the breed I felt like describing the collar was more distracting than helpful.
 
 This is the exact image I was describing:
-![A Rottweiler wearing a red bandanna style collar. It's a large muscular dog with short black sleek fur and distinctive tan markings on the face, chest, and paws. It's head is strong and broad with a kind face and medium sized ears that flop loosely either side.]({{imgPath}}/dog.webp)
+![A Rottweiler wearing a red bandanna style collar. It's a large muscular dog with short black sleek fur and distinctive tan markings on the face, chest, and paws. Its head is strong and broad with a kind face and medium sized ears that flop loosely on either side.]({{imgPath}}/dog.webp)
 
 ### Adding alt text to decorative images
 Sometimes, having no alt text is just as important as having descriptive alt text.
@@ -138,9 +138,9 @@ For example, if you're writing alt text like the following, it's probably suppos
 > Colourful squiggles and lines.
 
 ### Incorrectly marking images as decorative
-I often see people marking stock images on articles as decorative, but you have to ask yourself, if it's *really* decorative why did you choose that exact image to compliment what you were writing about?
+I often see people marking stock images on articles as decorative, but you have to ask yourself, if it's *really* decorative, why did you choose that exact image to compliment what you were writing about?
 
-I mean, you don't expect to see an article on the financial crisis of 2008 with an accompanying image of a cat wearing sunglasses, right? It would likely be an image of money or something related to banking. So, the image is in context, it's like not decorative.
+I mean, you don't expect to see an article on the financial crisis of 2008 with an accompanying image of a cat wearing sunglasses, right? It would likely be an image of money or something related to banking. So, if the image is in context, it's likely not decorative.
 
 Anywhere an image adds any kind of value for sighted users, then alternative text should be provided.
 
@@ -235,11 +235,11 @@ For example, a screen reader may read it out like the following:
 ## Controversy
 99% of the time, alt text is relatively straight forward. If the image adds any kind of context, then you should provide it.
 
-There are some people to advocate for hiding all images. Literally marking every image as decorative and describing them in the body of the page.
+There are some people who advocate for hiding all images. Literally marking every image as decorative and describing them in the body of the page.
 
 The argument *for* this is that the alt text is often useful for non-screen reader uses too. Especially if it's a complicated image. So by hiding the images and forcing you to describe it in the body content, then it's accessible to everybody.
 
-The argument *against* this, is that screen reader users sometimes like to know there is an image there so that they can imagine the page layout and get a similar experience to sighted users. I've seen some people who like to hop around the images on a screen, which of course you can't do if they're all hidden.
+The argument *against* this is that screen reader users sometimes like to know there is an image there so that they can imagine the page layout and get a similar experience to sighted users. I've seen some people who like to hop around the images on a screen, which of course you can't do if they're all hidden.
 
 Some people argue it improves the 'user experience' for screen reader users, but what about the human experience? If we start hiding everything and replacing everything with paragraphs of text just because it's easier to develop, the web will become very flat and very boring for a lot of people.
 
