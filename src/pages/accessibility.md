@@ -63,4 +63,4 @@ I'm always looking to improve the accessibility of this website. If you find any
 
 ## Compliance status
 
-This website is fully compliant with the [Web Content Accessibility Guidelines version 2.1](https://www.w3.org/WAI/WCAG21/Understanding/) AA standard.
+This website is fully compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/WAI/WCAG22/Understanding/) AA standard.
