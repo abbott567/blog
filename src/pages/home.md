@@ -30,14 +30,6 @@ If you get stuck with anything or just want to say *"Hi"*, please reach out. Way
 
 <ul>
   <li>
-    <a href="https://twitter.com/abbott567">
-      Twitter 
-      <span class="visually-hidden">
-        - @Abbott567
-      </span>
-    </a>
-  </li>
-  <li>
     <a href="https://uk.linkedin.com/in/abbott567">
       LinkedIn 
       <span class="visually-hidden">
@@ -50,6 +42,14 @@ If you get stuck with anything or just want to say *"Hi"*, please reach out. Way
       Mastodon 
       <span class="visually-hidden">
         - a11y.info/@craigabbott
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="https://bsky.app/profile/craigabbott.bsky.social">
+      Bluesky 
+      <span class="visually-hidden">
+        - @craigabbott.bsky.social
       </span>
     </a>
   </li>
