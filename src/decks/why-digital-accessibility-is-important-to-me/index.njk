@@ -1,0 +1,1731 @@
+---
+eleventyComputed:
+  title: Why digital accessibility is important to me
+  meta:
+    description: Session on accessibility, neurodivergence and going beyond compliance.
+---
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Deck: {{title}} - {{site.name}}</title>
+    <meta name="description" content="Session on accessibility, neurodivergence and going beyond compliance.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+      div.marpit>section {
+        width: 1280px;
+        height: 720px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+
+        scroll-snap-align: center center;
+      }
+
+      div.marpit>section::after {
+        bottom: 0;
+        content: attr(data-marpit-pagination);
+        padding: inherit;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+      }
+
+      div.marpit>section:not([data-marpit-pagination])::after {
+        display: none;
+      }
+
+      /* Normalization */
+      div.marpit>section h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      div.marpit>section video::-webkit-media-controls {
+        will-change: transform;
+      }
+
+      @page {
+        size: 1280px 720px;
+        margin: 0;
+      }
+
+      @media print {
+
+        html,
+        body {
+          background-color: #fff;
+          margin: 0;
+          page-break-inside: avoid;
+          break-inside: avoid-page;
+        }
+
+        div.marpit>section {
+          page-break-before: always;
+          break-before: page;
+        }
+
+        div.marpit>section,
+        div.marpit>section * {
+          -webkit-print-color-adjust: exact !important;
+          animation-delay: 0s !important;
+          animation-duration: 0s !important;
+          color-adjust: exact !important;
+          transition: none !important;
+        }
+
+        div.marpit>svg[data-marpit-svg] {
+          display: block;
+          height: 100vh;
+          width: 100vw;
+        }
+      }
+
+      /* @theme black-yellow-2 */
+      /*!
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
+      div.marpit>section .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        margin: calc(var(--marpit-root-font-size, 1rem) * 1) 0;
+      }
+
+      div.marpit>section .col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        margin-right: calc(var(--marpit-root-font-size, 1rem) * 1);
+      }
+
+      div.marpit>section .col> :first-child {
+        margin-top: 0;
+      }
+
+      div.marpit>section .pagination {
+        color: #505a5f;
+        font-size: 24px;
+        position: absolute;
+        padding: 0;
+        right: 50px;
+        top: 0;
+      }
+
+      div.marpit>section section.pagination {
+        --marpit-root-font-size: 24px;
+      }
+
+      div.marpit>section {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div.marpit>section pre code,
+      div.marpit>section code {
+        font-family: monospace, monospace;
+      }
+
+      div.marpit>section h1,
+      div.marpit>section h2,
+      div.marpit>section h3,
+      div.marpit>section h4,
+      div.marpit>section h5,
+      div.marpit>section h6,
+      div.marpit>section p {
+        max-width: 67%;
+      }
+
+      div.marpit>section {
+        line-height: 1.2;
+        font-size: 29px;
+        color: #F9B900;
+        background: #1e1e1e;
+        align-items: stretch;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 720px;
+        justify-content: center;
+        padding: 78.5px;
+        width: 1280px;
+        background-size: cover;
+      }
+
+      div.marpit>section {
+        --marpit-root-font-size: 29px;
+      }
+
+      div.marpit>section:after {
+        color: #F9B900;
+        font-size: 24px;
+        position: absolute;
+        padding: 0;
+        right: 30px;
+        bottom: 21px;
+      }
+
+      div.marpit>section:after {
+        --marpit-root-font-size: 24px;
+      }
+
+      div.marpit>section>*:last-child,
+      div.marpit>section section[data-footer]> :nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
+      div.marpit>section>*:first-child,
+      div.marpit>section header:first-child+* {
+        margin-top: 0;
+      }
+
+      div.marpit>section pre {
+        margin: 0;
+        overflow: visible;
+        margin-bottom: calc(var(--marpit-root-font-size, 1rem) * 1);
+      }
+
+      div.marpit>section pre code {
+        display: block;
+        overflow-y: visible;
+        overflow-x: auto;
+        padding: calc(var(--marpit-root-font-size, 1rem) * .75);
+        border: 1px dashed;
+        font-size: calc(var(--marpit-root-font-size, 1rem) * .9);
+      }
+
+      div.marpit>section pre code:focus {
+        outline: 4px solid white;
+        outline-offset: 4px;
+        box-shadow: 0px 0px 0px 5px #cc0000;
+      }
+
+      div.marpit>section code {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 1);
+        padding: 0 calc(var(--marpit-root-font-size, 1rem) * .2);
+        border-radius: 5px;
+      }
+
+      div.marpit>section h1 {
+        border-bottom: none;
+        font-size: 1.75em;
+      }
+
+      div.marpit>section h2,
+      div.marpit>section h3,
+      div.marpit>section h4,
+      div.marpit>section h5,
+      div.marpit>section h6 {
+        border-bottom: none;
+        font-size: 1.6em;
+        margin-bottom: calc(var(--marpit-root-font-size, 1rem) * 1);
+      }
+
+      div.marpit>section a,
+      div.marpit>section a:visited {
+        color: inherit;
+      }
+
+      div.marpit>section a:focus {
+        outline: none;
+        padding: 3px;
+        text-decoration: none;
+        background-color: #cc0000 !important;
+        color: white !important;
+        border-bottom: 5px solid white !important;
+      }
+
+      div.marpit>section hr {
+        height: 0;
+        padding-top: 0.25em;
+      }
+
+      div.marpit>section header {
+        top: 21px;
+      }
+
+      div.marpit>section footer {
+        bottom: 21px;
+      }
+
+      div.marpit>section header,
+      div.marpit>section footer {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * .75);
+        margin: 0;
+        position: absolute;
+        left: 0;
+        padding-left: 30px;
+        width: 100%;
+        min-height: 30px;
+        color: white;
+      }
+
+      div.marpit>section kbd {
+        color: #F9B900;
+        font-size: calc(var(--marpit-root-font-size, 1rem) * .9);
+        border: 1px solid grey;
+      }
+
+      div.marpit>section img,
+      div.marpit>section figure {
+        margin-top: 0;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      div.marpit>section p {
+        margin-top: 0;
+      }
+
+      div.marpit>section input {
+        padding: calc(var(--marpit-root-font-size, 1rem) * .25);
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 1);
+        border: 2px solid black;
+        display: block;
+      }
+
+      div.marpit>section figure {
+        margin: 0;
+        border: 0;
+      }
+
+      div.marpit>section ul,
+      div.marpit>section ol {
+        margin-top: 0;
+        margin-bottom: calc(var(--marpit-root-font-size, 1rem) * 1.5);
+      }
+
+      div.marpit>section ul li,
+      div.marpit>section ol li {
+        padding-left: calc(var(--marpit-root-font-size, 1rem) * 1);
+        line-height: 1.5;
+      }
+
+      div.marpit>section ul.list--no-bullet {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      div.marpit>section blockquote {
+        margin: 0;
+        padding-left: calc(var(--marpit-root-font-size, 1rem) * 1);
+        border-left: 10px solid #F9B900;
+      }
+
+      div.marpit>section blockquote p {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-style: italic;
+      }
+
+      div.marpit>section dd {
+        margin-left: 0;
+        padding-left: 20px;
+        border-left: 8px solid #F9B900;
+      }
+
+      div.marpit>section em {
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      div.marpit>section button {
+        font-size: 19px;
+      }
+
+      div.marpit>section button:focus {
+        outline: 4px solid white;
+        outline-offset: 4px;
+        box-shadow: 0px 0px 0px 5px #cc0000;
+      }
+
+      div.marpit>section video {
+        margin-top: 30px;
+      }
+
+      div.marpit>section p {
+        color: white;
+      }
+
+      div.marpit>section ul,
+      div.marpit>section ol {
+        color: white;
+      }
+
+      div.marpit>section .list {
+        color: white;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      div.marpit>section .list--bullet {
+        list-style: disc;
+      }
+
+      div.marpit>section .list--number {
+        list-style: decimal;
+      }
+
+      div.marpit>section pre code.hljs {
+        display: block;
+        overflow-x: auto;
+        padding: 1em;
+      }
+
+      div.marpit>section code.hljs {
+        padding: 3px 5px;
+      }
+
+      /*!
+  Theme: a11y-dark
+  Author: @ericwbailey
+  Maintainer: @ericwbailey
+
+  Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css
+*/
+      div.marpit>section .hljs {
+        background: #2b2b2b;
+        color: #f8f8f2;
+      }
+
+      div.marpit>section .hljs-comment,
+      div.marpit>section .hljs-quote {
+        color: #d4d0ab;
+      }
+
+      div.marpit>section .hljs-deletion,
+      div.marpit>section .hljs-name,
+      div.marpit>section .hljs-regexp,
+      div.marpit>section .hljs-selector-class,
+      div.marpit>section .hljs-selector-id,
+      div.marpit>section .hljs-tag,
+      div.marpit>section .hljs-template-variable,
+      div.marpit>section .hljs-variable {
+        color: #ffa07a;
+      }
+
+      div.marpit>section .hljs-built_in,
+      div.marpit>section .hljs-link,
+      div.marpit>section .hljs-literal,
+      div.marpit>section .hljs-meta,
+      div.marpit>section .hljs-number,
+      div.marpit>section .hljs-params,
+      div.marpit>section .hljs-type {
+        color: #f5ab35;
+      }
+
+      div.marpit>section .hljs-attribute {
+        color: gold;
+      }
+
+      div.marpit>section .hljs-addition,
+      div.marpit>section .hljs-bullet,
+      div.marpit>section .hljs-string,
+      div.marpit>section .hljs-symbol {
+        color: #abe338;
+      }
+
+      div.marpit>section .hljs-section,
+      div.marpit>section .hljs-title {
+        color: #00e0e0;
+      }
+
+      div.marpit>section .hljs-keyword,
+      div.marpit>section .hljs-selector-tag {
+        color: #dcc6e0;
+      }
+
+      div.marpit>section .hljs-emphasis {
+        font-style: italic;
+      }
+
+      div.marpit>section .hljs-strong {
+        font-weight: 700;
+      }
+
+      @media screen and (-ms-high-contrast: active) {
+
+        div.marpit>section .hljs-addition,
+        div.marpit>section .hljs-attribute,
+        div.marpit>section .hljs-built_in,
+        div.marpit>section .hljs-bullet,
+        div.marpit>section .hljs-comment,
+        div.marpit>section .hljs-link,
+        div.marpit>section .hljs-literal,
+        div.marpit>section .hljs-meta,
+        div.marpit>section .hljs-number,
+        div.marpit>section .hljs-params,
+        div.marpit>section .hljs-quote,
+        div.marpit>section .hljs-string,
+        div.marpit>section .hljs-symbol,
+        div.marpit>section .hljs-type {
+          color: highlight;
+        }
+
+        div.marpit>section .hljs-keyword,
+        div.marpit>section .hljs-selector-tag {
+          font-weight: 700;
+        }
+      }
+
+      div.marpit>section.light {
+        background-color: white;
+        color: #1e1e1e;
+      }
+
+      div.marpit>section .visually-hidden {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0 0 0 0) !important;
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        border: 0 !important;
+        white-space: nowrap !important;
+      }
+
+      div.marpit>section .size--1-5 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * .75) !important;
+      }
+
+      div.marpit>section section.size--1-5 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * .75) !important;
+      }
+
+      div.marpit>section .size-1 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 1) !important;
+      }
+
+      div.marpit>section section.size-1 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 1) !important;
+      }
+
+      div.marpit>section .size-1-5 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 1.5) !important;
+      }
+
+      div.marpit>section section.size-1-5 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 1.5) !important;
+      }
+
+      div.marpit>section .size-2 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 2) !important;
+      }
+
+      div.marpit>section section.size-2 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 2) !important;
+      }
+
+      div.marpit>section .size-2-5 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 2.5) !important;
+      }
+
+      div.marpit>section section.size-2-5 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 2.5) !important;
+      }
+
+      div.marpit>section .size-3 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 3) !important;
+      }
+
+      div.marpit>section section.size-3 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 3) !important;
+      }
+
+      div.marpit>section .size-3-5 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 3.5) !important;
+      }
+
+      div.marpit>section section.size-3-5 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 3.5) !important;
+      }
+
+      div.marpit>section .size-4 {
+        font-size: calc(var(--marpit-root-font-size, 1rem) * 4) !important;
+      }
+
+      div.marpit>section section.size-4 {
+        --marpit-root-font-size: calc(var(--marpit-root-font-size, 1rem) * 4) !important;
+      }
+
+      div.marpit>section .bold {
+        font-weight: 700;
+      }
+
+      div.marpit>section .width-100>* {
+        max-width: 100%;
+      }
+
+      div.marpit>section .width-80>* {
+        max-width: 80%;
+      }
+
+      div.marpit>section .width-66>* {
+        max-width: 67%;
+      }
+
+      div.marpit>section .m-t--0 {
+        margin-top: 0;
+      }
+
+      div.marpit>section .m-t--1 {
+        margin-top: -50px;
+      }
+
+      div.marpit>section .m-t--2 {
+        margin-top: -100px;
+      }
+
+      div.marpit>section .m-t--3 {
+        margin-top: -150px;
+      }
+
+      div.marpit>section .m-t--4 {
+        margin-top: -200px;
+      }
+
+      div.marpit>section .m-t-1 {
+        margin-top: 50px;
+      }
+
+      div.marpit>section .m-t-2 {
+        margin-top: 100px;
+      }
+
+      div.marpit>section .m-t-3 {
+        margin-top: 150px;
+      }
+
+      div.marpit>section .m-t-4 {
+        margin-top: 200px;
+      }
+
+      div.marpit>section .bg-overlay {
+        padding: .5em;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      body {
+        background: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      div.marpit>section {
+        margin: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="marpit">
+        <section id="1" data-marpit-pagination-total="64" aria-label="Slide 1: Why digital accessibility is important to me Craig Abbott">
+          <div class="size-1-5 width-100">
+            <h1 aria-describedby="page-number-1" id="slide-1">Why digital accessibility is important to me Craig Abbott</h1>
+            <p>Craig Abbott</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 1</p>
+              <p id="page-number-1" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>1</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="2" data-background-image="url(&quot;images/intro.webp&quot;)" data-marpit-pagination-total="64" style="background-image: url(&quot;images/intro.webp&quot;);" aria-label="Slide 2: Hi, my name is Craig">
+          <h2 class="visually-hidden" aria-describedby="page-number-2" id="slide-2">Hi, my name is Craig</h2>
+          <p class="visually-hidden">
+            I'm a Design Manager at Elastic, and former Head of Accessibility for the Department for Work and Pensions in UK Government.
+          </p>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 2</p>
+              <p id="page-number-2" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>2</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="3" data-marpit-pagination-total="64" aria-label="Slide 3: 
+  ADHD + 
+  Autism = 
+  Me
+">
+          <h3 class="size-2" style="font-family:monospace;color:white;" aria-describedby="page-number-3" id="slide-3">
+            <span style="color:#00A2FF">ADHD</span> +
+            <span style="color:#EF5FA7">Autism</span> =
+            <span style="color:#18E7CF">Me</span>
+          </h3>
+          <div class="visually-hidden">
+            <p>I have combined presentation ADHD and Autism</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 3</p>
+              <p id="page-number-3" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>3</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="4" data-marpit-pagination-total="64" aria-label="Slide 4: Terminology">
+          <h2 class="visually-hidden" aria-describedby="page-number-4" id="slide-4">Terminology</h2>
+          <ul class="bold list" style="font-size:4rem;">
+            <li style="color:#F9B900">
+              Neurotypical?
+            </li>
+            <li style="color:#FF9301">
+              Neurodivergent?
+            </li>
+            <li style="color:#D75F02">
+              Neurodiversity?
+            </li>
+          </ul>
+          <div class="visually-hidden">
+            <p>Neuro means to do with the brain.</p>
+            <p>So neurotypical pretty much means typical brain.</p>
+            <p>Divergent means different. So, different brain.</p>
+            <p>Neurodiversity is when you have a collection of people who all think differently.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 4</p>
+              <p id="page-number-4" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>4</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="5" data-marpit-pagination-total="64" aria-label="Slide 5: Being non-typical is actually pretty typical">
+          <div class="size-1-5">
+            <h2 aria-describedby="page-number-5" id="slide-5">Being non-typical is actually pretty typical</h2>
+          </div>
+          <div class="visually-hidden">
+            <p>Around 15% of the population are neurodivergent.</p>
+            <p>As time goes on, more understanding, more diagnosis and more support is becoming available.</p>
+            <p>If neurodivergents made up more than 50% of the population, we’d probably be the ones considered neurotypical.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 5</p>
+              <p id="page-number-5" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>5</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="6" data-marpit-pagination-total="64" aria-label="Slide 6: If you’re comfortable">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-6" id="slide-6">If you’re comfortable</h3>
+            <p>Raise your hand if you identify as being Neurodivergent.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 6</p>
+              <p id="page-number-6" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>6</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="7" data-marpit-pagination-total="64" aria-label="Slide 7: In the past you probably wouldn’t know you were neurodivergent…">
+          <div class="width-100 size-1-5">
+            <h3 aria-describedby="page-number-7" id="slide-7">In the past you probably wouldn’t know you were neurodivergent…</h3>
+            <p>unless you were diagnosed with a ‘disorder’.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 7</p>
+              <p id="page-number-7" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>7</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="8" data-marpit-pagination-total="64" aria-label="Slide 8: Attention Deficit, Hyperactivity, Disorder">
+          <div class="size-1-5">
+            <h2 aria-describedby="page-number-8" id="slide-8">Attention Deficit, Hyperactivity, Disorder</h2>
+            <p class="visually-hidden">
+              It basically means:
+            </p>
+            <p>Easily distracted, wayward, abnormal.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 8</p>
+              <p id="page-number-8" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>8</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="9" data-marpit-pagination-total="64" aria-label="Slide 9: Language matters">
+          <div class="size-1-5">
+            <h2 aria-describedby="page-number-9" id="slide-9">Language matters</h2>
+            <ul>
+              <li>Autism Spectrum <strong style="color:#EF5FA7">Disorder</strong></li>
+              <li>Attention Deficit Hyperactivity <strong style="color:#EF5FA7">Disorder</strong></li>
+              <li>Obsessive Compulsive <strong style="color:#EF5FA7">Disorder</strong></li>
+              <li>Bipolar <strong style="color:#EF5FA7">Disorder</strong></li>
+              <li>Learning <strong style="color:#EF5FA7">Disorder</strong> <span style="font-size:.6em">(Dyslexia, Dyscalculia, Dysgraphia)</span></li>
+            </ul>
+            <p class="visually-hidden">
+              Almost every neurodivergent person is labelled with a disorder or a syndrome.
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 9</p>
+              <p id="page-number-9" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>9</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="10" data-marpit-pagination-total="64" aria-label="Slide 10: Disorder implies chaos">
+          <div class="width-100 size-1-5">
+            <h3 aria-describedby="page-number-10" id="slide-10">Disorder implies chaos</h3>
+            <p>That you are not orderly, or that you don’t fit.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 10</p>
+              <p id="page-number-10" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>10</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="11" data-marpit-pagination-total="64" aria-label="Slide 11: ‘Disorder’ relies on context">
+          <div class="row">
+            <div class="col">
+              <h3 aria-describedby="page-number-11" id="slide-11">‘Disorder’ relies on context</h3>
+              <p>Books ordered by colour are considered disordered.</p>
+            </div>
+            <div class="col width-100">
+              <p><img src="images/books.webp" alt="A wall full of books in a library, but all the books are organised by colour." width="500"></p>
+            </div>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 11</p>
+              <p id="page-number-11" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>11</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="12" data-background-image="url(&quot;images/liam-neeson.webp&quot;)" data-marpit-pagination-total="64" style="background-image: url(&quot;images/liam-neeson.webp&quot;);" aria-label="Slide 12: Neurodivergents have a very particular set of skills!">
+          <div class="bg-overlay" style="margin-top:30%">
+            <h2 aria-describedby="page-number-12" id="slide-12">Neurodivergents have a very particular set of skills!</h2>
+            <p>
+              and employers are starting to notice…
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 12</p>
+              <p id="page-number-12" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>12</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="13" data-marpit-pagination-total="64" aria-label="Slide 13: Quote from Harvard Business Review">
+          <div class="size-1-5">
+            <h3 class="visually-hidden" aria-describedby="page-number-13" id="slide-13">Quote from Harvard Business Review</h3>
+            <blockquote>
+              <p>“many people with neurological conditions such as autism spectrum disorder, dyspraxia, and dyslexia have extraordinary skills, including in pattern recognition, memory, and mathematics”</p>
+            </blockquote>
+          </div>
+          <footer><a href="https://flipboard.com/@HBR/neurodiversity-is-a-competitive-advantage/a-gSKmdE_0ReyPdit5EfoJiw:a:8395351-43a6ed65fa%2Fhbr.org">Harvard Business Review</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 13</p>
+              <p id="page-number-13" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>13</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="14" data-marpit-pagination-total="64" aria-label="Slide 14: Pay close attention to the language">
+          <div class="size-1-5">
+            <h4 class="visually-hidden" aria-describedby="page-number-14" id="slide-14">Pay close attention to the language</h4>
+            <blockquote style="max-width:66%;font-style:italic;color:white;">
+              “many people with neurological <strong style="color:#EF5FA7">conditions</strong> such as autism spectrum <strong style="color:#EF5FA7">disorder</strong>, dyspraxia, and dyslexia have <strong style="color:#18E7CF">extraordinary skills</strong>, including in pattern recognition, memory, and mathematics”
+            </blockquote>
+            <p class="visually-hidden">
+              The stigma still bleeds through in the language.
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 14</p>
+              <p id="page-number-14" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>14</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="15" data-marpit-pagination-total="64" aria-label="Slide 15: There’s a thin line between exploitation and culture change">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-15" id="slide-15">There’s a thin line between exploitation and culture change</h3>
+            <p class="visually-hidden">
+              This slide does not contain any additional content.
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 15</p>
+              <p id="page-number-15" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>15</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="16" data-marpit-pagination-total="64" aria-label="Slide 16: Quote from the World Economic Forum">
+          <div class="size-1-5">
+            <h3 class="visually-hidden" aria-describedby="page-number-16" id="slide-16">Quote from the World Economic Forum</h3>
+            <blockquote style="max-width:66%;font-style:italic;color:white;">
+              “Many of the worlds biggest companies are now actively recruiting neurodiverse workers in order to benefit from their unique skills and abilities.”
+            </blockquote>
+          </div>
+          <footer><a href="https://www.weforum.org/agenda/2023/05/neurodiversity-employers-workers-jobs/">World Economic Forum</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 16</p>
+              <p id="page-number-16" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>16</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="17" data-marpit-pagination-total="64" aria-label="Slide 17: Again, pay close attention to the language">
+          <div class="size-1-5">
+            <h4 class="visually-hidden" aria-describedby="page-number-17" id="slide-17">Again, pay close attention to the language</h4>
+            <blockquote style="max-width:66%;font-style:italic;color:white;">
+              “Many of the worlds biggest companies are now actively recruiting <strong style="color:#EF5FA7">neurodiverse</strong> workers <strong style="color:#EF5FA7">in order to benefit</strong> from their <strong style="color:#18E7CF">unique skills and abilities</strong>.”
+            </blockquote>
+            <p class="visually-hidden">
+              This reads very much like exploitation to me.
+            </p>
+          </div>
+          <footer><a href="https://www.weforum.org/agenda/2023/05/neurodiversity-employers-workers-jobs/">World Economic Forum</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 17</p>
+              <p id="page-number-17" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>17</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="18" data-marpit-pagination-total="64" aria-label="Slide 18: Why am I telling you this?">
+          <h3 aria-describedby="page-number-18" id="slide-18">Why am I telling you this?</h3>
+          <p>Because accessibility regulations and standards are getting better, but culture and attitudes are not!</p>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 18</p>
+              <p id="page-number-18" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>18</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="19" data-marpit-pagination-total="64" aria-label="Slide 19: Statistics">
+          <div class="size-2">
+            <h2 aria-describedby="page-number-19" id="slide-19">Statistics</h2>
+          </div>
+          <p class="visually-hidden">
+            This slide does not contain any additional content.
+          </p>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 19</p>
+              <p id="page-number-19" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>19</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="20" data-marpit-pagination-total="64" aria-label="Slide 20: A common misconception:">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-20" id="slide-20">A common misconception:</h3>
+            <p>Accessibility only affects a small number of people.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 20</p>
+              <p id="page-number-20" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>20</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="21" data-marpit-pagination-total="64" aria-label="Slide 21: 1 in 5 people in the UK have a disability…">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-21" id="slide-21">1 in 5 people in the UK have a disability…</h3>
+            <p>the same number as those with brown eyes.</p>
+          </div>
+          <footer><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/disabilityenglandandwales/census2021">Office for National Statistics data</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 21</p>
+              <p id="page-number-21" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>21</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="22" data-marpit-pagination-total="64" aria-label="Slide 22: The prevalence of disability rises with age:">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-22" id="slide-22">The prevalence of disability rises with age:</h3>
+            <ul>
+              <li>8% of children</li>
+              <li>19% of working-age adults</li>
+              <li>46% of adults over state pension age</li>
+            </ul>
+          </div>
+          <footer><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2021-to-2022/family-resources-survey-financial-year-2021-to-2022">Family Resources Survey: financial year 2021 to 2022</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 22</p>
+              <p id="page-number-22" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>22</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="23" data-marpit-pagination-total="64" aria-label="Slide 23: The official statistics paint a bleak picture,">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-23" id="slide-23">The official statistics paint a bleak picture,</h3>
+            <p>but it’s actually far worse.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 23</p>
+              <p id="page-number-23" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>23</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="24" data-marpit-pagination-total="64" aria-label="Slide 24: Definitions and thresholds">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-24" id="slide-24">Definitions and thresholds</h3>
+            <p>Missing data.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 24</p>
+              <p id="page-number-24" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>24</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="25" data-marpit-pagination-total="64" aria-label="Slide 25: Mental health issues">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-25" id="slide-25">Mental health issues</h3>
+            <p>Missing data.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 25</p>
+              <p id="page-number-25" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>25</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="26" data-marpit-pagination-total="64" aria-label="Slide 26: Non-visible disabilities">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-26" id="slide-26">Non-visible disabilities</h3>
+            <p>Missing data.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 26</p>
+              <p id="page-number-26" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>26</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="27" data-marpit-pagination-total="64" aria-label="Slide 27: Hidden disabilities">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-27" id="slide-27">Hidden disabilities</h3>
+            <p>Missing data.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 27</p>
+              <p id="page-number-27" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>27</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="28" data-marpit-pagination-total="64" aria-label="Slide 28: 1 in 3 people">
+          <div class="size-1-5">
+            <h4 aria-describedby="page-number-28" id="slide-28">1 in 3 people</h4>
+            <p>Show unconscious bias towards people with disabilities.</p>
+          </div>
+          <footer><a href="https://abilitymagazine.com/unconscious-bias-pwds-workplace/">Unconscious Bias Towards People with Disabilities in the Workplace</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 28</p>
+              <p id="page-number-28" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>28</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="29" data-background-image="url(&quot;images/mind-the-gap.webp&quot;)" data-marpit-pagination-total="64" style="background-image: url(&quot;images/mind-the-gap.webp&quot;);" aria-label="Slide 29: The disability pay gap">
+          <h4 class="visually-hidden" aria-describedby="page-number-29" id="slide-29">The disability pay gap</h4>
+          <div class="size-1-5 m-t--3">
+            <blockquote>
+              <p>Autistic people earn around<br>
+                33% less than their colleagues<br>
+                doing the same job.</p>
+            </blockquote>
+          </div>
+          <footer class="bg-overlay">
+            <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/disability/articles/disabilitypaygapsintheuk/2021">
+              Disability pay gaps in the UK: 2021
+            </a>
+
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 29</p>
+              <p id="page-number-29" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>29</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="30" data-marpit-pagination-total="64" aria-label="Slide 30: The need for accessibility is massively underrepresented in the ‘official statistics’.">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-30" id="slide-30">The need for accessibility is massively underrepresented in the ‘official statistics’.</h3>
+            <p>1 in 5 people is just the tip of the iceberg.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 30</p>
+              <p id="page-number-30" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>30</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="31" data-marpit-pagination-total="64" aria-label="Slide 31: 
+    Impairment !== 
+    Disability
+  Impairment does not equal disability">
+          <div aria-hidden="true" class="width-100">
+            <h2 class="size-2" style="font-family:monospace;color:white;" aria-describedby="page-number-31" id="slide-31">
+              <span style="color:#00A2FF">Impairment</span> !==
+              <span style="color:#EF5FA7">Disability</span>
+            </h2>
+            <p class="size-1-5" style="font-family:monospace;color:white;">
+              <span style="color:#18E7CF">// Important</span>
+            </p>
+          </div>
+          <div class="visually-hidden">
+            <h2 aria-describedby="page-number-31" id="slide-31">Impairment does not equal disability</h2>
+            <p>This is important!</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 31</p>
+              <p id="page-number-31" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>31</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="32" data-marpit-pagination-total="64" aria-label="Slide 32: Impairment">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-32" id="slide-32">Impairment</h3>
+            <p>An impairment is medical. It’s the condition or symptoms that a person experiences.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 32</p>
+              <p id="page-number-32" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>32</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="33" data-marpit-pagination-total="64" aria-label="Slide 33: Disability">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-33" id="slide-33">Disability</h3>
+            <p>When a person finds it difficult to perform every-day tasks to a level that is considered comfortable for most people.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 33</p>
+              <p id="page-number-33" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>33</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="34" data-marpit-pagination-total="64" aria-label="Slide 34: Medical Model of Disability">
+          <div class="size-1">
+            <h4 aria-describedby="page-number-34" id="slide-34">Medical Model of Disability</h4>
+            <p>A persons ‘disability’ is due to their impairment. It is a condition to be ‘fixed’ or ‘cured’.</p>
+            <p><span style="font-size:.7em;font-style:italic;">Example: Sam cannot enjoy the cinema because they are blind.</span></p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 34</p>
+              <p id="page-number-34" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>34</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="35" data-marpit-pagination-total="64" aria-label="Slide 35: Social Model of Disability">
+          <div class="size-1">
+            <h4 aria-describedby="page-number-35" id="slide-35">Social Model of Disability</h4>
+            <p>A persons ‘disability’ is due to an environment or a society not accommodating their impairments.</p>
+            <p><span style="font-size:.7em;font-style:italic;">Example: Sam cannot enjoy the cinema because audio descriptions are not available.</span></p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 35</p>
+              <p id="page-number-35" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>35</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="36" data-marpit-pagination-total="64" aria-label="Slide 36: An impairment does not always mean a person has a disability">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-36" id="slide-36">An impairment does not always mean a person has a disability</h3>
+            <p class="visually-hidden">
+              This is important!
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 36</p>
+              <p id="page-number-36" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>36</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="37" data-marpit-pagination-total="64" aria-label="Slide 37: Example">
+          <div class="size-1-5">
+            <h4 aria-describedby="page-number-37" id="slide-37">Example</h4>
+            <p>Imagine you’re colour blind and it’s your job to analyse pandemic statistics.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 37</p>
+              <p id="page-number-37" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>37</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="38" data-background-image="url(&quot;images/COBR-rgb.webp&quot;)" data-marpit-pagination-total="64" style="background-image: url(&quot;images/COBR-rgb.webp&quot;);" aria-label="Slide 38: Pandemic statistics">
+          <div class="visually-hidden">
+            <h5 aria-describedby="page-number-38" id="slide-38">Pandemic statistics</h5>
+            <p>This slide shows a heat map for hospitals with over 100 COVID-19 positive inpatients on 30 October.</p>
+            <p>It is a grid, which shows hospitals down the y axis, and days across the top axis.</p>
+            <p>Each square in the grid is coloured red, amber or green to show the risk at that hospital on that day.</p>
+            <p>There is a key, which states red means above previous peak, amber means over half the previous peak and green means below half the previous peak.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 38</p>
+              <p id="page-number-38" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>38</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="39" data-background-image="url(&quot;images/COBR-filtered.webp&quot;)" data-marpit-pagination-total="64" style="background-image: url(&quot;images/COBR-filtered.webp&quot;);" aria-label="Slide 39: Pandemic statistics: filtered">
+          <div class="visually-hidden">
+            <h5 aria-describedby="page-number-39" id="slide-39">Pandemic statistics: filtered</h5>
+            <p>This slide is the same as the previous slide, showing the pandemic grid. Only this time it has been filtered for red green colour blindness.</p>
+            <p>Now, every tile is yellow, and you cannot make out from the key which tile represents high, medium or low risk.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 39</p>
+              <p id="page-number-39" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>39</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="40" data-marpit-pagination-total="64" aria-label="Slide 40: Colour blindness is a good example of impairment vs disability">
+          <div class="size-1 width-80">
+            <h4 aria-describedby="page-number-40" id="slide-40">Colour blindness is a good example of impairment vs <em>disability</em></h4>
+          </div>
+          <div class="size-1-5 width-100">
+            <p>1 in 12 men, and 1 in 200 women are colour blind.</p>
+          </div>
+          <footer><a href="https://www.colourblindawareness.org/colour-blindness/">Colourblind Awareness</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 40</p>
+              <p id="page-number-40" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>40</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="41" data-marpit-pagination-total="64" aria-label="Slide 41: People are not always disabled by their impairments">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-41" id="slide-41">People are not always disabled by their impairments</h3>
+            <p>They’re disabled by poorly designed environments.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 41</p>
+              <p id="page-number-41" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>41</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="42" data-marpit-pagination-total="64" aria-label="Slide 42: As Head of Accessibility…">
+          <div class="size-1-5 width-100">
+            <h2 aria-describedby="page-number-42" id="slide-42">As Head of Accessibility…</h2>
+            <p>I had a lot of focus on improving compliance.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 42</p>
+              <p id="page-number-42" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>42</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="43" data-marpit-pagination-total="64" aria-label="Slide 43: WCAG 2.2 - Level AA">
+          <div class="width-100 size-1-5">
+            <h2 aria-describedby="page-number-43" id="slide-43">WCAG 2.2 - Level AA</h2>
+            <p>Does not support most cognitive impairments.</p>
+          </div>
+          <footer><a href="https://www.w3.org/WAI/WCAG21/Understanding/">The Web Content Accessibility Guidelines</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 43</p>
+              <p id="page-number-43" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>43</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="44" data-marpit-pagination-total="64" aria-label="Slide 44: A lot of cognitive support is lost in AAA criteria:">
+          <div class="size-1">
+            <h3 aria-describedby="page-number-44" id="slide-44">A lot of cognitive support is lost in AAA criteria:</h3>
+            <p>For example:</p>
+            <ul>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-noise">1.4.7 Low or no background audio</a></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/interruptions">2.2.4 Interruptions</a></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/location">2.4.8 Location</a></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level">3.1.5 Reading level</a></li>
+            </ul>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 44</p>
+              <p id="page-number-44" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>44</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="45" data-marpit-pagination-total="64" aria-label="Slide 45: Examples of affected impairments:">
+          <div class="size-1">
+            <h4 aria-describedby="page-number-45" id="slide-45">Examples of affected impairments:</h4>
+            <ul>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-noise">1.4.7 Low or no background audio</a> - <span style="color:#EF5FA7">Auditory processing</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/interruptions">2.2.4 Interruptions</a> - <span style="color:#EF5FA7">Focus</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/location">2.4.8 Location</a> - <span style="color:#EF5FA7">Memory</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level">3.1.5 Reading level</a> - <span style="color:#EF5FA7">Reading level</span></li>
+            </ul>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 45</p>
+              <p id="page-number-45" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>45</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="46" data-marpit-pagination-total="64" aria-label="Slide 46: Examples of conditions helped by these criteria:">
+          <div class="size-1">
+            <h4 aria-describedby="page-number-46" id="slide-46">Examples of conditions helped by these criteria:</h4>
+            <ul>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-noise">1.4.7 Low or no background audio</a> - <span style="color:#18E7CF">Autism</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/interruptions">2.2.4 Interruptions</a> - <span style="color:#18E7CF">ADHD</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/location">2.4.8 Location</a> - <span style="color:#18E7CF">Anxiety</span></li>
+              <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level">3.1.5 Reading level</a> - <span style="color:#18E7CF">Dyslexia</span></li>
+            </ul>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 46</p>
+              <p id="page-number-46" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>46</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="47" data-marpit-pagination-total="64" aria-label="Slide 47: Around 67% of WCAG failures originate in the design">
+          <h3 aria-describedby="page-number-47" id="slide-47">Around 67% of WCAG failures originate in the design</h3>
+          <p>Anna E Cook</p>
+          <footer><a href="https://www.youtube.com/watch?v=dQVrfS74xyM">Why we need more accessibility designers</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 47</p>
+              <p id="page-number-47" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>47</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="48" data-marpit-pagination-total="64" aria-label="Slide 48: Accessibility is largely a design problem">
+          <div class="size-1-5 width-80">
+            <h4 aria-describedby="page-number-48" id="slide-48">Accessibility is largely a design problem</h4>
+            <p>But everybody expects Software and Test Engineers to fix it.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 48</p>
+              <p id="page-number-48" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>48</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="49" data-marpit-pagination-total="64" aria-label="Slide 49: Accessible by design">
+          <div class="size-1-5">
+            <h4 aria-describedby="page-number-49" id="slide-49">Accessible by design</h4>
+            <p>Not ‘accessible because it passed an audit’.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 49</p>
+              <p id="page-number-49" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>49</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="50" data-marpit-pagination-total="64" aria-label="Slide 50: 
+    Compliant !== 
+    Accessible
+  Compliant does not equal accessible">
+          <div aria-hidden="true" class="width-100">
+            <h3 class="size-2" style="font-family:monospace;color:white;" aria-describedby="page-number-50" id="slide-50">
+              <span style="color:#00A2FF">Compliant</span> !==
+              <span style="color:#EF5FA7">Accessible</span>
+            </h3>
+            <p class="size-1-5" style="font-family:monospace;color:white;">
+              <span style="color:#18E7CF">// Important</span>
+            </p>
+          </div>
+          <div class="visually-hidden">
+            <h3 aria-describedby="page-number-50" id="slide-50">Compliant does not equal accessible</h3>
+            <p>This is important!</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 50</p>
+              <p id="page-number-50" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>50</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="51" data-marpit-pagination-total="64" aria-label="Slide 51: As a Design Manager…">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-51" id="slide-51">As a Design Manager…</h3>
+            <p>I get to focus on accessible design.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 51</p>
+              <p id="page-number-51" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>51</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="52" data-marpit-pagination-total="64" aria-label="Slide 52: WCAG 3.0 will support neurodivergence">
+          <div class="size-1-5 width-100">
+            <h2 aria-describedby="page-number-52" id="slide-52">WCAG 3.0 will support neurodivergence</h2>
+            <p>But it’s not expected until at least 2030.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 52</p>
+              <p id="page-number-52" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>52</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="53" data-marpit-pagination-total="64" aria-label="Slide 53: CogA is a stop gap">
+          <h3 aria-describedby="page-number-53" id="slide-53">CogA is a stop gap</h3>
+          <p>CogA = Cognitive Accessibility Guidance.</p>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 53</p>
+              <p id="page-number-53" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>53</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="54" data-marpit-pagination-total="64" aria-label="Slide 54: CogA is a set of 8 principles">
+          <div class="size-1-5 width-100">
+            <h3 aria-describedby="page-number-54" id="slide-54">CogA is a set of 8 principles</h3>
+            <p>Spoiler: Most of them are just good design.</p>
+          </div>
+          <footer><a href="https://www.w3.org/TR/coga-usable/">Cognitive Accessibility Guidelines</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 54</p>
+              <p id="page-number-54" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>54</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="55" data-marpit-pagination-total="64" aria-label="Slide 55: The 8 principles of CogA">
+          <h4 aria-describedby="page-number-55" id="slide-55">The 8 principles of CogA</h4>
+          <ol>
+            <li>Help users understand what things are and how to use them</li>
+            <li>Help users to find what they need</li>
+            <li>Use clear and understandable content</li>
+            <li>Help users avoid mistakes and know how to correct them</li>
+            <li>Help users focus</li>
+            <li>Ensure processes do not rely on memory</li>
+            <li>Provide help and support</li>
+            <li>Support adaptation and personalisation</li>
+          </ol>
+          <footer><a href="https://www.w3.org/TR/coga-usable/">Cognitive Accessibility Guidelines</a>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 55</p>
+              <p id="page-number-55" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>55</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="56" data-marpit-pagination-total="64" aria-label="Slide 56: Wrap up…">
+          <div class="size-2">
+            <h2 aria-describedby="page-number-56" id="slide-56">Wrap up…</h2>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 56</p>
+              <p id="page-number-56" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>56</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="57" data-marpit-pagination-total="64" aria-label="Slide 57: The statistics are flawed">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-57" id="slide-57">The statistics are flawed</h3>
+            <p>More people rely on accessibility than 1 in 5.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 57</p>
+              <p id="page-number-57" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>57</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="58" data-marpit-pagination-total="64" aria-label="Slide 58: Meet standards">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-58" id="slide-58">Meet standards</h3>
+            <p>At the very least, be compliant.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 58</p>
+              <p id="page-number-58" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>58</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="59" data-marpit-pagination-total="64" aria-label="Slide 59: Accessibility is a user need">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-59" id="slide-59">Accessibility is a user need</h3>
+            <p>Not a technical specification.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 59</p>
+              <p id="page-number-59" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>59</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="60" data-marpit-pagination-total="64" aria-label="Slide 60: Design for accessibility">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-60" id="slide-60">Design for accessibility</h3>
+            <p>Don’t just expect developers to fix it.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 60</p>
+              <p id="page-number-60" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>60</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="61" data-marpit-pagination-total="64" aria-label="Slide 61: Hire neurodivergent people">
+          <div class="size-1-5">
+            <h3 aria-describedby="page-number-61" id="slide-61">Hire neurodivergent people</h3>
+            <p>But make sure you support us properly!</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 61</p>
+              <p id="page-number-61" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>61</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="62" data-marpit-pagination-total="64" aria-label="Slide 62: Accessibility compliance is our starting block…">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-62" id="slide-62">Accessibility compliance is our starting block…</h3>
+            <p>Inclusion should be our finish line.</p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 62</p>
+              <p id="page-number-62" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>62</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="63" data-marpit-pagination-total="64" aria-label="Slide 63: That’s why digital accessibility is important to me!">
+          <div class="size-1-5 width-80">
+            <h3 aria-describedby="page-number-63" id="slide-63">That’s why digital accessibility is important to me!</h3>
+            <p class="visually-hidden">
+              This slide does not contain any additional content.
+            </p>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 63</p>
+              <p id="page-number-63" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>63</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+        <section id="64" data-marpit-pagination-total="64" aria-label="Slide 64: Thanks!">
+          <div class="size-1-5">
+            <h2 aria-describedby="page-number-64" id="slide-64">Thanks!</h2>
+            <p>Craig Abbott</p>
+            <ul>
+              <li><a href="https://a11y.info/@craigabbott@a11y.info">Mastodon: @craigabbott@a11y.info</a></li>
+              <li><a href="https://uk.linkedin.com/in/abbott567">LinkedIn: /in/abbott567</a></li>
+              <li><a href="https://bsky.app/profile/craigabbott.bsky.social">Bluesky: @craigabbott@bsky.social</a></li>
+            </ul>
+          </div>
+          <footer>
+            <div class="pagination">
+              <p class="visually-hidden">End of slide 64</p>
+              <p id="page-number-64" aria-hidden="true">
+                <span class="visually-hidden">slide </span>
+                <span>64</span>
+              </p>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
