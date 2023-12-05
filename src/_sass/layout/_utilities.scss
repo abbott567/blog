@@ -136,13 +136,16 @@
 
 .visually-hidden {
   position: absolute;
-  top: auto;
-  left: -9999rem;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
-  background-color: black;
-  color: white;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+  background-color: black; // to address axe false flag on contrast
+  color: white; // to address axe false flag on contrast
 
   .focusable {
     &:active,
@@ -153,6 +156,7 @@
       margin: 0;
       overflow: visible;
       clip: auto;
+      white-space: normal;
     }
   }
 }
