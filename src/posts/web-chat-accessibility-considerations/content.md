@@ -239,7 +239,7 @@ So opening and closing the chat feature, replying to messages, scrolling through
 
 The keyboard is not considered trapped if it is held temporarily inside of a feature, as long as there is a mechanism to return it to the main page, such as a close button on a pop-up.
 
-In a lot of cases it is best practice to hold the focus inside of modals or pop-ups to stop the keyboard focus disappearing under the modal which can cause a failure of 2.4.7 Focus Visible.
+In a lot of cases it is best practice to hold the focus inside of modals or pop-ups to stop the keyboard focus disappearing under the modal which can cause a failure of [2.4.7 Focus Visible]({wcagify}) in 2.1, or [2.4.11 Focus Not Obscured (Minimum)]({wcagify}) in 2.2.
 
 However, in the case of a chat feature, you'd need to make sure that if the keyboard user closed the chat window mid-chat to return the focus to the main page to continue browsing, then they are made aware when they have new messages they need to deal with, and that they can return to the chat window without any loss of data.
 
