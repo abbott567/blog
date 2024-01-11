@@ -16,6 +16,6 @@
   --s6: calc(var(--s5) * var(--ratio));
   --s7: calc(var(--s6) * var(--ratio));
   @media (max-width: 399px) {
-    --ratio: 1.2;
+    --ratio: 1.1;
   }
 }
