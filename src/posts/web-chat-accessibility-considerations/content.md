@@ -215,9 +215,9 @@ If it's larger than 24px, or; bold and larger than 14px, then it can have a rati
 
 To pass this criterion, the chat feature would always need to fit on the screen regardless of it's size down to a device width of 320px wide, without requiring the user to scroll horizontally. Scrolling vertically is fine.
 
-### 1.4.11 Non-text Content
+### 1.4.11 Non-text Contrast
 
-[1.4.11 Non-text Content]({wcagify}) is to make sure that images, icons and anything else which is not text, has a text alternative.
+[1.4.11 Non-text Contrast]({wcagify}) is to make sure that images, icons and anything else which is not text, has a text alternative.
 
 For example, if you use an image such as a speech bubble to access the chat feature, it will need to have alternative text so it can be identified by screen readers.
 
