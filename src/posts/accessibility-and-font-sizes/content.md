@@ -9,6 +9,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-01-03
+dateModified: 2022-01-03
 tags:
   - accessibility
 excerpt: |
@@ -31,7 +32,7 @@ All modern browsers allow people to override the default font size in the user s
 
 You can try it. If you're using chrome and you type `chrome://settings` into the address bar, then search for 'font size', you will see that you can set it to various sizes. However, depending on the websites you're browsing, you might not actually see it work.
 
-The reason it might look like a broken setting on some websites is that the browser gets its initial instructions from the user settings, but it gets the rest of its intructions from the website you're viewing.
+The reason it might look like a broken setting on some websites is that the browser gets its initial instructions from the user settings, but it gets the rest of its instructions from the website you're viewing.
 
 The browser will always prioritise the website CSS. If it didn't, all websites would look the same. This means developers have a responsibility to code websites properly. If the website is coded badly, then it will override the useful settings in the browser and make it inaccessible for some users.
 

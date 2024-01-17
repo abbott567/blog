@@ -2,6 +2,7 @@
 title: What can Baloo teach us about design?
 permalink: '/blog/{{title|slugify}}/'
 date: 2018-02-20
+dateModified: 2018-02-20
 tags:
   - design
 eleventyComputed:

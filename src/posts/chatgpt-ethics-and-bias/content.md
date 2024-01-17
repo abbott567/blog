@@ -8,6 +8,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2023-09-21
+dateModified: 2023-09-21
 tags:
   - ai
   - tools

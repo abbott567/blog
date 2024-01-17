@@ -9,6 +9,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2022-03-02
+dateModified: 2022-03-02
 tags:
   - accessibility
 excerpt: |

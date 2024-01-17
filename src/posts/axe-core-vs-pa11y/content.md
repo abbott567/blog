@@ -9,6 +9,7 @@ meta:
     href: /images/share-image-computer-with-code.jpg
     alt: A computer on a desk in a darkened room, with code on the screen.
 date: 2021-09-05
+dateModified: 2021-09-05
 tags:
   - accessibility
 excerpt: |

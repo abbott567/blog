@@ -8,6 +8,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2014-10-29
+dateModified: 2014-10-29
 tags:
   - mental-health
 excerpt: |

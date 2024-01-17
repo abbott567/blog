@@ -3,11 +3,12 @@ title: 'European Accessibility Act: Article 32, and why it sucks!'
 permalink: '/blog/{{title|slugify}}/'
 meta:
   description: >-
-    An explaination of the European Accessibility Act: Article 32.
+    An explanation of the European Accessibility Act: Article 32.
   image:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2023-08-24
+dateModified: 2023-08-24
 tags:
   - accessibility
 excerpt: |
@@ -26,7 +27,7 @@ Before we start, I just want to caveat this article with the fact that I have a 
 
 I hate how much of the burden of accessibility is still on the user, and how little is on the organisations which offer the products or services, and this definitely is reflected in my writing style. My tone is one of frustration, and perhaps even a bit petty in places. I'm aware of this, and I'm trying to own it up-front.
 
-If you're an accessibility specialist, I know you'll get it. But, if you're not, and you're here to try and genuiely find out what you need to do to get your organisation ready for the changes, please accept my apologies and read on anyway, because despite my frustrated tone, I've genuinely tried to make this post informative.
+If you're an accessibility specialist, I know you'll get it. But, if you're not, and you're here to try and genuinely find out what you need to do to get your organisation ready for the changes, please accept my apologies and read on anyway, because despite my frustrated tone, I've genuinely tried to make this post informative.
 
 ## Breakdown
 
@@ -60,7 +61,7 @@ First off, we've got to briefly cover the term 'transitional measures'.
 
 Simply put, its just a period of change and giving people time to adjust to new laws.
 
-I guess it's like switching from your favorite old jeans to a new pair; some people need more time than others to feel comfortable!
+I guess it's like switching from your favourite old jeans to a new pair; some people need more time than others to feel comfortable!
 
 ### The Transitional Period
 The first part of Article 32 sets up a transitional period that ends on 28 June 2030.
@@ -98,7 +99,7 @@ These transitional measures may suck, but they are a big 'heads up' to businesse
 
 Unfortunately, it's not coming as quickly as some of us had hoped, but Rome wasn't built in a day.
 
-Luckily, for some organisations, it's a way to ease into new rules without causing too much panic or chaos. Or, I guess, without them losing too much money, which if we're honest, is proably what all the transitional period boils down to.
+Luckily, for some organisations, it's a way to ease into new rules without causing too much panic or chaos. Or, I guess, without them losing too much money, which if we're honest, is probably what all the transitional period boils down to.
 
 What we're seeing is an attempt at balance, between moving forward into a more inclusive world, and giving organisations a fair amount of time to adapt. But, for some of us, I guess it feels like the balance is just never tipped in our favour. I mean, the Web Content Accessibility Guidelines have been around since 1999, so, I personally think we've all given organisations long enough to adjust! But that's just me.
 

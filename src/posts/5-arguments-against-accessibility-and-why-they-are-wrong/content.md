@@ -8,6 +8,7 @@ meta:
     href: /images/share-image-chair-with-fire.jpg
     alt: A wheelchair on fire against a dark background.
 date: 2021-06-03
+dateModified: 2021-06-03
 tags:
   - accessibility
 excerpt: |
@@ -32,7 +33,7 @@ There is a weird thought process by a lot of people, that, if a person is being 
 
 But whether you discriminate against 1 person, or 100 people, discrimination is still discrimination. Just because it's a small number of people, it doesn't make it any better. It's still forbidden under the [Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) and the [Public Sector Equality Duty 2011](https://www.gov.uk/government/publications/public-sector-equality-duty). 
 
-Regardless of the law, from a moral standpoint, it's still 1 person that may not be able to do their job effectively. 1 person who does not have equal opportunities to thrive.1 person that will likely have their responsibilities removed. 1 person who will likley get moved onto other teams time and time again or have to have their work checked by other people. Whichever way you try to dress it up, it's still 1 person who is being actively discriminated against for being different; and having their self-esteem eroded in the process.
+Regardless of the law, from a moral standpoint, it's still 1 person that may not be able to do their job effectively. 1 person who does not have equal opportunities to thrive.1 person that will likely have their responsibilities removed. 1 person who will likely get moved onto other teams time and time again or have to have their work checked by other people. Whichever way you try to dress it up, it's still 1 person who is being actively discriminated against for being different; and having their self-esteem eroded in the process.
 
 Look at it this way. Imagine your job is to drive a bus. There's a fleet of 10 busses, and a team of 10 drivers. The bus you've been assigned does not have a steering wheel. However, the expectations for you to do your job, hit your targets and perform like everyone else is still there. But you're only 1 person, so your needs probably don't matter, right?
 

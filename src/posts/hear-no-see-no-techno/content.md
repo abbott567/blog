@@ -9,6 +9,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2016-03-31
+dateModified: 2016-03-31
 tags:
   - design
 excerpt: |

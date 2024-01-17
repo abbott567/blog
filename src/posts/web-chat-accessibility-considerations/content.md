@@ -3,6 +3,7 @@
 title: Web Chat accessibility considerations
 permalink: '/blog/{{title|slugify}}/'
 date: 2023-12-05
+dateModified: 2023-12-05
 tags:
   - accessibility
 eleventyComputed:

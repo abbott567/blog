@@ -6,7 +6,7 @@ eleventyComputed:
       A sustainable strategy for accessibility in a large organisation.
     image:
       href: '{{imgPath}}/share-image.jpg'
-      alt: 'A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
+      alt: 'A Venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
   excerpt: |
     I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat are required to make a fire burn. If you remove any of those things  from the equation, the fire will use up what it has left and eventually burn out.
 
@@ -16,6 +16,7 @@ eleventyComputed:
 title: Defining a strategy for accessibility
 permalink: '/blog/{{title|slugify}}/'
 date: 2021-04-01
+dateModified: 2021-04-01
 tags:
   - accessibility
   - strategy
@@ -35,7 +36,7 @@ However, agility is somewhat subjective.
 
 We can all probably agree that both a chipmunk and a chimpanzee would be considered agile creatures. But their agility is not comparable. One weighs 60 grams and one weighs 60 kilograms. So, even though they're both 'agile', the fact that one is 1000 times bigger than the other means when they're moving between point A and point B and avoiding obstacles, the larger of the two is always going to change direction more slowly. 
 
-This is the issue with large organisations. They often have an unrivaled ability to gather momentum quickly, but slowing down and changing direction, despite it being quick for something so large, it is still relatively slow in comparison to smaller entities.
+This is the issue with large organisations. They often have an unrivalled ability to gather momentum quickly, but slowing down and changing direction, despite it being quick for something so large, it is still relatively slow in comparison to smaller entities.
 
 So, when it comes to implementing a strategy, the process takes time, and it's important to not lose faith or give up on the journey.
 
@@ -45,7 +46,7 @@ Before you can fix a problem, you need to understand it. This was one of the fir
 
 If you know some services aren't meeting the standards, you need to do some research and really understand why.
 
-I teamed up with the awesome [Emma Nichol](https://twitter.com/emmamarienicol), a Senior User Researcher with an incredible eye for detail. We designed a survey and anaylised responses from over 200 people.
+I teamed up with the awesome [Emma Nichol](https://twitter.com/emmamarienicol), a Senior User Researcher with an incredible eye for detail. We designed a survey and analysed responses from over 200 people.
 
 The responses spanned all of the roles you'd expect to see in a multidisciplinary team, plus a few others:
 - Product Manager
@@ -98,7 +99,7 @@ I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat a
 
 We can think of accessibility in a large organisation in the same way. There are 3 core parts. Compliance, education, and culture. If you lack any of these 3 things over a sustained period of time, the strategy is unsustainable and your ability to consistently deliver accessible services will burn out.
 
-![A venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.]({{imgPath}}/a11y-strategy-3-pillars.webp)
+![A Venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.]({{imgPath}}/a11y-strategy-3-pillars.webp)
 
 ### Compliance
 Compliance is checking your digital service against a defined standard or law. At the time of writing this, the standard is the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) to the level of AA, and the main piece of legislation is the [Public Sector Bodies Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/made).
@@ -106,7 +107,7 @@ Compliance is checking your digital service against a defined standard or law. A
 Compliance is essential. Without it you have no way of measuring how good or bad something is. But, on its own, compliance is not enough. If you view accessibility as a checkbox exercise or a governance gateway then you're unlikely to have any truly accessible services.
 
 ### Culture
-Culture is embracing accessiblity and embedding it in everything you do as an organisation. It's the attitudes of your colleagues and the way accessibility is viewed and talked about. It's discussions, community, inclusion. It's treating accessibility as a user-need and a basic human right, rather than a list of things to check off or a governance gateway to get through.
+Culture is embracing accessibility and embedding it in everything you do as an organisation. It's the attitudes of your colleagues and the way accessibility is viewed and talked about. It's discussions, community, inclusion. It's treating accessibility as a user-need and a basic human right, rather than a list of things to check off or a governance gateway to get through.
 
 Having a good culture is essential. But again, on its own, it's not enough. Being passionate about accessibility it is great, and it can be infectious, but if you do not have the right education or training in place then you have no way of implementing it successfully. So, you are unlikely to have any accessible services.
 
@@ -139,7 +140,7 @@ One of the most important parts of the manual is the fact that it breaks accessi
 
 A lot of people wrongly assume designers and developers just do the accessibility work, and that is simply not true. Everyone has a role to play, and breaking it down by job role is perhaps the most useful way we have found to help people to understand the impact they have on the accessibility of a service.
 
-We wanted to make the manual as open as possible, so feel free to use it, and if you have any suggestions or want to contribute, you can do that too! [View the accessibility manual on github](https://github.com/dwp/accessibility-manual).
+We wanted to make the manual as open as possible, so feel free to use it, and if you have any suggestions or want to contribute, you can do that too! [View the accessibility manual on GitHub](https://github.com/dwp/accessibility-manual).
 
 We are also working on a series of structured training courses, which we will be able to open source so other organisations can use them once we have done pilots and refined the content.
 
@@ -170,7 +171,7 @@ I've found the best way to do accessibility without it being a huge bottleneck a
 5. Once the automated tools are passing, manually test your page against the 50 WCAG criteria. You can use something like the [Accessibility Insights Chrome extension](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en). If you select the assessment option, it will take you through all the manual checks for your page. It will also produce a HTML report which makes up part of your testing evidence.
 6. Once all the automated and manual tests are passing, test your page against the functionality of different types of assistive technology. You should test it with at least one of each of the 3 main types. A screen reader, a screen magnifier and a voice controller. You should document what you tested and how it performed as part of your evidence. I've created a few assistive technology testing templates you can use: <a href="https://htmlpreview.github.io/?https://github.com/dwp/assistive-technology-templates/blob/master/html/nvda.html">NVDA<span class="visually-hidden"> testing template</span></a>, <a href="https://htmlpreview.github.io/?https://github.com/dwp/assistive-technology-templates/blob/master/html/os-x-voiceover.html">Voiceover<span class="visually-hidden"> testing template</span></a> and <a href="https://htmlpreview.github.io/?https://github.com/dwp/assistive-technology-templates/blob/master/html/os-x-voice-control.html">Voice Control<span class="visually-hidden"> testing template</span></a>.
 7. Once your page is passing on all of these points, you're ready to push your code. You should build automated accessibility tests into your integration pipeline as a last line of defence to stop you pushing in any obvious errors. You can implement something like [AxeCore](https://github.com/dequelabs/axe-core) or [Pa11y-CI](https://github.com/pa11y/pa11y-ci). These should reject any code pushes if they find accessibility issues.
-8. Now you've pushed your page and the code is all ok, you should usability test it as part of the whole application. Use the 3 types of assistive technology testing again, but rather than using every single function on every single page, just make sure you can complete the service from the start to the end using the common features. If you've followed the previous steps for every page, there should be no issues. But sometimes when you test something in isolation you dont pick up on things like back buttons not working as expected.
+8. Now you've pushed your page and the code is all ok, you should usability test it as part of the whole application. Use the 3 types of assistive technology testing again, but rather than using every single function on every single page, just make sure you can complete the service from the start to the end using the common features. If you've followed the previous steps for every page, there should be no issues. But sometimes when you test something in isolation you don't pick up on things like back buttons not working as expected.
 9. Update your accessibility statement. Now you are sure your service is compliant, you've documented all your evidence and stored it in all the right places, make sure your accessibility statement is updated to show the dates it was last tested and the current compliance status.
 10. Definition of done. If you've done all of these steps, only then consider the user story or ticket finished. 
 

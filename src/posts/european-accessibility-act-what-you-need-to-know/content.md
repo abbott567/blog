@@ -8,6 +8,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2023-08-20
+dateModified: 2023-08-20
 tags:
   - accessibility
 excerpt: |
@@ -222,7 +223,7 @@ You can read my blog post called [Article 32, and why it sucks](/blog/european-a
 ## Final thoughts
 The European Accessibility Act is a big step, and it's important for private sector organisations to be prepared. With the right approach, you can this can be an opportunity to make things better for everybody!
 
-Organisations that bury their head and hope it goes away will be left behind. The EAA deadline is coming, whether you like it or not, so grab hold of the challenge, get ahead, and get the acolade for being one of those leading the way.
+Organisations that bury their head and hope it goes away will be left behind. The EAA deadline is coming, whether you like it or not, so grab hold of the challenge, get ahead, and get the accolade for being one of those leading the way.
 
 I hope this was helpful!
 

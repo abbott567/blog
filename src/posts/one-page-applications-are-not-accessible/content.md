@@ -9,6 +9,7 @@ meta:
     href: /images/share-image-1.jpg
     alt: Craig Abbott talking at a conference.
 date: 2018-03-14
+dateModified: 2018-03-14
 tags:
   - design
   - accessibility

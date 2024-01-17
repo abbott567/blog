@@ -8,6 +8,7 @@ meta:
     href: /images/share-image-cosmic-entities.jpg
     alt: Craig Abbott talking at a conference.
 date: 2021-09-06
+dateModified: 2021-09-06
 tags:
   - accessibility
 excerpt: |

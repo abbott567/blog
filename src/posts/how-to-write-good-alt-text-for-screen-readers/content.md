@@ -14,6 +14,7 @@ excerpt: |
 title: How to write good alt text for screen readers
 permalink: '/blog/{{title|slugify}}/'
 date: 2023-11-02
+dateModified: 2023-11-02
 tags:
   - accessibility
 ---

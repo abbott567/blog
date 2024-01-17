@@ -10,6 +10,7 @@ eleventyComputed:
 title: Making microservices accessible
 permalink: '/blog/{{title|slugify}}/'
 date: 2022-11-30
+dateModified: 2022-11-30
 tags:
   - accessibility
 excerpt: |

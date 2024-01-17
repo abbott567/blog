@@ -3,6 +3,7 @@
 title: Error messages are not funny
 permalink: '/blog/{{title|slugify}}/'
 date: 2017-08-07
+dateModified: 2017-08-07
 tags:
   - design
 eleventyComputed:
@@ -39,7 +40,7 @@ There are so many things wrong with this error message, and it caused a bit of a
 
 Out of curiosity, I deleted everything and hit submit again to see the full extent of the problem. The following screenshot shows the error messages in all their glory. For the sake of this post, I'm going to focus on the mobile number field.
 
-![A screenshot of kidly.co.uk's website. It shows 3 text fields for recipient name, your mobile and recipient address. The error messages read: Please enter a recipient name. Oops, you forgot to pop in your mobile number, don't be shy. And, Doh! We need this to know where we're going.]({{imgPath}}/error-messages-are-not-funny.webp)
+![A screenshot of the kidly.co.uk website. It shows 3 text fields for recipient name, your mobile and recipient address. The error messages read: Please enter a recipient name. Oops, you forgot to pop in your mobile number, don't be shy. And, Doh! We need this to know where we're going.]({{imgPath}}/error-messages-are-not-funny.webp)
 
 ## Making assumptions about behaviour
 

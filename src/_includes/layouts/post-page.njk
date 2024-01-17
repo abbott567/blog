@@ -20,3 +20,34 @@ layout: layouts/base.njk
     }) -}}
   </div>
 {%- endblock -%}
+
+{%- block pageScripts -%}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "description": "{{description}}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{meta.image.href}}",
+      "height": 800,
+      "width": 1200
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Craig Abbott"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "craigabbott.co.uk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.craigabbott.co.uk/images/logo.webp"
+      }
+    },
+    "datePublished": "{{date}}",
+    "dateModified": "{{dateModified}}"
+  }
+</script>
+{%- endblock -%}
