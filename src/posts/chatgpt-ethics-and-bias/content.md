@@ -7,7 +7,7 @@ tags:
   - tools
 meta:
   description: >-
-    Some ethical questions around how we use ChatGPT
+    Exploring ChatGPT's ethical dilemmas and challenges
 eleventyComputed:
   permalink: '/blog/{{title|slugify}}/'
   imgPath: '/posts/{{title|slugify}}/images'

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: 'Featured'
 permalink: /featured/
 meta:
-  description: Things I've been featured on
+  description: "Highlights of my work that has been featured in various publications."
   canonicalURL: 'https://craigabbott.co.uk/featured/'
   image:
     href: '/images/share-image-1.jpg'

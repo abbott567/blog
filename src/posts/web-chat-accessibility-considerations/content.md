@@ -6,7 +6,7 @@ tags:
   - accessibility
 meta:
   description: >-
-    A detailed look at what things you need to consider for accessibility when building web chat.
+    A guide on accessibility considerations for web chat development.
 eleventyComputed:
   permalink: '/blog/{{title|slugify}}/'
   imgPath: '/posts/{{title|slugify}}/images'
