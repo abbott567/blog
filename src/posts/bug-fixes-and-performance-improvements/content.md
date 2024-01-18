@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An iPhone face up on a table. The app store is open on the screen showing a collection of apps that need updating."
   excerpt: |
     On my iPhone, I don't have automatic updates turned on. I'm that guy that likes to read the release notes. Or, at least, I was.

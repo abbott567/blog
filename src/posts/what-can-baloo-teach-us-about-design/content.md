@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur."
   excerpt: |
     The idea of design-reuse has been around for many years. Walt Disney reused many scenes. They also reused entire characters. Cartoon creators called this reanimation. It's the process of tracing over existing frames to save time and money. 

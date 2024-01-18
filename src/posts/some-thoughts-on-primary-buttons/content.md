@@ -16,7 +16,7 @@ eleventyComputed:
     image:
       name: 'share-image-1'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: Craig Abbott talking at a conference.
   excerpt: |
     I've recently been ranting a lot about primary buttons. But people often don't understand what they are.

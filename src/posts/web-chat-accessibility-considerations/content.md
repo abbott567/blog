@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: Illustration representing web chat accessibility. A chat interface, users with a screen reader and keyboard, and assistive technology icons, emphasising inclusivity.
   excerpt: |
     Web Chat relies on real time information and notifications, so you're going to need to use several features of Aria (Accessible Rich Internet Applications).

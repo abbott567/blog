@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A bar chart showing a rising trend in statistics. It is depicted as a dystopian city where the bars are high rise buildings, placed on on a broken island floating in the sky."
   excerpt: |
     The number of people in the UK living with a disability is rising.

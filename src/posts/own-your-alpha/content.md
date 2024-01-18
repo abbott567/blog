@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image-1'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: Craig Abbott talking at a conference.
   excerpt: | 
     In Government our digital services get assessed at each stage of their journey. From Discovery into Alpha. Alpha through Beta. And Beta into Live. 

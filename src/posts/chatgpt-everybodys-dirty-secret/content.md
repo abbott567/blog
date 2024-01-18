@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A 3D rendering depicting an AI. It is a robot with the face of a woman. Apart from the face, there is no flesh, and the rest is wiring and metal hardware."
 excerpt: |
   I'm seeing more and more people using ChatGPT, but also, being weirdly secretive about it. They're augmenting their own work, increasing their knowledge and productivity, but not really sharing how they suddenly appear to have stepped up a gear.

@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A crudely made suspension bridge made of sticks and string. The edges appear to be well supported but the middle is flimsy."
   excerpt: |
     As you probably know by now, any software which is built or procured by a Public Sector Body must meet the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) to the standard of AA.

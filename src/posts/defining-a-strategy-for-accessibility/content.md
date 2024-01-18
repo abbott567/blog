@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: 'A Venn diagram with 3 overlapping circles. The 3 circles are labelled: compliance, culture and education.'
   excerpt: |
     I remember in school we learned about the fire-triangle. Fuel, Oxygen and heat are required to make a fire burn. If you remove any of those things  from the equation, the fire will use up what it has left and eventually burn out.

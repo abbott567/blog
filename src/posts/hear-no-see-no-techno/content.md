@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "Molly Watt on stage at a conference. A white woman with long brown hair, and is wearing an orange floaty shirt and blue jeans."
   excerpt: |
     Last week I attended [Camp Digital](http://www.wearesigma.com/campdigital/2017/), in the beautiful Town Hall of Manchester.

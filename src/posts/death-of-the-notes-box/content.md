@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A filing cabinet engulfed in flames."
   excerpt: |
     As a designer, it's not my job to design the things people *want*. It's my job to design the things they *need*.

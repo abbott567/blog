@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.
   excerpt: |
     The term &lsquo;[microservice](https://en.wikipedia.org/wiki/Microservices)&rsquo; is becoming more and more popular when you look across the Digital landscape of a lot of big organisations. 

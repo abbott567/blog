@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "The W3C logo and the title WCAG 2.2"
   excerpt: |
     After much anticipation and several delayed release dates, we eventually got the elusive [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22) on 5 October 2023.

@@ -18,7 +18,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A desktop computer. The screen is covered with flags of the world."
 excerpt: |
   There's a couple of criteria in the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) that I see catching people out time and time again. [3.1.1 Language of page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html) and [3.1.2 Language of parts](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html).

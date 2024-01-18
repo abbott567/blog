@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A cartoon of teenage boy sitting on a wooden floor. He has brown shaggy hair and is wearing a white t-shirt and blue jeans. He looks directly at the camera wearing headphones and holding a smartphone. Behind him is an explosion of consciousness and trash littering everything else in the frame."
   excerpt: |
     "Attention Deficit Hyperactivity Disorder." I was 35 when the Psychiatrist confirmed it.

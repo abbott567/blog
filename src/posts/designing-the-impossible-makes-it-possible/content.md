@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A domed tower style building with staircases surrounding it. The bottom is round, but it is not tipping over, and some of the staircases invert so it would be impossible to get from one floor to another, yet somehow people are inhabiting the building."
   excerpt: |
     As an interaction designer, I hear a sentence at least once on every project I work on. "We can't do that because [insert mediocre excuse here]."

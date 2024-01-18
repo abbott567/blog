@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A cartoon of a man working at a laptop in the dark. Behind him is a collection of lights arranged to look like a face looming over him. The imagine creates an ominous feeling, like you’re being watched."
   excerpt: |
     When I first started working for Government, I found flexi-time awkward. 

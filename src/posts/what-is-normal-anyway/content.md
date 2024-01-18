@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An artist depiction of ‘the realm of depression’. It shows a silhouette against a moonlit stormy sky and spooky trees surrounding the character. Dimly lit lanterns hang from the trees."
   excerpt: |
     *I want to be normal*. How many people have muttered these words during times of turmoil? How many people have wanted to trade their noisy racing thoughts, for a brain that was more peaceful? A brain that was numb and void of opinion.

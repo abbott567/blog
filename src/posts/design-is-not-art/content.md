@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An artist imagined scene. There is an island, with a building on it. The left side of the building looks like a historical church, and the right side of the building looks like a futuristic apartment complex."
   excerpt: |
     Design and art go hand in hand. But they're not the same thing.

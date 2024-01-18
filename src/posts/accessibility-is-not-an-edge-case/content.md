@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An infographic showing an illustration of a woman in a wheelchair surrounded by statistics and charts. The statistics are for stylistic purposes only and aren’t actually decipherable."
   excerpt: |
     There's a common misconception that people using assistive technologies are an edge case. That they fall into that 1% where people disable Javascript. But, this couldn't be further from the truth. 

@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset."
   excerpt: |
     In this post, I just want to talk through what alt text is, why it matters, and how to avoid some common mistakes!

@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A deliberately complex user interface which shows all of the information on one page, including graphs, charts, statistics and maps."
   excerpt: |
     Ok, this maybe should have been called one-page-applications are *rarely* accessible. Anything can be made accessible, it just takes a lot of effort, and very few people put the effort in.

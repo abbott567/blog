@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A collection of vegetables and leaves on a black background."
   excerpt: |
     My new years resolution for 2017 was to move on from vegetarian and to become a legitimate vegan.

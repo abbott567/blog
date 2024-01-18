@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image-1'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: Craig Abbott talking at a conference.
   excerpt: |
     Recently, I took a leaf out of Medium's book and decided to add the estimated reading time to my blog posts. This was so that people could decide whether they had enough time to commit to the post before reading it.

@@ -16,7 +16,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "An abstract artwork of UI components mixed in with html tags as text, for example <button>."
   excerpt: |
     As designers, we always like to put our stamp on things. We like to make things fancy and show off our full range of talents. Then when it comes to coding them up, we abuse our design!

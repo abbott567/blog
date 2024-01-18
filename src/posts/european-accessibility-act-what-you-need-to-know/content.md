@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A young white man in a suit. He is in a wheelchair outside of the European parliament building. It is a glass building which curves and around the top of the building are rows of flags representing EU countries."
   excerpt: |
     The European Accessibility Act and its impact on the private sector.

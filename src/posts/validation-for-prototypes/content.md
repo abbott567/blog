@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A laptop on a desk surrounded by clutter. On the screen is a GOVUK service showing a validation error, which is a red box at the top of the page."
   excerpt: |
     I made a jQuery plugin a couple of years back. It picked up a data attribute called `data-required`. It also picked up an error message you passed into `data-error`. Then, it checked if the input was blank or unchecked. If it was, it would append the error messages and prevent the user from submitting the form.

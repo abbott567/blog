@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A collision of two powerful entities in a cosmic comic book style scene. On one side is a fiery entity, and on the other is icy looking. There’s a bright flash of light where they come together."
   excerpt: |
     My initial thoughts were to decouple PA11Y from it's headless browser, and run it as part of the Selenium tests, rather than booting up 2 separate browser instances which would add seconds onto each test they could just both hit the same page when it was open.

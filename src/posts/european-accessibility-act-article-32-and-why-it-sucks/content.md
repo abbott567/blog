@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A pile of papers titled article 32, placed amongst EU flags and gold trinkets."
   excerpt: |
     I recently wrote a blog post called [European Accessibility Act: What you need to know](/blog/european-accessibility-act-what-you-need-to-know/) and it created a bit of a stir, and a really interesting question came up around Article 32, which is all about transitional measures.

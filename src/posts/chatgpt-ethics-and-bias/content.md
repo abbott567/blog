@@ -15,7 +15,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A brain made of metal hardware and wiring. It is floating against a light background and is connected with lines representing neural pathways."
   excerpt: |
     In this post, we'll be specifically looking at the ethics of ChatGPT, and some warnings to heed when using it.

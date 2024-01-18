@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A computer on a desk in a darkened room, with code on the screen."
   excerpt: |
     We use [axe-core](https://www.npmjs.com/package/axe-core) by [Deque](https://www.deque.com/) regularly as part of acceptance tests. 
