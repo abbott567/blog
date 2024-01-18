@@ -1,27 +1,32 @@
 ---
 
 title: My ADHD and me
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Living with ADHD. How it affects me and how I got a diagnosis.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2022-01-09
 dateModified: 2022-01-09
 tags:
   - mental-health
-excerpt: |
-  "Attention Deficit Hyperactivity Disorder." I was 35 when the Psychiatrist confirmed it.
+meta:
+  description: >-
+    Living with ADHD. How it affects me and how I got a diagnosis.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A cartoon of teenage boy sitting on a wooden floor. He has brown shaggy hair and is wearing a white t-shirt and blue jeans. He looks directly at the camera wearing headphones and holding a smartphone. Behind him is an explosion of consciousness and trash littering everything else in the frame."
+  excerpt: |
+    "Attention Deficit Hyperactivity Disorder." I was 35 when the Psychiatrist confirmed it.
 
-  I felt conflicted. I'd spent years in counselling trying to figure out the inside of my own head. I thought I had a pretty good understanding of who I was. Now, I doubted if I knew myself at all.
+    I felt conflicted. I'd spent years in counselling trying to figure out the inside of my own head. I thought I had a pretty good understanding of who I was. Now, I doubted if I knew myself at all.
 
-  I knew I had quirks. Looking at them now, some of them are textbook ADHD traits. But I also struggle a lot with Impostor Syndrome, Anxiety and Depression. This obviously made my ADHD difficult to diagnose because a lot of the traits can also be attributed to these comorbid conditions.
+    I knew I had quirks. Looking at them now, some of them are textbook ADHD traits. But I also struggle a lot with Impostor Syndrome, Anxiety and Depression. This obviously made my ADHD difficult to diagnose because a lot of the traits can also be attributed to these comorbid conditions.
 
-  Because of this, ADHD was not something I'd ever really considered. It was actually my partner, Eliza, who first suggested that's what it could be.
+    Because of this, ADHD was not something I'd ever really considered. It was actually my partner, Eliza, who first suggested that's what it could be.
 
-  I guess, like most of society, I had a preconceived idea of what ADHD looked like; and it wasn't particularly positive.
+    I guess, like most of society, I had a preconceived idea of what ADHD looked like; and it wasn't particularly positive.
 ---
 
 # {{title}}

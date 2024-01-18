@@ -1,21 +1,27 @@
 ---
 title: 'European Accessibility Act: What you need to know'
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    The European Accessibility Act and its impact on the private sector.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-08-20
 dateModified: 2023-08-20
 tags:
   - accessibility
-excerpt: |
-  The European Accessibility Act and its impact on the private sector.
-  
-  Learn the differences between the EAA, EU Accessibility Directive, Public Sector Bodies Accessibility Regulations, and EN 301 549, and discover top tips to prepare your business for compliance with the EAA.
+meta:
+  description: >-
+    The European Accessibility Act and its impact on the private sector.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/european-accessibility-act-what-you-need-to-know/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A young white man in a suit. He is in a wheelchair outside of the European parliament building. It is a glass building which curves and around the top of the building are rows of flags representing EU countries."
+  excerpt: |
+    The European Accessibility Act and its impact on the private sector.
+    
+    Learn the differences between the EAA, EU Accessibility Directive, Public Sector Bodies Accessibility Regulations, and EN 301 549, and discover top tips to prepare your business for compliance with the EAA.
 ---
+
 # {{title}}
 
 The [European Accessibility Act (EAA)](https://en.wikipedia.org/wiki/European_Accessibility_Act) has been on my mind for a while now.

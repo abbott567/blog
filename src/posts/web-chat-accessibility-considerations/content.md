@@ -1,19 +1,21 @@
 ---
-
 title: Web Chat accessibility considerations
-permalink: '/blog/{{title|slugify}}/'
 date: 2023-12-05
 dateModified: 2023-12-05
 tags:
   - accessibility
+meta:
+  description: >-
+    A detailed look at what things you need to consider for accessibility when building web chat.
 eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
   imgPath: '/posts/{{title|slugify}}/images'
   meta:
-    description: >-
-      A detailed look at what things you need to consider for accessibility when building web chat.
     image:
-      href: '{{imgPath}}/share-image-web-chat.jpg'
-      alt: "Illustration representing web chat accessibility. A chat interface, users with a screen reader and keyboard, and assistive technology icons, emphasising inclusivity."
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Illustration representing web chat accessibility. A chat interface, users with a screen reader and keyboard, and assistive technology icons, emphasising inclusivity.
   excerpt: |
     Web Chat relies on real time information and notifications, so you're going to need to use several features of Aria (Accessible Rich Internet Applications).
 

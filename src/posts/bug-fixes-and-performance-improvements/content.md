@@ -1,23 +1,27 @@
 ---
-
 title: Bug fixes and performance improvements
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Looking at how release notes have become lazy and pointless.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-08-22
 dateModified: 2017-08-22
 tags:
   - design
-excerpt: |
-  On my iPhone, I don't have automatic updates turned on. I'm that guy that likes to read the release notes. Or, at least, I was.
+meta:
+  description: >-
+    Looking at how release notes have become lazy and pointless.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An iPhone face up on a table. The app store is open on the screen showing a collection of apps that need updating."
+  excerpt: |
+    On my iPhone, I don't have automatic updates turned on. I'm that guy that likes to read the release notes. Or, at least, I was.
 
-  Release notes used to be interesting. They'd tell you what the developers had been up to. What features they were adding, or removing. But, the most important thing they brought was the ability to make an informed decision. They gave you the chance to decide whether you actually wanted to install it or not.
+    Release notes used to be interesting. They'd tell you what the developers had been up to. What features they were adding, or removing. But, the most important thing they brought was the ability to make an informed decision. They gave you the chance to decide whether you actually wanted to install it or not.
 
-  Companies such as Slack and Monzo have fun with their release notes. They're proud to show you the new features they've been working hard on. But these two companies are becoming part of a minority. A small group of companies that actually bother to write anything.
+    Companies such as Slack and Monzo have fun with their release notes. They're proud to show you the new features they've been working hard on. But these two companies are becoming part of a minority. A small group of companies that actually bother to write anything.
 ---
 
 # {{title}}

@@ -1,25 +1,30 @@
 ---
 
 title: Own your Alpha
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    How to design a digital service if you're doing Alpha correctly.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-11-22
 dateModified: 2017-11-22
 tags:
   - design
-excerpt: | 
-  In Government our digital services get assessed at each stage of their journey. From Discovery into Alpha. Alpha through Beta. And Beta into Live. 
+meta:
+  description: >-
+    How to design a digital service if you're doing Alpha correctly.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
+  meta:
+    image:
+      name: 'share-image-1'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Craig Abbott talking at a conference.
+  excerpt: | 
+    In Government our digital services get assessed at each stage of their journey. From Discovery into Alpha. Alpha through Beta. And Beta into Live. 
 
-  Every service that ends up on GOVUK will have to go through this. Each one assessed against the [service standard for Government](https://www.gov.uk/service-manual/service-standard).
+    Every service that ends up on GOVUK will have to go through this. Each one assessed against the [service standard for Government](https://www.gov.uk/service-manual/service-standard).
 
-  A panel of trained assessors will conduct the assessment. Each panel member from a different discipline within digital. The panel will cover the team setup. Their design and research, and their chosen technology stack.
+    A panel of trained assessors will conduct the assessment. Each panel member from a different discipline within digital. The panel will cover the team setup. Their design and research, and their chosen technology stack.
 
-  From my time as an assessor, I've noticed teams don't always conduct Alphas correctly.
+    From my time as an assessor, I've noticed teams don't always conduct Alphas correctly.
 ---
 
 # {{title}}

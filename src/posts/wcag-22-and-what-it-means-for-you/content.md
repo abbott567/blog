@@ -1,24 +1,29 @@
 ---
-
 title: WCAG 2.2 and what it means for you
-permalink: '/blog/wcag-22-and-what-it-means-for-you/'
-meta:
-  description: >-
-    An overview of WCAG 2.2 and how it may affect your product
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-10-06
 dateModified: 2023-10-06
 tags:
   - accessibility
-excerpt: |
-  After much anticipation and several delayed release dates, we eventually got the elusive [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22) on 5 October 2023.
+meta:
+  description: >-
+    An overview of WCAG 2.2 and how it may affect your product
+eleventyComputed:
+  permalink: '/blog/wcag-22-and-what-it-means-for-you/'
+  imgPath: '/posts/wcag-22-and-what-it-means-for-you/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "The W3C logo and the title WCAG 2.2"
+  excerpt: |
+    After much anticipation and several delayed release dates, we eventually got the elusive [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22) on 5 October 2023.
 
-  For those who build websites, digital services or mobile applications, or if you just care about making the internet more accessible in general, then this is *big* news!
+    For those who build websites, digital services or mobile applications, or if you just care about making the internet more accessible in general, then this is *big* news!
 
-  So, lets have a look at what all the fuss is about!
+    So, lets have a look at what all the fuss is about!
 ---
+![{{meta.image.alt}}]({{imgPath}}/{{meta.image.name}}.webp)
 
 # {{title}}
 

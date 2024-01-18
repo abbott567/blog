@@ -1,18 +1,21 @@
 ---
 title: What can Baloo teach us about design?
-permalink: '/blog/{{title|slugify}}/'
 date: 2018-02-20
 dateModified: 2018-02-20
 tags:
   - design
+meta:
+  description: >-
+    Component reuse is not new. Walt Disney used to do it regularly.
 eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
   imgPath: '/posts/{{title|slugify}}/images'
   meta:
-    description: >-
-      Component reuse is not new. Walt Disney used to do it regularly.
     image:
-      href: '{{imgPath}}/share-image.jpg'
-      alt: An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur.
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An image of Baloo and Little John side by side. They are identical apart from their clothes and the colour of their fur."
   excerpt: |
     The idea of design-reuse has been around for many years. Walt Disney reused many scenes. They also reused entire characters. Cartoon creators called this reanimation. It's the process of tracing over existing frames to save time and money. 
 

@@ -1,25 +1,29 @@
 ---
-
 title: Death of the notes box
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    A post about designing for user needs not for what users want.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-08-14
 dateModified: 2017-08-14
 tags:
   - design
-excerpt: |
-  As a designer, it's not my job to design the things people *want*. It's my job to design the things they *need*.
+meta:
+  description: >-
+    A post about designing for user needs not for what users want.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A filing cabinet engulfed in flames."
+  excerpt: |
+    As a designer, it's not my job to design the things people *want*. It's my job to design the things they *need*.
 
-  When you work in Government, you see a lot of legacy systems. These are ancient beasts, built off the back of corporate I.T contracts decades ago. 
+    When you work in Government, you see a lot of legacy systems. These are ancient beasts, built off the back of corporate I.T contracts decades ago. 
 
-  They're clunky, and we're unable to make changes. UX wasn't even a thing back then. The interfaces range from what looks like Teletext to an Excel spreadsheet. The font size is about 6px, because any screen resolution over 640px was unheard of when they were built.
+    They're clunky, and we're unable to make changes. UX wasn't even a thing back then. The interfaces range from what looks like Teletext to an Excel spreadsheet. The font size is about 6px, because any screen resolution over 640px was unheard of when they were built.
 
-  There's a lot these systems have to answer for. But one of my biggest gripes is the culture of 'note-box enthusiasts' these systems have created.
+    There's a lot these systems have to answer for. But one of my biggest gripes is the culture of 'note-box enthusiasts' these systems have created.
 ---
 
 # {{title}}

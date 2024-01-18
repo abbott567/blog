@@ -1,21 +1,25 @@
 ---
-
 title: Hear no, see no, techno
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Molly Watts talk at Camp Digital called 'Hear no, see no, techno.'
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2016-03-31
 dateModified: 2016-03-31
 tags:
   - design
-excerpt: |
-  Last week I attended [Camp Digital](http://www.wearesigma.com/campdigital/2017/), in the beautiful Town Hall of Manchester.
+meta:
+  description: >-
+    Molly Watts talk at Camp Digital called 'Hear no, see no, techno.'
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "Molly Watt on stage at a conference. A white woman with long brown hair, and is wearing an orange floaty shirt and blue jeans."
+  excerpt: |
+    Last week I attended [Camp Digital](http://www.wearesigma.com/campdigital/2017/), in the beautiful Town Hall of Manchester.
 
-  It was your usual digital conference. Your usual crowd. But, today I saw a talk that has changed the way I think about websites and service design forever.
+    It was your usual digital conference. Your usual crowd. But, today I saw a talk that has changed the way I think about websites and service design forever.
 ---
 
 # {{title}}

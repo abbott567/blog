@@ -1,27 +1,31 @@
 ---
-eleventyComputed:
-  imgPath: '/posts/{{title|slugify}}/images'
-  meta:
-    description: >-
-      Accessibility and different approaches to developing microservices.
-    image:
-      href: '{{imgPath}}/share-image.jpg'
-      alt: A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.
 title: Making microservices accessible
-permalink: '/blog/{{title|slugify}}/'
 date: 2022-11-30
 dateModified: 2022-11-30
 tags:
   - accessibility
-excerpt: |
-  The term &lsquo;[microservice](https://en.wikipedia.org/wiki/Microservices)&rsquo; is becoming more and more popular when you look across the Digital landscape of a lot of big organisations. 
-  
-  Several Government departments, and several large organisations I've spoken to recently, are all looking at this approach; because, if executed well, it saves time and money, and they create consistency for users.
-  
-  However, as more and more organisations try to leverage microservices, the pitfalls of accessibility are perhaps not being fully considered.
+meta:
+  description: >-
+    Accessibility and different approaches to developing microservices.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: A user flow showing 3 compliant pages, and 1 non-compliant microservice in the middle making the whole thing non-compliant.
+  excerpt: |
+    The term &lsquo;[microservice](https://en.wikipedia.org/wiki/Microservices)&rsquo; is becoming more and more popular when you look across the Digital landscape of a lot of big organisations. 
+    
+    Several Government departments, and several large organisations I've spoken to recently, are all looking at this approach; because, if executed well, it saves time and money, and they create consistency for users.
+    
+    However, as more and more organisations try to leverage microservices, the pitfalls of accessibility are perhaps not being fully considered.
 ---
 
 # {{title}}
+![{{meta.image.alt}}]({{imgPath}}/{{meta.image.name}}.webp)
 
 ## Overview
 

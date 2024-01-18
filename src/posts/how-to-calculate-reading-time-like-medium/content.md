@@ -1,23 +1,27 @@
 ---
-
 title: How to calculate reading time, like Medium
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    How to calculate the reading time on blog posts, like medium.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2016-03-31
 dateModified: 2016-03-31
 tags:
   - design
-excerpt: |
-  Recently, I took a leaf out of Medium's book and decided to add the estimated reading time to my blog posts. This was so that people could decide whether they had enough time to commit to the post before reading it.
+meta:
+  description: >-
+    How to calculate the reading time on blog posts, like medium.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
+  meta:
+    image:
+      name: 'share-image-1'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Craig Abbott talking at a conference.
+  excerpt: |
+    Recently, I took a leaf out of Medium's book and decided to add the estimated reading time to my blog posts. This was so that people could decide whether they had enough time to commit to the post before reading it.
 
-  The task was pretty simple. It was only 7 lines of JavaScript. I wrote it and implemented it in a single train journey to Leeds.
+    The task was pretty simple. It was only 7 lines of JavaScript. I wrote it and implemented it in a single train journey to Leeds.
 
-  When I tweeted about it, I got a request to write an explanation of the code. So here it goes!
+    When I tweeted about it, I got a request to write an explanation of the code. So here it goes!
 ---
 
 # {{title}}

@@ -1,24 +1,29 @@
 ---
-
 title: Some thoughts on primary buttons
 permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Interactions should be obvious. Primary buttons get overused in UX.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-07-26
 dateModified: 2017-07-26
 tags:
   - design
   - html
-excerpt: |
-  I've recently been ranting a lot about primary buttons. But people often don't understand what they are.
+meta:
+  description: >-
+    Interactions should be obvious. Primary buttons get overused in UX.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
+  meta:
+    image:
+      name: 'share-image-1'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Craig Abbott talking at a conference.
+  excerpt: |
+    I've recently been ranting a lot about primary buttons. But people often don't understand what they are.
 
-  In my early days as a designer, I thought it just meant adding `class="btn-primary"` to my markup to make it pretty and blue, and this is a common mistake.
+    In my early days as a designer, I thought it just meant adding `class="btn-primary"` to my markup to make it pretty and blue, and this is a common mistake.
 
-  A lot of people make this mistake and litter the Internet with bad design which is confusing for the people that have to use it. Some of my early contributions are still out there causing a nuisance. Sorry.
+    A lot of people make this mistake and litter the Internet with bad design which is confusing for the people that have to use it. Some of my early contributions are still out there causing a nuisance. Sorry.
 ---
 
 # {{title}}

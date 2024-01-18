@@ -1,24 +1,29 @@
 ---
 title: What is 'normal' anyway?
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Anxiety and depression and how it has always impacted me.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2014-10-29
 dateModified: 2014-10-29
 tags:
   - mental-health
-excerpt: |
-  *I want to be normal*. How many people have muttered these words during times of turmoil? How many people have wanted to trade their noisy racing thoughts, for a brain that was more peaceful? A brain that was numb and void of opinion.
+meta:
+  description: >-
+    Anxiety and depression and how it has always impacted me.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An artist depiction of ‘the realm of depression’. It shows a silhouette against a moonlit stormy sky and spooky trees surrounding the character. Dimly lit lanterns hang from the trees."
+  excerpt: |
+    *I want to be normal*. How many people have muttered these words during times of turmoil? How many people have wanted to trade their noisy racing thoughts, for a brain that was more peaceful? A brain that was numb and void of opinion.
 
-  I know I have.
+    I know I have.
 
-  As I sit here, staring at the blank page, I can already feel my anxieties rising. As I begin to write, I find myself trying to imagine how anybody reading this will perceive my words.
+    As I sit here, staring at the blank page, I can already feel my anxieties rising. As I begin to write, I find myself trying to imagine how anybody reading this will perceive my words.
 
-  Type. Delete. Type. Delete.
+    Type. Delete. Type. Delete.
 ---
 # {{title}}
 

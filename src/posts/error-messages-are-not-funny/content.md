@@ -1,18 +1,20 @@
 ---
-
 title: Error messages are not funny
-permalink: '/blog/{{title|slugify}}/'
 date: 2017-08-07
 dateModified: 2017-08-07
 tags:
   - design
+meta:
+  description: >-
+    Error messages should be clear an concise, not funny.
 eleventyComputed:
-  imgPath: '/posts/{{title|slugify}}/images'
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
   meta:
-    description: >-
-      Error messages should be clear an concise, not funny.
     image:
-      href: /images/share-image-1.jpg
+      name: 'share-image-2'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
       alt: Craig Abbott talking at a conference.
   excerpt: |
     I'm at that age now where all my friends are into having babies. Because of this, I ended up browsing [kidly.co.uk](http://kidly.co.uk). It's an eCommerce site aimed at gifts for 0-4-year-olds. They do a great job of selling themselves as a 'by people for people' kind of company. There are fluffy images of the team looking happy. The about us section is full of references to parenting so that people can relate.

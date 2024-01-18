@@ -1,18 +1,22 @@
 ---
 title: 5 arguments against accessibility and why they are wrong
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    5 arguments people use to try to get out of doing accessibility work.
-  image:
-    href: /images/share-image-chair-with-fire.jpg
-    alt: A wheelchair on fire against a dark background.
 date: 2021-06-03
 dateModified: 2021-06-03
 tags:
-  - accessibility
-excerpt: |
-  In my role, I deal with many different teams and organisations. I also get involved in a bunch of other things on the side, just because accessibility is so misunderstood. One thing which has become quite apparent is that there are some common misconceptions regardless of which team, department or arms-length body you talk to.
+meta:
+  description: >-
+    5 arguments people use to try to get out of doing accessibility work.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An empty wheelchair in flames against a dark background."
+  excerpt: |
+    In my role, I deal with many different teams and organisations. I also get involved in a bunch of other things on the side, just because accessibility is so misunderstood. One thing which has become quite apparent is that there are some common misconceptions regardless of which team, department or arms-length body you talk to.
 ---
 
 # {{title}}

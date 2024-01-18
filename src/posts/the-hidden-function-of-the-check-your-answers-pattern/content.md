@@ -1,22 +1,27 @@
 ---
 title: The hidden function of the 'check your answers' pattern'
-permalink: '/blog/the-hidden-function-of-the-check-your-answers-pattern/'
-meta:
-  description: >-
-    The benefits of using a check your answers pattern
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-10-27
 dateModified: 2023-10-27
 tags:
   - design
-excerpt: |
-  A friend of mine, stated that usually when we add steps to a process, people get concerned that it will add friction and lead to fewer conversions. But, he argued that it is even more costly to the business to deal with mistakes, and therefore we should use the check your answers pattern.
+meta:
+  description: >-
+    The benefits of using a check your answers pattern    
+eleventyComputed:
+  permalink: '/blog/the-hidden-function-of-the-check-your-answers-pattern/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "The GOVUK Check your answers pattern. It shows a website with a black heading and a GOV.UK logo. The title reads ‘Check your answers before sending your application” and there is a list of personal details. Name: Sarah Philips. Date of Birth 5 January 1978. Next to each piece of data is a link which reads: Change."
+  excerpt: |
+    A friend of mine, stated that usually when we add steps to a process, people get concerned that it will add friction and lead to fewer conversions. But, he argued that it is even more costly to the business to deal with mistakes, and therefore we should use the check your answers pattern.
 
-  I agree. There is *always* a user need to make sure the information they have entered is correct, and a check your answers page is the easiest way to do that. That is it's primary function.
+    I agree. There is *always* a user need to make sure the information they have entered is correct, and a check your answers page is the easiest way to do that. That is it's primary function.
 
-  But, what I want to cover in a bit more depth, is the secondary function which often gets overlooked: The pause!
+    But, what I want to cover in a bit more depth, is the secondary function which often gets overlooked: The pause!
 ---
 # The hidden function of the 'check your answers' pattern
 

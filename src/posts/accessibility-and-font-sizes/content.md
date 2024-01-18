@@ -1,23 +1,27 @@
 ---
-
 title: Accessibility and font sizes
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Using px for font sizes can make your website inaccessible. Stop it!
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2022-01-03
 dateModified: 2022-01-03
 tags:
   - accessibility
-excerpt: |
-  It's now 2022, and I'm still seeing far too many websites using static pixel sizes for fonts. Even big hitters like Facebook do this.
+meta:
+  description: >-
+    Using px for font sizes can make your website inaccessible. Stop it!
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title | slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: A collection of different font sizes and weights organised into columns. You can’t read any detail, it is an illustration for stylistic purposes.
+  excerpt: |
+    It's now 2022, and I'm still seeing far too many websites using static pixel sizes for fonts. Even big hitters like Facebook do this.
 
-  Stop it!
+    Stop it!
 
-  Using the wrong units of measurement in your Cascading Style Sheets (CSS) can be a barrier for many visually impaired users.
+    Using the wrong units of measurement in your Cascading Style Sheets (CSS) can be a barrier for many visually impaired users.
 ---
 
 # {{title}}

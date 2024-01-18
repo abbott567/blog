@@ -1,17 +1,22 @@
 ---
 title: "ChatGPT: Everybody's dirty secret"
-permalink: '/blog/chatgpt-everybodys-dirty-secret/'
-meta:
-  description: >-
-    My observations, fears and opinions on the sudden rise of ChatGPT.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-09-11
 dateModified: 2023-09-11
 tags:
   - ai
   - tools
+meta:
+  description: >-
+    My observations, fears and opinions on the sudden rise of ChatGPT.
+eleventyComputed:
+  permalink: '/blog/chatgpt-everybodys-dirty-secret/'
+  imgPath: '/posts/chatgpt-everybodys-dirty-secret/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A 3D rendering depicting an AI. It is a robot with the face of a woman. Apart from the face, there is no flesh, and the rest is wiring and metal hardware."
 excerpt: |
   I'm seeing more and more people using ChatGPT, but also, being weirdly secretive about it. They're augmenting their own work, increasing their knowledge and productivity, but not really sharing how they suddenly appear to have stepped up a gear.
 

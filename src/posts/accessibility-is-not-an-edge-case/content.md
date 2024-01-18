@@ -1,21 +1,25 @@
 ---
-
 title: Accessibility is not an edge case
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Analysis of data to show why accessibility is not an edge case.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-09-27
 dateModified: 2017-09-27
 tags:
   - accessibility
-excerpt: |
-  There's a common misconception that people using assistive technologies are an edge case. That they fall into that 1% where people disable Javascript. But, this couldn't be further from the truth. 
+meta:
+  description: >-
+    Analysis of data to show why accessibility is not an edge case.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An infographic showing an illustration of a woman in a wheelchair surrounded by statistics and charts. The statistics are for stylistic purposes only and aren’t actually decipherable."
+  excerpt: |
+    There's a common misconception that people using assistive technologies are an edge case. That they fall into that 1% where people disable Javascript. But, this couldn't be further from the truth. 
 
-  I'm going to show you why it's important to make your website accessible.
+    I'm going to show you why it's important to make your website accessible.
 ---
 
 # {{title}}

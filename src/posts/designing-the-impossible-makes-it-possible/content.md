@@ -1,25 +1,29 @@
 ---
-
 title: Designing the impossible makes it possible
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    How to push UX Design to make sure you get the correct outcome.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2018-05-02
 dateModified: 2018-05-02
 tags:
   - design
-excerpt: |
-  As an interaction designer, I hear a sentence at least once on every project I work on. "We can't do that because [insert mediocre excuse here]."
+meta:
+  description: >-
+    How to push UX Design to make sure you get the correct outcome.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A domed tower style building with staircases surrounding it. The bottom is round, but it is not tipping over, and some of the staircases invert so it would be impossible to get from one floor to another, yet somehow people are inhabiting the building."
+  excerpt: |
+    As an interaction designer, I hear a sentence at least once on every project I work on. "We can't do that because [insert mediocre excuse here]."
 
-  A lot of the time this is because of technology restrictions. We can't integrate with legacy systems. Or, we can, but the legacy system wants the information in a ridiculous format. So we have to change the design to ask for a mandatory middle name, where people have to write "none" in the box to progress. Urgh.
+    A lot of the time this is because of technology restrictions. We can't integrate with legacy systems. Or, we can, but the legacy system wants the information in a ridiculous format. So we have to change the design to ask for a mandatory middle name, where people have to write "none" in the box to progress. Urgh.
 
-  It's easy to make a snap decision, bow to peer pressure and change the design. After all, we don't want to waste our time designing something that's not possible.
+    It's easy to make a snap decision, bow to peer pressure and change the design. After all, we don't want to waste our time designing something that's not possible.
 
-  Only, that's exactly what we *should* do.
+    Only, that's exactly what we *should* do.
 ---
 
 # {{title}}

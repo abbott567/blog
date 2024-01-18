@@ -1,23 +1,27 @@
 ---
-
 title: Back to blogging
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Why I have been absent from blogging for a quite a while.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2021-03-19
 dateModified: 2021-03-19
 tags:
   - mental-health
-excerpt: |
-  Well, it's been a while.
+meta:
+  description: >-
+    Why I have been absent from blogging for a quite a while.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
+  meta:
+    image:
+      name: 'share-image-1'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Craig Abbott talking at a conference.
+  excerpt: |
+    Well, it's been a while.
 
-  I haven't published a blog post on my personal site for several years.
+    I haven't published a blog post on my personal site for several years.
 
-  The <em>exact</em> reason, I'm actually unsure of, but I'm pretty sure it's anxiety related.
+    The <em>exact</em> reason, I'm actually unsure of, but I'm pretty sure it's anxiety related.
 ---
 
 # {{title}}

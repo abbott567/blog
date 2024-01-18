@@ -1,21 +1,26 @@
 ---
 title: 'ChatGPT: Ethics and bias'
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Some ethical questions around how we use ChatGPT
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-09-21
 dateModified: 2023-09-21
 tags:
   - ai
   - tools
-excerpt: |
-  In this post, we'll be specifically looking at the ethics of ChatGPT, and some warnings to heed when using it.
+meta:
+  description: >-
+    Some ethical questions around how we use ChatGPT
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A brain made of metal hardware and wiring. It is floating against a light background and is connected with lines representing neural pathways."
+  excerpt: |
+    In this post, we'll be specifically looking at the ethics of ChatGPT, and some warnings to heed when using it.
 
-  ChatGPT is a real ethical conundrum. By making something not human sound; well… human, it can be confusing or unnerving if you're not prepared.
+    ChatGPT is a real ethical conundrum. By making something not human sound; well… human, it can be confusing or unnerving if you're not prepared.
 ---
 
 # {{title}}

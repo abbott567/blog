@@ -1,13 +1,6 @@
 ---
 
 title: Using the language attribute to make your website accessible
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Using the lang attribute to make your page accessible.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2022-02-11
 dateModified: 2022-02-11
 tags:
@@ -15,6 +8,18 @@ tags:
   - design
   - html
   - frontend-dev
+meta:
+  description: >-
+    Using the lang attribute to make your page accessible.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A desktop computer. The screen is covered with flags of the world."
 excerpt: |
   There's a couple of criteria in the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) that I see catching people out time and time again. [3.1.1 Language of page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html) and [3.1.2 Language of parts](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html).
 

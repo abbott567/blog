@@ -1,21 +1,25 @@
 ---
-
 title: I've stopped calling myself vegan
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Being vegan, and the mental health toll that comes with it.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2018-01-26
 dateModified: 2018-01-26
 tags:
   - mental-health
-excerpt: |
-  My new years resolution for 2017 was to move on from vegetarian and to become a legitimate vegan.
+meta:
+  description: >-
+    Being vegan, and the mental health toll that comes with it.
+eleventyComputed:
+  permalink: '/blog/ive-stopped-calling-myself-vegan/'
+  imgPath: '/posts/ive-stopped-calling-myself-vegan/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A collection of vegetables and leaves on a black background."
+  excerpt: |
+    My new years resolution for 2017 was to move on from vegetarian and to become a legitimate vegan.
 
-  Now, 12 months later, my new years resolution for 2018 is to no longer call myself a vegan at all.
+    Now, 12 months later, my new years resolution for 2018 is to no longer call myself a vegan at all.
 ---
 
 # {{title}}

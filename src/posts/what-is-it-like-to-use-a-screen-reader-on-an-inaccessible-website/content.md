@@ -1,25 +1,29 @@
 ---
-
 title: What is it like to use a screen reader on an inaccessible website?
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Behind the scenes, understanding how screen readers work.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2018-03-15
 dateModified: 2018-03-15
 tags:
   - accessibility
-excerpt:
-  Screen readers are amazing things. But they can be difficult learn and use.
+meta:
+  description: >-
+    Behind the scenes, understanding how screen readers work.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/images'
+  meta:
+    image:
+      name: 'share-image-1'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: Craig Abbott talking at a conference.
+  excerpt: |
+    Screen readers are amazing things. But they can be difficult learn and use.
 
-  When we see with our eyes, we see in 3 dimensions. We can look up, down, left and right, and we can look a things close to us or in the distance.
+    When we see with our eyes, we see in 3 dimensions. We can look up, down, left and right, and we can look a things close to us or in the distance.
 
-  Almost all websites are 2 dimensional. You can position content top to bottom and left to right.
+    Almost all websites are 2 dimensional. You can position content top to bottom and left to right.
 
-  A screen reader really can only view a website in 1 dimension. It's features are linear. It removes all of the visual positioning, lines all of the content up, then it navigates through it from start to finish. 
+    A screen reader really can only view a website in 1 dimension. It's features are linear. It removes all of the visual positioning, lines all of the content up, then it navigates through it from start to finish. 
 ---
 
 # {{title}}

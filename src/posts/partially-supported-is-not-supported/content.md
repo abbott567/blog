@@ -1,25 +1,29 @@
 ---
-
 title: Partially supported is not supported
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Stop using the phrase 'partially supports' in accessibility.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2022-03-02
 dateModified: 2022-03-02
 tags:
   - accessibility
-excerpt: |
-  As you probably know by now, any software which is built or procured by a Public Sector Body must meet the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) to the standard of AA.
+meta:
+  description: >-
+    Stop using the phrase 'partially supports' in accessibility.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A crudely made suspension bridge made of sticks and string. The edges appear to be well supported but the middle is flimsy."
+  excerpt: |
+    As you probably know by now, any software which is built or procured by a Public Sector Body must meet the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) to the standard of AA.
 
-  What I'm *really* tired of, is reading conformance reports from third party suppliers who are trying to push their inaccessible products for large sums of money under the guise that it is accessible. 
+    What I'm *really* tired of, is reading conformance reports from third party suppliers who are trying to push their inaccessible products for large sums of money under the guise that it is accessible. 
 
-  These chancers often state that some of the criteria is 'partially supported', 'supported with exceptions' or any number of different ways to carefully word the fact that it does not support a particular accessibility feature.
+    These chancers often state that some of the criteria is 'partially supported', 'supported with exceptions' or any number of different ways to carefully word the fact that it does not support a particular accessibility feature.
 
-  And, it's not just one company, they're all doing it.
+    And, it's not just one company, they're all doing it.
 ---
 
 # {{title}}

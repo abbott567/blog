@@ -1,25 +1,29 @@
 ---
-eleventyComputed:
-  imgPath: '/posts/{{title|slugify}}/images'
-  meta:
-    description: >-
-      What is alt text? Why it matters. And, how to avoid common mistakes.
-    image:
-      href: '{{imgPath}}/share-image-cat.jpg'
-      alt: "A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset."
-excerpt: |
-  In this post, I just want to talk through what alt text is, why it matters, and how to avoid some common mistakes!
-
-  I know alt text posts are common, but I feel compelled to write it given that it's 2023, and I still see a lot of the same issues I've been seeing for years.
 title: How to write good alt text for screen readers
-permalink: '/blog/{{title|slugify}}/'
 date: 2023-11-02
 dateModified: 2023-11-02
 tags:
   - accessibility
+meta:
+  description: >-
+    What is alt text? Why it matters. And, how to avoid common mistakes.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset."
+  excerpt: |
+    In this post, I just want to talk through what alt text is, why it matters, and how to avoid some common mistakes!
+
+    I know alt text posts are common, but I feel compelled to write it given that it's 2023, and I still see a lot of the same issues I've been seeing for years.
 ---
 
 # {{title}}
+
 In this post, I just want to talk through what alt text is, why it matters, and how to avoid some common mistakes!
 
 I know alt text posts are common, but I feel compelled to write it given that it's 2023, and I still see a lot of the same issues I've been seeing for years.
@@ -53,7 +57,7 @@ Of course, I say *'should'*. But there is a strong possibility you won't see it,
 ## Why alt text matters 
 The following image is what I was actually describing in the previous example. My hunch is that you imagined something very similar.
 
-![A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.]({{imgPath}}/share-image-cat.webp)
+![A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.]({{imgPath}}/share-image.webp)
 
 If the alt text was not descriptive enough, or it didn't accurately describe the image, then that entire experience and your ability to imagine this majestic cat wearing sunglasses is broken.
 

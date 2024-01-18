@@ -1,20 +1,25 @@
 ---
 title: 'European Accessibility Act: Article 32, and why it sucks!'
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    An explanation of the European Accessibility Act: Article 32.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2023-08-24
 dateModified: 2023-08-24
 tags:
   - accessibility
-excerpt: |
-  I recently wrote a blog post called [European Accessibility Act: What you need to know](/blog/european-accessibility-act-what-you-need-to-know/) and it created a bit of a stir, and a really interesting question came up around Article 32, which is all about transitional measures.
+meta:
+  description: >-
+    An explanation of the European Accessibility Act: Article 32.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/article-32-and-why-it-sucks/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A pile of papers titled article 32, placed amongst EU flags and gold trinkets."
+  excerpt: |
+    I recently wrote a blog post called [European Accessibility Act: What you need to know](/blog/european-accessibility-act-what-you-need-to-know/) and it created a bit of a stir, and a really interesting question came up around Article 32, which is all about transitional measures.
 
-  Now, you might be thinking, 'Transitional what?' So let's dive into it together and try to make sense of it.
+    Now, you might be thinking, 'Transitional what?' So let's dive into it together and try to make sense of it.
 ---
 # {{title}}
 

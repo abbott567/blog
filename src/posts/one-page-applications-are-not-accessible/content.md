@@ -1,24 +1,28 @@
 ---
-
 title: One-page-applications are not accessible
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    The pitfalls of one page applications and accessibility.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2018-03-14
 dateModified: 2018-03-14
 tags:
   - design
   - accessibility
-excerpt: |
-  Ok, this maybe should have been called one-page-applications are *rarely* accessible. Anything can be made accessible, it just takes a lot of effort, and very few people put the effort in.
+meta:
+  description: >-
+    The pitfalls of one page applications and accessibility.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A deliberately complex user interface which shows all of the information on one page, including graphs, charts, statistics and maps."
+  excerpt: |
+    Ok, this maybe should have been called one-page-applications are *rarely* accessible. Anything can be made accessible, it just takes a lot of effort, and very few people put the effort in.
 
-  One-page-applications are on the rise. With them you get funky animations and cool transition effects. Some are a real beauty to behold.
+    One-page-applications are on the rise. With them you get funky animations and cool transition effects. Some are a real beauty to behold.
 
-  The biggest problem with one-page-applications, is they often create a terrible experience for people using screen readers.
+    The biggest problem with one-page-applications, is they often create a terrible experience for people using screen readers.
 ---
 
 # {{title}}

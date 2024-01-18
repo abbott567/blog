@@ -1,27 +1,31 @@
 ---
-
 title: Semantics and accessibility
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    Why semantics matters for accessibility, and how we get it wrong.
-  image:
-    href: /images/share-image-1.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2017-10-10
 dateModified: 2017-10-10
 tags:
   - accessibility
   - design
   - html
-excerpt: |
-  As designers, we always like to put our stamp on things. We like to make things fancy and show off our full range of talents. Then when it comes to coding them up, we abuse our design!
+meta:
+  description: >-
+    Why semantics matters for accessibility, and how we get it wrong.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "An abstract artwork of UI components mixed in with html tags as text, for example <button>."
+  excerpt: |
+    As designers, we always like to put our stamp on things. We like to make things fancy and show off our full range of talents. Then when it comes to coding them up, we abuse our design!
 
-  We float things right. We use absolute positioning. We style links to look like buttons. We use fancy hover states and chuck in break tags in to create whitespace.
+    We float things right. We use absolute positioning. We style links to look like buttons. We use fancy hover states and chuck in break tags in to create whitespace.
 
-  Then, we marvel at how pretty our designs look. After all, as long as it looks good, that's all that matters. Right?
+    Then, we marvel at how pretty our designs look. After all, as long as it looks good, that's all that matters. Right?
 
-  Well, not exactly.
+    Well, not exactly.
 ---
 
 # {{title}}

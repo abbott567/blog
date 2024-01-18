@@ -1,20 +1,25 @@
 ---
 title: Combining axe-core and PA11Y
-permalink: '/blog/{{title|slugify}}/'
-meta:
-  description: >-
-    How to use axe-core and PA11Y for automated accessibility testing.
-  image:
-    href: /images/share-image-cosmic-entities.jpg
-    alt: Craig Abbott talking at a conference.
 date: 2021-09-06
 dateModified: 2021-09-06
 tags:
   - accessibility
-excerpt: |
-  My initial thoughts were to decouple PA11Y from it's headless browser, and run it as part of the Selenium tests, rather than booting up 2 separate browser instances which would add seconds onto each test they could just both hit the same page when it was open.
+meta:
+  description: >-
+    How to use axe-core and PA11Y for automated accessibility testing.
+eleventyComputed:
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
+  meta:
+    image:
+      name: 'share-image'
+      extension: 'jpg'
+      href: '{{imgPath}}/{{name}}.{{extension}}'
+      alt: "A collision of two powerful entities in a cosmic comic book style scene. On one side is a fiery entity, and on the other is icy looking. There’s a bright flash of light where they come together."
+  excerpt: |
+    My initial thoughts were to decouple PA11Y from it's headless browser, and run it as part of the Selenium tests, rather than booting up 2 separate browser instances which would add seconds onto each test they could just both hit the same page when it was open.
 
-  However, on closer inspection, it turns out that using both is actually far simpler than I anticipated. PA11Y has the ability to use different 'runners' or plugins. So, using axe-core and PA11Y together is as simple as passing in the runners in as an option.
+    However, on closer inspection, it turns out that using both is actually far simpler than I anticipated. PA11Y has the ability to use different 'runners' or plugins. So, using axe-core and PA11Y together is as simple as passing in the runners in as an option.
 ---
 
 # {{title}}
