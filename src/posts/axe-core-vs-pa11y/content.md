@@ -1,7 +1,7 @@
 ---
 title: Axe-core vs PA11Y
 date: 2021-09-05
-dateModified: 2021-09-05
+dateModified: 2024-01-18
 tags:
   - accessibility
 meta:
@@ -19,12 +19,12 @@ eleventyComputed:
   excerpt: |
     We use [axe-core](https://www.npmjs.com/package/axe-core) by [Deque](https://www.deque.com/) regularly as part of acceptance tests. 
 
-    With [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/accessibility_testing.html) now offering [PA11Y](https://www.npmjs.com/package/pa11y) as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
+    With [GitLab](https://docs.gitlab.com/ee/ci/testing/accessibility_testing.html) now offering [PA11Y](https://www.npmjs.com/package/pa11y) as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
 ---
 
 # {{title}}
 
-We use [axe-core](https://www.npmjs.com/package/axe-core) by [Deque](https://www.deque.com/) regularly as part of acceptance tests. With [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/accessibility_testing.html) now offering [PA11Y](https://www.npmjs.com/package/pa11y) as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
+We use [axe-core](https://www.npmjs.com/package/axe-core) by [Deque](https://www.deque.com/) regularly as part of acceptance tests. With [GitLab](https://docs.gitlab.com/ee/ci/testing/accessibility_testing.html) now offering [PA11Y](https://www.npmjs.com/package/pa11y) as part of the Continuous Integration (CI) Pipeline with zero config, I wanted to understand how it stacked up against axe-core. Can you drop axe-core for PA11Y? Can you drop PA11Y for axe-core? Should you use both?
 
 Spoiler alert, all automated tools perform poorly. This doesn't mean we shouldn't use them. But we need to remain realistic about how many errors we may still have on our pages, even if the tools can't find them.
 
