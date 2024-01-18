@@ -9,13 +9,13 @@ meta:
     Error messages should be clear an concise, not funny.
 eleventyComputed:
   permalink: '/blog/{{title|slugify}}/'
-  imgPath: '/images'
+  imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:
-      name: 'share-image-2'
+      name: 'share-image'
       extension: 'jpg'
       href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
-      alt: Craig Abbott talking at a conference.
+      alt: "An error message which reads: Oopsie Daisy! Error Code 404 - Coffee not found! Our server went on a coffee break and spilled some on the keyboard. We're trying to clean up the mess, but it might take a while."
   excerpt: |
     I'm at that age now where all my friends are into having babies. Because of this, I ended up browsing [kidly.co.uk](http://kidly.co.uk). It's an eCommerce site aimed at gifts for 0-4-year-olds. They do a great job of selling themselves as a 'by people for people' kind of company. There are fluffy images of the team looking happy. The about us section is full of references to parenting so that people can relate.
 
