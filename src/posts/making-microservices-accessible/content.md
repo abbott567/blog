@@ -25,7 +25,6 @@ eleventyComputed:
 ---
 
 # {{title}}
-![{{meta.image.alt}}]({{imgPath}}/{{meta.image.name}}.webp)
 
 ## Overview
 

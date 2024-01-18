@@ -8,7 +8,7 @@ meta:
   description: >-
     The benefits of using a check your answers pattern    
 eleventyComputed:
-  permalink: '/blog/the-hidden-function-of-the-check-your-answers-pattern/'
+  permalink: '/blog/{{title|slugify}}/'
   imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:

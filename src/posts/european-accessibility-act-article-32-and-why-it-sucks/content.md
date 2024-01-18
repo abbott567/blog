@@ -9,7 +9,7 @@ meta:
     An explanation of the European Accessibility Act: Article 32.
 eleventyComputed:
   permalink: '/blog/{{title|slugify}}/'
-  imgPath: '/posts/article-32-and-why-it-sucks/images'
+  imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:
       name: 'share-image'

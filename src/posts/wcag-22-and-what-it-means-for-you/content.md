@@ -8,8 +8,8 @@ meta:
   description: >-
     An overview of WCAG 2.2 and how it may affect your product
 eleventyComputed:
-  permalink: '/blog/wcag-22-and-what-it-means-for-you/'
-  imgPath: '/posts/wcag-22-and-what-it-means-for-you/images'
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:
       name: 'share-image'
@@ -23,7 +23,6 @@ eleventyComputed:
 
     So, lets have a look at what all the fuss is about!
 ---
-![{{meta.image.alt}}]({{imgPath}}/{{meta.image.name}}.webp)
 
 # {{title}}
 

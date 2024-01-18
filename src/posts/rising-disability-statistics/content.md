@@ -1,5 +1,4 @@
 ---
-
 title: Rising disability statistics
 permalink: '/blog/{{title|slugify}}/'
 date: 2021-11-03

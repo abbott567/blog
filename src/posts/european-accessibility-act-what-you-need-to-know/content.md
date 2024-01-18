@@ -9,7 +9,7 @@ meta:
     The European Accessibility Act and its impact on the private sector.
 eleventyComputed:
   permalink: '/blog/{{title|slugify}}/'
-  imgPath: '/posts/european-accessibility-act-what-you-need-to-know/images'
+  imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:
       name: 'share-image'

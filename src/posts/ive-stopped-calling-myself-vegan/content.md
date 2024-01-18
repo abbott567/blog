@@ -8,8 +8,8 @@ meta:
   description: >-
     Being vegan, and the mental health toll that comes with it.
 eleventyComputed:
-  permalink: '/blog/ive-stopped-calling-myself-vegan/'
-  imgPath: '/posts/ive-stopped-calling-myself-vegan/images'
+  permalink: '/blog/{{title|slugify}}/'
+  imgPath: '/posts/{{title|slugify}}/images'
   meta:
     image:
       name: 'share-image'
