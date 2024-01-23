@@ -124,7 +124,7 @@ Again, if we take a mature practice like frontend engineering. When we look at [
 
 Now, if you do the same for an [accessibility specialist](https://www.linkedin.com/jobs/search/?currentJobId=3750357169&keywords=accessibility&origin=JOBS_HOME_SEARCH_BUTTON&refresh=true), at the time of writing this post, the average salary for a working level accessibility specialist, if you can even find an advert with a salary listed, is usually around £30,000 to £40,000 per year. Most of the time they don't even advertise the salary because they're ashamed of how low it is, it just says 'competitive'.
 
-The lack of job adverts which expect you to apply without knowing the salary range is a huge problem too, but that is another rant for another day.
+The amount of job adverts which expect you to apply without knowing the salary range is a huge problem too, but that is another rant for another day.
 
 In most cases the salary for an accessibility specialist is around half or two-thirds the salary of a frontend engineer. Yet, the advert will still specify that you must have a foundational skill set that includes HTML, CSS and Javascript. Because you have to find, explain and often fix the problems created by the frontend engineer that's getting paid twice as much!
 
@@ -347,7 +347,7 @@ But, the IAAP certification process is very much set up in a way which mimics th
 
 IAAP has a formal exam with an invigilator which you will need to study for. Which is super overwhelming and stressful for a lot of neurodivergent people. It's not designed in a way which caters for these people drawn to the accessibility industry in the first place.
 
-It's kind of ironic that accessibility specialists often need to advise organisations on reasonable adjustments, but the certification they often need to do does not afford them the same opportunities.
+It's kind of ironic that accessibility specialists often need to advise organisations on reasonable adjustments, but the certification they often need in order to do this, does not afford them the same opportunities.
 
 ##### It's IAAP or nothing
 
@@ -418,7 +418,7 @@ Public sector salaries tend to be around 15% to 20% less than the private sector
 
 The pension scheme in the Civil Service contributes around 25% to 30%, whereas a good private sector pension contributes around 6% or 7%, so bear that in mind when pitching your salaries.
 
-Each level is mapped to a salary band, and whilst these might have marginal fluctuations based on department and location, they're an accurate figure of what you should expect to be paying. 
+Each level is mapped to a salary band, and whilst these might have marginal fluctuations based on department and location, they're a pretty accurate figure of what you should expect to be paying. 
 
 I've outlined them below, with an adjustment showing a 15% increase for where you should likely be aiming in the private sector.
 
