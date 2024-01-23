@@ -14,7 +14,7 @@ eleventyComputed:
     image:
       name: 'share-image'
       extension: 'jpg'
-      href: '{{imgPath}}/{{name}}.{{extension}}'
+      href: '{{imgPath}}/{{meta.image.name}}.{{meta.image.extension}}'
       alt: "A unicorn running. Its back legs are supported by wheels, much like a wheelchair harness for dogs. It's surrounded by bursts of rainbow colours."
   excerpt: |
     Many organisations seem to view accessibility through a narrow lens. They do not recognise the breadth and depth of expertise that is required to create a well rounded accessibility role.
