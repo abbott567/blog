@@ -1,7 +1,17 @@
+/* Styles for <code> elements within <pre> tags */
 pre > code {
   font-size: var(--s-1);
   padding: var(--s0);
   display: block;
   overflow-x: auto;
   border: thin dashed var(--partially-visible);
+  color: inherit;
+}
+
+/* Global styles for all inline <code> */
+code {
+  font-size: 0.9em;
+  background-color: var(--barely-visible);
+  padding: 0 var(--s-6);
+  color: var(--inline-code-colour);
 }

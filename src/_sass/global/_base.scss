@@ -39,12 +39,6 @@ a {
   }
 }
 
-p code {
-  background-color: var(--barely-visible);
-  padding: 0 var(--s-6);
-  color: var(--inline-code-colour);
-}
-
 button {
   &:hover {
     opacity: .8;
