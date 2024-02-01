@@ -106,7 +106,7 @@ A role attribute can be implicit or explicit. Every interactive element has an i
 
 Contrary to popular belief, it's the accessibility tree that assistive technology interacts with, not the actual DOM itself. So it's important to make sure elements are assigned the correct role during this translation from DOM to accessibility tree.
 
-For example, a `<button>` element has an implicit role of 'button'. You don't need to tell the browser it's a button, it just automatically assumes it is one because of the tag you used.
+For example, a button element has an implicit role of 'button'. You don't need to tell the browser it's a button, it just automatically assumes it is one because of the tag you used.
 
 These two elements will be identical in the DOM and the accessibility tree.
 
@@ -187,9 +187,9 @@ You can [read about the suggestion role in the 1.3 draft](https://w3c.github.io/
 #### The Comment Role
 Almost every article you read online these days has comments, because engagement feeds algorithms, right? But, for screen reader users, sometimes it's difficult to know where the article ends and where the comments start.
 
-The purpose of `role="comment"` will be to make sure that it's clear to a user when they're reading a comment, and not the body copy of an article or something else entirely.
+The purpose of the comment role, or `role=comment`, will be to make sure that it's clear to a user when they're reading a comment, and not the body copy of an article or something else entirely.
 
-Having a role of 'comment' will help the screen reader to inform the user of exactly the type of content they're hearing. You will also be able to pair it up with existing attributes like `aria-labelledby` to add additional context, like who wrote it, and when.
+Having a role of 'comment' will help the screen reader to inform the user of exactly the type of content they're hearing. You will also be able to pair it up with existing attributes like ARIA labelled by, or `aria-labelledby`, to add additional context, like who wrote it, and when.
 
 For example:
 ```html
@@ -246,13 +246,13 @@ Again, you can still do this now using a hack. For example:
 You can [read about the comment role in the 1.3 draft](https://w3c.github.io/aria/#comment).
 
 #### The Mark Role
-Using `role="mark"` will be like a digital highlighter, pointing out important text for reference.
+Using the mark role, or `role=mark` will be like a digital highlighter, pointing out important text for reference.
 
-Currently, highlighting is often just done using a `<mark>` or `<span>` element and CSS styling, which means the importance of it is missed by assistive technologies.
+Currently, highlighting is often just done using a mark element (`<mark>`), or span element (`<span>`), combined with CSS styling. This means the importance of it is missed by assistive technologies.
 
-I expect that if the mark role becomes part of the final version of WAI-ARIA 1.3, then in future the `<mark>` element will come to have an implicit role of 'mark'. But, at the moment it's purely decorative.
+I expect that if the mark role becomes part of the final version of WAI-ARIA 1.3, then in future the mark element will come to have an implicit role of 'mark'. But, at the moment it's purely decorative.
 
-The following is an example of how you'll be able to use the mark role based on the proposals in the 1.3 draft. I have used it on a `<span>` element, just to highlight how we would use it as an explicit change. But, technically, using `<mark role="mark">` would be more semantically correct, it just looks weird in an example, as the role *should* be implicit at some point.
+The following is an example of how you'll be able to use the mark role based on the proposals in the 1.3 draft. I have used it on a span element, just to highlight how we would use it as an explicit change. But, technically, using a mark element with a mark role, or `<mark role="mark">`, would be more semantically correct, it just looks weird in an example, as the role *should* be implicit at some point.
 
 ```html
 <p>
@@ -373,7 +373,7 @@ Here is another example:
 >
 ```
 
-These examples are for illustrative purposes, and may not be suitable in the real world. I've written an in-depth post on [how to write good alt text for screen readers](/blog/how-to-write-good-alt-text-for-screen-readers/), which has much better examples.
+These examples are for illustrative purposes. I've written an in-depth post on [how to write good alt text for screen readers](/blog/how-to-write-good-alt-text-for-screen-readers/) for better, real-world examples.
 
 You can [read about the ARIA description attribute in the 1.3 draft](https://w3c.github.io/aria/#aria-description).
 
@@ -387,7 +387,7 @@ Also, as a bi-product of trying to make the web more accessible, we often add ad
 
 This new attribute should allow us to provide more context for screen readers, whilst simultaneously keeping it shortened for Braille keyboards.
 
-The ARIAL Braille label attribute is closely related to the ARIA label attribute, and should not be used without it. Think of it as an extension of `aria-label` rather than a standalone attribute.
+The ARIA Braille label attribute is closely related to the ARIA label attribute, and should not be used without it. Think of it as an extension of `aria-label` rather than a standalone attribute.
 
 In the following example, imagine you have a reset button on an application form, you could offer a visual icon for sighted users, additional context in the label for screen reader users, and a more concise option for Braille users.
 
@@ -552,9 +552,9 @@ The WAI-ARIA 1.3 draft shows some exciting new features, but they won't be widel
 
 ARIA is great, and it definitely has its uses for complex components. But, it is overused and even abused at times.
 
-We should use simple, native elements wherever possible, and only resort to using ARIA as sparingly as possible when there is literally no alternative, as 9 times out of 10, you can make things more accessible just by using the correct elements and roles, and by being smarter about the way you word your content.
+We should use simple, native elements wherever possible, and only resort to using ARIA sparingly when there is literally no alternative, as 9 times out of 10, you can make things more accessible just by using the correct elements and roles, and by being smarter about the way you word your content.
 
-As always, I hope this was helpful, and less of a rant than usual!
+As always, I hope this was helpful. It was nice to write an article that isn't a rant for a change!
 
 Thanks,    
 Craig
