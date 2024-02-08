@@ -155,8 +155,10 @@ With the new suggestion role, you'll be able to highlight these suggestions to a
 ```html
 <p>
   The cat sat on the 
-  <span role="deletion">veranda.</span>
-  <span role="insertion">mat.</span>
+  <span role="suggestion">
+    <span role="deletion">veranda.</span>
+    <span role="insertion">mat.</span>
+  </span>
 </p>
 ```
 
