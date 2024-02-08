@@ -169,6 +169,9 @@ For example:
 ```html
 <p>
   The cat sat on the 
+  <span class="visually-hidden">
+    Suggestion:
+  </span>
   <span class="deletion">
     <span class="visually-hidden">
       deletion:
