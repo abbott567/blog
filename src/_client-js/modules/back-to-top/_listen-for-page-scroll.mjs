@@ -32,7 +32,6 @@ function listenForrticleInfoVisibility () {
 
   const observerCallback = (entries) => {
     entries.forEach(entry => {
-      console.log(entry.isIntersecting, entry.intersectionRatio)
       isArticleInfoVisible = entry.isIntersecting
       if (entry.isIntersecting) {
         // Footer is entering the viewport, adjust the back link to align with .article-info
