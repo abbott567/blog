@@ -1,0 +1,11 @@
+.toc {
+  max-width: 400px;
+  font-size: var(--s-1);
+  @media (min-width: 1080px) {
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 0;
+  }
+}

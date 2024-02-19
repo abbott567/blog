@@ -29,13 +29,15 @@
     </div>
     {%- include 'components/header.njk' -%}
     {%- block beforeMain -%}{%- endblock -%}
-    <main id="main">
-      <div class="box container">
-        {%- block main -%}
-          {{content|safe}}
-        {%- endblock -%}
-      </div>
-    </main>
+    <div class="main-container">
+      <main id="main">
+        <div class="box container">
+          {%- block main -%}
+            {{content|safe}}
+          {%- endblock -%}
+        </div>
+      </main>
+    </div>
     {%- block afterMain -%}{%- endblock -%}
     {%- include 'components/footer.njk' -%}
     {%- block pageScripts -%}{%- endblock -%}

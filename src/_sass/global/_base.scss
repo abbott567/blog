@@ -3,6 +3,10 @@ body {
   color: var(--text-colour-primary);
 }
 
+.main-container {
+  position: relative;
+}
+
 dl {
   dt {
     font-weight: 700;
