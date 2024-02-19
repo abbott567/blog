@@ -4,10 +4,12 @@ layout: layouts/base.njk
 
 {%- from 'components/article-info.njk' import articleInfo -%}
 {%- block main -%}
-  <div class="post">
+  <div class="post" id="top">
 
     {{content|safe}}
 
+    {%- include 'components/back-to-top.njk' -%}
+  
     <hr>
     
     <h2 class="visually-hidden">

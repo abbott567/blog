@@ -1,0 +1,20 @@
+.back-to-top {
+  display: inline-block;
+  margin-bottom: var(--s0);
+  &__icon {
+    display: inline-block;
+    width: .8em;
+    height: 1em;
+    margin-right: var(--s-3);
+    vertical-align: middle;
+  }
+  &--fixed {
+    @media (min-width: 1080px) {
+      margin-bottom: 0;
+      position: fixed;
+      left: 50%;
+      bottom: 5%;
+      margin-left: -500px;
+    }
+  }
+}
