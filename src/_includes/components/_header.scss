@@ -1,11 +1,10 @@
-@use '../layout/box' as *;
-@use '../layout/container' as *;
-@use '../layout/cluster' as *;
-@use '../layout/icon' as *;
+@use 'layout/box' as *;
+@use 'layout/cluster' as *;
+@use 'layout/icon' as *;
+@use 'layout/breakpoint' as *;
 
 .header {
   &__container {
-    @include container;
     @include box;
     border-bottom: medium solid var(--border-colour);
   }
@@ -20,11 +19,11 @@
       fill: var(--link-colour);
     }
     > svg {
+      padding: var(--s0);
       display: block;
-      max-width: 200px;
       background-color: var(--page-colour);
       fill: var(--text-colour-primary);
-      @media (max-width: 540px) {
+      @include breakpoint('mobile') {
         margin: auto;
         width: 150px;
       }
@@ -34,7 +33,7 @@
     @include cluster;
     padding-top: var(--s-2);
     justify-content: space-between;
-    @media (max-width: 540px) {
+    @include breakpoint('mobile') {
       justify-content: center;
     }
   }
@@ -44,7 +43,7 @@
     list-style: none;
     margin-bottom: 0;
     margin-left: 0;
-    @media (max-width: 540px) {
+    @include breakpoint('mobile') {
       justify-content: center;
     }
   }
