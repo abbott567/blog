@@ -2,9 +2,11 @@
 @use 'layout/cluster' as *;
 @use 'layout/icon' as *;
 @use 'layout/breakpoint' as *;
+@use 'layout/centre' as *;
 
 .header {
   &__container {
+    @include centre;
     @include box;
     border-bottom: medium solid var(--border-colour);
   }

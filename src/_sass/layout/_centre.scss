@@ -1,7 +1,7 @@
 @mixin centre {
   box-sizing: content-box;
   margin-inline: auto;
-  max-inline-size: var(--measure);
+  max-inline-size: 1200px;
 }
 
 .center,

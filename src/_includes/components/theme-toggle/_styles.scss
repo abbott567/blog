@@ -1,13 +1,14 @@
-@use '../layout/container' as *;
+@use '../../../_sass/layout/breakpoint' as *;
+@use '../../../_sass/layout/centre' as *;
 
 .theme-toggle__placeholder {
   margin-bottom: 44px;
 }
 .theme-toggle__container {
-  @include container;
+  @include centre;
   text-align: right;
   padding: 0 1.5rem;
-  @media (max-width: 540px) {
+  @include breakpoint('mobile') {
     padding: 0 var(--s4);
   }
 }
@@ -20,7 +21,7 @@
   border-bottom-left-radius: var(--s-6);
   border-bottom-right-radius: var(--s-6);
   box-shadow: 0 .1rem .1rem 0 black;
-  @media (max-width: 540px) {
+  @include breakpoint('mobile') {
     width: 100%;
   }
 }

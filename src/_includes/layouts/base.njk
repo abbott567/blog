@@ -27,15 +27,13 @@
     <div class="container">
       <a class="skip-link" href="#main">Skip to main content</a>
     </div>
-    {%- include 'components/header.njk' -%}
+    {%- include 'components/header/template.njk' -%}
     {%- block beforeMain -%}{%- endblock -%}
-    <div class="main-container">
+    <div class="page-content">
       <main id="main">
-        <div class="box container">
-          {%- block main -%}
-            {{content|safe}}
-          {%- endblock -%}
-        </div>
+        {%- block main -%}
+          {{content|safe}}
+        {%- endblock -%}
       </main>
     </div>
     {%- block afterMain -%}{%- endblock -%}

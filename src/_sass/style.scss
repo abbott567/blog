@@ -1,3 +1,7 @@
+@use './layout/centre' as *;
+@use './layout/box' as *;
+@use './layout/frame' as *;
+
 // Normalise
 @use 'reset/normalise';
 @use 'reset/reset';
@@ -10,10 +14,46 @@
 
 // Components
 // @use 'components/all.scss';
-@use 'components/header.scss';
+@use 'components/header/styles.scss' as *;
+@use 'components/theme-toggle/styles.scss' as *;
 
 // Layout
 // @use 'layout/all-layout';
 
 // Theme styles
 @use 'theme/colours';
+
+:root {
+  --measure: 60ch;
+}
+* {
+  max-inline-size: var(--measure);
+}
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-inline-size: none;
+}
+
+p img {
+  max-inline-size: 100%;
+}
+
+p img {
+  @include frame;
+  width: auto; /* Reset the width to auto to allow natural size or specify a width */
+  max-width: none; /* Remove the max-width constraint */
+  display: block; /* Optional: makes the image block-level for better control */
+  margin-left: auto; /* Center the image if it's larger than the paragraph */
+  margin-right: auto; /* Center the image if it's larger than the paragraph */
+  /* Optionally, use negative margins to extend beyond the paragraph width */
+}
+
+.page-content {
+  @include box;
+  @include centre;
+}
