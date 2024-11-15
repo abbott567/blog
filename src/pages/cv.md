@@ -25,19 +25,24 @@ meta:
 
 ## Tools and platforms
 
-### Assistive technology
+<h3 class="margin-bottom-!-0">Assistive technology</h3>
+
 Voiceover, NVDA, JAWS, Voice control, Dragon, ZoomText, and Fusion.
 
-### Automated tools
+<h3 class="margin-bottom-!-0">Automated tools</h3>
+
 Accessibility Insights, ARC Toolkit, Axe DevTools, axe-core, PA11Y and Wave.
 
-### Documentation
+<h3 class="margin-bottom-!-0">Documentation</h3>
+
 Microsoft Word, Excel, PowerPoint, Teams and SharePoint. Google Drive, Docs, Sheets and Slides. Apple Keynote, Pages and Numbers.
 
-### Design
+<h3 class="margin-bottom-!-0">Design</h3>
+
 Figma, Sketch, Adobe Acrobat, InDesign, Photoshop and Illustrator.
 
-### Project management
+<h3 class="margin-bottom-!-0">Project management</h3>
+
 GitHub Projects, JIRA and Confluence. 
 
 ## Experience
@@ -101,7 +106,9 @@ GitHub Projects, JIRA and Confluence. 
 In 2021, I created and implemented the role of “Accessibility Specialist” and formed the accessibility practice at DWP. It was the first time in the history of the department that people were hired solely for their expertise in accessibility.
 
 It involved a lot of stakeholder management, working with HR, policy and finance, defining job specifications, behaviours and skills for various levels of seniority: associate, working level, senior and lead.
+
 During my tenure, I hired several accessibility specialists at various levels using the framework. Most had impairments and lived experience, which made my team the most diverse in the organisation in terms of representation.
+
 My work and the definition of the role was used in the formation of the GOV.UK Accessibility Specialist role, which is now published in the Government Digital and Data Profession Capability Framework.
 
 Further reading: [Government Digital and Data Profession Capability Framework](https://ddat-capability-framework.service.gov.uk/)

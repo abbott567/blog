@@ -139,11 +139,14 @@ h2 {
   border-bottom: 1px solid var(--link-colour);
   margin-top: var(--s2);
   margin-bottom: var(--s2);
+  padding-bottom: var(--s-5);
 }
 
 h3 {
   font-size: var(--s1);
-  margin-top: var(--s2);
+  margin-top: var(--s3);
+  margin-bottom: var(--s-5);
+  padding-bottom: var(--s-5);
 }
 
 .cv-h3 {
