@@ -51,14 +51,6 @@ I'm always looking to improve the accessibility of this website. If you find any
       </span>
     </a>
   </li>
-  <li>
-    <a href="https://instagram.com/abbott567">
-      Instagram 
-      <span class="visually-hidden">
-        - @Abbott567
-      </span>
-    </a>
-  </li>
 </ul>
 
 ## Compliance status

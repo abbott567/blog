@@ -14,13 +14,11 @@ meta:
 
 I'm the former Head of Accessibility at the Department for Work and Pensions and the creator of the DWP Accessibility Manual. 
 
-I'm a design lead and accessibility specialist by trade, and my focus is user centred design.
+I'm a design lead and accessibility specialist, and my focus is user centred design.
 
 I love to deliver [talks](/talks), design things and solve problems. 
 
-I have [combined presentation ADHD](https://www.additudemag.com/3-types-of-adhd/), so sometimes I talk a little too much or get distracted from the problem.
-
-But, I'm passionate about breaking down the stigma of mental health, so I think it's important to talk openly about mine!
+I"m Autistic and I have ADHD. I'm passionate about breaking down the stigma of mental health and neurodivergence, so I think it's important to talk openly about mine!
 
 ![Craig Abbott talking at a conference.](/images/share-image-2.webp)
 
@@ -50,14 +48,6 @@ If you get stuck with anything or just want to say *"Hi"*, please reach out. Way
       Bluesky 
       <span class="visually-hidden">
         - @craigabbott.bsky.social
-      </span>
-    </a>
-  </li>
-  <li>
-    <a href="https://instagram.com/abbott567">
-      Instagram 
-      <span class="visually-hidden">
-        - @Abbott567
       </span>
     </a>
   </li>

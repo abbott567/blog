@@ -11,6 +11,8 @@ meta:
     alt: 'Craig Abbott presenting at a conference'
 ---
 
+{%- from 'components/project-grid.njk' import projectGrid with context -%}
+
 <h1>
   {{title}}
 </h1>
@@ -33,6 +35,23 @@ meta:
 </p>
 <ul>
   <li>
+    <a href="#accessibility-work">
+      Accessibility work
+    </a>
+    <ul>
+      {%- for project in collections._work|sortByTitle -%}
+        {%- if 'accessibility' in project.data.tags -%}
+          <li>
+            <a href="#{{project.data.title|slugify}}">
+              <span class="visually-hidden">Jump to: </span>
+              {{project.data.title}}
+            </a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </li>
+  <li>
     <a href="#design-work">
       <span class="visually-hidden">Jump to: </span>
       Design work
@@ -50,24 +69,39 @@ meta:
       {%- endfor -%}
     </ul>
   </li>
-  <li>
-    <a href="#accessibility-work">
-      Accessibility work
-    </a>
-    <ul>
-      {%- for project in collections._work|sortByTitle -%}
-        {%- if 'accessibility' in project.data.tags -%}
-          <li>
-            <a href="#{{project.data.title|slugify}}">
-              <span class="visually-hidden">Jump to: </span>
-              {{project.data.title}}
-            </a>
-          </li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </li>
 </ul>
+
+<h2 id="accessibility-work">
+  Accessibility Work
+</h2>
+<p>
+  I work to embed accessibility in User Centred Design across large 
+  organisations. I've built communities, practices, and lead on accessibility 
+  strategy, implementing best practice, training and support for product teams.
+</p>
+<p>
+  I work with Directors and Deputy Directors to implement accessibility 
+  strategy, set Objective Key Results and define Key Performance Indicators.
+</p>
+<p>
+  I work with product teams, senior stakeholders and communities of practice. 
+  I run meet-ups, workshops and training sessions to make sure accessibility 
+  standards are understood and adhered to.
+</p>
+<p>
+  I worked to create the 'Accessibility Specialist' job role in DWP and 
+  collaborated with other departments to define it as a 
+  <a href="https://www.gov.uk/guidance/accessibility-specialist">Digital, Data 
+  and Technology (DDaT) role</a> in Government.
+</p>
+<p>
+  I designed, built and maintain the DWP Accessibility Manual, and I give 
+  <a href="/talks">talks</a> regularly on the topics of accessibility, 
+  inclusion and neurodiversity.
+</p>
+{{- projectGrid({
+  tag: 'accessibility'
+}) -}}
 
 <h2 id="design-work">
   Design work
@@ -105,39 +139,6 @@ meta:
   and best practice wherever possible.
 </p>
 
-{%- from 'components/project-grid.njk' import projectGrid with context -%}
 {{- projectGrid({
   tag: 'design'
-}) -}}
-
-<h2 id="accessibility-work">
-  Accessibility Work
-</h2>
-<p>
-  I work to embed accessibility in User Centred Design across large 
-  organisations. I've built communities, practices, and lead on accessibility 
-  strategy, implementing best practice, training and support for product teams.
-</p>
-<p>
-  I work with Directors and Deputy Directors to implement accessibility 
-  strategy, set Objective Key Results and define Key Performance Indicators.
-</p>
-<p>
-  I work with product teams, senior stakeholders and communities of practice. 
-  I run meet-ups, workshops and training sessions to make sure accessibility 
-  standards are understood and adhered to.
-</p>
-<p>
-  I worked to create the 'Accessibility Specialist' job role in DWP and 
-  collaborated with other departments to define it as a 
-  <a href="https://www.gov.uk/guidance/accessibility-specialist">Digital, Data 
-  and Technology (DDaT) role</a> in Government.
-</p>
-<p>
-  I designed, built and maintain the DWP Accessibility Manual, and I give 
-  <a href="/talks">talks</a> regularly on the topics of accessibility, 
-  inclusion and neurodiversity.
-</p>
-{{- projectGrid({
-  tag: 'accessibility'
 }) -}}

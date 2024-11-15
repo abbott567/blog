@@ -12,7 +12,13 @@ meta:
 
 # Featured
 
+## 2024
+- [Government Transformation Magazine: How emerging technologies are shaping the future of digital services](https://www.government-transformation.com/en/citizen-experience/how-emerging-technologies-are-shaping-the-future-of-digital-services)
+- [Elastic: ADHD Coping strategies and why accessibility impacts everyone](https://www.elastic.co/blog/culture-accessibility-impacts-everyone)
+- [Adlib: Design for All](https://www.adlib-recruitment.co.uk/design-for-all-feat-elastic)
+
 ## 2023
+- [Talk: Beyond Accessibility Regulations](https://vimeo.com/867298745)
 - [Podcast: Managing burnout within accessibility](https://www.youtube.com/watch?v=lChvjtGlg5E&t=459s)
 
 ## 2022
