@@ -1,4 +1,11 @@
 {
+  "name": "craig-abbott-blog",
+  "version": "1.0.0",
+  "author": "Craig Abbott",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.12.2"
+  },
   "scripts": {
     "start": "set NODE_ENV=dev&&node lib/scripts/all&&eleventy --serve",
     "build": "node lib/scripts/all && eleventy"
