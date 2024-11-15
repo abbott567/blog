@@ -11,8 +11,6 @@ meta:
     alt: 'Craig Abbott presenting at a conference'
 ---
 
-{%- from 'components/project-grid.njk' import projectGrid with context -%}
-
 <h1>
   {{title}}
 </h1>
@@ -99,6 +97,7 @@ meta:
   <a href="/talks">talks</a> regularly on the topics of accessibility, 
   inclusion and neurodiversity.
 </p>
+{%- from 'components/project-grid.njk' import projectGrid with context -%}
 {{- projectGrid({
   tag: 'accessibility'
 }) -}}
